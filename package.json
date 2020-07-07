@@ -1,27 +1,18 @@
 {
-  "name": "gatsby-starter-tailwind",
-  "description": "Gatsby starter styled with Tailwind",
-  "version": "4.0.0",
-  "author": "Taylor Bryant <taylor@bryant.io>",
+  "name": "gazduig-website",
+  "description": "Gazduig Agency Website",
+  "version": "2.0.0",
+  "author": "David Levai <david@davidlevai.com>",
   "dependencies": {
-    "gatsby": "2.23.14",
-    "gatsby-plugin-manifest": "2.4.14",
-    "gatsby-plugin-offline": "3.2.15",
-    "gatsby-plugin-postcss": "2.3.6",
-    "gatsby-plugin-react-helmet": "3.3.8",
-    "gatsby-plugin-sharp": "2.6.14",
-    "prop-types": "15.7.2",
+    "gatsby": "2.23.20",
+    "gatsby-plugin-manifest": "2.4.17",
+    "gatsby-plugin-postcss": "2.3.9",
+    "gatsby-plugin-react-helmet": "3.3.9",
+    "gatsby-plugin-sharp": "2.6.17",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-helmet": "6.1.0"
   },
-  "keywords": [
-    "gatsby",
-    "tailwind",
-    "tailwindcss",
-    "purgecss"
-  ],
-  "license": "MIT",
   "scripts": {
     "analyze:lint": "eslint --ext .jsx --ext .js .",
     "analyze:prettier": "prettier --list-different \"**/*.{css,js,jsx,json,md}\"",
@@ -31,30 +22,22 @@
     "fix": "npm run fix:lint && npm run fix:prettier",
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "dev": "npm run develop",
-    "start": "npm run develop",
+    "dev": "yarn develop",
+    "start": "yarn develop",
     "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "clean": "gatsby clean"
   },
   "devDependencies": {
     "@tailwindcss/custom-forms": "0.2.1",
     "autoprefixer": "9.8.4",
     "babel-eslint": "10.1.0",
     "cssnano": "4.1.10",
-    "eslint": "6.8.0",
-    "eslint-loader": "3.0.4",
+    "eslint": "7.4.0",
+    "eslint-loader": "4.0.2",
     "eslint-plugin-import": "2.22.0",
     "eslint-plugin-react": "7.20.3",
     "gatsby-plugin-eslint": "2.0.8",
     "prettier": "2.0.5",
     "tailwindcss": "1.4.6"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/taylorbryant/gatsby-starter-tailwind"
-  },
-  "bugs": {
-    "url": "https://github.com/taylorbryant/gatsby-starter-tailwind/issues"
   }
 }
