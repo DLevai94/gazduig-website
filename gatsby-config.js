@@ -1,4 +1,3 @@
-const path = require(`path`);
 const resolveConfig = require('tailwindcss/resolveConfig');
 const tailwindConfig = require('./tailwind.config.js');
 
@@ -31,11 +30,31 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: path.join(__dirname, `src`, `images`),
+        path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `portfolio`,
+        path: `${__dirname}/content/portfolio`,
+      },
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [],
       },
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-netlify`,
+    {
+      resolve: `gatsby-plugin-netlify-cms`,
+      options: {
+        publicPath: 'kathi',
+      },
+    },
     {
       resolve: `gatsby-plugin-postcss`,
       options: {

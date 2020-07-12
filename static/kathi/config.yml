@@ -1,0 +1,27 @@
+backend:
+  name: github
+  repo: gazduig/Gazduig-Creative-Agency-Website
+
+media_folder: static/assets
+public_folder: /assets
+logo_url: https://gazduig.com/static/logo.svg
+locale: 'hu'
+
+collections:
+  - name: portfolio
+    label: Munka
+    folder: content/portfolio
+    create: true
+    slug: index
+    path: '{{title}}/index'
+    editor:
+      preview: false
+    fields:
+      - { name: path, label: Webcím }
+      - { name: date, label: Dátum, widget: datetime }
+      - { name: "thumbnail", label: "Promo kép", widget: "image"}
+      - { name: title, label: Cím }
+      - { name: client, label: Ügyfél }
+      - { name: solutions, label: Megoldások }
+      - { name: jobtime, label: Ekkor készült }
+      - { name: body, label: Tartalom, widget: markdown }
