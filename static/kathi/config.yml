@@ -19,9 +19,11 @@ collections:
     fields:
       - { name: path, label: Webcím }
       - { name: date, label: Dátum, widget: datetime }
-      - { name: "thumbnail", label: "Promo kép", widget: "image"}
+      - { name: "thumbnail", label: "Promo kép", widget: "image", allow_multiple: false}
       - { name: title, label: Cím }
       - { name: client, label: Ügyfél }
       - { name: solutions, label: Megoldások }
       - { name: jobtime, label: Ekkor készült }
+      - { name: categories, label: Kategória, widget: lsit }
+      - { name: "images", label: "Képek", widget: "image"}
       - { name: body, label: Tartalom, widget: markdown }
