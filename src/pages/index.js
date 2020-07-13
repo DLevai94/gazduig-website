@@ -2,8 +2,7 @@ import React from 'react';
 import HeroBG from '../images/heroBG.jpg';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import ProjectGrid from '../components/projectGrid';
-import CalloutBranding from '../components/svg/calloutBranding';
+import CalloutSection from '../components/callout-section';
 
 function IndexPage() {
   return (
@@ -51,87 +50,13 @@ function IndexPage() {
             </div>
           </div>
         </div>
-
-        <section className="container mx-auto -mt-64">
-          <h2 className="font-display font-extrabold text-2xl pl-16">
-            Ez itt az
-            <br /> eszköztárunk
-          </h2>
-          <div className="flex flex-wrap -mx-2 overflow-hidden">
-            <div className="callout-card">
-              <div className="w-3/12">
-                <CalloutBranding className="w-16" />
-              </div>
-              <div className="w-9/12">
-                <h3 className="font-extrabold">Arculattervezés</h3>
-                <p className="font-light leading-tight">
-                  A profi és egységes megjelenés ugyanilyen minőségi portékát sejtet. Tüntesd fel magad jó színben!
-                </p>
-              </div>
-            </div>
-            <div className="callout-card">
-              <div className="w-3/12">
-                <CalloutBranding className="w-16" />
-              </div>
-              <div className="w-9/12">
-                <h3 className="font-extrabold">Arculattervezés</h3>
-                <p className="font-light leading-tight">
-                  A profi és egységes megjelenés ugyanilyen minőségi portékát sejtet. Tüntesd fel magad jó színben!
-                </p>
-              </div>
-            </div>
-            <div className="callout-card">
-              <div className="w-3/12">
-                <CalloutBranding className="w-16" />
-              </div>
-              <div className="w-9/12">
-                <h3 className="font-extrabold">Arculattervezés</h3>
-                <p className="font-light leading-tight">
-                  A profi és egységes megjelenés ugyanilyen minőségi portékát sejtet. Tüntesd fel magad jó színben!
-                </p>
-              </div>
-            </div>
-            <div className="callout-card">
-              <div className="w-3/12">
-                <CalloutBranding className="w-16" />
-              </div>
-              <div className="w-9/12">
-                <h3 className="font-extrabold">Arculattervezés</h3>
-                <p className="font-light leading-tight">
-                  A profi és egységes megjelenés ugyanilyen minőségi portékát sejtet. Tüntesd fel magad jó színben!
-                </p>
-              </div>
-            </div>
-            <div className="callout-card">
-              <div className="w-3/12">
-                <CalloutBranding className="w-16" />
-              </div>
-              <div className="w-9/12">
-                <h3 className="font-extrabold">Arculattervezés</h3>
-                <p className="font-light leading-tight">
-                  A profi és egységes megjelenés ugyanilyen minőségi portékát sejtet. Tüntesd fel magad jó színben!
-                </p>
-              </div>
-            </div>
-            <div className="callout-card">
-              <div className="w-3/12">
-                <CalloutBranding className="w-16" />
-              </div>
-              <div className="w-9/12">
-                <h3 className="font-extrabold">Arculattervezés</h3>
-                <p className="font-light leading-tight">
-                  A profi és egységes megjelenés ugyanilyen minőségi portékát sejtet. Tüntesd fel magad jó színben!
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
       </section>
+
+      <CalloutSection />
 
       <section
         className="container max-w-4xl mx-auto md:flex-row flex-col items-center justify-start"
         id="main-content">
-        <ProjectGrid />
         <section className="text-gray-700 body-font">
           <div className="container px-5 py-24 mx-auto flex flex-wrap">
             <div className="flex w-full mb-20 flex-wrap">

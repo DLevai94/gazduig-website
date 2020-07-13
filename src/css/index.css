@@ -69,12 +69,12 @@
 }
 
 .callout-card {
-  @apply my-2 mx-4 w-full overflow-hidden bg-white p-5 shadow-xl rounded-lg flex justify-start items-center;
+  @apply my-2 mr-2 w-full overflow-hidden bg-white p-4 shadow-xl rounded-lg flex justify-start items-center;
 }
 
 @screen md {
   .callout-card {
-    @apply w-1/2;
+    @apply w-1/3;
   }
 }
 
