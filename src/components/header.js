@@ -6,8 +6,8 @@ function Header() {
   const [isExpanded, toggleExpansion] = useState(false);
 
   return (
-    <nav className="text-gray-900 body-font font-light bg-fixed bg-white mx-auto fixed flex flex-wrap p-2 md:p-5 flex-row justify-between items-center w-full">
-      <div className="mr-2">
+    <nav className="container text-gray-900 body-font font-light bg-fixed bg-white mx-auto sticky flex flex-wrap p-2 pt-10 md:px-5 flex-row justify-between items-center w-full">
+      <div className="mr-12">
         <Link to="/">
           <MenuLogo className="w-24 sm:w-32" />
         </Link>
@@ -41,18 +41,18 @@ function Header() {
             },
           ].map((link) => (
             <Link
-              activeClassName="text-brand-red-500"
-              getProps={({ isPartiallyCurrent }) => (isPartiallyCurrent ? { className: 'text-brand-red-500' } : {})}
-              className="block mt-4 lg:inline-block lg:mt-0 mr-4 hover:text-gray-900"
+              activeClassName="text-brand-red-500 font-extrabold"
+              getProps={({ isPartiallyCurrent }) =>
+                isPartiallyCurrent ? { className: 'text-brand-red-500 font-extrabold' } : {}
+              }
+              className="block mt-4 lg:inline-block lg:mt-0 mr-6 hover:text-gray-900"
               key={link.title}
               to={link.route}>
               {link.title}
             </Link>
           ))}
         </div>
-        <button className="inline-flex rounded items-center shadow bg-brand-red-500 px-4 py-2 text-white hover:bg-brand-red-400 mt-6 sm:mt-0">
-          Beszélgessünk
-        </button>
+        <button className="primary-btn">Beszélgessünk</button>
       </div>
     </nav>
   );
