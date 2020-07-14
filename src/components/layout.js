@@ -10,7 +10,7 @@ function Layout({ children }) {
         Irány a tartalom
       </a>
       <Header />
-      <main className="min-h-screen bg-gray-100">{children}</main>
+      <main className="min-h-screen">{children}</main>
       <Footer />
     </div>
   );
