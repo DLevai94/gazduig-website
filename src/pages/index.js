@@ -123,7 +123,7 @@ function IndexPage() {
                   (edge) => edge?.node?.frontmatter?.categories?.includes(chosenCategory) || chosenCategory === 'all'
                 )
                 .map((edge) => (
-                  <Link key={edge?.node?.id} to={edge?.node?.frontmatter?.slug}>
+                  <Link key={edge?.node?.id} to={`portfolio/${edge?.node?.frontmatter?.slug}`}>
                     <div className="flex flex-wrap w-1/2">
                       <div className="md:p-2 p-1 w-full">
                         <div className="flex-shrink-0 relative overflow-hidden bg-pink-600 rounded-lg shadow-lg h-64">

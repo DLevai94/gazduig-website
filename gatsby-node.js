@@ -25,10 +25,9 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
     createPage({
-      path: node.frontmatter.slug,
+      path: `portfolio/${node.frontmatter.slug}`,
       component: workTemplate,
       context: {
-        // additional data can be passed via context
         slug: node.frontmatter.slug,
       },
     });
