@@ -5,6 +5,9 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 import CalloutSection from '../components/callout-section';
 import Callout6 from '../components/svg/callout6.svg';
+import Plant from '../images/plant.png';
+import Typewriter from '../images/the-great-typewriter.png';
+import Couch from '../images/couch.png';
 import LogoTSystems from '../images/logos/tsystems.svg';
 import LogoShoprenter from '../images/logos/shoprenter.svg';
 import LogoPensum from '../images/logos/pensum.svg';
@@ -297,6 +300,73 @@ function IndexPage() {
           </div>
         </div>
       </section>
+      <section
+        className="max-w-screen-xl mx-auto mb-32 px-4 sm:px-6 lg:px-8 bg-no-repeat"
+        style={{ backgroundImage: `url(${Plant})` }}>
+        <h2 className="heading">Vélemények rólunk olyanoktól, akik nem a rokonaink</h2>
+        <div className="grid grid-cols-2 gap-8 md:grid-cols-3">
+          <div className="bg-white col-span-1 flex justify-center md:col-span-2 lg:col-span-1 flex-col rounded shadow-lg p-4">
+            <p className="text-sm leading-tight mb-3">
+              A profi és egységes megjelenés ugyanilyen minőségi portékát sejtet. Tüntesd fel magad jó színben.
+            </p>
+            <p className="font-extrabold text-sm leading-tight">
+              Weinwurm Bence
+              <br />
+              Senior projektmenedzser, T-Systems
+            </p>
+          </div>
+          <div className="bg-white col-span-1 flex justify-center md:col-span-2 lg:col-span-1 flex-col rounded shadow-lg p-4">
+            <p className="text-sm leading-tight mb-3">
+              A profi és egységes megjelenés ugyanilyen minőségi portékát sejtet. Tüntesd fel magad jó színben.
+            </p>
+            <p className="font-extrabold text-sm leading-tight">
+              Weinwurm Bence
+              <br />
+              Senior projektmenedzser, T-Systems
+            </p>
+          </div>
+          <div className="bg-white col-span-1 flex justify-center md:col-span-2 lg:col-span-1 flex-col rounded shadow-lg p-4">
+            <p className="text-sm leading-tight mb-3">
+              A profi és egységes megjelenés ugyanilyen minőségi portékát sejtet. Tüntesd fel magad jó színben.
+            </p>
+            <p className="font-extrabold text-sm leading-tight">
+              Weinwurm Bence
+              <br />
+              Senior projektmenedzser, T-Systems
+            </p>
+          </div>
+          <div className="bg-white col-span-1 flex justify-center md:col-span-2 lg:col-span-1 flex-col rounded shadow-lg p-4">
+            <p className="text-sm leading-tight mb-3">
+              A profi és egységes megjelenés ugyanilyen minőségi portékát sejtet. Tüntesd fel magad jó színben.
+            </p>
+            <p className="font-extrabold text-sm leading-tight">
+              Weinwurm Bence
+              <br />
+              Senior projektmenedzser, T-Systems
+            </p>
+          </div>
+          <div className="bg-white col-span-1 flex justify-center md:col-span-2 lg:col-span-1 flex-col rounded shadow-lg p-4">
+            <p className="text-sm leading-tight mb-3">
+              A profi és egységes megjelenés ugyanilyen minőségi portékát sejtet. Tüntesd fel magad jó színben.
+            </p>
+            <p className="font-extrabold text-sm leading-tight">
+              Weinwurm Bence
+              <br />
+              Senior projektmenedzser, T-Systems
+            </p>
+          </div>
+          <div className="bg-white col-span-1 flex justify-center md:col-span-2 lg:col-span-1 flex-col rounded shadow-lg p-4">
+            <p className="text-sm leading-tight mb-3">
+              A profi és egységes megjelenés ugyanilyen minőségi portékát sejtet. Tüntesd fel magad jó színben.
+            </p>
+            <p className="font-extrabold text-sm leading-tight">
+              Weinwurm Bence
+              <br />
+              Senior projektmenedzser, T-Systems
+            </p>
+          </div>
+        </div>
+      </section>
       <section>
         <div className="max-w-screen-xl mx-auto mb-32 px-4 sm:px-6 lg:px-8">
           <h2 className="heading">
@@ -305,18 +375,54 @@ function IndexPage() {
             Viszont ehhez előbb együtt kell dolgoznunk! Mondd el, miben segíthetünk!
           </h2>
           <Link to="contact">
-            <button className="primary-btn md:ml-16">Kattints ide</button>
+            <button className="primary-btn md:m-16">Kattints ide</button>
           </Link>
         </div>
       </section>
-      <section>
-        <div className="max-w-screen-xl mx-auto mb-32 px-4 sm:px-6 lg:px-8">
+      <section className="z-50">
+        <div className="max-w-screen-xl mx-auto mb-32 px-4 sm:px-6 lg:px-8 z-50">
           <h2 className="heading mb-4">
             Írtunk egy összefoglalót arról, milyen módszerrel szerezzük
             <br />
             az ügyfeleink 90%-át Instáról
           </h2>
-          <p className="font-light text-lg ml-16">Olvass bele, hátha találsz benne valami érdekeset!</p>
+          <p className="font-light text-lg ml-16 mb-16">Olvass bele, hátha találsz benne valami érdekeset!</p>
+          <div className="bg-white rounded p-8 mx-8 shadow-lg flex z-50">
+            <div className="max-w-1/2">
+              <h3 className="font-display font-extrabold text-xl">Pötyögd be az e-mail címed, és már küldjük is!</h3>
+              <label className="block mb-2 text-xs font-bold uppercase" htmlFor="email">
+                Az e-mail címed
+                <input className="w-full mb-6 form-input" id="email" placeholder="Az e-mail címed" type="email" />
+              </label>
+              <label className="block mb-2 text-xs font-bold uppercase" htmlFor="name">
+                Hogy szólíthatunk?
+                <input className="w-full mb-6 form-input" id="name" placeholder="Hogy szólíthatunk?" type="text" />
+              </label>
+              {/* <label className="block mb-2 text-xs" htmlFor="privacy">
+                <input type="checkbox" className="form-input" name="privacy" />
+                Elfogadom az adatvédelmi nyilatkozatot és engedélyezem, hogy a megadott elérhetőségeken felvegyétek
+                velem a kapcsolatot.
+              </label> */}
+            </div>
+            <div className="w-1/2 relative flex justify-end items-center">
+              <img className="absolute" src={Typewriter} alt="Irogep" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="-mt-64 z-0 p-96 bg-gray-200 flex items-center justify-between">
+        <div className="max-w-1/2">
+          <h2 className="heading mb-8">
+            Á, az oldal alján vagy! Hadd mutatkozzunk
+            <br />
+            be, ha már legörgettél idáig!
+          </h2>
+          <Link to="/csapat">
+            <button className="mx-16 primary-btn">Kattints ide</button>
+          </Link>
+        </div>
+        <div className="w-1/2 relative flex justify-end items-center">
+          <img className="absolute max-h-64" src={Couch} alt="Kanape" />
         </div>
       </section>
     </Layout>
