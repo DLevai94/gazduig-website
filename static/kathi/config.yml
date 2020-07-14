@@ -24,6 +24,6 @@ collections:
       - { name: client, label: Ügyfél }
       - { name: solutions, label: Megoldások }
       - { name: jobtime, label: Ekkor készült }
-      - { name: categories, label: Kategória, widget: lsit }
+      - { name: categories, label: Kategória, widget: list, default: ['all', 'branding', 'web', 'print', 'copy', 'social', 'ig'] }
       - { name: "images", label: "Képek", widget: "image"}
       - { name: body, label: Tartalom, widget: markdown }

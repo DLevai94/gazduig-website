@@ -5,7 +5,7 @@ title: "Elso dinamikus melo"
 client: "Jo ugyfel"
 solutions: "Hello szia"
 jobtime: "2020 marcius"
-categories: ['web', 'arculat']
+categories: ['web', 'branding']
 ---
 
 Hello szia NetlifyCMS!

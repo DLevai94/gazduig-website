@@ -9,6 +9,9 @@ module.exports = {
         display: ['Roboto Slab', ...fontFamily.sans],
         body: ['Poppins', ...fontFamily.sans],
       },
+      borderRadius: {
+        default: '10px',
+      },
       colors: {
         'brand-red': {
           100: '#FBE8EC',

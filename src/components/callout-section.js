@@ -5,6 +5,7 @@ import CalloutIg from './svg/calloutIg';
 import CalloutPrint from './svg/calloutPrint';
 import CalloutSocial from './svg/calloutSocial';
 import CalloutWebsite from './svg/calloutWebsite';
+import Callout1 from './svg/callout1.svg';
 
 const data = [
   {
@@ -53,7 +54,10 @@ const CalloutSection = () => {
 
         <div className="md:grid md:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-4 lg:gap-8">
           {data.map(({ title, description, icon }) => (
-            <div key={title} className="callout-card">
+            <div
+              key={title}
+              className="callout-card bg-no-repeat bg-left"
+              style={{ backgroundImage: `url(${Callout1})` }}>
               <div className="w-3/12">{icon}</div>
               <div className="w-9/12">
                 <h3 className="font-extrabold">{title}</h3>
