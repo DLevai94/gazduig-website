@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: gazduig/Gazduig-Creative-Agency-Website
+  repo: DLevai94/gazduig-website
 
 media_folder: static/assets
 public_folder: /assets
