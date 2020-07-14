@@ -4,6 +4,7 @@ date: 2020-07-14T15:26:16.733Z
 thumbnail: screenshot-2020-07-05-at-12.15.23.png
 title: Kylie Jennernek is dolgoztunk
 client: Kylie Jenner
+slug: kylie-jennernek-is-dolgoztunk
 solutions: Retusalas, popsi nagyobbitas Photoshoppal
 jobtime: 2017 aprilis
 categories:
