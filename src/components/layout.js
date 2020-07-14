@@ -10,9 +10,7 @@ function Layout({ children }) {
         Irány a tartalom
       </a>
       <Header />
-
-      <main className="flex-1 w-full">{children}</main>
-
+      <main className="min-h-screen bg-gray-100">{children}</main>
       <Footer />
     </div>
   );

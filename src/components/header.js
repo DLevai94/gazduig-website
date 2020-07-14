@@ -6,53 +6,123 @@ function Header() {
   const [isExpanded, toggleExpansion] = useState(false);
 
   return (
-    <nav className="container text-gray-900 body-font font-light bg-fixed bg-white mx-auto sticky flex flex-wrap p-2 pt-10 md:px-5 flex-row justify-between items-center w-full">
-      <div className="mr-12">
-        <Link to="/">
-          <MenuLogo className="w-24 sm:w-32" />
-        </Link>
-      </div>
-      <div className="block lg:hidden" onClick={() => toggleExpansion(!isExpanded)}>
-        <button className="flex items-center px-3 py-2 border rounded text-grey-300 border-grey-500 hover:text-white hover:border-white">
-          <svg className="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-            <title>Menu</title>
-            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-          </svg>
-        </button>
-      </div>
-      <div className={`${isExpanded ? `block` : `hidden`} w-full block flex-grow lg:flex lg:items-center lg:w-auto`}>
-        <div className="text-sm lg:flex-grow">
-          {[
-            {
-              route: `/szolgaltatasok`,
-              title: `Ebben segítünk`,
-            },
-            {
-              route: `/portfolio`,
-              title: `Ezeket csináltuk eddig`,
-            },
-            {
-              route: `/marketing-tippek`,
-              title: `Ezeket neked írtuk`,
-            },
-            {
-              route: `/csapat`,
-              title: `Ezek vagyunk`,
-            },
-          ].map((link) => (
-            <Link
-              activeClassName="text-brand-red-500 font-extrabold"
-              getProps={({ isPartiallyCurrent }) =>
-                isPartiallyCurrent ? { className: 'text-brand-red-500 font-extrabold' } : {}
-              }
-              className="block mt-4 lg:inline-block lg:mt-0 mr-6 hover:text-gray-900"
-              key={link.title}
-              to={link.route}>
-              {link.title}
-            </Link>
-          ))}
+    <nav className="bg-white shadow-sm">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between h-16">
+          <div className="flex">
+            <div className="flex-shrink-0 flex items-center">
+              <Link to="/">
+                <MenuLogo className="w-24 sm:w-32" />
+              </Link>
+            </div>
+            <div className="hidden sm:ml-6 sm:flex">
+              {[
+                {
+                  route: `/szolgaltatasok`,
+                  title: `Ebben segítünk`,
+                },
+                {
+                  route: `/portfolio`,
+                  title: `Ezeket csináltuk eddig`,
+                },
+                {
+                  route: `/marketing-tippek`,
+                  title: `Ezeket neked írtuk`,
+                },
+                {
+                  route: `/csapat`,
+                  title: `Ezek vagyunk`,
+                },
+              ].map((link) => (
+                <Link
+                  activeClassName="ml-8 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium leading-5 focus:outline-none hover:text-red-brand-500 hover:border-red-brand-500 focus:text-red-brand-500 focus:border-brand-red-500 transition duration-150 ease-in-out border-brand-red-500"
+                  getProps={({ isPartiallyCurrent }) =>
+                    isPartiallyCurrent
+                      ? {
+                          className:
+                            'ml-8 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium leading-5 focus:outline-none hover:text-red-brand-500 hover:border-red-brand-500 focus:text-red-brand-500 focus:border-brand-red-500 transition duration-150 ease-in-out border-brand-red-500',
+                        }
+                      : {}
+                  }
+                  className="ml-8 inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium leading-5 focus:outline-none hover:text-red-brand-700 hover:border-red-brand-300 focus:text-red-brand-700 focus:border-brand-red-700 transition duration-150 ease-in-out"
+                  key={link.title}
+                  to={link.route}>
+                  {link.title}
+                </Link>
+              ))}
+            </div>
+          </div>
+          <div className="sm:ml-6 sm:flex sm:items-center">
+            <button className="primary-btn hidden md:inline-block" aria-label="Beszélgessünk">
+              Beszélgessünk
+            </button>
+            <div className="-mr-2 flex items-center sm:hidden">
+              <button
+                className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out"
+                onClick={() => toggleExpansion(!isExpanded)}>
+                <svg
+                  className={`${isExpanded ? 'hidden' : 'block'} h-6 w-6`}
+                  stroke="currentColor"
+                  fill="none"
+                  viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+                <svg
+                  className={`${isExpanded ? 'block' : 'hidden'} h-6 w-6`}
+                  stroke="currentColor"
+                  fill="none"
+                  viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+          </div>
         </div>
-        <button className="primary-btn">Beszélgessünk</button>
+        <div className={`${isExpanded ? 'block' : 'hidden'} sm:hidden`}>
+          <div className="pt-2 pb-3">
+            {[
+              {
+                route: `/szolgaltatasok`,
+                title: `Ebben segítünk`,
+              },
+              {
+                route: `/portfolio`,
+                title: `Ezeket csináltuk eddig`,
+              },
+              {
+                route: `/marketing-tippek`,
+                title: `Ezeket neked írtuk`,
+              },
+              {
+                route: `/csapat`,
+                title: `Ezek vagyunk`,
+              },
+            ].map((link) => (
+              <Link
+                activeClassName="mt-1 block pl-3 pr-4 py-2 border-l-4 text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300 focus:outline-none focus:text-gray-800 focus:bg-gray-50 focus:border-gray-300 transition duration-150 ease-in-out"
+                getProps={({ isPartiallyCurrent }) =>
+                  isPartiallyCurrent
+                    ? {
+                        className:
+                          'mt-1 block pl-3 pr-4 py-2 border-l-4 text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300 focus:outline-none focus:text-gray-800 focus:bg-gray-50 focus:border-gray-300 transition duration-150 ease-in-out',
+                      }
+                    : {}
+                }
+                className="mt-1 block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300 focus:outline-none focus:text-gray-800 focus:bg-gray-50 focus:border-gray-300 transition duration-150 ease-in-out"
+                key={link.title}
+                to={link.route}>
+                {link.title}
+              </Link>
+            ))}
+          </div>
+          <div className="pt-4 pb-3 border-t border-gray-400">
+            <div className="flex items-center">
+              <button className="primary-btn" aria-label="Beszélgessünk">
+                Beszélgessünk
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </nav>
   );

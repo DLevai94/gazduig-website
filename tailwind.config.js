@@ -1,9 +1,14 @@
-const { colors } = require('tailwindcss/defaultTheme');
+const { colors, fontFamily } = require('tailwindcss/defaultTheme');
 
 module.exports = {
   purge: ['./src/**/*.js', './src/**/*.jsx', './src/**/*.ts', './src/**/*.tsx'],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['Poppins', ...fontFamily.sans],
+        display: ['Roboto Slab', ...fontFamily.sans],
+        body: ['Poppins', ...fontFamily.sans],
+      },
       colors: {
         'brand-red': {
           100: '#FBE8EC',
@@ -32,13 +37,13 @@ module.exports = {
           900: '#262626',
         },
       },
-      fontFamily: {
-        display: ['Roboto Slab', 'sans-serif'],
-        body: ['Poppins', 'sans-serif'],
-      },
     },
   },
-  variants: {},
-  // https://github.com/tailwindcss/custom-forms
-  plugins: [require('@tailwindcss/custom-forms'), require('tailwindcss-skip-link')],
+  variants: { margin: ['responsive', 'hover', 'focus'] },
+  plugins: [
+    require('@tailwindcss/ui'),
+    require('@tailwindcss/custom-forms'),
+    require('tailwindcss-skip-link'),
+    require('@tailwindcss/typography'),
+  ],
 };

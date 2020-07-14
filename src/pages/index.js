@@ -1,5 +1,5 @@
 import React from 'react';
-import HeroBG from '../images/heroBG.jpg';
+// import HeroBG from '../images/heroBG.jpg';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import CalloutSection from '../components/callout-section';
@@ -8,86 +8,71 @@ function IndexPage() {
   return (
     <Layout>
       <SEO keywords={[`gazduig`, `designer`, `grafikus`, `gazdig bence`]} title="Főoldal" />
-      <section>
-        <div
-          className="hidden sm:flex sm:h-screen sm:w-auto sm:bg-center sm:bg-no-repeat sm:bg-cover"
-          style={{ backgroundImage: `url(${HeroBG})` }}>
-          <div className="container mx-auto flex px-5 my-48 md:flex-row flex-col items-start justify-start pl-16">
-            <div className="lg:flex-grow lg:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-              <h1 className="lg:text-6xl text-5xl font-display font-extrabold tracking-tight leading-none">
-                Ütős megoldások, ütős márkák számára
-              </h1>
-              <div className="max-w-md my-8">
-                <p className="leading-relaxed font-light tracking-tight text-2xl">
+      <div className="hero">
+        <div className="max-w-screen-xl mx-auto">
+          <div className="relative pb-8 sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
+            <main className="mt-10 mx-auto max-w-screen-xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-64 lg:px-8">
+              <div className="sm:text-center lg:text-left">
+                <h2 className="text-4xl font-display tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-6xl">
+                  Ütős megoldások, ütős márkák számára
+                </h2>
+                <p className="mt-3 text-base sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0 font-light">
                   Szia! A Gazduig Creative Agency vagyunk Budapesről. Márkákat teszünk ismertebbé és feltűnőbbé, a
                   dizájn erejét használva.
                 </p>
+                <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
+                  <button className="primary-btn">Íme a részletek</button>
+                </div>
               </div>
-              <div className="flex justify-center">
-                <button className="primary-btn">Íme a részletek</button>
-              </div>
-            </div>
-            <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6"></div>
+            </main>
           </div>
         </div>
-      </section>
-      <section>
-        <div className="sm:hidden sm:h-screen sm:w-auto sm:bg-center sm:bg-no-repeat sm:bg-cover">
-          <div className="container mx-auto flex px-5 my-48 md:flex-row flex-col items-start justify-start">
-            <div className="lg:flex-grow lg:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-              <h1 className="lg:text-6xl text-5xl font-display font-extrabold tracking-tight leading-none">
-                Ütős megoldások, ütős márkák számára
-              </h1>
-              <div className="max-w-md my-8">
-                <p className="leading-relaxed font-light tracking-tight text-2xl">
-                  Szia! A Gazduig Creative Agency vagyunk Budapesről. Márkákat teszünk ismertebbé és feltűnőbbé, a
-                  dizájn erejét használva.
-                </p>
-              </div>
-              <div className="flex justify-center">
-                <button className="primary-btn">Íme a részletek</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <CalloutSection />
+      </div>
 
       <section
-        className="container max-w-4xl mx-auto md:flex-row flex-col items-center justify-start"
+        className="container max-w-7xl mx-auto md:flex-row flex-col items-center justify-start"
         id="main-content">
-        <section className="text-gray-700 body-font">
+        <CalloutSection />
+        <section>
           <div className="container px-5 py-24 mx-auto flex flex-wrap">
-            <div className="flex w-full mb-20 flex-wrap">
-              <h1 className="sm:text-3xl text-2xl font-extrabold font-display lg:w-1/3 lg:mb-0 mb-4 leading-tight">
+            <div className="w-full mb-20">
+              <h1 className="ml-16 text-2xl font-extrabold font-display">
                 Nézz meg a fentiekből pár sikeres projektet
               </h1>
               <br />
-              <nav className="block bg-white px-8 pt-2 shadow-md">
-                <div className="-mb-px flex justify-center">
-                  <a
-                    className="no-underline text-teal-dark border-b-2 border-teal-dark uppercase tracking-wide font-bold text-xs py-3 mr-8"
-                    href="#">
-                    Home
-                  </a>
-                  <a
-                    className="no-underline text-grey-dark border-b-2 border-transparent uppercase tracking-wide font-bold text-xs py-3 mr-8"
-                    href="#">
-                    Products
-                  </a>
-                  <a
-                    className="no-underline text-grey-dark border-b-2 border-transparent uppercase tracking-wide font-bold text-xs py-3 mr-8"
-                    href="#">
-                    Discounts
-                  </a>
-                  <a
-                    className="no-underline text-grey-dark border-b-2 border-transparent uppercase tracking-wide font-bold text-xs py-3"
-                    href="#">
-                    Customers
-                  </a>
+              <div className="overflow-hidden bg-white pt-2 px-16 shadow-lg rounded-lg">
+                <div className="sm:hidden">
+                  <select
+                    aria-label="Selected tab"
+                    className="mt-1 form-select block w-full pl-3 pr-10 py-2 text-base leading-6 border-gray-300 focus:outline-none focus:shadow-outline-brand-red-500 focus:border-brand-red-500 sm:text-sm sm:leading-5 transition ease-in-out duration-150">
+                    <option selected>Összes</option>
+                    <option>Arculattervezés</option>
+                    <option>Web-, és appdizájn</option>
+                  </select>
                 </div>
-              </nav>
+                <div className="hidden sm:block">
+                  <div className="border-b border-gray-200">
+                    <nav className="-mb-px flex">
+                      <a
+                        href="#"
+                        className="whitespace-no-wrap py-4 px-1 border-b-2 border-transparent font-medium text-sm leading-5 hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300">
+                        Összes
+                      </a>
+                      <a
+                        href="#"
+                        className="whitespace-no-wrap ml-8 py-4 px-1 border-b-2 border-transparent font-medium text-sm leading-5 hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300">
+                        Arculattervezés
+                      </a>
+                      <a
+                        href="#"
+                        className="whitespace-no-wrap ml-8 py-4 px-1 border-b-2 border-brand-red-500 font-extrabold text-sm leading-5 text-brand-red-500 focus:outline-none focus:text-brand-red-400 focus:brand-red-500"
+                        aria-current="page">
+                        Web-, és appdizájn
+                      </a>
+                    </nav>
+                  </div>
+                </div>
+              </div>
             </div>
             <div className="flex flex-wrap md:-m-2 -m-1">
               <div className="flex flex-wrap w-1/2">
@@ -144,6 +129,10 @@ function IndexPage() {
             </div>
           </div>
         </section>
+
+        <div className="mt-5 centered mx-auto">
+          <button className="primary-btn">Íme a részletek</button>
+        </div>
       </section>
     </Layout>
   );

@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white text-sm font-light">
       <div className="container px-5 py-16 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-no-wrap flex-wrap flex-col">
-        <div className="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+        <div className="flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
           <Link to="/" className="flexitems-center md:justify-start justify-center">
             <FooterLogo className="w-32" />
           </Link>

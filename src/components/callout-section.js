@@ -44,21 +44,24 @@ const data = [
 
 const CalloutSection = () => {
   return (
-    <section className="container mx-auto -mt-64">
-      <h2 className="font-display font-extrabold text-2xl pl-16">
-        Ez itt az
-        <br /> eszköztárunk
-      </h2>
-      <div className="flex flex-wrap -mx-4 overflow-hidden">
-        {data.map(({ title, description, icon }) => (
-          <div key={title} className="callout-card">
-            <div className="w-3/12">{icon}</div>
-            <div className="w-9/12">
-              <h3 className="font-extrabold">{title}</h3>
-              <p className="font-light leading-tight text-sm">{description}</p>
+    <section className="lg:-mt-64 z-50 relative">
+      <div className="max-w-full mx-auto lg:px-6">
+        <h2 className="font-display font-extrabold text-2xl md:pl-16 mb-8">
+          Ez itt az
+          <br /> eszköztárunk
+        </h2>
+
+        <div className="md:grid md:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-4 lg:gap-8">
+          {data.map(({ title, description, icon }) => (
+            <div key={title} className="callout-card">
+              <div className="w-3/12">{icon}</div>
+              <div className="w-9/12">
+                <h3 className="font-extrabold">{title}</h3>
+                <p className="font-light leading-tight tracking-tight text-sm">{description}</p>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </section>
   );
