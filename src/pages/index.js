@@ -410,19 +410,21 @@ function IndexPage() {
           </div>
         </div>
       </section>
-      <section className="-mt-64 z-0 p-96 bg-gray-200 flex items-center justify-between">
-        <div className="max-w-1/2">
-          <h2 className="heading mb-8">
-            Á, az oldal alján vagy! Hadd mutatkozzunk
-            <br />
-            be, ha már legörgettél idáig!
-          </h2>
-          <Link to="/csapat">
-            <button className="mx-16 primary-btn">Kattints ide</button>
-          </Link>
-        </div>
-        <div className="w-1/2 relative flex justify-end items-center">
-          <img className="absolute max-h-64" src={Couch} alt="Kanape" />
+      <section>
+        <div className="-mt-64 z-0 p-96 bg-gray-200 flex items-center justify-between">
+          <div className="max-w-1/2">
+            <h2 className="heading mb-8">
+              Á, az oldal alján vagy! Hadd mutatkozzunk
+              <br />
+              be, ha már legörgettél idáig!
+            </h2>
+            <Link to="/csapat">
+              <button className="mx-16 primary-btn">Kattints ide</button>
+            </Link>
+          </div>
+          <div className="w-1/2 relative flex justify-end items-center">
+            <img className="absolute max-h-64" src={Couch} alt="Kanape" />
+          </div>
         </div>
       </section>
     </Layout>
