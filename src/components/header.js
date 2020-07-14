@@ -53,9 +53,11 @@ function Header() {
             </div>
           </div>
           <div className="sm:ml-6 sm:flex sm:items-center">
-            <button className="primary-btn hidden md:inline-block" aria-label="Beszélgessünk">
-              Beszélgessünk
-            </button>
+            <Link to="/contect">
+              <button className="primary-btn hidden md:inline-block" aria-label="Beszélgessünk">
+                Beszélgessünk
+              </button>
+            </Link>
             <div className="-mr-2 flex items-center sm:hidden">
               <button
                 className="inline-flex items-center justify-center p-2 rounded-lg text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out"
@@ -117,9 +119,11 @@ function Header() {
           </div>
           <div className="pt-4 pb-3 border-t border-gray-400">
             <div className="flex items-center">
-              <button className="primary-btn" aria-label="Beszélgessünk">
-                Beszélgessünk
-              </button>
+              <Link to="/contact">
+                <button className="primary-btn" aria-label="Beszélgessünk">
+                  Beszélgessünk
+                </button>
+              </Link>
             </div>
           </div>
         </div>

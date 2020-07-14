@@ -60,6 +60,10 @@
 
 @tailwind components;
 
+.heading {
+  @apply mb-8 text-2xl font-extrabold font-display;
+}
+
 .hero {
   @apply relative overflow-hidden;
 }
@@ -77,17 +81,25 @@
 }
 
 .callout-card {
-  @apply w-full rounded overflow-hidden bg-white p-4 shadow-lg flex flex-row justify-start items-center transition-all duration-300 ease-out;
-}
-
-.callout-card:hover {
-  @apply  -mt-8;
+  @apply mb-8 w-full rounded overflow-hidden bg-white p-4 shadow-lg flex flex-row justify-start items-center transition-all duration-300 ease-out;
 }
 
 @screen sm {
   .content-container {
     @apply rounded px-6;
   }
+}
+
+@screen md {
+.heading {
+  @apply ml-16;
+}
+.callout-card {
+  @apply mb-0;
+}
+.callout-card:hover {
+  @apply -mt-8;
+}
 }
 
 @screen lg {

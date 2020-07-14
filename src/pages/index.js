@@ -1,8 +1,22 @@
 import React, { useState } from 'react';
 import { graphql, useStaticQuery, Link } from 'gatsby';
+import Img from 'gatsby-image';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import CalloutSection from '../components/callout-section';
+import Callout6 from '../components/svg/callout6.svg';
+import LogoTSystems from '../images/logos/tsystems.svg';
+import LogoShoprenter from '../images/logos/shoprenter.svg';
+import LogoPensum from '../images/logos/pensum.svg';
+import LogoHD from '../images/logos/hdmarketing.png';
+import LogoDoupla from '../images/logos/doupla.png';
+import LogoDigital from '../images/logos/welove.svg';
+import LogoGolden from '../images/logos/goldenbrothers.png';
+import LogoAllyos from '../images/logos/allyos.svg';
+import LogoEkata from '../images/logos/ekata.svg';
+import LogoInsimu from '../images/logos/insimu.svg';
+import LogoNetmetro from '../images/logos/netmetro.svg';
+import LogoSzaboKandallo from '../images/logos/szabokandallo.svg';
 
 const categories = [
   {
@@ -31,7 +45,7 @@ function IndexPage() {
   const [chosenCategory, setChosenCategory] = useState('all');
   const data = useStaticQuery(graphql`
     {
-      allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+      posts: allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
         edges {
           node {
             id
@@ -47,8 +61,16 @@ function IndexPage() {
           }
         }
       }
+      benceImg: file(relativePath: { eq: "bence.png" }) {
+        childImageSharp {
+          fluid(maxHeight: 250) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `);
+  console.log(data);
 
   return (
     <Layout>
@@ -75,15 +97,15 @@ function IndexPage() {
       </div>
       <div className="bg-gray-100">
         <section
-          className="container max-w-7xl mx-auto md:flex-row flex-col items-center justify-start"
+          className="container max-w-7xl mx-auto md:flex-row flex-col items-center justify-start pb-64"
           id="main-content">
           <CalloutSection />
           <section>
             <div className="container px-5 py-24 mx-auto flex flex-wrap">
               <div className="w-full mb-20">
-                <h1 className="ml-16 text-2xl font-extrabold font-display">
+                <h2 className="ml-16 text-2xl font-extrabold font-display">
                   Nézz meg a fentiekből pár sikeres projektet
-                </h1>
+                </h2>
                 <br />
                 <div className="overflow-hidden bg-white pt-2 px-16 shadow-lg rounded">
                   <div className="sm:hidden">
@@ -122,12 +144,12 @@ function IndexPage() {
               </div>
               <div className="flex flex-wrap md:-m-2 -m-1">
                 <div className="flex flex-wrap w-1/2">
-                  {data?.allMarkdownRemark?.edges
-                    .filter(
+                  {data?.posts?.edges
+                    ?.filter(
                       (edge) =>
                         edge?.node?.frontmatter?.categories?.includes(chosenCategory) || chosenCategory === 'all'
                     )
-                    .map((edge) => (
+                    ?.map((edge) => (
                       <Link key={edge?.node?.id} to={`portfolio/${edge?.node?.frontmatter?.slug}`}>
                         <div className="md:p-2 p-1 w-full">
                           <div
@@ -199,40 +221,102 @@ function IndexPage() {
         </section>
       </div>
       <section>
-        <div className="container px-5 py-24 mx-auto flex flex-wrap">
+        <div className="container px-5 py-24 mx-auto flex flex-wrap -mt-56">
           <div className="w-full mb-20">
-            <h1 className="ml-16 text-2xl font-extrabold font-display">
-              Hogy tetszettek a látottak? Készítsünk valami ütőset neked is?
-            </h1>
+            <h2 className="ml-16 text-2xl font-extrabold font-display">
+              Hogy tetszettek a látottak?
+              <br />
+              Készítsünk valami ütőset neked is?
+            </h2>
             <br />
-            <div className="overflow-hidden bg-white pt-2 px-16 shadow-lg rounded">helo</div>
+            <div
+              className="bg-white py-12 px-16 shadow-lg rounded flex flex-row justify-around items-center bg-right bg-no-repeat bg-contain"
+              style={{ backgroundImage: `url(${Callout6})` }}>
+              <div>
+                <h3 className="font-extrabold mb-6 text-lg">
+                  Írd meg, miben
+                  <br /> segíthetünk!
+                </h3>
+                <button className="primary-btn">Kattints ide</button>
+              </div>
+              <div className="relative max-h-28 bg-gray-900 pt-2 px-4 rounded flex flex-row justify-between items-center w-3/7">
+                <div className="text-white">
+                  <p className="font-extrabold mb-2">Vagy hívd fel Bencét!</p>
+                  <p className="font-light text-sm mb-2">Gazdig Bence - CEO & Designer csávó</p>
+                  <p className="font-extrabold text-sm">+36 30 270 5363</p>
+                </div>
+                <Img
+                  fixed={data?.benceImg?.childImageSharp?.fluid}
+                  className="absolute bottom-0 right-6 h-32 w-32 z-50"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
       <section>
-        <div className="bg-transparent">
-          <div className="max-w-screen-xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-            <h1 className="ml-16 mb-8 text-2xl font-extrabold font-display">
-              Néhány ügyfelünk, akik nem bánták meg, hogy velünk dolgoztak
-            </h1>
-            <div className="grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5">
-              <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-                <img className="h-12" src="https://tailwindui.com/img/logos/tuple-logo.svg" alt="Tuple" />
-              </div>
-              <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-                <img className="h-12" src="https://tailwindui.com/img/logos/mirage-logo.svg" alt="Mirage" />
-              </div>
-              <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-                <img className="h-12" src="https://tailwindui.com/img/logos/statickit-logo.svg" alt="StaticKit" />
-              </div>
-              <div className="col-span-1 flex justify-center md:col-span-3 lg:col-span-1">
-                <img className="h-12" src="https://tailwindui.com/img/logos/transistor-logo.svg" alt="Transistor" />
-              </div>
-              <div className="col-span-2 flex justify-center md:col-span-3 lg:col-span-1">
-                <img className="h-12" src="https://tailwindui.com/img/logos/workcation-logo.svg" alt="Workcation" />
-              </div>
+        <div className="max-w-screen-xl mx-auto mb-32 px-4 sm:px-6 lg:px-8">
+          <h2 className="heading">Néhány ügyfelünk, akik nem bánták meg, hogy velünk dolgoztak</h2>
+          <div className="mx-16 grid grid-cols-2 gap-8 md:grid-cols-6">
+            <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
+              <img className="h-12" src={LogoTSystems} alt="T-Systems" />
+            </div>
+            <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
+              <img className="h-12" src={LogoShoprenter} alt="Shoprenter" />
+            </div>
+            <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
+              <img className="h-12" src={LogoPensum} alt="Pensum Group" />
+            </div>
+            <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
+              <img className="h-12" src={LogoHD} alt="HD Marketing" />
+            </div>
+            <div className="col-span-2 flex justify-center md:col-span-2 lg:col-span-1">
+              <img className="h-12" src={LogoDoupla} alt="Doupla" />
+            </div>
+            <div className="col-span-2 flex justify-center md:col-span-2 lg:col-span-1">
+              <img className="h-12" src={LogoDigital} alt="We Love Digital" />
+            </div>
+            <div className="col-span-2 flex justify-center md:col-span-2 lg:col-span-1">
+              <img className="h-12" src={LogoGolden} alt="Golden Brothers" />
+            </div>
+            <div className="col-span-2 flex justify-center md:col-span-2 lg:col-span-1">
+              <img className="h-12" src={LogoAllyos} alt="Allyos" />
+            </div>
+            <div className="col-span-2 flex justify-center md:col-span-2 lg:col-span-1">
+              <img className="h-12" src={LogoEkata} alt="Ekata" />
+            </div>
+            <div className="col-span-2 flex justify-center md:col-span-2 lg:col-span-1">
+              <img className="h-12" src={LogoInsimu} alt="Insimu" />
+            </div>
+            <div className="col-span-2 flex justify-center md:col-span-2 lg:col-span-1">
+              <img className="h-12" src={LogoNetmetro} alt="Netmetro" />
+            </div>
+            <div className="col-span-2 flex justify-center md:col-span-2 lg:col-span-1">
+              <img className="h-12" src={LogoSzaboKandallo} alt="Szabo Kandallo" />
             </div>
           </div>
+        </div>
+      </section>
+      <section>
+        <div className="max-w-screen-xl mx-auto mb-32 px-4 sm:px-6 lg:px-8">
+          <h2 className="heading">
+            Akár a rokonunk vagy, akár nem, a te soraidat is szívesen olvasnánk itt!
+            <br />
+            Viszont ehhez előbb együtt kell dolgoznunk! Mondd el, miben segíthetünk!
+          </h2>
+          <Link to="contact">
+            <button className="primary-btn md:ml-16">Kattints ide</button>
+          </Link>
+        </div>
+      </section>
+      <section>
+        <div className="max-w-screen-xl mx-auto mb-32 px-4 sm:px-6 lg:px-8">
+          <h2 className="heading mb-4">
+            Írtunk egy összefoglalót arról, milyen módszerrel szerezzük
+            <br />
+            az ügyfeleink 90%-át Instáról
+          </h2>
+          <p className="font-light text-lg ml-16">Olvass bele, hátha találsz benne valami érdekeset!</p>
         </div>
       </section>
     </Layout>
