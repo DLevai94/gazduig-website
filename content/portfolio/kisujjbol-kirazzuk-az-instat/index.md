@@ -4,6 +4,7 @@ date: 2020-07-14T15:34:57.357Z
 thumbnail: screenshot-2020-06-30-at-17.07.58.png
 title: Kisujjbol kirazzuk az Instat
 client: Barki
+slug: kisujjbol-kirazzuk-az-instat
 solutions: IG megfaszazas
 jobtime: 2018+
 categories:
