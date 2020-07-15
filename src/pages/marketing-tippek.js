@@ -1,5 +1,5 @@
 import React from 'react';
-import { graphql, useStaticQuery } from 'gatsby';
+import { graphql, useStaticQuery, Link } from 'gatsby';
 import Img from 'gatsby-image';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
@@ -33,7 +33,7 @@ function AboutPage() {
             Írtunk egy összefoglalót arról, milyen módszerrel szerezzük az ügyfeleink 90%-át Instáról
           </h2>
         </div>
-        <div className="bg-white min-h-64 w-full shadow-xl flex justify-start items-center my-32 p-8">
+        <div className="bg-white min-h-64 w-full shadow-brand flex justify-start items-center my-32 p-8">
           <div className="flex flex-col w-full md:w-1/2">
             <h3 className="text-2xl leading-tight font-display font-extrabold">
               Pötyögd be az e-mail címed, és már küldjük is!
@@ -58,7 +58,9 @@ function AboutPage() {
             Most inkább nézelődnél
             <br /> olvasás helyett? No problem!
           </h2>
-          <button className="primary-btn">Irány a portfólió</button>
+          <Link to="/portfolio">
+            <button className="primary-btn">Irány a portfólió</button>
+          </Link>
         </div>
       </section>
     </Layout>

@@ -81,7 +81,7 @@
 }
 
 .callout-card {
-  @apply mb-8 w-full rounded overflow-hidden bg-white p-4 shadow-lg flex flex-row justify-start items-center transition-all duration-300 ease-out;
+  @apply mb-8 w-full rounded overflow-hidden bg-white p-4 shadow-brand flex flex-row justify-start items-center transition-all duration-300 ease-out;
 }
 
 @screen sm {

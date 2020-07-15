@@ -12,6 +12,9 @@ module.exports = {
       borderRadius: {
         default: '10px',
       },
+      boxShadow: {
+        brand: '3px 3px 10px rgba(0, 0, 0, 0.101)',
+      },
       colors: {
         'brand-red': {
           100: '#FBE8EC',

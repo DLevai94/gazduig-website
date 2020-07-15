@@ -64,7 +64,7 @@ function IndexPage() {
           }
         }
       }
-      benceImg: file(relativePath: { eq: "bence.png" }) {
+      benceImg: file(relativePath: { eq: "bence-bw.png" }) {
         childImageSharp {
           fluid(maxHeight: 250) {
             ...GatsbyImageSharpFluid
@@ -99,9 +99,7 @@ function IndexPage() {
         </div>
       </div>
       <div className="bg-gray-100">
-        <section
-          className="container max-w-7xl mx-auto md:flex-row flex-col items-center justify-start pb-64"
-          id="main-content">
+        <section className="container max-w-7xl mx-auto md:flex-row flex-col items-center justify-start pb-64">
           <CalloutSection />
           <section>
             <div className="container px-5 py-24 mx-auto flex flex-wrap">
@@ -110,16 +108,14 @@ function IndexPage() {
                   Nézz meg a fentiekből pár sikeres projektet
                 </h2>
                 <br />
-                <div className="overflow-hidden bg-white pt-2 px-16 shadow-lg rounded">
+                <div className="overflow-hidden bg-white pt-2 px-16 shadow-brand rounded">
                   <div className="sm:hidden">
                     <select
                       aria-label="Selected tab"
-                      className="mt-1 form-select block w-full pl-3 pr-10 py-2 text-base leading-6 border-gray-300 focus:outline-none focus:shadow-outline-brand-red-500 focus:border-brand-red-500 sm:text-sm sm:leading-5 transition ease-in-out duration-150">
+                      className="mt-1 form-select block w-full pl-3 pr-10 py-2 text-base leading-6 border-gray-300 focus:outline-none focus:shadow-outline-brand-red-500 focus:border-brand-red-500 sm:text-sm sm:leading-5 transition ease-in-out duration-150"
+                      onSelect={(e) => setChosenCategory(e)}>
                       {categories?.map((category) => (
-                        <option
-                          key={category.key}
-                          selected={category.key === chosenCategory || 'all'}
-                          onClick={() => setChosenCategory(category.key)}>
+                        <option key={category.key} selected={category.key === chosenCategory || 'all'}>
                           {category.name}
                         </option>
                       ))}
@@ -156,7 +152,7 @@ function IndexPage() {
                       <Link key={edge?.node?.id} to={`portfolio/${edge?.node?.frontmatter?.slug}`}>
                         <div className="md:p-2 p-1 w-full">
                           <div
-                            className="relative flex-shrink-0 overflow-hidden bg-gray-600 rounded shadow-lg h-64 bg-cover bg-no-repeat"
+                            className="relative flex-shrink-0 overflow-hidden bg-gray-600 rounded shadow-brand h-64 bg-cover bg-no-repeat"
                             style={{
                               background: `linear-gradient(0deg, rgba(227,32,116,1) 0%, rgba(227,32,116,0.5) 46%, rgba(227,32,116,0) 100%) bottom, url(${edge?.node?.frontmatter?.thumbnail?.publicURL}) no-repeat center `,
                             }}>
@@ -233,7 +229,7 @@ function IndexPage() {
             </h2>
             <br />
             <div
-              className="bg-white py-12 px-16 shadow-lg rounded flex flex-row justify-around items-center bg-right bg-no-repeat bg-contain"
+              className="bg-white py-12 px-16 shadow-brand rounded flex flex-row justify-around items-center bg-right bg-no-repeat bg-contain"
               style={{ backgroundImage: `url(${Callout6})` }}>
               <div>
                 <h3 className="font-extrabold mb-6 text-lg">
@@ -305,7 +301,7 @@ function IndexPage() {
         style={{ backgroundImage: `url(${Plant})` }}>
         <h2 className="heading">Vélemények rólunk olyanoktól, akik nem a rokonaink</h2>
         <div className="grid grid-cols-2 gap-8 md:grid-cols-3">
-          <div className="bg-white col-span-1 flex justify-center md:col-span-2 lg:col-span-1 flex-col rounded shadow-lg p-4">
+          <div className="bg-white col-span-1 flex justify-center md:col-span-2 lg:col-span-1 flex-col rounded shadow-brand p-4">
             <p className="text-sm leading-tight mb-3">
               A profi és egységes megjelenés ugyanilyen minőségi portékát sejtet. Tüntesd fel magad jó színben.
             </p>
@@ -315,7 +311,7 @@ function IndexPage() {
               Senior projektmenedzser, T-Systems
             </p>
           </div>
-          <div className="bg-white col-span-1 flex justify-center md:col-span-2 lg:col-span-1 flex-col rounded shadow-lg p-4">
+          <div className="bg-white col-span-1 flex justify-center md:col-span-2 lg:col-span-1 flex-col rounded shadow-brand p-4">
             <p className="text-sm leading-tight mb-3">
               A profi és egységes megjelenés ugyanilyen minőségi portékát sejtet. Tüntesd fel magad jó színben.
             </p>
@@ -325,7 +321,7 @@ function IndexPage() {
               Senior projektmenedzser, T-Systems
             </p>
           </div>
-          <div className="bg-white col-span-1 flex justify-center md:col-span-2 lg:col-span-1 flex-col rounded shadow-lg p-4">
+          <div className="bg-white col-span-1 flex justify-center md:col-span-2 lg:col-span-1 flex-col rounded shadow-brand p-4">
             <p className="text-sm leading-tight mb-3">
               A profi és egységes megjelenés ugyanilyen minőségi portékát sejtet. Tüntesd fel magad jó színben.
             </p>
@@ -335,7 +331,7 @@ function IndexPage() {
               Senior projektmenedzser, T-Systems
             </p>
           </div>
-          <div className="bg-white col-span-1 flex justify-center md:col-span-2 lg:col-span-1 flex-col rounded shadow-lg p-4">
+          <div className="bg-white col-span-1 flex justify-center md:col-span-2 lg:col-span-1 flex-col rounded shadow-brand p-4">
             <p className="text-sm leading-tight mb-3">
               A profi és egységes megjelenés ugyanilyen minőségi portékát sejtet. Tüntesd fel magad jó színben.
             </p>
@@ -345,7 +341,7 @@ function IndexPage() {
               Senior projektmenedzser, T-Systems
             </p>
           </div>
-          <div className="bg-white col-span-1 flex justify-center md:col-span-2 lg:col-span-1 flex-col rounded shadow-lg p-4">
+          <div className="bg-white col-span-1 flex justify-center md:col-span-2 lg:col-span-1 flex-col rounded shadow-brand p-4">
             <p className="text-sm leading-tight mb-3">
               A profi és egységes megjelenés ugyanilyen minőségi portékát sejtet. Tüntesd fel magad jó színben.
             </p>
@@ -355,7 +351,7 @@ function IndexPage() {
               Senior projektmenedzser, T-Systems
             </p>
           </div>
-          <div className="bg-white col-span-1 flex justify-center md:col-span-2 lg:col-span-1 flex-col rounded shadow-lg p-4">
+          <div className="bg-white col-span-1 flex justify-center md:col-span-2 lg:col-span-1 flex-col rounded shadow-brand p-4">
             <p className="text-sm leading-tight mb-3">
               A profi és egységes megjelenés ugyanilyen minőségi portékát sejtet. Tüntesd fel magad jó színben.
             </p>
@@ -387,7 +383,7 @@ function IndexPage() {
             az ügyfeleink 90%-át Instáról
           </h2>
           <p className="font-light text-lg ml-16 mb-16">Olvass bele, hátha találsz benne valami érdekeset!</p>
-          <div className="bg-white rounded p-8 mx-8 shadow-lg flex z-50">
+          <div className="bg-white rounded p-8 mx-8 shadow-brand flex z-50">
             <div className="max-w-1/2">
               <h3 className="font-display font-extrabold text-xl">Pötyögd be az e-mail címed, és már küldjük is!</h3>
               <label className="block mb-2 text-xs font-bold uppercase" htmlFor="email">

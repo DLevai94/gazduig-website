@@ -6,7 +6,7 @@ function Header() {
   const [isExpanded, toggleExpansion] = useState(false);
 
   return (
-    <nav className="bg-white shadow-sm">
+    <nav className="bg-white shadow-brand">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex">
@@ -53,7 +53,7 @@ function Header() {
             </div>
           </div>
           <div className="sm:ml-6 sm:flex sm:items-center">
-            <Link to="/contect">
+            <Link to="/contact">
               <button className="primary-btn hidden md:inline-block" aria-label="Beszélgessünk">
                 Beszélgessünk
               </button>
