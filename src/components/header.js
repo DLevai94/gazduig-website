@@ -6,7 +6,7 @@ function Header() {
   const [isExpanded, toggleExpansion] = useState(false);
 
   return (
-    <nav className="bg-white shadow-brand">
+    <nav className="bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex">
@@ -26,7 +26,7 @@ function Header() {
                   title: `Ezeket csináltuk eddig`,
                 },
                 {
-                  route: `/marketing-tippek`,
+                  route: `/instagram-markaepites`,
                   title: `Ezeket neked írtuk`,
                 },
                 {
@@ -35,16 +35,16 @@ function Header() {
                 },
               ].map((link) => (
                 <Link
-                  activeClassName="ml-8 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium leading-5 focus:outline-none hover:text-red-brand-500 hover:border-red-brand-500 focus:text-red-brand-500 focus:border-brand-red-500 transition duration-150 ease-in-out border-brand-red-500"
+                  activeClassName="text-sm font-extrabold ml-8 inline-flex items-center px-1 pt-1 bor0 text-brand-red-500 -b-2-5 focus:outline-none hover:text-brand-red-500 hover:border-brand-red-500 focus:text-brand-red-500 focus:border-brand-red-500 transition duration-150 ease-in-out border-brand-red-500"
                   getProps={({ isPartiallyCurrent }) =>
                     isPartiallyCurrent
                       ? {
                           className:
-                            'ml-8 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium leading-5 focus:outline-none hover:text-red-brand-500 hover:border-red-brand-500 focus:text-red-brand-500 focus:border-brand-red-500 transition duration-150 ease-in-out border-brand-red-500',
+                            'text-sm font-extrabold ml-8 inline-flex items-center px-1 pt-1 bor0 text-brand-red-500 -b-2-5 focus:outline-none hover:text-brand-red-500 hover:border-brand-red-500 focus:text-brand-red-500 focus:border-brand-red-500 transition duration-150 ease-in-out border-brand-red-500',
                         }
                       : {}
                   }
-                  className="ml-8 inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium leading-5 focus:outline-none hover:text-red-brand-700 hover:border-red-brand-300 focus:text-red-brand-700 focus:border-brand-red-700 transition duration-150 ease-in-out"
+                  className="ml-8 inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium leading-5 focus:outline-none hover:text-brand-red-700 hover:border-brand-red-300 focus:text-brand-red-700 focus:border-brand-red-700 transition duration-150 ease-in-out"
                   key={link.title}
                   to={link.route}>
                   {link.title}
@@ -92,7 +92,7 @@ function Header() {
                 title: `Ezeket csináltuk eddig`,
               },
               {
-                route: `/marketing-tippek`,
+                route: `/instagram-markaepites`,
                 title: `Ezeket neked írtuk`,
               },
               {
@@ -101,16 +101,16 @@ function Header() {
               },
             ].map((link) => (
               <Link
-                activeClassName="mt-1 block pl-3 pr-4 py-2 border-l-4 text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300 focus:outline-none focus:text-gray-800 focus:bg-gray-50 focus:border-gray-300 transition duration-150 ease-in-out"
+                activeClassName="text-sm font-extrabold mt-1 block pl-3 pr-4 py-2 border-0 text-brand-red-500 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300 focus:outline-none focus:text-gray-800 focus:bg-gray-50 focus:border-gray-300 transition duration-150 ease-in-out"
                 getProps={({ isPartiallyCurrent }) =>
                   isPartiallyCurrent
                     ? {
                         className:
-                          'mt-1 block pl-3 pr-4 py-2 border-l-4 text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300 focus:outline-none focus:text-gray-800 focus:bg-gray-50 focus:border-gray-300 transition duration-150 ease-in-out',
+                          'text-sm font-extrabold mt-1 block pl-3 pr-4 py-2 border-0 text-brand-red-500 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300 focus:outline-none focus:text-gray-800 focus:bg-gray-50 focus:border-gray-300 transition duration-150 ease-in-out',
                       }
                     : {}
                 }
-                className="mt-1 block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300 focus:outline-none focus:text-gray-800 focus:bg-gray-50 focus:border-gray-300 transition duration-150 ease-in-out"
+                className="mt-1 block pl-3 pr-4 py-2 border-l-4 border-transparent font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300 focus:outline-none focus:text-gray-800 focus:bg-gray-50 focus:border-gray-300 transition duration-150 ease-in-out"
                 key={link.title}
                 to={link.route}>
                 {link.title}

@@ -6,8 +6,10 @@ const fullConfig = resolveConfig(tailwindConfig);
 module.exports = {
   siteMetadata: {
     title: `Gazduig Creative Agency`,
-    description: `Gazduig Creative Agency Website Meta leiras`,
-    author: `@davidlevaicodes`,
+    titleTemplate: `%s - Gazduig Creative Agency Budapest`,
+    description: `Ütős megoldások, ütős márkák számára. Legyél feltűnőbb és menőbb a versenytársaidnál. Dolgozzunk együtt! Gazduig Creative Agency Budapest.`,
+    author: `@gazduig`,
+    url: 'https://gazduig.com',
   },
   plugins: [
     `gatsby-plugin-eslint`,
@@ -17,7 +19,7 @@ module.exports = {
       options: {
         name: `Gazduig Creative Agency`,
         short_name: `Gazduig`,
-        description: `Gazduig Creative Agency Website Meta leiras`,
+        description: `Ütős megoldások, ütős márkák számára. Legyél feltűnőbb és menőbb a versenytársaidnál. Dolgozzunk együtt! Gazduig Creative Agency Budapest.`,
         lang: 'hu',
         start_url: `/`,
         background_color: fullConfig.theme.colors.white,

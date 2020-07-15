@@ -42,7 +42,20 @@ function ContactPage() {
   `);
   return (
     <Layout className="bg-no-repeat bg-right-bottom bg-contain" style={{ backgroundImage: `url(${Astronaut})` }}>
-      <SEO keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]} title="Contact" />
+      <SEO
+        keywords={[
+          'kreatív',
+          'ügynökség',
+          'budapest',
+          'budapesti kreatív ügynökség',
+          'creative agency budapest',
+          'arculattervezés',
+          'márka',
+          'ütős',
+          'gazduig',
+        ]}
+        title="Beszélgessünk"
+      />
       <section className="container md:ml-32 mt-32 px-4 sm:px-6 lg:px-8 max-w-3/4">
         <div className="mx-auto md:w-3/4">
           <h1 className="text-5xl font-extrabold font-display leading-tight tracking-tight">
@@ -141,7 +154,11 @@ function ContactPage() {
                 <p className="font-light">
                   Én válaszolok majd az üzenetedre. Ha kérdésed van, hívj fel bármikor a +36 30 270 5363-as számon!
                 </p>
-                <Img className="absolute bottom-0" fluid={data?.benceBW?.childImageSharp?.fluid} alt="Gazdig Bence" />
+                <Img
+                  className="absolute bottom-0 max-h-52"
+                  fluid={data?.benceBW?.childImageSharp?.fluid}
+                  alt="Gazdig Bence"
+                />
               </div>
             </div>
           </div>

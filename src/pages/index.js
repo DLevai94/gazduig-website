@@ -77,7 +77,19 @@ function IndexPage() {
 
   return (
     <Layout>
-      <SEO keywords={[`gazduig`, `designer`, `grafikus`, `gazdig bence`]} title="Főoldal" />
+      <SEO
+        title="Ütős megoldások"
+        keywords={[
+          'kreatív',
+          'ügynökség',
+          'budapesti kreatív ügynökség',
+          'creative agency budapest',
+          'arculattervezés',
+          'márka',
+          'ütős',
+          'gazduig',
+        ]}
+      />
       <div className="hero">
         <div className="max-w-screen-xl mx-auto">
           <div className="relative pb-8 sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">

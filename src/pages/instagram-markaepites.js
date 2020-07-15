@@ -6,7 +6,7 @@ import SEO from '../components/seo';
 import PurpleBlob from '../images/purple-blob.svg';
 // import PurpleBlobSvg from '../components/svg/purpleBlob';
 
-function AboutPage() {
+function IgHacks() {
   const data = useStaticQuery(graphql`
     query {
       file(relativePath: { eq: "writer.png" }) {
@@ -22,8 +22,17 @@ function AboutPage() {
   return (
     <Layout>
       <SEO
-        keywords={[`marketing tippek`, `instagram marketing`, `instagram tippek`, `ügyfélszerzés instagrammon`]}
-        title="Instagram Marketing Tippek"
+        keywords={[
+          'kreatív esettanulmány',
+          'instagram esettanulmány',
+          'insta esettanulmány',
+          'instagram márkaépítés',
+          'ütős',
+          'kreatív ügynökség',
+          'kreatív ügynökség budapest',
+          'gazduig',
+        ]}
+        title="Ezekt neked írtuk"
       />
       <section
         className="container mx-auto flex flex-col bg-right bg-no-repeat"
@@ -67,4 +76,4 @@ function AboutPage() {
   );
 }
 
-export default AboutPage;
+export default IgHacks;

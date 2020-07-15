@@ -40,8 +40,19 @@ const Portfolio = () => {
   return (
     <Layout>
       <SEO
-        keywords={[`marketing tippek`, `instagram marketing`, `instagram tippek`, `ügyfélszerzés instagrammon`]}
-        title="Instagram Marketing Tippek"
+        keywords={[
+          'arculattervezés budapest',
+          'arculattervezés',
+          'webdizájn budapest',
+          'webdizájn',
+          'kreatív ügynökség budapest',
+          'budapest creative agency',
+          'instagram márkaépítés',
+          'insta márkaépítés',
+          'ütős',
+          'gazduig',
+        ]}
+        title="Ezeket csináltunk eddig"
       />
       <Hero
         title=""

@@ -3,10 +3,24 @@ import React from 'react';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
-function AboutPage() {
+function Team() {
   return (
     <Layout>
-      <SEO keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]} title="About" />
+      <SEO
+        keywords={[
+          'kreatív',
+          'ügynökség',
+          'budapest',
+          'budapesti kreatív ügynökség',
+          'creative agency budapest',
+          'arculattervezés',
+          'márka',
+          'ütős',
+          'dizájner csávó',
+          'gazduig',
+        ]}
+        title="Ezek vagyunk"
+      />
 
       <section className="flex flex-col items-center md:flex-row">
         <div className="md:w-2/3 md:mr-8">
@@ -27,4 +41,4 @@ function AboutPage() {
   );
 }
 
-export default AboutPage;
+export default Team;
