@@ -6,7 +6,6 @@ const fullConfig = resolveConfig(tailwindConfig);
 module.exports = {
   siteMetadata: {
     title: `Gazduig Creative Agency`,
-    titleTemplate: `%s - Gazduig Creative Agency Budapest`,
     description: `Ütős megoldások, ütős márkák számára. Legyél feltűnőbb és menőbb a versenytársaidnál. Dolgozzunk együtt! Gazduig Creative Agency Budapest.`,
     author: `@gazduig`,
     url: 'https://gazduig.com',
@@ -23,9 +22,17 @@ module.exports = {
         lang: 'hu',
         start_url: `/`,
         background_color: fullConfig.theme.colors.white,
-        theme_color: fullConfig.theme.colors.teal['400'],
+        theme_color: fullConfig.theme.colors['brand-red']['400'],
         display: `minimal-ui`,
         // icon: `src/images/tailwind-icon.png`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: 'UA-172527734-1',
+        anonymize: true,
+        cookieDomain: 'gazduig.com',
       },
     },
     {

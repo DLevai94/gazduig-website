@@ -2,7 +2,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 import React from 'react';
 import { Helmet } from 'react-helmet';
 
-function SEO({ description, lang = 'hu', meta = [], keywords = [], title }) {
+function SEO({ description, lang = 'hu', meta = [], keywords = [], title = '' }) {
   const { site } = useStaticQuery(graphql`
     query DefaultSEOQuery {
       site {
@@ -15,7 +15,7 @@ function SEO({ description, lang = 'hu', meta = [], keywords = [], title }) {
     }
   `);
 
-  const metaDescription = description || site.siteMetadata.description;
+  const metaDescription = description || site?.siteMetadata?.description;
 
   return (
     <Helmet
@@ -45,7 +45,7 @@ function SEO({ description, lang = 'hu', meta = [], keywords = [], title }) {
         },
         {
           name: `twitter:creator`,
-          content: site.siteMetadata.author,
+          content: site?.siteMetadata.author,
         },
         {
           name: `twitter:title`,
@@ -66,7 +66,7 @@ function SEO({ description, lang = 'hu', meta = [], keywords = [], title }) {
         )
         .concat(meta)}
       title={title}
-      titleTemplate={`%s - ${site.siteMetadata.title}`}
+      titleTemplate={`%s - ${site?.siteMetadata?.title}`}
     />
   );
 }

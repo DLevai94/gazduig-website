@@ -1,4 +1,4 @@
-# Gaxduig Website
+# Gazduig Website
 
 ## Get started
 
