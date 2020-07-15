@@ -1,12 +1,11 @@
 import React from 'react';
 import { graphql } from 'gatsby';
+import Img from 'gatsby-image';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
-export default function Template({
-  data, // this prop will be injected by the GraphQL query below.
-}) {
-  const { markdownRemark } = data; // data.markdownRemark holds your post data
+export default function Template({ data }) {
+  const { markdownRemark } = data;
   const { frontmatter, html } = markdownRemark;
   return (
     <Layout>
@@ -31,19 +30,37 @@ export default function Template({
             <h1 className="font-display text-white font-extrabold text-4xl">{frontmatter?.title}</h1>
           </div>
         </div>
-        <div className="grid md:grid-cols-2 md:gap-12">
+        <div className="grid md:grid-cols-8 md:gap-12 md:px-16">
           <div className="col-span-2">
-            <div className="md:rounded md:bg-white mb-12 flex flex-row py-2 px-4">
+            <div className="md:rounded md:bg-white mb-12 flex flex-row py-2 px-4 md:shadow-brand">
               <div className="icon"></div>
               <div className="flex flex-col justify-start items-center">
-                <p className="font-light text-sm">Ugyfel</p>
+                <p className="font-light text-xs">Ügyfél</p>
                 <p className="font-extrabold text-sm leading-tight">{frontmatter?.client}</p>
               </div>
             </div>
+            <div className="md:rounded md:bg-white mb-12 flex flex-row py-2 px-4 md:shadow-brand">
+              <div className="icon"></div>
+              <div className="flex flex-col justify-start items-center">
+                <p className="font-light text-xs">Megoldások</p>
+                <p className="font-extrabold text-sm leading-tight">{frontmatter?.solutions}</p>
+              </div>
+            </div>
+            <div className="md:rounded md:bg-white mb-12 flex flex-row py-2 px-4 md:shadow-brand">
+              <div className="icon"></div>
+              <div className="flex flex-col justify-start items-center">
+                <p className="font-light text-xs">Ekkor készült</p>
+                <p className="font-extrabold text-sm leading-tight">{frontmatter?.jobtime}</p>
+              </div>
+            </div>
           </div>
-          <div className="col-span-10">
-            <div className="blog-post-content" dangerouslySetInnerHTML={{ __html: html }} />
+          <div className="col-span-6">
+            <p className="font-extrabold">Egy rövid összefoglaló</p>
+            <div className="mt-8 font-light" dangerouslySetInnerHTML={{ __html: html }} />
           </div>
+        </div>
+        <div className="md:px-16 mt-16 mb-32">
+          <Img className="w-100 rounded mb-16" fluid={frontmatter?.images?.childImageSharp?.fluid} />
         </div>
       </div>
     </Layout>
@@ -58,6 +75,16 @@ export const pageQuery = graphql`
         date(formatString: "YYY MMMM DD")
         slug
         title
+        client
+        solutions
+        jobtime
+        images {
+          childImageSharp {
+            fluid(maxWidth: 768) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     }
   }

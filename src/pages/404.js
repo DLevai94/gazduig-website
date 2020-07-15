@@ -8,9 +8,9 @@ function NotFoundPage() {
   return (
     <Layout>
       <SEO title="404: nem található" />
-      <div className="flex flex-col flex-1 centered h-screen w-screen mx-auto container">
-        <div className="bg-brand-purple-500 rounded shadow-brand my-8 p-3 max-h-32 text-center">
-          <h2 className="text-2xl text-white font-extrabold font-display">
+      <div className="centered mx-auto container">
+        <div className="sm:bg-brand-purple-500 sm:rounded sm:shadow-brand my-8 p-3 max-h-32 text-center">
+          <h2 className="text-2xl sm:text-white font-extrabold font-display">
             Úgy tűnik ezt az oldalt elvitték a földönkívüliek... 🤷‍♂️🛸
           </h2>
         </div>
