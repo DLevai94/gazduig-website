@@ -57,10 +57,5 @@ module.exports = {
     },
   },
   variants: { margin: ['responsive', 'hover', 'focus'] },
-  plugins: [
-    require('@tailwindcss/ui'),
-    require('@tailwindcss/custom-forms'),
-    require('tailwindcss-skip-link'),
-    require('@tailwindcss/typography'),
-  ],
+  plugins: [require('@tailwindcss/ui'), require('@tailwindcss/custom-forms'), require('tailwindcss-skip-link')],
 };

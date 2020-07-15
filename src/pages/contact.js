@@ -4,29 +4,9 @@ import Img from 'gatsby-image';
 import Astronaut from '../images/astronaut.png';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
+import { CATEGORIES } from '../config/consts';
 
-const categories = [
-  {
-    key: 'branding',
-    name: 'Arculattervezés',
-  },
-  {
-    key: 'web',
-    name: 'Web-, és appdizájn',
-  },
-  {
-    key: 'social',
-    name: 'Social anyagok dizájnja',
-  },
-  {
-    key: 'print',
-    name: 'Print anyagok dizájnja',
-  },
-  {
-    key: 'other',
-    name: 'Egyéb',
-  },
-];
+const categories = CATEGORIES.slice(1);
 
 function ContactPage() {
   const data = useStaticQuery(graphql`
