@@ -1,6 +1,9 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
+import CrownIcon from '../components/svg/crown';
+import CalendarIcon from '../components/svg/calendar';
+import KeyIcon from '../components/svg/key';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
@@ -25,30 +28,36 @@ export default function Template({ data }) {
         ]}
       />
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="rounded w-100 pt-32 px-28 pb-12 mb-20 bg-brand-purple-500">
+        <div className="rounded w-100 pt-32 px-28 pb-12 mb-20 bg-brand-purple-500 mt-8">
           <div className="max-w-8/12">
             <h1 className="font-display text-white font-extrabold text-4xl">{frontmatter?.title}</h1>
           </div>
         </div>
         <div className="grid md:grid-cols-8 md:gap-12 md:px-16">
           <div className="col-span-2">
-            <div className="md:rounded md:bg-white mb-12 flex flex-row py-2 px-4 md:shadow-brand">
-              <div className="icon"></div>
-              <div className="flex flex-col justify-start items-center">
+            <div className="md:rounded md:bg-white mb-12 flex flex-row py-2 px-4 md:shadow-brand justify-start items-center">
+              <div className="icon">
+                <CrownIcon className="w-8 mr-3" />
+              </div>
+              <div className="flex flex-col justify-center items-start">
                 <p className="font-light text-xs">Ügyfél</p>
                 <p className="font-extrabold text-sm leading-tight">{frontmatter?.client}</p>
               </div>
             </div>
-            <div className="md:rounded md:bg-white mb-12 flex flex-row py-2 px-4 md:shadow-brand">
-              <div className="icon"></div>
-              <div className="flex flex-col justify-start items-center">
+            <div className="md:rounded md:bg-white mb-12 flex flex-row py-2 px-4 md:shadow-brand justify-start items-center">
+              <div className="icon">
+                <KeyIcon className="w-8 mr-3" />
+              </div>
+              <div className="flex flex-col justify-center items-start">
                 <p className="font-light text-xs">Megoldások</p>
                 <p className="font-extrabold text-sm leading-tight">{frontmatter?.solutions}</p>
               </div>
             </div>
-            <div className="md:rounded md:bg-white mb-12 flex flex-row py-2 px-4 md:shadow-brand">
-              <div className="icon"></div>
-              <div className="flex flex-col justify-start items-center">
+            <div className="md:rounded md:bg-white mb-12 flex flex-row py-2 px-4 md:shadow-brand justify-start items-center">
+              <div className="icon">
+                <CalendarIcon className="w-8 mr-3" />
+              </div>
+              <div className="flex flex-col justify-center items-start">
                 <p className="font-light text-xs">Ekkor készült</p>
                 <p className="font-extrabold text-sm leading-tight">{frontmatter?.jobtime}</p>
               </div>

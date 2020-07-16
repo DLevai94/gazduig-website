@@ -83,7 +83,7 @@ const Portfolio = () => {
                 return renderCallout();
               }
               return (
-                <Link key={edge?.node?.id} to={`portfolio/${edge?.node?.frontmatter?.slug}`}>
+                <Link key={edge?.node?.id} to={`${edge?.node?.frontmatter?.slug}`}>
                   <div
                     className="relative flex-shrink-0 overflow-hidden bg-gray-600 rounded h-40 w-64 bg-cover bg-no-repeat"
                     style={{
