@@ -26,3 +26,5 @@ collections:
       - { name: jobtime, label: Ekkor készült }
       - { name: categories, label: Kategória, widget: list, default: ['all', 'branding', 'web', 'print', 'copy', 'social', 'ig'] }
       - { name: "images", label: "Képek", widget: "image", allow_multiple: true}
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+
