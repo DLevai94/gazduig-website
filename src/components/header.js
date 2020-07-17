@@ -7,7 +7,7 @@ function Header() {
 
   return (
     <nav className="bg-white">
-      <div className="mx-auto max-w-8xl px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto container px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex">
             <div className="flex-shrink-0 flex items-center">

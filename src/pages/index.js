@@ -198,7 +198,7 @@ function IndexPage() {
                 </h3>
                 <button className="primary-btn">Kattints ide</button>
               </div>
-              <div className="relative max-h-28 bg-gray-900 pt-2 px-4 rounded flex flex-row justify-between items-center w-3/7">
+              <div className="relative  bg-gray-900 py-3 pl-6 rounded flex flex-row justify-between items-center w-96">
                 <div className="text-white">
                   <p className="font-extrabold mb-2">Vagy hívd fel Bencét!</p>
                   <p className="font-light text-sm mb-2">Gazdig Bence - CEO & Designer csávó</p>
@@ -206,7 +206,9 @@ function IndexPage() {
                 </div>
                 <Img
                   fluid={data?.benceImg?.childImageSharp?.fluid}
-                  className="absolute bottom-0 right-6 h-32 w-32 z-50"
+                  alt="Gazdig Bence"
+                  className="absolute bottom-0 right-5 h-32 w-32 z-50"
+                  style={null}
                 />
               </div>
             </div>
