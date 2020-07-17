@@ -367,7 +367,7 @@ function IndexPage() {
         </div>
       </section>
       <section>
-        <div className="-mt-64 z-0 p-96 bg-gray-200 flex items-center justify-between">
+        <div className="-mt-64 z-0 lg:p-96 bg-gray-200 flex items-center justify-between">
           <div className="max-w-1/2">
             <h2 className="heading mb-8">
               Á, az oldal alján vagy! Hadd mutatkozzunk

@@ -15,6 +15,9 @@ module.exports = {
       boxShadow: {
         brand: '3px 3px 10px rgba(0, 0, 0, 0.101)',
       },
+      maxWidth: {
+        '8xl': '86rem',
+      },
       colors: {
         'brand-red': {
           100: '#FBE8EC',

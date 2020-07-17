@@ -1,11 +1,12 @@
 import React from 'react';
-import { graphql } from 'gatsby';
+import { graphql, Link } from 'gatsby';
 import Img from 'gatsby-image';
 import CrownIcon from '../components/svg/crown';
 import CalendarIcon from '../components/svg/calendar';
 import KeyIcon from '../components/svg/key';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
+import Contact from '../components/contact-form';
 
 export default function Template({ data }) {
   const { markdownRemark } = data;
@@ -71,7 +72,28 @@ export default function Template({ data }) {
         <div className="md:px-16 mt-16 mb-32">
           <Img className="w-100 rounded mb-16" fluid={frontmatter?.images?.childImageSharp?.fluid} />
         </div>
+
+        <section className="bg-white md:rounded md:shadow-brand py-8 px-8 md:px-36 z-50">
+          <div className="mb-16 max-w-2xl">
+            <h2 className="font-display font-extrabold text-2xl leading-tight">
+              Tetszettek a látottak? Töltsd ki a lenti formot, és alkossunk együtt valami ütőset!
+            </h2>
+          </div>
+          <Contact />
+        </section>
       </div>
+      <section className="bg-gray-300 md:-mt-64 pt-36 md:pt-96 pb-36 z-0">
+        <div className="container mx-auto text-center md:text-left">
+          <h2 className="font-display font-extrabold text-2xl leading-tight mb-6">
+            Még nem vagy 100%-ig biztos a dologban?
+            <br />
+            Nézz meg pár hasonlót is!
+          </h2>
+          <Link to="/portfolio">
+            <button className="primary-btn">Irány a portfólió</button>
+          </Link>
+        </div>
+      </section>
     </Layout>
   );
 }
