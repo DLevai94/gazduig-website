@@ -27,7 +27,7 @@ function IndexPage() {
   const [chosenCategory, setChosenCategory] = useState('all');
   const data = useStaticQuery(graphql`
     {
-      posts: allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+      posts: allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }, limit: 6) {
         edges {
           node {
             id
@@ -52,7 +52,28 @@ function IndexPage() {
       }
     }
   `);
-  console.log(data);
+
+  const checkIndexAndApplyToContainer = (index) => {
+    switch (index) {
+      case 0:
+        return { gridArea: '1 / 1 / 3 / 3' };
+      case 5:
+        return { gridArea: '2 / 3 / 4 / 5' };
+      default:
+        return null;
+    }
+  };
+
+  const checkIndexAndApplyToCard = (index) => {
+    switch (index) {
+      case 0:
+        return 'h-48 lg:h-full';
+      case 5:
+        return 'h-48 lg:h-full';
+      default:
+        return 'h-48';
+    }
+  };
 
   return (
     <Layout>
@@ -93,88 +114,52 @@ function IndexPage() {
         <section className="container max-w-7xl mx-auto md:flex-row flex-col items-center justify-start pb-64">
           <CalloutSection />
           <section>
-            <div className="container px-5 py-24 mx-auto flex flex-wrap">
+            <div className="container px-5 py-24 mx-auto">
               <div className="w-full mb-20">
                 <h2 className="ml-16 text-2xl font-extrabold font-display">
                   Nézz meg a fentiekből pár sikeres projektet
                 </h2>
                 <br />
-                <TabBar categories={CATEGORIES} chosenCategory={chosenCategory} setCategory={setChosenCategory} />
+                <TabBar
+                  categories={CATEGORIES}
+                  chosenCategory={chosenCategory}
+                  setCategory={setChosenCategory}
+                  containerClass="mb-8"
+                />
               </div>
-              <div className="flex flex-wrap md:-m-2 -m-1">
-                <div className="flex flex-wrap w-1/2">
-                  {data?.posts?.edges
-                    ?.filter(
-                      (edge) =>
-                        edge?.node?.frontmatter?.categories?.includes(chosenCategory) || chosenCategory === 'all'
-                    )
-                    ?.map((edge) => (
-                      <Link key={edge?.node?.id} to={`portfolio/${edge?.node?.frontmatter?.slug}`}>
-                        <div className="md:p-2 p-1 w-full">
-                          <div
-                            className="relative flex-shrink-0 overflow-hidden bg-gray-600 rounded shadow-brand h-64 bg-cover bg-no-repeat"
-                            style={{
-                              background: `linear-gradient(0deg, rgba(227,32,116,1) 0%, rgba(227,32,116,0.5) 46%, rgba(227,32,116,0) 100%) bottom, url(${edge?.node?.frontmatter?.thumbnail?.publicURL}) no-repeat center `,
-                            }}>
-                            <div className="relative inset-x-0 bottom-0 text-white px-6 pb-6  justify-end items-start flex-col">
-                              <span className="block opacity-75 -mb-1 font-light">
-                                {edge?.node?.frontmatter?.jobtime}
-                              </span>
-                              <div className="flex justify-between">
-                                <span className="block text-xl font-display font-extrabold">
-                                  {edge?.node?.frontmatter?.title}
-                                </span>
-                              </div>
-                            </div>
-                          </div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:grid-rows-3 gap-8">
+                {data?.posts?.edges
+                  ?.filter(
+                    (edge) => edge?.node?.frontmatter?.categories?.includes(chosenCategory) || chosenCategory === 'all'
+                  )
+                  ?.map((edge, index) => (
+                    <Link
+                      key={edge?.node?.id}
+                      to={`portfolio/${edge?.node?.frontmatter?.slug}`}
+                      style={checkIndexAndApplyToContainer(index)}>
+                      <div
+                        className={`relative flex-shrink-0 overflow-hidden bg-gray-600 rounded bg-cover bg-no-repeat ${checkIndexAndApplyToCard(
+                          index
+                        )}`}
+                        style={{
+                          background: `linear-gradient(0deg, rgba(227,32,116,1) 0%, rgba(227,32,116,0.5) 46%, rgba(227,32,116,0) 100%) bottom, url(${edge?.node?.frontmatter?.thumbnail?.publicURL}) no-repeat center`,
+                        }}>
+                        <div className="absolute bottom-0 left-0 px-5 py-3 text-white">
+                          <p className="font-light">{edge?.node?.frontmatter?.jobtime}</p>
+                          <p className="font-extrabold">{edge?.node?.frontmatter?.title}</p>
                         </div>
-                      </Link>
-                    ))}
-                  <div className="md:p-2 p-1 w-1/2">
-                    <img
-                      alt="gallery"
-                      className="w-full object-cover h-full object-center block"
-                      src="https://dummyimage.com/500x300"
-                    />
-                  </div>
-                  <div className="md:p-2 p-1 w-1/2">
-                    <img
-                      alt="gallery"
-                      className="w-full object-cover h-full object-center block"
-                      src="https://dummyimage.com/501x301"
-                    />
-                  </div>
-                </div>
-                <div className="flex flex-wrap w-1/2">
-                  <div className="md:p-2 p-1 w-1/2">
-                    <img
-                      alt="gallery"
-                      className="w-full object-cover h-full object-center block"
-                      src="https://dummyimage.com/502x302"
-                    />
-                  </div>
-                  <div className="md:p-2 p-1 w-1/2">
-                    <img
-                      alt="gallery"
-                      className="w-full object-cover h-full object-center block"
-                      src="https://dummyimage.com/503x303"
-                    />
-                  </div>
-                  <div className="md:p-2 p-1 w-full">
-                    <img
-                      alt="gallery"
-                      className="w-full h-full object-cover object-center block"
-                      src="https://dummyimage.com/601x361"
-                    />
-                  </div>
-                </div>
+                      </div>
+                    </Link>
+                  ))}
               </div>
             </div>
           </section>
 
           <div className="container mt-5 flex w-full">
             <div className="mx-auto">
-              <button className="primary-btn">Megnézem a többit is</button>
+              <Link to="/poortfolio">
+                <button className="primary-btn">Megnézem a többit is</button>
+              </Link>
             </div>
           </div>
         </section>

@@ -11,12 +11,11 @@ const Portfolio = () => {
   const [chosenCategory, setChosenCategory] = useState('all');
   const data = useStaticQuery(graphql`
     query {
-      posts: allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+      posts: allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }, limit: 12) {
         edges {
           node {
             id
             frontmatter {
-              date(formatString: "MMMM DD, YYYY")
               slug
               title
               jobtime
@@ -39,7 +38,7 @@ const Portfolio = () => {
   `);
 
   const renderCallout = () => (
-    <div className="relative flex-col content-center flex-shrink-0 overflow-hidden bg-white rounded border-brand-red-500 border h-40 w-64 flex justify-center items-center">
+    <div className="relative flex-col content-center flex-shrink-0 overflow-hidden bg-white rounded border-brand-red-500 border h-48 flex justify-center items-center">
       <p className="font-extrabold text-center text-sm">Ezt a helyet neked tartjuk fenn!</p>
       <button className="primary-btn">Dolgozzunk együtt</button>
     </div>
@@ -72,8 +71,13 @@ const Portfolio = () => {
         }
       />
       <section className="container mx-auto">
-        <TabBar categories={CATEGORIES} chosenCategory={chosenCategory} setCategory={setChosenCategory} />
-        <div className="grid grid-cols-4">
+        <TabBar
+          categories={CATEGORIES}
+          chosenCategory={chosenCategory}
+          setCategory={setChosenCategory}
+          containerClass="mb-8"
+        />
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
           {data?.posts?.edges
             ?.filter(
               (edge) => edge?.node?.frontmatter?.categories?.includes(chosenCategory) || chosenCategory === 'all'
@@ -85,11 +89,15 @@ const Portfolio = () => {
               return (
                 <Link key={edge?.node?.id} to={`${edge?.node?.frontmatter?.slug}`}>
                   <div
-                    className="relative flex-shrink-0 overflow-hidden bg-gray-600 rounded h-40 w-64 bg-cover bg-no-repeat"
+                    className="relative flex-shrink-0 overflow-hidden bg-gray-600 rounded h-48 bg-cover bg-no-repeat"
                     style={{
-                      background: `linear-gradient(0deg, rgba(227,32,116,1) 0%, rgba(227,32,116,0.5) 46%, rgba(227,32,116,0) 100%) bottom, url(${edge?.node?.frontmatter?.thumbnail?.publicURL}) no-repeat center `,
-                    }}></div>
-                  {edge?.node?.frontmatter?.title}
+                      background: `linear-gradient(0deg, rgba(227,32,116,1) 0%, rgba(227,32,116,0.5) 46%, rgba(227,32,116,0) 100%) bottom, url(${edge?.node?.frontmatter?.thumbnail?.publicURL}) no-repeat center`,
+                    }}>
+                    <div className="absolute bottom-0 left-0 px-5 py-3 text-sm text-white">
+                      <p className="font-light">{edge?.node?.frontmatter?.jobtime}</p>
+                      <p className="font-extrabold">{edge?.node?.frontmatter?.title}</p>
+                    </div>
+                  </div>
                 </Link>
               );
             })}

@@ -1,8 +1,8 @@
 import React from 'react';
 
-const TabBar = ({ categories, chosenCategory, setCategory }) => {
+const TabBar = ({ containerClass, categories, chosenCategory, setCategory }) => {
   return (
-    <div className="overflow-hidden bg-white pt-2 px-16 shadow-brand rounded">
+    <div className={`overflow-hidden bg-white pt-2 px-16 shadow-brand rounded ${containerClass}`}>
       <div className="sm:hidden">
         <select
           aria-label="Selected tab"
