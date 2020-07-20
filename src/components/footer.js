@@ -35,19 +35,19 @@ const Footer = () => {
             <h4 className="text-sm font-extrabold">Kötelező cuccok</h4>
             <ul className="font-light">
               <li className="mb-1  text-sm">
-                <a href="#" className="text-base">
+                <Link to="/privacy" className="text-base">
                   Adatvédelmi tájékoztató
-                </a>
+                </Link>
               </li>
               <li className="mb-1 text-sm">
-                <a href="#" className="text-base">
+                <Link to="/cookie" className="text-base">
                   Süti tájékoztató (gluténmentes)
-                </a>
+                </Link>
               </li>
               <li className="mb-1  text-sm">
-                <a href="#" className="text-base">
+                <Link to="/impresszum" className="text-base">
                   Impresszum
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

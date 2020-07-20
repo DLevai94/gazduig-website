@@ -7,7 +7,9 @@ const Hero = ({ title, subtitle, icon }) => {
         <h1 className="text-4xl font-display font-extrabold leading-tight">{title}</h1>
         <p className="text-light text-lg">{subtitle}</p>
       </div>
-      <div className="w-1/2 flex items-center justify-end">{icon}</div>
+      <div className="w-1/2 flex items-center justify-end" style={{ animation: 'float 4s ease-in-out infinite' }}>
+        {icon}
+      </div>
     </div>
   );
 };

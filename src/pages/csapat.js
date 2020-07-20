@@ -10,6 +10,10 @@ import DataIcon from '../components/svg/dataIcon';
 import ChatIcon from '../components/svg/chatIcon';
 import FistsIcon from '../components/svg/fistsIcon';
 import FireIcon from '../components/svg/fireIcon';
+import RocketIcon from '../components/svg/rocketIcon';
+import TheatreIcon from '../components/svg/theatreIcon';
+import LightBulbIcon from '../components/svg/lightbulbIcon';
+import Bence from '../images/team-bence.png';
 
 function Team() {
   const data = useStaticQuery(graphql`
@@ -66,7 +70,7 @@ function Team() {
               </li>
             </ul>
           </div>
-          <div className="">
+          <div className="" style={{ animation: 'float 4s ease-in-out infinite' }}>
             <Img fluid={data?.heroImg?.childImageSharp?.fluid} className="w-96" />
           </div>
         </section>
@@ -160,8 +164,101 @@ function Team() {
       </section>
       <section className="bg-gray-200 -mt-28">
         <div className="container mx-auto pt-48">
-          <h2>Ismerj meg minket pár perc alatt!</h2>
-          DOBOZOK
+          <h2 className="font-display text-2xl font-extrabold my-8">Ismerj meg minket pár perc alatt!</h2>
+          <div className="bg-white shadow-brand rounded pl-16 pt-8 pr-8 flex flex-col mb-10">
+            <h3 className="font-extrabold text-2xl mb-6">Gazdig Bence - CEO & Dizájner csávó</h3>
+            <div className="flex">
+              <div className="w-8/12 grid md:grid-cols-2 md:grid-rows-4 col-gap-20 row-gap-10 mb-10">
+                <div className="flex items-start ">
+                  <div className="mr-4">
+                    <RocketIcon className="w-10" />
+                  </div>
+                  <div>
+                    <h4 className="font-extrabold text-sm leading-tight mb-2">Önfejlesztés</h4>
+                    <p className="font-light text-sm leading-tight">
+                      Az összes tudásom a YouTube, Insta, Udemy, Libri négyszög valamelyikéből szereztem.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-start ">
+                  <div className="mr-4">
+                    <LightBulbIcon className="w-10" />
+                  </div>
+                  <div>
+                    <h4 className="font-extrabold text-sm leading-tight mb-2">Kreativitás</h4>
+                    <p className="font-light text-sm leading-tight">
+                      Mivel nem tanultam a dizájnról semmit szervezett iskolai keretek között, így nem követek egyetlen
+                      “kötelező” vonalat sem.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-start ">
+                  <div className="mr-4">
+                    <TheatreIcon className="w-10" />
+                  </div>
+                  <div>
+                    <h4 className="font-extrabold text-sm leading-tight mb-2">Csak lazán</h4>
+                    <p className="font-light text-sm leading-tight">
+                      Az utolsó dolog, amit tőlem hallani fogsz, az a keretek közé szorított fekete-fehér bizniszzsargon
+                      lesz.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-start ">
+                  <div className="mr-4">
+                    <TheatreIcon className="w-10" />
+                  </div>
+                  <div>
+                    <h4 className="font-extrabold text-sm leading-tight mb-2">Csak lazán</h4>
+                    <p className="font-light text-sm leading-tight">
+                      Az utolsó dolog, amit tőlem hallani fogsz, az a keretek közé szorított fekete-fehér bizniszzsargon
+                      lesz.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-start ">
+                  <div className="mr-4">
+                    <TheatreIcon className="w-10" />
+                  </div>
+                  <div>
+                    <h4 className="font-extrabold text-sm leading-tight mb-2">Csak lazán</h4>
+                    <p className="font-light text-sm leading-tight">
+                      Az utolsó dolog, amit tőlem hallani fogsz, az a keretek közé szorított fekete-fehér bizniszzsargon
+                      lesz.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-start ">
+                  <div className="mr-4">
+                    <TheatreIcon className="w-10" />
+                  </div>
+                  <div>
+                    <h4 className="font-extrabold text-sm leading-tight mb-2">Csak lazán</h4>
+                    <p className="font-light text-sm leading-tight">
+                      Az utolsó dolog, amit tőlem hallani fogsz, az a keretek közé szorított fekete-fehér bizniszzsargon
+                      lesz.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-start ">
+                  <div className="mr-4">
+                    <TheatreIcon className="w-10" />
+                  </div>
+                  <div>
+                    <h4 className="font-extrabold text-sm leading-tight mb-2">Csak lazán</h4>
+                    <p className="font-light text-sm leading-tight">
+                      Az utolsó dolog, amit tőlem hallani fogsz, az a keretek közé szorított fekete-fehér bizniszzsargon
+                      lesz.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="w-4/12 relative">
+                <img src={Bence} className="absolute bottom-0 right-4" />
+              </div>
+              <div className="self-center flex flex-col">IG IN</div>
+            </div>
+          </div>
         </div>
       </section>
     </Layout>
