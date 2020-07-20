@@ -5,6 +5,8 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 import PartnerCard from '../components/partner-card';
 
+// import YellowBlob from '../images/yellow-blob.png';
+// import GreenBlob from '../images/green-blob.png';
 import InstagramIcon from '../components/svg/instagramIcon';
 import LinkedInIcon from '../components/svg/linkedInIcon';
 import ListIcon from '../components/svg/listIcon';
@@ -79,6 +81,8 @@ function Team() {
         ]}
         title="Ezek vagyunk"
       />
+      {/* <img src={YellowBlob} alt="Egy sarga paca" className="absolute z-0 right-0 bottom-0" />
+      <img src={GreenBlob} alt="Egy zold paca" className="absolute z-0 left-0 bottom-0" /> */}
       <section className="container mx-auto">
         <section className="flex flex-row justify-around items-center">
           <div className="w-6/12">
@@ -106,7 +110,7 @@ function Team() {
             </ul>
           </div>
           <div className="" style={{ animation: 'float 4s ease-in-out infinite' }}>
-            <Img fluid={data?.heroImg?.childImageSharp?.fluid} className="w-96" />
+            <Img fluid={data?.heroImg?.childImageSharp?.fluid} className="w-96" alt="Gazduig Creative Agency Rolunk" />
           </div>
         </section>
         <section>
@@ -286,7 +290,7 @@ function Team() {
                 </div>
               </div>
               <div className="w-4/12 relative">
-                <img src={Bence} className="absolute bottom-0 right-4" />
+                <img src={Bence} className="absolute bottom-0 right-4" alt="Gazdig Bence" />
               </div>
               <div className="self-center flex flex-col">
                 <a href="https://instagram.com/gazduig" rel="noreferrer">
@@ -362,7 +366,7 @@ function Team() {
                 </div>
               </div>
               <div className="w-4/12 relative">
-                <img src={Gergo} className="absolute bottom-0 right-4" />
+                <img src={Gergo} className="absolute bottom-0 right-4" alt="Bergyár Gergő" />
               </div>
               <div className="self-center flex flex-col">
                 <a href="https://instagram.com/x" rel="noreferrer">
@@ -427,7 +431,7 @@ function Team() {
                 </div>
               </div>
               <div className="w-4/12 relative">
-                <img src={Reka} className="absolute bottom-0 right-4" />
+                <img src={Reka} className="absolute bottom-0 right-4" alt="Dabasi Réka" />
               </div>
               <div className="self-center flex flex-col">
                 <a href="https://instagram.com/x" rel="noreferrer">
@@ -537,7 +541,7 @@ function Team() {
                 </div>
               </div>
               <div className="w-4/12 relative">
-                <img src={Dani} className="absolute bottom-0 right-4" />
+                <img src={Dani} className="absolute bottom-0 right-4" alt="Tímár Dani" />
               </div>
               <div className="self-center flex flex-col">
                 <a href="https://instagram.com/x" rel="noreferrer">

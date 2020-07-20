@@ -70,7 +70,11 @@ export default function Template({ data }) {
           </div>
         </div>
         <div className="md:px-16 mt-16 mb-32">
-          <Img className="w-100 rounded mb-16" fluid={frontmatter?.images?.childImageSharp?.fluid} />
+          <Img
+            className="w-100 rounded mb-16"
+            fluid={frontmatter?.images?.childImageSharp?.fluid}
+            alt={frontmatter?.title}
+          />
         </div>
 
         <section className="bg-white md:rounded md:shadow-brand py-8 px-8 md:px-36 z-50">

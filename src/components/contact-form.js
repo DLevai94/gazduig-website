@@ -133,7 +133,11 @@ const ContactForm = () => {
               <p className="font-light">
                 Én válaszolok majd az üzenetedre. Ha kérdésed van, hívj fel bármikor a +36 30 270 5363-as számon!
               </p>
-              <img src={Bence} className="absolute bottom-0 left-0 object-contain object-center md:w-96" />
+              <img
+                src={Bence}
+                className="absolute bottom-0 left-0 object-contain object-center md:w-96"
+                alt="Gazdig Bence"
+              />
             </div>
           </div>
         </div>

@@ -66,7 +66,11 @@ const Portfolio = () => {
         subtitle="Mindig azon vagyunk, hogy újat, maradandót és persze ütőset alkossunk. Íme pár korábbi példa."
         icon={
           data?.heroImg?.childImageSharp?.fluid ? (
-            <Img fluid={data?.heroImg?.childImageSharp?.fluid} className="w-96" />
+            <Img
+              fluid={data?.heroImg?.childImageSharp?.fluid}
+              className="w-96"
+              alt="Gazduig Creative Agency Portfolio"
+            />
           ) : null
         }
       />

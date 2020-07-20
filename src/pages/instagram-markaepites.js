@@ -36,7 +36,7 @@ function IgHacks() {
       />
       <div className="bg-no-repeat" style={{ backgroundImage: `url(${PurpleBlob})`, backgroundPosition: `110% 75%` }}>
         <section className="container mx-auto flex flex-col my-32">
-          <div className="md:w-1/2">
+          <div className="w-full lg:w-1/2">
             <h2 className="text-5xl leading-tight font-display font-extrabold">
               Írtunk egy összefoglalót arról, milyen módszerrel szerezzük az ügyfeleink 90%-át Instáról
             </h2>
@@ -56,7 +56,7 @@ function IgHacks() {
                 netlify>
                 <input type="hidden" name="bot-field" />
                 <input type="hidden" name="form-name" value="ig-marketing" />
-                <div className="w-96">
+                <div className="max-w-96">
                   <label htmlFor="full_name" className="sr-only">
                     Hogy szólíthatunk?
                   </label>
@@ -69,7 +69,7 @@ function IgHacks() {
                     />
                   </div>
                 </div>
-                <div className="w-96">
+                <div className="max-w-96">
                   <label htmlFor="email" className="sr-only">
                     Milyen e-mail címen érünk el?
                   </label>
@@ -83,7 +83,7 @@ function IgHacks() {
                     />
                   </div>
                 </div>
-                <div className="w-96">
+                <div className="max-w-96">
                   <label htmlFor="privacy" className="font-light text-sm">
                     <input
                       id="privacy"
@@ -111,8 +111,8 @@ function IgHacks() {
                 </div>
               </form>
             </div>
-            <div className="hidden md:visible md:w-1/2 justify-center items-center content-center object-center">
-              <Img fluid={data.file.childImageSharp.fluid} className="w-1/2" />
+            <div className="relative md:visible md:w-1/2 justify-center items-center content-center object-center">
+              <Img fluid={data?.file?.childImageSharp?.fluid} className="absolute" alt="Kep egy irogeprol" />
             </div>
           </div>
           <div>
