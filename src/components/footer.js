@@ -17,7 +17,7 @@ const Footer = () => {
             </Link>
           </div>
           <div>
-            <h4 className="text-sm font-extrabold mb-4">Gazduig Creative Agency</h4>
+            <p className="text-sm font-extrabold mb-4">Gazduig Creative Agency</p>
             <ul className="font-light">
               <li className="mb-1 text-sm">
                 <a className="flex flex-row" href="tel:+36302705363">
@@ -32,7 +32,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className="mt-4 lg:mt-0 mb-4">
-            <h4 className="text-sm font-extrabold">Kötelező cuccok</h4>
+            <p className="text-sm font-extrabold">Kötelező cuccok</p>
             <ul className="font-light">
               <li className="mb-1  text-sm">
                 <Link to="/privacy" className="text-base">
@@ -52,7 +52,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className="mt-4 lg:mt-0 mb-4">
-            <h4 className="text-sm font-extrabold">Dobj egy pacsit valahol</h4>
+            <p className="text-sm font-extrabold">Dobj egy pacsit valahol</p>
             <ul className="font-light">
               <li className="mb-1 text-sm">
                 <a className="flex flex-row" target="_blank" rel="noreferrer" href="https://instagram.com/gazduig">
