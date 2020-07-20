@@ -103,7 +103,9 @@ function IndexPage() {
                   dizájn erejét használva.
                 </p>
                 <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
-                  <button className="primary-btn">Íme a részletek</button>
+                  <Link to="/szolgaltatasok">
+                    <button className="primary-btn">Íme a részletek</button>
+                  </Link>
                 </div>
               </div>
             </main>
@@ -138,7 +140,7 @@ function IndexPage() {
                       to={`portfolio/${edge?.node?.frontmatter?.slug}`}
                       style={checkIndexAndApplyToContainer(index)}>
                       <div
-                        className={`relative flex-shrink-0 overflow-hidden bg-gray-600 rounded bg-cover bg-no-repeat ${checkIndexAndApplyToCard(
+                        className={`hover:-mt-2 hover:opacity-75 transition-all duration-300 ease-in-out relative flex-shrink-0 overflow-hidden bg-gray-600 rounded bg-cover bg-no-repeat ${checkIndexAndApplyToCard(
                           index
                         )}`}
                         style={{

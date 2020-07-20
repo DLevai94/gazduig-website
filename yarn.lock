@@ -1652,11 +1652,6 @@
     mini-svg-data-uri "^1.0.3"
     traverse "^0.6.6"
 
-"@tailwindcss/typography@^0.1.2":
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/@tailwindcss/typography/-/typography-0.1.2.tgz#41fb4f862b7810e6c8eb03ad2de465b53380f0c0"
-  integrity sha512-Qc52tzH2HGWhgn1IWyqzQ5GuuyXnEWCKflAZDiDHSYHq/Rhapsdlqd4ItqDdYjtpl8+6EC8/tV9nGfG3jifdPg==
-
 "@tailwindcss/ui@^0.3.1":
   version "0.3.1"
   resolved "https://registry.yarnpkg.com/@tailwindcss/ui/-/ui-0.3.1.tgz#5ae5dc0ede9f62c265aad6765c35b80183f6cd91"
@@ -2208,6 +2203,11 @@ alphanum-sort@^1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/alphanum-sort/-/alphanum-sort-1.0.2.tgz#97a1119649b211ad33691d9f9f486a8ec9fbe0a3"
   integrity sha1-l6ERlkmyEa0zaR2fn0hqjsn74KM=
+
+animejs@^3.1.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/animejs/-/animejs-3.2.0.tgz#2daea7365983249022cc454fa726acdb4a84345d"
+  integrity sha512-zhtGl5cS0G2f5DfciMO8uwWpnx06nfFnHlXYYXHBazHep1Lyd6kEtBQP+9hpYKE0dBZjIigHp9VpMO95ZfXQJQ==
 
 ansi-align@^3.0.0:
   version "3.0.0"
@@ -12545,6 +12545,14 @@ react-style-proptype@^3.2.2:
   integrity sha512-ywYLSjNkxKHiZOqNlso9PZByNEY+FTyh3C+7uuziK0xFXu9xzdyfHwg4S9iyiRRoPCR4k2LqaBBsWVmSBwCWYQ==
   dependencies:
     prop-types "^15.5.4"
+
+react-svg-drawing@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/react-svg-drawing/-/react-svg-drawing-1.0.1.tgz#0e3fd90d059573ae5ff1a03206e60c59c38fc9ca"
+  integrity sha512-WE+drkBTfWOJWDrOtbZrL+JTSX8Sqw3QQueyERPbE/OdGay8QYG9PIG8KJDrxfSTXU8z2TeDWW4KDRx0NMkMjQ==
+  dependencies:
+    animejs "^3.1.0"
+    prop-types "^15.7.2"
 
 react-textarea-autosize@^7.1.0:
   version "7.1.2"

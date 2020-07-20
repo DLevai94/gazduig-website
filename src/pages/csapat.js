@@ -3,6 +3,8 @@ import { graphql, useStaticQuery } from 'gatsby';
 import Img from 'gatsby-image';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
+import InstagramIcon from '../components/svg/instagramIcon';
+import LinkedInIcon from '../components/svg/linkedInIcon';
 import ListIcon from '../components/svg/listIcon';
 import BrainIcon from '../components/svg/brainIcon';
 import TimeIcon from '../components/svg/timeIcon';
@@ -209,10 +211,10 @@ function Team() {
                     <TheatreIcon className="w-10" />
                   </div>
                   <div>
-                    <h4 className="font-extrabold text-sm leading-tight mb-2">Csak lazán</h4>
+                    <h4 className="font-extrabold text-sm leading-tight mb-2">Éjszakai műszak</h4>
                     <p className="font-light text-sm leading-tight">
-                      Az utolsó dolog, amit tőlem hallani fogsz, az a keretek közé szorított fekete-fehér bizniszzsargon
-                      lesz.
+                      Nem hiszem, hogy napi 8 órában maradandót lehet alkotni, így a nap összes óráját szívesen töltöm
+                      hasznosan.
                     </p>
                   </div>
                 </div>
@@ -221,10 +223,10 @@ function Team() {
                     <TheatreIcon className="w-10" />
                   </div>
                   <div>
-                    <h4 className="font-extrabold text-sm leading-tight mb-2">Csak lazán</h4>
+                    <h4 className="font-extrabold text-sm leading-tight mb-2">United</h4>
                     <p className="font-light text-sm leading-tight">
-                      Az utolsó dolog, amit tőlem hallani fogsz, az a keretek közé szorított fekete-fehér bizniszzsargon
-                      lesz.
+                      9 éves korom óta Manchester United drukker vagyok, de más csapatok rajongóival is szívesen
+                      dolgozom együtt.
                     </p>
                   </div>
                 </div>
@@ -233,11 +235,8 @@ function Team() {
                     <TheatreIcon className="w-10" />
                   </div>
                   <div>
-                    <h4 className="font-extrabold text-sm leading-tight mb-2">Csak lazán</h4>
-                    <p className="font-light text-sm leading-tight">
-                      Az utolsó dolog, amit tőlem hallani fogsz, az a keretek közé szorított fekete-fehér bizniszzsargon
-                      lesz.
-                    </p>
+                    <h4 className="font-extrabold text-sm leading-tight mb-2">Jó fej vagyok</h4>
+                    <p className="font-light text-sm leading-tight">Esküszöm! Volt, hogy már mások is mondták!</p>
                   </div>
                 </div>
                 <div className="flex items-start ">
@@ -245,10 +244,10 @@ function Team() {
                     <TheatreIcon className="w-10" />
                   </div>
                   <div>
-                    <h4 className="font-extrabold text-sm leading-tight mb-2">Csak lazán</h4>
+                    <h4 className="font-extrabold text-sm leading-tight mb-2">Lazac</h4>
                     <p className="font-light text-sm leading-tight">
-                      Az utolsó dolog, amit tőlem hallani fogsz, az a keretek közé szorított fekete-fehér bizniszzsargon
-                      lesz.
+                      Fontosnak éreztem megosztani, hogy a lazac az egyik kedvenc ételem, ha már ilyen lazac sávó
+                      vagyok.
                     </p>
                   </div>
                 </div>
@@ -256,7 +255,14 @@ function Team() {
               <div className="w-4/12 relative">
                 <img src={Bence} className="absolute bottom-0 right-4" />
               </div>
-              <div className="self-center flex flex-col">IG IN</div>
+              <div className="self-center flex flex-col">
+                <a href="https://instagram.com/gazduig" rel="noreferrer">
+                  <InstagramIcon className="w-8 mb-8 hover:opacity-50" />
+                </a>
+                <a href="https://linkedin.com/in/gazduig" rel="noreferrer">
+                  <LinkedInIcon className="w-8 mt-8 hover:opacity-50" />
+                </a>
+              </div>
             </div>
           </div>
         </div>
