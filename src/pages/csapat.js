@@ -16,6 +16,9 @@ import RocketIcon from '../components/svg/rocketIcon';
 import TheatreIcon from '../components/svg/theatreIcon';
 import LightBulbIcon from '../components/svg/lightbulbIcon';
 import Bence from '../images/team-bence.png';
+import Reka from '../images/csapat-reka.png';
+import Dani from '../images/csapat-dani.png';
+import Gergo from '../images/csapat-gergo.png';
 
 function Team() {
   const data = useStaticQuery(graphql`
@@ -164,7 +167,7 @@ function Team() {
           </div>
         </section>
       </section>
-      <section className="bg-gray-200 -mt-28">
+      <section className="bg-gray-200 -mt-28 pb-40">
         <div className="container mx-auto pt-48">
           <h2 className="font-display text-2xl font-extrabold my-8">Ismerj meg minket pár perc alatt!</h2>
           <div className="bg-white shadow-brand rounded pl-16 pt-8 pr-8 flex flex-col mb-10">
@@ -265,6 +268,266 @@ function Team() {
               </div>
             </div>
           </div>
+          <div className="bg-white shadow-brand rounded pl-16 pt-8 pr-8 flex flex-col mb-10">
+            <h3 className="font-extrabold text-2xl mb-6">Bergyár Gergő - Dizájner bajnok</h3>
+            <div className="flex">
+              <div className="w-8/12 grid md:grid-cols-2 md:grid-rows-4 col-gap-20 row-gap-10 mb-10">
+                <div className="flex items-start ">
+                  <div className="mr-4">
+                    <RocketIcon className="w-10" />
+                  </div>
+                  <div>
+                    <h4 className="font-extrabold text-sm leading-tight mb-2">Metal</h4>
+                    <p className="font-light text-sm leading-tight">
+                      Nyugi, nem az ördög hű követője vagyok, sőt még egyetlen kecskét sem áldoztam fel.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-start ">
+                  <div className="mr-4">
+                    <LightBulbIcon className="w-10" />
+                  </div>
+                  <div>
+                    <h4 className="font-extrabold text-sm leading-tight mb-2">Képregény</h4>
+                    <p className="font-light text-sm leading-tight">5 éves korom óta szeretnék Pókember lenni.</p>
+                  </div>
+                </div>
+                <div className="flex items-start ">
+                  <div className="mr-4">
+                    <TheatreIcon className="w-10" />
+                  </div>
+                  <div>
+                    <h4 className="font-extrabold text-sm leading-tight mb-2">Pankráció</h4>
+                    <p className="font-light text-sm leading-tight">Ez a pókemberré válás első lépése.</p>
+                  </div>
+                </div>
+                <div className="flex items-start ">
+                  <div className="mr-4">
+                    <TheatreIcon className="w-10" />
+                  </div>
+                  <div>
+                    <h4 className="font-extrabold text-sm leading-tight mb-2">Önfejlesztés</h4>
+                    <p className="font-light text-sm leading-tight">
+                      Y Generációmhoz híven fejlődésemet a Youtube, udemY és könYvek támogatják mai napig.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-start ">
+                  <div className="mr-4">
+                    <TheatreIcon className="w-10" />
+                  </div>
+                  <div>
+                    <h4 className="font-extrabold text-sm leading-tight mb-2">Bringázás</h4>
+                    <p className="font-light text-sm leading-tight">Csak a két kerék, kitartóan védem a környezetet.</p>
+                  </div>
+                </div>
+                <div className="flex items-start ">
+                  <div className="mr-4">
+                    <TheatreIcon className="w-10" />
+                  </div>
+                  <div>
+                    <h4 className="font-extrabold text-sm leading-tight mb-2">Gyros</h4>
+                    <p className="font-light text-sm leading-tight">Több éve keresem a tökéletes Gyros receptjét.</p>
+                  </div>
+                </div>
+              </div>
+              <div className="w-4/12 relative">
+                <img src={Gergo} className="absolute bottom-0 right-4" />
+              </div>
+              <div className="self-center flex flex-col">
+                <a href="https://instagram.com/x" rel="noreferrer">
+                  <InstagramIcon className="w-8 mb-8 hover:opacity-50" />
+                </a>
+                <a href="https://linkedin.com/in/x" rel="noreferrer">
+                  <LinkedInIcon className="w-8 mt-8 hover:opacity-50" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="bg-white shadow-brand rounded pl-16 pt-8 pr-8 flex flex-col mb-10">
+            <h3 className="font-extrabold text-2xl mb-6">Dabasi Réka - Sportdizájn specialista</h3>
+            <div className="flex">
+              <div className="w-8/12 grid md:grid-cols-2 md:grid-rows-4 col-gap-20 row-gap-10 mb-10">
+                <div className="flex items-start ">
+                  <div className="mr-4">
+                    <RocketIcon className="w-10" />
+                  </div>
+                  <div>
+                    <h4 className="font-extrabold text-sm leading-tight mb-2">Versenyszellem</h4>
+                    <p className="font-light text-sm leading-tight">
+                      Amibe belekezdek, azt csakis 100%-osan szeretem csinálni.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-start ">
+                  <div className="mr-4">
+                    <LightBulbIcon className="w-10" />
+                  </div>
+                  <div>
+                    <h4 className="font-extrabold text-sm leading-tight mb-2">Sport</h4>
+                    <p className="font-light text-sm leading-tight">
+                      Már több mint 14 éve jégkorongozom versenyszerűen, innen ered számomra a sport iránt érzett
+                      szeretet.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-start ">
+                  <div className="mr-4">
+                    <TheatreIcon className="w-10" />
+                  </div>
+                  <div>
+                    <h4 className="font-extrabold text-sm leading-tight mb-2">Állatok</h4>
+                    <p className="font-light text-sm leading-tight">
+                      Van egy kutyám, Bruno és egy macskám, akit csak cicának hívnak. Az általam készített dizájnok a
+                      kisállat névválasztással ellentétben kreatívak.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-start ">
+                  <div className="mr-4">
+                    <TheatreIcon className="w-10" />
+                  </div>
+                  <div>
+                    <h4 className="font-extrabold text-sm leading-tight mb-2">Önfejlesztés</h4>
+                    <p className="font-light text-sm leading-tight">
+                      Non-formális oktatási keretek között is folyamatosan fejlesztem magam, igyekszem minél jobban
+                      szélesíteni az ismereteimet.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="w-4/12 relative">
+                <img src={Reka} className="absolute bottom-0 right-4" />
+              </div>
+              <div className="self-center flex flex-col">
+                <a href="https://instagram.com/x" rel="noreferrer">
+                  <InstagramIcon className="w-8 mb-8 hover:opacity-50" />
+                </a>
+                <a href="https://linkedin.com/in/x" rel="noreferrer">
+                  <LinkedInIcon className="w-8 mt-8 hover:opacity-50" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="bg-white shadow-brand rounded pl-16 pt-8 pr-8 flex flex-col mb-10">
+            <h3 className="font-extrabold text-2xl mb-6">Tímár Dani - Minden szövegek írója</h3>
+            <div className="flex">
+              <div className="w-8/12 grid md:grid-cols-2 md:grid-rows-4 col-gap-20 row-gap-10 mb-10">
+                <div className="flex items-start ">
+                  <div className="mr-4">
+                    <RocketIcon className="w-10" />
+                  </div>
+                  <div>
+                    <h4 className="font-extrabold text-sm leading-tight mb-2">Skillek</h4>
+                    <p className="font-light text-sm leading-tight">
+                      17 éves koromban rájöttem, hogy a képességeim fogják kifizetni a számláim.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-start ">
+                  <div className="mr-4">
+                    <LightBulbIcon className="w-10" />
+                  </div>
+                  <div>
+                    <h4 className="font-extrabold text-sm leading-tight mb-2">Sales</h4>
+                    <p className="font-light text-sm leading-tight">
+                      Az értékesítésben találtam meg az első munka iránti szerelmemet. 5 év tapasztalatom van benne, de
+                      elkezdtem más vizekre evezni.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-start ">
+                  <div className="mr-4">
+                    <TheatreIcon className="w-10" />
+                  </div>
+                  <div>
+                    <h4 className="font-extrabold text-sm leading-tight mb-2">Írás</h4>
+                    <p className="font-light text-sm leading-tight">
+                      Hobbiként kezdtem el írni. Meseíró versenyeken és blogokon át vezetett az út odaáig, hogy együtt
+                      dolgozhassunk.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-start ">
+                  <div className="mr-4">
+                    <TheatreIcon className="w-10" />
+                  </div>
+                  <div>
+                    <h4 className="font-extrabold text-sm leading-tight mb-2">Instagram</h4>
+                    <p className="font-light text-sm leading-tight">
+                      Egyedül csinálom az Üzleti Farkas oldalt. Mondhatnék sok mindent, de beszéljen helyettem inkább az
+                      oldal.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-start ">
+                  <div className="mr-4">
+                    <TheatreIcon className="w-10" />
+                  </div>
+                  <div>
+                    <h4 className="font-extrabold text-sm leading-tight mb-2">Sport</h4>
+                    <p className="font-light text-sm leading-tight">
+                      Több csapatsportban is kipróbáltam magam, de a foci az örök szerelem.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-start ">
+                  <div className="mr-4">
+                    <TheatreIcon className="w-10" />
+                  </div>
+                  <div>
+                    <h4 className="font-extrabold text-sm leading-tight mb-2">Rap</h4>
+                    <p className="font-light text-sm leading-tight">
+                      8 éves voltam, amikor meghallottam életem első rap zenéjét. Azóta is a szívem csücske.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-start ">
+                  <div className="mr-4">
+                    <TheatreIcon className="w-10" />
+                  </div>
+                  <div>
+                    <h4 className="font-extrabold text-sm leading-tight mb-2">Maximalizmus</h4>
+                    <p className="font-light text-sm leading-tight">
+                      Ez az előnyöm és a hátrányom is. Az utolsó pillanatig tökéletesítem néha a dolgokat, mindig a
+                      legjobbat akarom nyújtani.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-start ">
+                  <div className="mr-4">
+                    <TheatreIcon className="w-10" />
+                  </div>
+                  <div>
+                    <h4 className="font-extrabold text-sm leading-tight mb-2">Saját könyv</h4>
+                    <p className="font-light text-sm leading-tight">
+                      Az egyik nagy célom, hogy könyvet írjak. Egy regény és egy életrajzi is tervben van.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="w-4/12 relative">
+                <img src={Dani} className="absolute bottom-0 right-4" />
+              </div>
+              <div className="self-center flex flex-col">
+                <a href="https://instagram.com/x" rel="noreferrer">
+                  <InstagramIcon className="w-8 mb-8 hover:opacity-50" />
+                </a>
+                <a href="https://linkedin.com/in/x" rel="noreferrer">
+                  <LinkedInIcon className="w-8 mt-8 hover:opacity-50" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="container mx-auto">
+        <div className="-mt-16 rounded bg-gray-900 text-white text-2xl font-display font-extrabold ml-16 inline-block px-8 py-4 pr-20 mb-8">
+          <p>
+            A kreatív dolgokban vagyunk otthon. Viszont
+            <br /> vannak remek partnereink, akikkel kiegészülve
+            <br /> a kreativitáson túli területeket is lefedjük.
+          </p>
         </div>
       </section>
     </Layout>
