@@ -1,15 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { CATEGORIES } from '../config/consts';
 import Bence from '../images/bence-bw.png';
 
 const categories = CATEGORIES.slice(1);
 
 const ContactForm = () => {
+  const [hasPrivacyAccepted, setHasPrivacyAccepted] = useState(false);
   return (
     <div className="mx-auto lg:grid lg:grid-cols-2 lg:col-gap-1">
       <div className="lg:col-span-1 lg:col-start-1">
         <div className="max-w-lg">
-          <form action="#" method="POST" className="grid grid-cols-1 row-gap-6" netlify>
+          <form
+            netlify-honeypot="bot-field"
+            data-netlify="true"
+            name="contact"
+            method="POST"
+            className="grid grid-cols-1 row-gap-6"
+            netlify>
+            <input type="hidden" name="bot-field" />
+            <input type="hidden" name="form-name" value="contact" />
             <div>
               <label htmlFor="full_name" className="sr-only">
                 Hogy szólíthatunk?
@@ -91,8 +100,12 @@ const ContactForm = () => {
                 <input
                   id="privacy"
                   type="checkbox"
-                  className="form-input mr-2 rounded-full p-1 transition ease-in-out duration-150"
+                  className={`form-input mr-2 rounded-full p-1 transition ease-in-out duration-150 ${
+                    hasPrivacyAccepted && 'bg-brand-red-500'
+                  }`}
                   required
+                  onChange={() => setHasPrivacyAccepted(!hasPrivacyAccepted)}
+                  checked={hasPrivacyAccepted}
                 />
                 Elfogadom az adatvédelmi nyilatkozatot és engedélyezem, hogy a megadott elérhetőségeken felvegyétek
                 velem a kapcsolatot.
@@ -102,7 +115,8 @@ const ContactForm = () => {
               <span className="inline-flex rounded-md">
                 <button
                   type="submit"
-                  className="primary-btn inline-flex justify-center transition duration-150 ease-in-out">
+                  disabled={!hasPrivacyAccepted}
+                  className={`primary-btn ${!hasPrivacyAccepted && 'bg-gray-500'}`}>
                   Küldés
                 </button>
               </span>

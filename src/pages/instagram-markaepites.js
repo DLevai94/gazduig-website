@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { graphql, useStaticQuery, Link } from 'gatsby';
 import Img from 'gatsby-image';
 import Layout from '../components/layout';
@@ -6,6 +6,7 @@ import SEO from '../components/seo';
 import PurpleBlob from '../images/purple-blob.svg';
 
 function IgHacks() {
+  const [hasPrivacyAccepted, setHasPrivacyAccepted] = useState(false);
   const data = useStaticQuery(graphql`
     query {
       file(relativePath: { eq: "writer.png" }) {
@@ -87,8 +88,12 @@ function IgHacks() {
                     <input
                       id="privacy"
                       type="checkbox"
-                      className="form-input mr-2 rounded-full p-1 transition ease-in-out duration-150"
+                      className={`form-input mr-2 rounded-full p-1 transition ease-in-out duration-150 ${
+                        hasPrivacyAccepted && 'bg-brand-red-500'
+                      }`}
                       required
+                      onChange={() => setHasPrivacyAccepted(!hasPrivacyAccepted)}
+                      checked={hasPrivacyAccepted}
                     />
                     Elfogadom az adatvédelmi nyilatkozatot és engedélyezem, hogy a megadott elérhetőségeken felvegyétek
                     velem a kapcsolatot.
@@ -98,7 +103,8 @@ function IgHacks() {
                   <span className="inline-flex rounded-md">
                     <button
                       type="submit"
-                      className="primary-btn inline-flex justify-center transition duration-150 ease-in-out">
+                      disabled={!hasPrivacyAccepted}
+                      className={`primary-btn ${!hasPrivacyAccepted && 'bg-gray-500'}`}>
                       Jöhet
                     </button>
                   </span>
