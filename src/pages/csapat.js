@@ -529,6 +529,23 @@ function Team() {
             <br /> a kreativitáson túli területeket is lefedjük.
           </p>
         </div>
+        <div className="grid md:rid-cols-2 lg:grid-cols-4 mb-32">
+          <div className="rounded shadow-brand bg-white">
+            <p>kep</p>
+            <div>
+              <p>Lévai Dávid és csapata</p>
+              <p>Egyedi web-, és mobilapp fejlesztés</p>
+            </div>
+          </div>
+        </div>
+        <div className="rounded w-1/2 border-2 border-gray-900 bg-white p-8 mb-32">
+          <p>
+            Erre a helyre kerülnek majd a díjaink, amelyeket olyan projektekért kapunk, mint mondjuk a tiéd. Nagyon
+            szeretnénk párat, így mindent megteszünk értük.
+          </p>
+          <p>Nem hiszed? Dolgozzunk együtt, és meglátod!</p>
+          <button className="primary-btn">Besz</button>
+        </div>
       </section>
     </Layout>
   );
