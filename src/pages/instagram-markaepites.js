@@ -3,7 +3,6 @@ import { graphql, useStaticQuery, Link } from 'gatsby';
 import Img from 'gatsby-image';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import PurpleBlob from '../images/purple-blob.svg';
 
 function IgHacks() {
   const [hasPrivacyAccepted, setHasPrivacyAccepted] = useState(false);
@@ -34,7 +33,7 @@ function IgHacks() {
         ]}
         title="Ezekt neked írtuk"
       />
-      <div className="bg-no-repeat" style={{ backgroundImage: `url(${PurpleBlob})`, backgroundPosition: `110% 75%` }}>
+      <div className="purple-blob-bg">
         <section className="container mx-auto flex flex-col my-32">
           <div className="w-full lg:w-1/2">
             <h2 className="text-5xl leading-tight font-display font-extrabold">
@@ -46,7 +45,6 @@ function IgHacks() {
               <h3 className="text-2xl leading-tight font-display font-extrabold mb-8">
                 Pötyögd be az e-mail címed, és már küldjük is!
               </h3>
-
               <form
                 method="POST"
                 netlify-honeypot="bot-field"

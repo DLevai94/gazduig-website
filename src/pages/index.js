@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { graphql, useStaticQuery, Link } from 'gatsby';
-import Img from 'gatsby-image';
+// import Img from 'gatsby-image';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import CalloutSection from '../components/callout-section';
 import TabBar from '../components/tab-bar';
 import Callout6 from '../components/svg/callout6.svg';
-import Plant from '../images/plant.png';
+// import Plant from '../images/plant.png';
 import Typewriter from '../images/the-great-typewriter.png';
 import Couch from '../images/couch.png';
 import LogoTSystems from '../images/logos/tsystems.svg';
@@ -21,10 +21,12 @@ import LogoEkata from '../images/logos/ekata.svg';
 import LogoInsimu from '../images/logos/insimu.svg';
 import LogoNetmetro from '../images/logos/netmetro.svg';
 import LogoSzaboKandallo from '../images/logos/szabokandallo.svg';
+import BenceImg from '../images/bence-bw.png';
 import { CATEGORIES } from '../config/consts';
 
 function IndexPage() {
   const [chosenCategory, setChosenCategory] = useState('all');
+  const [hasPrivacyAccepted, setHasPrivacyAccepted] = useState(false);
   const data = useStaticQuery(graphql`
     {
       posts: allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }, limit: 6) {
@@ -43,7 +45,7 @@ function IndexPage() {
           }
         }
       }
-      benceImg: file(relativePath: { eq: "bence-bw.png" }) {
+      benceImg: file(relativePath: { eq: "team-bence.png" }) {
         childImageSharp {
           fluid(maxHeight: 250) {
             ...GatsbyImageSharpFluid
@@ -159,52 +161,47 @@ function IndexPage() {
 
           <div className="container mt-5 flex w-full">
             <div className="mx-auto">
-              <Link to="/poortfolio">
+              <Link to="/portfolio">
                 <button className="primary-btn">Megnézem a többit is</button>
               </Link>
             </div>
           </div>
         </section>
       </div>
-      <section>
-        <div className="container px-5 py-24 mx-auto flex flex-wrap -mt-56">
-          <div className="w-full mb-20">
-            <h2 className="ml-16 text-2xl font-extrabold font-display">
-              Hogy tetszettek a látottak?
-              <br />
-              Készítsünk valami ütőset neked is?
-            </h2>
+      <section className="container md:px-5 md:py-24 mx-auto -mt-56">
+        <div className="w-full mb-20">
+          <h2 className="md:ml-16 text-2xl font-extrabold font-display text-center md:text-left">
+            Hogy tetszettek a látottak?
             <br />
-            <div
-              className="bg-white py-12 px-16 shadow-brand rounded flex flex-row justify-around items-center bg-right bg-no-repeat bg-contain"
-              style={{ backgroundImage: `url(${Callout6})` }}>
-              <div>
-                <h3 className="font-extrabold mb-6 text-lg">
-                  Írd meg, miben
-                  <br /> segíthetünk!
-                </h3>
-                <button className="primary-btn">Kattints ide</button>
+            Készítsünk valami ütőset neked is?
+          </h2>
+          <br />
+          <div
+            className="bg-white py-3 md:py-12 md:px-16 shadow-brand rounded flex flex-col md:flex-row md:justify-around items-center bg-right bg-no-repeat bg-contain"
+            style={{ backgroundImage: `url(${Callout6})` }}>
+            <div className="mb-6 md:mb-0">
+              <h3 className="font-extrabold mb-6 text-lg text-center md:text-left">
+                Írd meg, miben
+                <br /> segíthetünk!
+              </h3>
+              <button className="primary-btn">Kattints ide</button>
+            </div>
+            <div className="relative overflow-visible bg-gray-900 py-3 pl-6 rounded flex flex-row justify-between items-center pr-28 md:pr-48">
+              <div className="text-white">
+                <p className="font-extrabold mb-2">Vagy hívd fel Bencét!</p>
+                <p className="font-light text-sm mb-2">Gazdig Bence - CEO & Designer csávó</p>
+                <p className="font-extrabold text-sm">+36 30 270 5363</p>
               </div>
-              <div className="relative  bg-gray-900 py-3 pl-6 rounded flex flex-row justify-between items-center w-96">
-                <div className="text-white">
-                  <p className="font-extrabold mb-2">Vagy hívd fel Bencét!</p>
-                  <p className="font-light text-sm mb-2">Gazdig Bence - CEO & Designer csávó</p>
-                  <p className="font-extrabold text-sm">+36 30 270 5363</p>
-                </div>
-                <Img
-                  fluid={data?.benceImg?.childImageSharp?.fluid}
-                  alt="Gazdig Bence"
-                  className="absolute bottom-0 right-5 h-32 w-32 z-50"
-                  style={null}
-                />
-              </div>
+              <img src={BenceImg} className="absolute bottom-0 right-2 h-32 overflow-visible" />
             </div>
           </div>
         </div>
       </section>
       <section>
         <div className="max-w-screen-xl mx-auto mb-32 px-4 sm:px-6 lg:px-8">
-          <h2 className="heading">Néhány ügyfelünk, akik nem bánták meg, hogy velünk dolgoztak</h2>
+          <h2 className="heading text-center md:text-left">
+            Néhány ügyfelünk, akik nem bánták meg, hogy velünk dolgoztak
+          </h2>
           <div className="mx-16 grid grid-cols-2 gap-8 md:grid-cols-6">
             <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
               <img className="h-12" src={LogoTSystems} alt="T-Systems" />
@@ -245,7 +242,7 @@ function IndexPage() {
           </div>
         </div>
       </section>
-      <section
+      {/* <section
         className="max-w-screen-xl mx-auto mb-32 px-4 sm:px-6 lg:px-8 bg-no-repeat"
         style={{ backgroundImage: `url(${Plant})` }}>
         <h2 className="heading">Vélemények rólunk olyanoktól, akik nem a rokonaink</h2>
@@ -323,31 +320,85 @@ function IndexPage() {
             <button className="primary-btn md:m-16">Kattints ide</button>
           </Link>
         </div>
-      </section>
-      <section className="z-50">
-        <div className="max-w-screen-xl mx-auto mb-32 px-4 sm:px-6 lg:px-8 z-50">
-          <h2 className="heading mb-4">
+      </section> */}
+      <section className="purple-blob-bg">
+        <div className="max-w-screen-xl mx-auto mb-32 px-4 sm:px-6 lg:px-8">
+          <h2 className="heading mb-4 text-center md:text-left">
             Írtunk egy összefoglalót arról, milyen módszerrel szerezzük
             <br />
             az ügyfeleink 90%-át Instáról
           </h2>
-          <p className="font-light text-lg ml-16 mb-16">Olvass bele, hátha találsz benne valami érdekeset!</p>
-          <div className="bg-white rounded p-8 mx-8 shadow-brand flex z-50">
-            <div className="max-w-1/2">
-              <h3 className="font-display font-extrabold text-xl">Pötyögd be az e-mail címed, és már küldjük is!</h3>
-              <label className="block mb-2 text-xs font-bold uppercase" htmlFor="email">
-                Az e-mail címed
-                <input className="w-full mb-6 form-input" id="email" placeholder="Az e-mail címed" type="email" />
-              </label>
-              <label className="block mb-2 text-xs font-bold uppercase" htmlFor="name">
-                Hogy szólíthatunk?
-                <input className="w-full mb-6 form-input" id="name" placeholder="Hogy szólíthatunk?" type="text" />
-              </label>
-              {/* <label className="block mb-2 text-xs" htmlFor="privacy">
-                <input type="checkbox" className="form-input" name="privacy" />
-                Elfogadom az adatvédelmi nyilatkozatot és engedélyezem, hogy a megadott elérhetőségeken felvegyétek
-                velem a kapcsolatot.
-              </label> */}
+          <p className="font-light text-lg md:ml-16 md:mb-16 text-center md:text-left">
+            Olvass bele, hátha találsz benne valami érdekeset!
+          </p>
+          <div className="md:bg-white md:rounded p-8 md:mx-8 md:shadow-brand flex">
+            <div className="w-full md:w-1/2">
+              <h3 className="text-2xl leading-tight font-display font-extrabold mb-8">
+                Pötyögd be az e-mail címed, és már küldjük is!
+              </h3>
+              <form
+                method="POST"
+                netlify-honeypot="bot-field"
+                data-netlify="true"
+                name="ig-marketing"
+                className="grid grid-cols-1 row-gap-6"
+                netlify>
+                <input type="hidden" name="bot-field" />
+                <input type="hidden" name="form-name" value="ig-marketing" />
+                <div className="md:max-w-96">
+                  <label htmlFor="full_name" className="sr-only">
+                    Hogy szólíthatunk?
+                  </label>
+                  <div className="relative rounded-md">
+                    <input
+                      id="full_name"
+                      className="form-input block w-full py-3 px-4 placeholder-gray-500 border-gray-900 transition ease-in-out duration-150"
+                      placeholder="Hogy szólíthatunk?"
+                      required
+                    />
+                  </div>
+                </div>
+                <div className="max-w-96">
+                  <label htmlFor="email" className="sr-only">
+                    Milyen e-mail címen érünk el?
+                  </label>
+                  <div className="relative rounded-md">
+                    <input
+                      id="email"
+                      type="email"
+                      className="form-input block w-full py-3 px-4 placeholder-gray-500 border-gray-900 transition ease-in-out duration-150"
+                      placeholder="Milyen e-mail címen érünk el?"
+                      required
+                    />
+                  </div>
+                </div>
+                <div className="max-w-96">
+                  <label htmlFor="privacy" className="font-light text-sm">
+                    <input
+                      id="privacy"
+                      type="checkbox"
+                      className={`form-input mr-2 rounded-full p-1 transition ease-in-out duration-150 ${
+                        hasPrivacyAccepted && 'bg-brand-red-500'
+                      }`}
+                      required
+                      onChange={() => setHasPrivacyAccepted(!hasPrivacyAccepted)}
+                      checked={hasPrivacyAccepted}
+                    />
+                    Elfogadom az adatvédelmi nyilatkozatot és engedélyezem, hogy a megadott elérhetőségeken felvegyétek
+                    velem a kapcsolatot.
+                  </label>
+                </div>
+                <div>
+                  <span className="inline-flex rounded-md">
+                    <button
+                      type="submit"
+                      disabled={!hasPrivacyAccepted}
+                      className={`primary-btn ${!hasPrivacyAccepted && 'bg-gray-500'}`}>
+                      Jöhet
+                    </button>
+                  </span>
+                </div>
+              </form>
             </div>
             <div className="w-1/2 relative flex justify-end items-center">
               <img className="absolute" src={Typewriter} alt="Irogep" />
@@ -355,20 +406,20 @@ function IndexPage() {
           </div>
         </div>
       </section>
-      <section>
-        <div className="-mt-64 z-0 lg:p-96 bg-gray-200 flex items-center justify-between">
-          <div className="max-w-1/2">
-            <h2 className="heading mb-8">
+      <section className="bg-gray-200">
+        <div className="py-10 lg:py-28 flex container mx-auto items-center justify-center md:justify-between">
+          <div className="w-100 md:max-w-1/2 text-center">
+            <h2 className="heading mb-8 md:text-left">
               Á, az oldal alján vagy! Hadd mutatkozzunk
               <br />
               be, ha már legörgettél idáig!
             </h2>
             <Link to="/csapat">
-              <button className="mx-16 primary-btn">Kattints ide</button>
+              <button className="mx-16 primary-btn md:text-left">Kattints ide</button>
             </Link>
           </div>
-          <div className="w-1/2 relative flex justify-end items-center">
-            <img className="absolute max-h-64" src={Couch} alt="Kanape" />
+          <div className="w-100 md:w-1/2 relative flex justify-end items-center">
+            <img className="absolute min-h-12 max-h-64" src={Couch} alt="Kanape" />
           </div>
         </div>
       </section>

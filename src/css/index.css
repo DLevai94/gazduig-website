@@ -60,6 +60,8 @@
 
 @tailwind components;
 
+.purple-blob-bg {  }
+
 .heading {
   @apply mb-8 text-2xl font-extrabold font-display;
 }
@@ -91,15 +93,15 @@
 }
 
 @screen md {
-.heading {
-  @apply ml-16;
-}
-.callout-card {
-  @apply mb-0;
-}
-.callout-card:hover {
-  @apply -mt-8;
-}
+  .heading {
+    @apply ml-16;
+  }
+  .callout-card {
+    @apply mb-0;
+  }
+  .callout-card:hover {
+    @apply -mt-8;
+  }
 }
 
 @screen lg {
@@ -107,9 +109,11 @@
     @apply relative bg-no-repeat bg-cover overflow-hidden h-screen;
     background-image: url("../images/heroBG.jpg");
   }
-}
-
-@screen lg {
+  .purple-blob-bg {
+    @apply bg-no-repeat;
+    background-image: url('../images/purple-blob.svg');
+    background-position: 110% 50%;
+  }
   .content-container {
     @apply px-8;
   }

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { graphql, useStaticQuery } from 'gatsby';
+import { graphql, useStaticQuery, Link } from 'gatsby';
 import Img from 'gatsby-image';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
@@ -72,7 +72,38 @@ const Services = () => {
           <p className="font-extrabold text-sm">Arculati kézikönyvet készítünk, hogy mindenki megértse a miérteket</p>
         </div>
       </div>
-      <h2 className="font-display text-lg font-extrabold">Így néz ki az együttműködésünk folyamata</h2>
+      <div className="mb-32">
+        <h2 className="font-display text-xl font-extrabold">Így néz ki az együttműködésünk folyamata</h2>
+        <ul>
+          <li>Kapcsolatba lépünk egymással</li>
+          <li>Felmérjük az igényeidet</li>
+          <li>Azok alapján terveket készítünk</li>
+          <li>
+            Bemutatjuk, és ha kell módosítjuk, végtelenszer, felár nélkül, míg olyan nem lesz, amilyet elképzeltél
+          </li>
+          <li>Átadjuk a kész anyagot</li>
+        </ul>
+      </div>
+      <div className="-mt-16 rounded bg-gray-900 text-white text-2xl font-display font-extrabold inline-block px-8 py-4 pr-20 mb-8">
+        <p>
+          Ez itt nem a mi irodánk. Viszont nagyon
+          <br />
+          szeretnénk egy hasonlót. Ehhez pedig a te
+          <br />
+          projekted is tökéletesen kell elkészítenünk!
+        </p>
+      </div>
+      <div>CONTACT</div>
+      <div className="py-28">
+        <h2 className="font-display text-2xl font-extrabold">
+          Még nem vagy 100%-ig biztos a dologban?
+          <br />
+          Nézd meg pár korábbi munkánkat a témában!
+        </h2>
+        <Link to="/portfolio">
+          <button className="my-8 primary-btn">Irány a portfólió</button>
+        </Link>
+      </div>
     </div>
   );
   return (
