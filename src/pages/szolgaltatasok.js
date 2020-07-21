@@ -342,7 +342,10 @@ const Services = () => {
         <div className="mb-32">
           <h2 className="font-display text-2xl font-extrabold mb-8">Így néz ki az együttműködésünk folyamata</h2>
           <ul className="text-lg font-light ">
-            <li>1 Kapcsolatba lépünk egymással</li>
+            <li>
+              <span className="border-full border-1 border-gray-900 mr-4 font-display font-extrabold">1</span>{' '}
+              Kapcsolatba lépünk egymással
+            </li>
             <li>2 Felmérjük az igényeidet</li>
             <li>3 Azok alapján terveket készítünk</li>
             <li>

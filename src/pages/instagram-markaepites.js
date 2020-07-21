@@ -51,6 +51,7 @@ function IgHacks() {
                     <div className="relative rounded-md">
                       <input
                         id="full_name"
+                        name="full_name"
                         className="form-input block w-full py-3 px-4 placeholder-gray-500 border-gray-900 transition ease-in-out duration-150"
                         placeholder="Hogy szólíthatunk?"
                         required
@@ -64,6 +65,7 @@ function IgHacks() {
                     <div className="relative rounded-md">
                       <input
                         id="email"
+                        name="email"
                         type="email"
                         className="form-input block w-full py-3 px-4 placeholder-gray-500 border-gray-900 transition ease-in-out duration-150"
                         placeholder="Milyen e-mail címen érünk el?"
@@ -75,6 +77,7 @@ function IgHacks() {
                     <label htmlFor="privacy" className="font-light text-sm">
                       <input
                         id="privacy"
+                        name="privacy"
                         type="checkbox"
                         className={`form-input mr-2 rounded-full p-1 transition ease-in-out duration-150 ${
                           hasPrivacyAccepted && 'bg-brand-red-500'

@@ -27,6 +27,7 @@ const ContactForm = () => {
               <div className="relative rounded-md">
                 <input
                   id="full_name"
+                  name="full_name"
                   className="form-input block w-full py-3 px-4 placeholder-gray-500 border-gray-900 transition ease-in-out duration-150"
                   placeholder="Hogy szólíthatunk?"
                   required
@@ -40,6 +41,7 @@ const ContactForm = () => {
               <div className="relative rounded-md">
                 <input
                   id="email"
+                  name="email"
                   type="email"
                   className="form-input block w-full py-3 px-4 placeholder-gray-500 border-gray-900 transition ease-in-out duration-150"
                   placeholder="Milyen e-mail címen érünk el?"
@@ -54,6 +56,7 @@ const ContactForm = () => {
               <div className="relative rounded-md">
                 <select
                   id="jobtype"
+                  name="jobtype"
                   className="form-input block w-full py-3 px-4 placeholder-gray-500 border-gray-900 transition ease-in-out duration-150"
                   defaultValue="Miben segíthetünk első körben?"
                   onChange={(e) => console.log(e)}>
@@ -66,12 +69,13 @@ const ContactForm = () => {
               </div>
             </div>
             <div>
-              <label htmlFor="jobtype" className="sr-only">
+              <label htmlFor="extra-jobtype" className="sr-only">
                 És ezen felül?
               </label>
               <div className="relative rounded-md">
                 <select
-                  id="jobtype"
+                  id="extra-jobtype"
+                  name="extra-jobtype"
                   className="form-input block w-full py-3 px-4 placeholder-gray-500 border-gray-900 transition ease-in-out duration-150"
                   defaultValue="És ezen felül?"
                   onChange={(e) => console.log(e)}>
@@ -91,6 +95,7 @@ const ContactForm = () => {
               <div className="relative rounded-md">
                 <textarea
                   id="message"
+                  name="message"
                   rows="5"
                   className="form-input block w-full py-3 px-4 placeholder-gray-500 border-gray-900 transition ease-in-out duration-150"
                   placeholder="Ha már tudsz részleteket, pötyögd be őket pár szóban, és amint lehet, felkeresünk!"></textarea>
@@ -100,6 +105,7 @@ const ContactForm = () => {
               <label htmlFor="privacy" className="font-light text-xs">
                 <input
                   id="privacy"
+                  name="privacy"
                   type="checkbox"
                   className={`form-input mr-2 rounded-full p-1 transition ease-in-out duration-150 ${
                     hasPrivacyAccepted && 'bg-brand-red-500'
