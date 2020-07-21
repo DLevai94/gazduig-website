@@ -1,6 +1,6 @@
 import React from 'react';
 
-const TabBar = ({ containerClass, categories, chosenCategory, setCategory }) => {
+const TabBar = ({ containerClass, categories, chosenCategory, setCategory, textClass }) => {
   return (
     <div className={`overflow-hidden bg-white pt-2 px-16 shadow-brand rounded ${containerClass}`}>
       <div className="sm:hidden">
@@ -26,7 +26,7 @@ const TabBar = ({ containerClass, categories, chosenCategory, setCategory }) => 
                   category.key !== chosenCategory
                     ? 'border-transparent font-medium'
                     : 'border-brand-red-500 font-extrabold text-brand-red-500'
-                } text-sm leading-5 hover:text-gray-700 hover:border-gray-700 focus:outline-none transition-colors duration-200 ease-in`}>
+                } text-sm leading-5 hover:text-gray-700 hover:border-gray-700 focus:outline-none transition-colors duration-200 ease-in ${textClass}`}>
                 {category?.name}
               </button>
             ))}

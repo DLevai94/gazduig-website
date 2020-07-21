@@ -21,7 +21,7 @@ function ContactPage() {
         ]}
         title="Beszélgessünk"
       />
-      <section className="container mx-auto">
+      <section className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-16 md:mt-48 max-w-2xl">
           <h2 className="font-display font-extrabold text-5xl leading-tight">
             Kis lépés ez neked, de nagy lépés lehet a márkádnak!

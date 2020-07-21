@@ -79,7 +79,7 @@ function Team() {
         ]}
         title="Ezek vagyunk"
       />
-      <section className="container mx-auto">
+      <section className="container mx-auto px-4 sm:px-6 lg:px-8">
         <section className="flex flex-col md:flex-row justify-around items-center">
           <div className="w-6/12">
             <h1 className="text-5xl font-display font-extrabold leading-tight mb-8">
@@ -558,7 +558,7 @@ function Team() {
           </div>
         </div>
       </section>
-      <section className="container mx-auto">
+      <section className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="-mt-16 rounded bg-gray-900 text-white text-2xl font-display font-extrabold mx-2 md:ml-16 md:mr-0 inline-block px-8 py-4 pr-20 mb-8">
           <p>
             A kreatív dolgokban vagyunk otthon. Viszont
