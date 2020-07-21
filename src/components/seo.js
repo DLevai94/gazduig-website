@@ -40,6 +40,10 @@ function SEO({ description, lang = 'hu', meta = [], keywords = [], title = '' })
           content: `website`,
         },
         {
+          property: `og:image`,
+          content: `/OG-image.jpg`,
+        },
+        {
           name: `twitter:card`,
           content: `summary`,
         },

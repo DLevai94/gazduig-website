@@ -22,9 +22,31 @@ module.exports = {
         lang: 'hu',
         start_url: `/`,
         background_color: fullConfig.theme.colors.white,
-        theme_color: fullConfig.theme.colors['brand-red']['400'],
+        theme_color: fullConfig.theme.colors['brand-red']['500'],
         display: `minimal-ui`,
-        // icon: `src/images/tailwind-icon.png`,
+        icon: `src/images/favicon.ico`,
+        icons: [
+          {
+            src: `src/images/android-chrome-192x192.png`,
+            sizes: `192x192`,
+            type: `image/png`,
+          },
+          {
+            src: `src/images/android-chrome-512x512.png`,
+            sizes: `512x512`,
+            type: `image/png`,
+          },
+          {
+            src: `src/images/mstile-150x150.png`,
+            sizes: `150x150`,
+            type: `image/png`,
+          },
+          {
+            src: `src/images/apple-touch-icon.png`,
+            sizes: `180x180`,
+            type: `image/png`,
+          },
+        ],
       },
     },
     {
