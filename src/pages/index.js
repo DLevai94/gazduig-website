@@ -22,6 +22,9 @@ import LogoInsimu from '../images/logos/insimu.svg';
 import LogoNetmetro from '../images/logos/netmetro.svg';
 import LogoSzaboKandallo from '../images/logos/szabokandallo.svg';
 import BenceImg from '../images/bence-bw.png';
+// import Cloud1 from '../images/cloud1.svg';
+// import Cloud2 from '../images/cloud2.svg';
+// import Cloud3 from '../images/cloud3.svg';
 import { CATEGORIES } from '../config/consts';
 
 function IndexPage() {
@@ -93,6 +96,9 @@ function IndexPage() {
         ]}
       />
       <div className="hero">
+        {/* <img src={Cloud1} alt="Felho" className="absolute top-0 right-0" />
+        <img src={Cloud2} alt="Felho" className="absolute top-0 right-0" />
+        <img src={Cloud3} alt="Felho" className="absolute top-0 right-0" /> */}
         <div className="max-w-screen-xl mx-auto">
           <div className="relative pb-8 sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
             <main className="mt-10 mx-auto max-w-screen-xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-64 lg:px-8">

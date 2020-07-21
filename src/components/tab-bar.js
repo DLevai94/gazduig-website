@@ -15,7 +15,7 @@ const TabBar = ({ containerClass, categories, chosenCategory, setCategory, textC
           ))}
         </select>
       </div>
-      <div className="hidden sm:block overflow-scroll">
+      <div className="hidden sm:block overflow-scroll" id="tab-bar">
         <div className="border-b border-gray-200">
           <nav className="-mb-px flex">
             {categories?.map((category) => (

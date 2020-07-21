@@ -60,6 +60,10 @@
 
 @tailwind components;
 
+#tab-bar::-webkit-scrollbar {
+  display: none;
+}
+
 .timeline {
   @apply relative;
 }

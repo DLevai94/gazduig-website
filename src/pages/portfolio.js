@@ -39,7 +39,7 @@ const Portfolio = () => {
   `);
 
   const renderCallout = () => (
-    <div className="relative flex-col content-center flex-shrink-0 overflow-hidden bg-white rounded border-brand-red-500 border h-48 flex justify-center items-center">
+    <div className="relative flex-col content-center flex-shrink-0 overflow-hidden bg-white rounded border-brand-red-500 border h-56 flex justify-center items-center">
       <p className="font-extrabold text-center text-sm">Ezt a helyet neked tartjuk fenn!</p>
       <button className="primary-btn">Dolgozzunk együtt</button>
     </div>
