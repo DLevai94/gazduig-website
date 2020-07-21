@@ -8,7 +8,7 @@ const Hero = ({ title, subtitle, icon }) => {
         <p className="text-light text-lg">{subtitle}</p>
       </div>
       <div
-        className="hidden md:block md:w-1/2 flex items-center justify-end"
+        className="hidden md:block md:w-5/12 flex items-center justify-end"
         style={{ animation: 'float 4s ease-in-out infinite' }}>
         {icon}
       </div>

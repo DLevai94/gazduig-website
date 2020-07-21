@@ -614,7 +614,7 @@ function Team() {
             <br /> Nagyon szeretnénk párat, így mindent megteszünk értük.
           </p>
           <p className="font-extrabold font-display mt-6 mb-4">Nem hiszed? Dolgozzunk együtt, és meglátod!</p>
-          <Link to="/contect">
+          <Link to="/contact">
             <button className="primary-btn">Beszélgessünk</button>
           </Link>
         </div>
