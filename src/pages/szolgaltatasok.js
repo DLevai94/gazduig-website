@@ -5,6 +5,7 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Hero from '../components/hero';
 import TabBar from '../components/tab-bar';
+import ContactForm from '../components/contact-form';
 import SolIcon1 from '../components/svg/solutions1';
 import SolIcon2 from '../components/svg/solutions2';
 import SolIcon3 from '../components/svg/solutions3';
@@ -93,17 +94,6 @@ const Services = () => {
           projekted is tökéletesen kell elkészítenünk!
         </p>
       </div>
-      <div>CONTACT</div>
-      <div className="py-28">
-        <h2 className="font-display text-2xl font-extrabold">
-          Még nem vagy 100%-ig biztos a dologban?
-          <br />
-          Nézd meg pár korábbi munkánkat a témában!
-        </h2>
-        <Link to="/portfolio">
-          <button className="my-8 primary-btn">Irány a portfólió</button>
-        </Link>
-      </div>
     </div>
   );
   return (
@@ -148,6 +138,29 @@ const Services = () => {
         </div>
       </section>
       <section className="container mx-auto mt-12">{renderBrandingContent()}</section>
+
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 my-32">
+        <section className="bg-white md:rounded md:shadow-brand py-8 px-8 md:px-36 z-50">
+          <div className="mb-16 max-w-2xl">
+            <h2 className="font-display font-extrabold text-2xl leading-tight">
+              Tetszettek a látottak? Töltsd ki a lenti formot, és alkossunk együtt valami ütőset!
+            </h2>
+          </div>
+          <ContactForm />
+        </section>
+      </div>
+      <section className="md:-mt-64 pt-36 md:pt-96 pb-36">
+        <div className="container mx-auto text-center md:text-left sm:px-6 lg:px-48">
+          <h2 className="font-display font-extrabold text-2xl leading-tight mb-6">
+            Még nem vagy 100%-ig biztos a dologban?
+            <br />
+            Nézz meg pár hasonlót is!
+          </h2>
+          <Link to="/portfolio">
+            <button className="primary-btn">Irány a portfólió</button>
+          </Link>
+        </div>
+      </section>
     </Layout>
   );
 };

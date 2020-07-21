@@ -78,7 +78,7 @@ const Portfolio = () => {
       <div className="yellow-blob-bg" style={{ backgroundPosition: `-20% 70%` }}>
         <section className="container mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="font-display text-2xl font-extrabold">A te márkád is jól mutatna itt</h2>
-          <div className="lg:-mx-16">
+          <div className="xl:-mx-16">
             <TabBar
               categories={CATEGORIES}
               chosenCategory={chosenCategory}
@@ -113,12 +113,14 @@ const Portfolio = () => {
           </div>
         </section>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 my-32">
-          <div className="bg-white rounded shadow-brand py-8">
-            <h2 className="font-extrabold font-display text-2xl max-w-screen-sm mb-10 lg:ml-10">
-              Tetszettek a látottak? Töltsd ki a lenti formot, és alkossunk együtt valami ütőset!
-            </h2>
+          <section className="bg-white md:rounded md:shadow-brand py-8 px-8 md:px-36 z-50">
+            <div className="mb-16 max-w-2xl">
+              <h2 className="font-display font-extrabold text-2xl leading-tight">
+                Tetszettek a látottak? Töltsd ki a lenti formot, és alkossunk együtt valami ütőset!
+              </h2>
+            </div>
             <ContactForm />
-          </div>
+          </section>
         </div>
       </div>
     </Layout>
