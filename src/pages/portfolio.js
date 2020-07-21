@@ -75,36 +75,39 @@ const Portfolio = () => {
         }
       />
       <section className="container mx-auto">
-        <TabBar
-          categories={CATEGORIES}
-          chosenCategory={chosenCategory}
-          setCategory={setChosenCategory}
-          containerClass="mb-8"
-        />
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-          {data?.posts?.edges
-            ?.filter(
-              (edge) => edge?.node?.frontmatter?.categories?.includes(chosenCategory) || chosenCategory === 'all'
-            )
-            ?.map((edge, index) => {
-              if (index === 5) {
-                return renderCallout();
-              }
-              return (
-                <Link key={edge?.node?.id} to={`${edge?.node?.frontmatter?.slug}`}>
-                  <div
-                    className="relative flex-shrink-0 overflow-hidden bg-gray-600 rounded h-48 bg-cover bg-no-repeat"
-                    style={{
-                      background: `linear-gradient(0deg, rgba(227,32,116,1) 0%, rgba(227,32,116,0.5) 46%, rgba(227,32,116,0) 100%) bottom, url(${edge?.node?.frontmatter?.thumbnail?.publicURL}) no-repeat center`,
-                    }}>
-                    <div className="absolute bottom-0 left-0 px-5 py-3 text-sm text-white">
-                      <p className="font-light">{edge?.node?.frontmatter?.jobtime}</p>
-                      <p className="font-extrabold">{edge?.node?.frontmatter?.title}</p>
+        <h2 className="font-display text-2xl font-extrabold">A te márkád is jól mutatna itt</h2>
+        <div className="-mx-16">
+          <TabBar
+            categories={CATEGORIES}
+            chosenCategory={chosenCategory}
+            setCategory={setChosenCategory}
+            containerClass="mb-16"
+          />
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+            {data?.posts?.edges
+              ?.filter(
+                (edge) => edge?.node?.frontmatter?.categories?.includes(chosenCategory) || chosenCategory === 'all'
+              )
+              ?.map((edge, index) => {
+                if (index === 5) {
+                  return renderCallout();
+                }
+                return (
+                  <Link key={edge?.node?.id} to={`${edge?.node?.frontmatter?.slug}`}>
+                    <div
+                      className="relative flex-shrink-0 overflow-hidden bg-gray-600 rounded h-56 bg-cover bg-no-repeat"
+                      style={{
+                        background: `linear-gradient(0deg, rgba(227,32,116,1) 0%, rgba(227,32,116,0.5) 46%, rgba(227,32,116,0) 100%) bottom, url(${edge?.node?.frontmatter?.thumbnail?.publicURL}) no-repeat center`,
+                      }}>
+                      <div className="absolute bottom-0 left-0 px-5 py-3 text-sm text-white">
+                        <p className="font-light">{edge?.node?.frontmatter?.jobtime}</p>
+                        <p className="font-extrabold">{edge?.node?.frontmatter?.title}</p>
+                      </div>
                     </div>
-                  </div>
-                </Link>
-              );
-            })}
+                  </Link>
+                );
+              })}
+          </div>
         </div>
       </section>
     </Layout>
