@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { CATEGORIES } from '../config/consts';
 import Bence from '../images/bence-bw.png';
+import PurpleBlob from '../images/purple-blob.svg';
 
 const categories = CATEGORIES.slice(1);
 
@@ -8,14 +9,14 @@ const ContactForm = () => {
   const [hasPrivacyAccepted, setHasPrivacyAccepted] = useState(false);
   return (
     <div className="mx-auto lg:grid lg:grid-cols-2 lg:col-gap-1">
-      <div className="lg:col-span-1 lg:col-start-1">
+      <div className="lg:col-span-1 lg:col-start-1 flex justify-center items-baseline">
         <div className="max-w-lg">
           <form
             netlify-honeypot="bot-field"
             data-netlify="true"
             name="contact"
             method="POST"
-            className="grid grid-cols-1 row-gap-6"
+            className="grid grid-cols-1 row-gap-6 items-center"
             netlify>
             <input type="hidden" name="bot-field" />
             <input type="hidden" name="form-name" value="contact" />
@@ -124,22 +125,19 @@ const ContactForm = () => {
           </form>
         </div>
       </div>
-
-      <div className="lg:col-span-1">
-        <div className="max-w-lg mx-auto lg:max-w-none">
-          <div className=" overflow-visible">
-            <div className="bg-white w-52 px-6 py-3 pb-56 md:shadow-brand rounded overflow-visible relative">
-              <p className="font-extrabold mb-4">Szia, Bence vagyok!</p>
-              <p className="font-light">
-                Én válaszolok majd az üzenetedre. Ha kérdésed van, hívj fel bármikor a +36 30 270 5363-as számon!
-              </p>
-              <img
-                src={Bence}
-                className="absolute bottom-0 left-0 object-contain object-center md:w-96"
-                alt="Gazdig Bence"
-              />
-            </div>
-          </div>
+      <div className="lg:col-span-1 flex justify-center items-baseline">
+        <div
+          className="bg-white w-80 pl-6 pr-16 py-3 pb-80 md:shadow-brand rounded overflow-visible relative bg-no-repeat"
+          style={{ backgroundImage: `url(${PurpleBlob})`, backgroundPosition: `0% 250%` }}>
+          <p className="font-extrabold mb-4">Szia, Bence vagyok!</p>
+          <p className="font-light">
+            Én válaszolok majd az üzenetedre. Ha kérdésed van, hívj fel bármikor a +36 30 270 5363-as számon!
+          </p>
+          <img
+            src={Bence}
+            className="absolute bottom-0 left-1 object-contain object-center md:w-80"
+            alt="Gazdig Bence"
+          />
         </div>
       </div>
     </div>

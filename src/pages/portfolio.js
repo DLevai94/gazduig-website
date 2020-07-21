@@ -5,6 +5,7 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Hero from '../components/hero';
 import TabBar from '../components/tab-bar';
+import ContactForm from '../components/contact-form';
 import { CATEGORIES } from '../config/consts';
 
 const Portfolio = () => {
@@ -74,42 +75,52 @@ const Portfolio = () => {
           ) : null
         }
       />
-      <section className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="font-display text-2xl font-extrabold">A te márkád is jól mutatna itt</h2>
-        <div className="lg:-mx-16">
-          <TabBar
-            categories={CATEGORIES}
-            chosenCategory={chosenCategory}
-            setCategory={setChosenCategory}
-            containerClass="mb-16"
-          />
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-            {data?.posts?.edges
-              ?.filter(
-                (edge) => edge?.node?.frontmatter?.categories?.includes(chosenCategory) || chosenCategory === 'all'
-              )
-              ?.map((edge, index) => {
-                if (index === 5) {
-                  return renderCallout();
-                }
-                return (
-                  <Link key={edge?.node?.id} to={`${edge?.node?.frontmatter?.slug}`}>
-                    <div
-                      className="relative flex-shrink-0 overflow-hidden bg-gray-600 rounded h-56 bg-cover bg-no-repeat"
-                      style={{
-                        background: `linear-gradient(0deg, rgba(227,32,116,1) 0%, rgba(227,32,116,0.5) 46%, rgba(227,32,116,0) 100%) bottom, url(${edge?.node?.frontmatter?.thumbnail?.publicURL}) no-repeat center`,
-                      }}>
-                      <div className="absolute bottom-0 left-0 px-5 py-3 text-sm text-white">
-                        <p className="font-light">{edge?.node?.frontmatter?.jobtime}</p>
-                        <p className="font-extrabold">{edge?.node?.frontmatter?.title}</p>
+      <div className="yellow-blob-bg" style={{ backgroundPosition: `-20% 70%` }}>
+        <section className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="font-display text-2xl font-extrabold">A te márkád is jól mutatna itt</h2>
+          <div className="lg:-mx-16">
+            <TabBar
+              categories={CATEGORIES}
+              chosenCategory={chosenCategory}
+              setCategory={setChosenCategory}
+              containerClass="mb-16"
+            />
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+              {data?.posts?.edges
+                ?.filter(
+                  (edge) => edge?.node?.frontmatter?.categories?.includes(chosenCategory) || chosenCategory === 'all'
+                )
+                ?.map((edge, index) => {
+                  if (index === 5) {
+                    return renderCallout();
+                  }
+                  return (
+                    <Link key={edge?.node?.id} to={`${edge?.node?.frontmatter?.slug}`}>
+                      <div
+                        className="relative flex-shrink-0 overflow-hidden bg-gray-600 rounded h-56 bg-cover bg-no-repeat"
+                        style={{
+                          background: `linear-gradient(0deg, rgba(227,32,116,1) 0%, rgba(227,32,116,0.5) 46%, rgba(227,32,116,0) 100%) bottom, url(${edge?.node?.frontmatter?.thumbnail?.publicURL}) no-repeat center`,
+                        }}>
+                        <div className="absolute bottom-0 left-0 px-5 py-3 text-sm text-white">
+                          <p className="font-light">{edge?.node?.frontmatter?.jobtime}</p>
+                          <p className="font-extrabold">{edge?.node?.frontmatter?.title}</p>
+                        </div>
                       </div>
-                    </div>
-                  </Link>
-                );
-              })}
+                    </Link>
+                  );
+                })}
+            </div>
+          </div>
+        </section>
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 my-32">
+          <div className="bg-white rounded shadow-brand py-8">
+            <h2 className="font-extrabold font-display text-2xl max-w-screen-sm mb-10 lg:ml-10">
+              Tetszettek a látottak? Töltsd ki a lenti formot, és alkossunk együtt valami ütőset!
+            </h2>
+            <ContactForm />
           </div>
         </div>
-      </section>
+      </div>
     </Layout>
   );
 };
