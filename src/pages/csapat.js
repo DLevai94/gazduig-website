@@ -84,13 +84,12 @@ function Team() {
       {/* <img src={YellowBlob} alt="Egy sarga paca" className="absolute z-0 right-0 bottom-0" />
       <img src={GreenBlob} alt="Egy zold paca" className="absolute z-0 left-0 bottom-0" /> */}
       <section className="container mx-auto">
-        <section className="flex flex-row justify-around items-center">
+        <section className="flex flex-col md:flex-row justify-around items-center">
           <div className="w-6/12">
             <h1 className="text-5xl font-display font-extrabold leading-tight mb-8">
-              Mi az a Gazduig, és
-              <br /> miben rejlik az ütősség?
+              Mi az a Gazduig, és miben rejlik az ütősség?
             </h1>
-            <ul className="grid grid-cols-2 grid-rows-2 gap-6 col-gap-56">
+            <ul className="grid grid-cols-1 md:grid-cols-2 md:grid-rows-2 gap-2 xl:gap-6 xl:col-gap-56">
               <li className="flex items-start font-light">
                 <ListIcon className="w-16 mr-2" />
                 Nem csak egy újabb ügynökség a többi mellé
@@ -109,13 +108,19 @@ function Team() {
               </li>
             </ul>
           </div>
-          <div className="" style={{ animation: 'float 4s ease-in-out infinite' }}>
-            <Img fluid={data?.heroImg?.childImageSharp?.fluid} className="w-96" alt="Gazduig Creative Agency Rolunk" />
+          <div className="hidden md:block" style={{ animation: 'float 4s ease-in-out infinite' }}>
+            <Img
+              fluid={data?.heroImg?.childImageSharp?.fluid}
+              className="md:w-48 lg:w-96"
+              alt="Gazduig Creative Agency Rolunk"
+            />
           </div>
         </section>
         <section>
-          <h2 className="font-display text-2xl font-extrabold my-16">Mondatok, amelyek aranyat érnek számunkra</h2>
-          <div className="lg:-mx-8 grid lg:grid-rows-2 lg:grid-cols-3 gap-8">
+          <h2 className="font-display text-2xl font-extrabold my-16 lg:ml-8 xl:ml-0">
+            Mondatok, amelyek aranyat érnek számunkra
+          </h2>
+          <div className="xl:-mx-8 grid lg:grid-rows-2 lg:grid-cols-3 gap-8 mx-4 lg:mx-8 xl:mx-0">
             <div className="bg-white rounded shadow-brand flex items-start p-4 pr-24">
               <div className="mr-4">
                 <BrainIcon className="w-10" />
@@ -202,13 +207,15 @@ function Team() {
         </section>
       </section>
       <section className="bg-gray-200 -mt-28 pb-40">
-        <div className="container mx-auto pt-48">
-          <h2 className="font-display text-2xl font-extrabold my-8">Ismerj meg minket pár perc alatt!</h2>
+        <div className="container mx-auto pt-48 px-4 lg:px-8 xl:px-0">
+          <h2 className="font-display text-2xl font-extrabold my-8 lg:ml-8 xl:ml-0">
+            Ismerj meg minket pár perc alatt!
+          </h2>
           <div className="bg-white shadow-brand rounded pl-16 pt-8 pr-8 flex flex-col mb-10">
             <h3 className="font-extrabold text-2xl mb-6">Gazdig Bence - CEO & Dizájner csávó</h3>
             <div className="flex">
               <div className="w-8/12 grid md:grid-cols-2 md:grid-rows-4 col-gap-20 row-gap-10 mb-10">
-                <div className="flex items-start ">
+                <div className="flex items-start">
                   <div className="mr-4">
                     <RocketIcon className="w-10" />
                   </div>
@@ -219,7 +226,7 @@ function Team() {
                     </p>
                   </div>
                 </div>
-                <div className="flex items-start ">
+                <div className="flex items-start">
                   <div className="mr-4">
                     <LightBulbIcon className="w-10" />
                   </div>
@@ -231,7 +238,7 @@ function Team() {
                     </p>
                   </div>
                 </div>
-                <div className="flex items-start ">
+                <div className="flex items-start">
                   <div className="mr-4">
                     <TheatreIcon className="w-10" />
                   </div>
@@ -243,7 +250,7 @@ function Team() {
                     </p>
                   </div>
                 </div>
-                <div className="flex items-start ">
+                <div className="flex items-start">
                   <div className="mr-4">
                     <TheatreIcon className="w-10" />
                   </div>
@@ -255,7 +262,7 @@ function Team() {
                     </p>
                   </div>
                 </div>
-                <div className="flex items-start ">
+                <div className="flex items-start">
                   <div className="mr-4">
                     <TheatreIcon className="w-10" />
                   </div>
@@ -267,7 +274,7 @@ function Team() {
                     </p>
                   </div>
                 </div>
-                <div className="flex items-start ">
+                <div className="flex items-start">
                   <div className="mr-4">
                     <TheatreIcon className="w-10" />
                   </div>
@@ -276,7 +283,7 @@ function Team() {
                     <p className="font-light text-sm leading-tight">Esküszöm! Volt, hogy már mások is mondták!</p>
                   </div>
                 </div>
-                <div className="flex items-start ">
+                <div className="flex items-start">
                   <div className="mr-4">
                     <TheatreIcon className="w-10" />
                   </div>
@@ -306,7 +313,7 @@ function Team() {
             <h3 className="font-extrabold text-2xl mb-6">Bergyár Gergő - Dizájner bajnok</h3>
             <div className="flex">
               <div className="w-8/12 grid md:grid-cols-2 md:grid-rows-4 col-gap-20 row-gap-10 mb-10">
-                <div className="flex items-start ">
+                <div className="flex items-start">
                   <div className="mr-4">
                     <RocketIcon className="w-10" />
                   </div>
@@ -317,7 +324,7 @@ function Team() {
                     </p>
                   </div>
                 </div>
-                <div className="flex items-start ">
+                <div className="flex items-start">
                   <div className="mr-4">
                     <LightBulbIcon className="w-10" />
                   </div>
@@ -326,7 +333,7 @@ function Team() {
                     <p className="font-light text-sm leading-tight">5 éves korom óta szeretnék Pókember lenni.</p>
                   </div>
                 </div>
-                <div className="flex items-start ">
+                <div className="flex items-start">
                   <div className="mr-4">
                     <TheatreIcon className="w-10" />
                   </div>
@@ -335,7 +342,7 @@ function Team() {
                     <p className="font-light text-sm leading-tight">Ez a pókemberré válás első lépése.</p>
                   </div>
                 </div>
-                <div className="flex items-start ">
+                <div className="flex items-start">
                   <div className="mr-4">
                     <TheatreIcon className="w-10" />
                   </div>
@@ -346,7 +353,7 @@ function Team() {
                     </p>
                   </div>
                 </div>
-                <div className="flex items-start ">
+                <div className="flex items-start">
                   <div className="mr-4">
                     <TheatreIcon className="w-10" />
                   </div>
@@ -355,7 +362,7 @@ function Team() {
                     <p className="font-light text-sm leading-tight">Csak a két kerék, kitartóan védem a környezetet.</p>
                   </div>
                 </div>
-                <div className="flex items-start ">
+                <div className="flex items-start">
                   <div className="mr-4">
                     <TheatreIcon className="w-10" />
                   </div>
@@ -382,7 +389,7 @@ function Team() {
             <h3 className="font-extrabold text-2xl mb-6">Dabasi Réka - Sportdizájn specialista</h3>
             <div className="flex">
               <div className="w-8/12 grid md:grid-cols-2 md:grid-rows-4 col-gap-20 row-gap-10 mb-10">
-                <div className="flex items-start ">
+                <div className="flex items-start">
                   <div className="mr-4">
                     <RocketIcon className="w-10" />
                   </div>
@@ -393,7 +400,7 @@ function Team() {
                     </p>
                   </div>
                 </div>
-                <div className="flex items-start ">
+                <div className="flex items-start">
                   <div className="mr-4">
                     <LightBulbIcon className="w-10" />
                   </div>
@@ -405,7 +412,7 @@ function Team() {
                     </p>
                   </div>
                 </div>
-                <div className="flex items-start ">
+                <div className="flex items-start">
                   <div className="mr-4">
                     <TheatreIcon className="w-10" />
                   </div>
@@ -417,7 +424,7 @@ function Team() {
                     </p>
                   </div>
                 </div>
-                <div className="flex items-start ">
+                <div className="flex items-start">
                   <div className="mr-4">
                     <TheatreIcon className="w-10" />
                   </div>
@@ -447,7 +454,7 @@ function Team() {
             <h3 className="font-extrabold text-2xl mb-6">Tímár Dani - Minden szövegek írója</h3>
             <div className="flex">
               <div className="w-8/12 grid md:grid-cols-2 md:grid-rows-4 col-gap-20 row-gap-10 mb-10">
-                <div className="flex items-start ">
+                <div className="flex items-start">
                   <div className="mr-4">
                     <RocketIcon className="w-10" />
                   </div>
@@ -458,7 +465,7 @@ function Team() {
                     </p>
                   </div>
                 </div>
-                <div className="flex items-start ">
+                <div className="flex items-start">
                   <div className="mr-4">
                     <LightBulbIcon className="w-10" />
                   </div>
@@ -470,7 +477,7 @@ function Team() {
                     </p>
                   </div>
                 </div>
-                <div className="flex items-start ">
+                <div className="flex items-start">
                   <div className="mr-4">
                     <TheatreIcon className="w-10" />
                   </div>
@@ -482,7 +489,7 @@ function Team() {
                     </p>
                   </div>
                 </div>
-                <div className="flex items-start ">
+                <div className="flex items-start">
                   <div className="mr-4">
                     <TheatreIcon className="w-10" />
                   </div>
@@ -494,7 +501,7 @@ function Team() {
                     </p>
                   </div>
                 </div>
-                <div className="flex items-start ">
+                <div className="flex items-start">
                   <div className="mr-4">
                     <TheatreIcon className="w-10" />
                   </div>
@@ -505,7 +512,7 @@ function Team() {
                     </p>
                   </div>
                 </div>
-                <div className="flex items-start ">
+                <div className="flex items-start">
                   <div className="mr-4">
                     <TheatreIcon className="w-10" />
                   </div>
@@ -516,7 +523,7 @@ function Team() {
                     </p>
                   </div>
                 </div>
-                <div className="flex items-start ">
+                <div className="flex items-start">
                   <div className="mr-4">
                     <TheatreIcon className="w-10" />
                   </div>
@@ -528,7 +535,7 @@ function Team() {
                     </p>
                   </div>
                 </div>
-                <div className="flex items-start ">
+                <div className="flex items-start">
                   <div className="mr-4">
                     <TheatreIcon className="w-10" />
                   </div>
@@ -556,14 +563,14 @@ function Team() {
         </div>
       </section>
       <section className="container mx-auto">
-        <div className="-mt-16 rounded bg-gray-900 text-white text-2xl font-display font-extrabold ml-16 inline-block px-8 py-4 pr-20 mb-8">
+        <div className="-mt-16 rounded bg-gray-900 text-white text-2xl font-display font-extrabold mx-2 md:ml-16 md:mr-0 inline-block px-8 py-4 pr-20 mb-8">
           <p>
             A kreatív dolgokban vagyunk otthon. Viszont
             <br /> vannak remek partnereink, akikkel kiegészülve
             <br /> a kreativitáson túli területeket is lefedjük.
           </p>
         </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10 mb-32">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-32 mx-16 md:mx-0">
           <PartnerCard
             imageURL={data?.davidImg?.childImageSharp?.fluid}
             title="Lévai Dávid és csapata"
@@ -585,7 +592,7 @@ function Team() {
             description="Patrik és csapata felelnek azért, ami online marketing"
           />
         </div>
-        <div className="mx-auto rounded w-full lg:w-1/2 border-2 border-gray-900 bg-white p-8 mb-32 text-xl">
+        <div className="mx-auto rounded w-full lg:w-1/2 md:border-2 md:border-gray-900 bg-white p-8 mb-32 text-xl">
           <p className="font-light">
             Erre a helyre kerülnek majd a díjaink, amelyeket olyan projektekért kapunk, mint mondjuk a tiéd.
             <br /> Nagyon szeretnénk párat, így mindent megteszünk értük.

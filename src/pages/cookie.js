@@ -1,8 +1,11 @@
 import React from 'react';
+import Layout from '../components/layout';
+import Hero from '../components/hero';
 
 const CookiePage = () => {
   return (
-    <div>
+    <Layout>
+      <Hero title="Cookie Irányelvek" />
       <div className="">
         <h3>HATÁLYOS: 2019. JANUÁR 1.</h3>
         <h3>1. MIK AZOK A COOKIE-K (SÜTIK), ÉS HOGYAN TUDOD MÓDOSÍTANI A BEÁLLÍTÁSOKAT?</h3>
@@ -185,7 +188,7 @@ const CookiePage = () => {
         </p>
         <p>A weboldal ez esetben a tervezettől eltérően működhet a böngészőben.</p>
       </div>
-    </div>
+    </Layout>
   );
 };
 

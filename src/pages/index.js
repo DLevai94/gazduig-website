@@ -400,7 +400,7 @@ function IndexPage() {
                 </div>
               </form>
             </div>
-            <div className="w-1/2 relative flex justify-end items-center">
+            <div className="md:w-1/2 relative flex justify-end items-center">
               <img className="absolute" src={Typewriter} alt="Irogep" />
             </div>
           </div>
@@ -408,14 +408,14 @@ function IndexPage() {
       </section>
       <section className="bg-gray-200">
         <div className="py-10 lg:py-28 flex container mx-auto items-center justify-center md:justify-between">
-          <div className="w-100 md:max-w-1/2 text-center">
-            <h2 className="heading mb-8 md:text-left">
+          <div className="w-100 md:max-w-1/2 text-center md:text-left">
+            <h2 className="heading mb-8">
               Á, az oldal alján vagy! Hadd mutatkozzunk
               <br />
               be, ha már legörgettél idáig!
             </h2>
             <Link to="/csapat">
-              <button className="mx-16 primary-btn md:text-left">Kattints ide</button>
+              <button className="primary-btn md:text-left md:ml-16">Kattints ide</button>
             </Link>
           </div>
           <div className="w-100 md:w-1/2 relative flex justify-end items-center">
