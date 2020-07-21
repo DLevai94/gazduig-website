@@ -22,15 +22,15 @@ function IgHacks() {
         ]}
         title="Ezekt neked írtuk"
       />
-      <div className="purple-blob-bg">
-        <section className="container mx-auto flex flex-col my-32">
-          <div className="w-full lg:w-1/2">
-            <h2 className="text-5xl leading-tight font-display font-extrabold">
+      <section className="purple-blob-bg" style={{ backgroundPosition: `140% 20%` }}>
+        <div className="container mx-auto">
+          <div className="px-8 xl:px-0 w-full lg:w-1/2 my-32">
+            <h2 className="text-2xl md:text-4xl xl:text-5xl leading-tight font-display font-extrabold">
               Írtunk egy összefoglalót arról, milyen módszerrel szerezzük az ügyfeleink 90%-át Instáról
             </h2>
           </div>
-          <div className="mb-32 px-4 sm:px-6 lg:px-8">
-            <div className="md:bg-white md:rounded p-8 md:mx-8 md:shadow-brand flex">
+          <div className="mb-32">
+            <div className="md:mx-4 lg:mx-auto md:bg-white md:rounded p-8 md:shadow-brand flex">
               <div className="w-full md:w-1/2">
                 <h3 className="text-2xl leading-tight font-display font-extrabold mb-8">
                   Pötyögd be az e-mail címed, és már küldjük is!
@@ -44,7 +44,7 @@ function IgHacks() {
                   netlify>
                   <input type="hidden" name="bot-field" />
                   <input type="hidden" name="form-name" value="ig-marketing" />
-                  <div className="md:max-w-96">
+                  <div className="md:w-96">
                     <label htmlFor="full_name" className="sr-only">
                       Hogy szólíthatunk?
                     </label>
@@ -57,7 +57,7 @@ function IgHacks() {
                       />
                     </div>
                   </div>
-                  <div className="max-w-96">
+                  <div className="md:w-96">
                     <label htmlFor="email" className="sr-only">
                       Milyen e-mail címen érünk el?
                     </label>
@@ -71,7 +71,7 @@ function IgHacks() {
                       />
                     </div>
                   </div>
-                  <div className="max-w-96">
+                  <div className="md:w-96">
                     <label htmlFor="privacy" className="font-light text-sm">
                       <input
                         id="privacy"
@@ -104,15 +104,17 @@ function IgHacks() {
               </div>
             </div>
           </div>
-          <h2 className="text-2xl leading-tight font-display font-extrabold mb-4">
-            Most inkább nézelődnél
-            <br /> olvasás helyett? No problem!
-          </h2>
-          <Link to="/portfolio">
-            <button className="primary-btn">Irány a portfólió</button>
-          </Link>
-        </section>
-      </div>
+          <div className="mb-32 px-8 xl:px-0">
+            <h2 className="text-2xl leading-tight font-display font-extrabold mb-4">
+              Most inkább nézelődnél
+              <br /> olvasás helyett? No problem!
+            </h2>
+            <Link to="/portfolio">
+              <button className="primary-btn">Irány a portfólió</button>
+            </Link>
+          </div>
+        </div>
+      </section>
     </Layout>
   );
 }
