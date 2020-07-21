@@ -61,6 +61,9 @@
 @tailwind components;
 
 .purple-blob-bg {  }
+.yellow-blob-bg {  }
+.green-blob-bg {  }
+.multi-blob-bg {  }
 
 .heading {
   @apply mb-8 text-2xl font-extrabold font-display;
@@ -113,6 +116,21 @@
     @apply bg-no-repeat;
     background-image: url('../images/purple-blob.svg');
     background-position: 110% 50%;
+  }
+  .yellow-blob-bg {
+    @apply bg-no-repeat;
+    background-image: url('../images/yellow-blob.png');
+    background-position: 120% 0%;
+  }
+  .green-blob-bg {
+    @apply bg-no-repeat;
+    background-image: url('../images/green-blob.png');
+    background-position: -20% 80%;
+  }
+  .multi-blob-bg {
+    @apply bg-no-repeat;
+    background-image: url('../images/yellow-blob.png'), url('../images/green-blob.png');
+    background-position: 120% 0%, -20% 80%;
   }
   .content-container {
     @apply px-8;

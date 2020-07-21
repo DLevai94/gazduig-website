@@ -5,8 +5,6 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 import PartnerCard from '../components/partner-card';
 
-// import YellowBlob from '../images/yellow-blob.png';
-// import GreenBlob from '../images/green-blob.png';
 import InstagramIcon from '../components/svg/instagramIcon';
 import LinkedInIcon from '../components/svg/linkedInIcon';
 import ListIcon from '../components/svg/listIcon';
@@ -81,8 +79,6 @@ function Team() {
         ]}
         title="Ezek vagyunk"
       />
-      {/* <img src={YellowBlob} alt="Egy sarga paca" className="absolute z-0 right-0 bottom-0" />
-      <img src={GreenBlob} alt="Egy zold paca" className="absolute z-0 left-0 bottom-0" /> */}
       <section className="container mx-auto">
         <section className="flex flex-col md:flex-row justify-around items-center">
           <div className="w-6/12">
@@ -206,7 +202,7 @@ function Team() {
           </div>
         </section>
       </section>
-      <section className="bg-gray-200 -mt-28 pb-40">
+      <section className="bg-gray-200 -mt-28 pb-40 multi-blob-bg">
         <div className="container mx-auto pt-48 px-4 lg:px-8 xl:px-0">
           <h2 className="font-display text-2xl font-extrabold my-8 lg:ml-8 xl:ml-0">
             Ismerj meg minket pár perc alatt!
