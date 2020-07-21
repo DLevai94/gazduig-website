@@ -7,21 +7,21 @@ const TabBar = ({ containerClass, categories, chosenCategory, setCategory }) => 
         <select
           aria-label="Selected tab"
           className="mt-1 form-select block w-full pl-3 pr-10 py-2 text-base leading-6 border-gray-300 focus:outline-none focus:shadow-outline-brand-red-500 focus:border-brand-red-500 sm:text-sm sm:leading-5 transition ease-in-out duration-150"
-          onSelect={(e) => setCategory(e)}>
+          onChange={(e) => setCategory(e?.target?.value)}>
           {categories?.map((category) => (
-            <option key={category.key} value={category.key === chosenCategory || 'all'}>
-              {category.name}
+            <option key={category?.key} value={category?.key}>
+              {category?.name}
             </option>
           ))}
         </select>
       </div>
-      <div className="hidden sm:block">
+      <div className="hidden sm:block overflow-scroll">
         <div className="border-b border-gray-200">
           <nav className="-mb-px flex">
             {categories?.map((category) => (
               <button
-                key={category.key}
-                onClick={() => setCategory(category.key)}
+                key={category?.key}
+                onClick={() => setCategory(category?.key)}
                 className={`whitespace-no-wrap mr-4 py-4 px-1 border-b-2 ${
                   category.key !== chosenCategory
                     ? 'border-transparent font-medium'

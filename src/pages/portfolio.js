@@ -76,7 +76,7 @@ const Portfolio = () => {
       />
       <section className="container mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="font-display text-2xl font-extrabold">A te márkád is jól mutatna itt</h2>
-        <div className="-mx-16">
+        <div className="lg:-mx-16">
           <TabBar
             categories={CATEGORIES}
             chosenCategory={chosenCategory}
