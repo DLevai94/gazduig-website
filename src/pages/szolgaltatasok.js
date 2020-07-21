@@ -14,6 +14,16 @@ import SolIcon3 from '../components/svg/solutions3';
 import SolIcon4 from '../components/svg/solutions4';
 import SolIcon5 from '../components/svg/solutions5';
 import SolIcon6 from '../components/svg/solutions6';
+import SolIcon7 from '../components/svg/solutions7';
+import SolIcon8 from '../components/svg/solutions8';
+import SolIcon9 from '../components/svg/solutions9';
+import SolIcon10 from '../components/svg/solutions10';
+import SolIcon11 from '../components/svg/solutions11';
+import SolIcon12 from '../components/svg/solutions12';
+import SolIcon13 from '../components/svg/solutions13';
+import SolIcon14 from '../components/svg/solutions14';
+import SolIcon15 from '../components/svg/solutions15';
+import SolIcon16 from '../components/svg/solutions16';
 import { SERVICES } from '../config/consts';
 
 const Services = () => {
@@ -98,25 +108,25 @@ const Services = () => {
               </p>
             </div>
             <div className="bg-white rounded shadow-brand p-3">
-              <SolIcon2 className="w-8 mb-2" />
+              <SolIcon16 className="w-8 mb-2" />
               <p className="font-extrabold text-sm">
                 Megismerjük a márkád arculatát, és a különböző vizuális irányokat
               </p>
             </div>
             <div className="bg-white rounded shadow-brand p-3">
-              <SolIcon3 className="w-8 mb-2" />
+              <SolIcon15 className="w-8 mb-2" />
               <p className="font-extrabold text-sm">
                 Meghatározzuk többek között a weboldal célját, célközönségét, és a problémát, amelyet megold
               </p>
             </div>
             <div className="bg-white rounded shadow-brand p-3">
-              <SolIcon4 className="w-8 mb-2" />
+              <SolIcon14 className="w-8 mb-2" />
               <p className="font-extrabold text-sm">
                 Közösen összegyűjtük/elkészítjük az oldalon megjelenő tartalmakat
               </p>
             </div>
             <div className="bg-white rounded shadow-brand p-3">
-              <SolIcon5 className="w-8 mb-2" />
+              <SolIcon13 className="w-8 mb-2" />
               <p className="font-extrabold text-sm">Minden képernyőnézetre passzoló, arculathű dizájnt készítünk</p>
             </div>
           </SolutionCategory>
@@ -140,23 +150,23 @@ const Services = () => {
               </p>
             </div>
             <div className="bg-white rounded shadow-brand p-3">
-              <SolIcon2 className="w-8 mb-2" />
+              <SolIcon16 className="w-8 mb-2" />
               <p className="font-extrabold text-sm">
                 Megismerjük a márkád arculatát, és a különböző vizuális irányokat
               </p>
             </div>
             <div className="bg-white rounded shadow-brand p-3">
-              <SolIcon3 className="w-8 mb-2" />
+              <SolIcon15 className="w-8 mb-2" />
               <p className="font-extrabold text-sm">
                 Meghatározzuk többek között a kommunikáció célját, célközönségét, és a problémát, amelyet megold
               </p>
             </div>
             <div className="bg-white rounded shadow-brand p-3">
-              <SolIcon4 className="w-8 mb-2" />
+              <SolIcon12 className="w-8 mb-2" />
               <p className="font-extrabold text-sm">Közösen összegyűjtük/elkészítjük a posztok tartalmakat</p>
             </div>
             <div className="bg-white rounded shadow-brand p-3">
-              <SolIcon5 className="w-8 mb-2" />
+              <SolIcon11 className="w-8 mb-2" />
               <p className="font-extrabold text-sm">Arculathű és ütős dizájnokat kreálunk</p>
             </div>
           </SolutionCategory>
@@ -180,23 +190,23 @@ const Services = () => {
               </p>
             </div>
             <div className="bg-white rounded shadow-brand p-3">
-              <SolIcon2 className="w-8 mb-2" />
+              <SolIcon16 className="w-8 mb-2" />
               <p className="font-extrabold text-sm">
                 Megismerjük a márkád arculatát, és a különböző vizuális irányokat
               </p>
             </div>
             <div className="bg-white rounded shadow-brand p-3">
-              <SolIcon3 className="w-8 mb-2" />
+              <SolIcon15 className="w-8 mb-2" />
               <p className="font-extrabold text-sm">
                 Meghatározzuk többek között a kommunikáció célját, célközönségét, és a problémát, amelyet megold
               </p>
             </div>
             <div className="bg-white rounded shadow-brand p-3">
-              <SolIcon4 className="w-8 mb-2" />
+              <SolIcon10 className="w-8 mb-2" />
               <p className="font-extrabold text-sm">Közösen összegyűjtük/elkészítjük az anyagok tartalmakat</p>
             </div>
             <div className="bg-white rounded shadow-brand p-3">
-              <SolIcon5 className="w-8 mb-2" />
+              <SolIcon11 className="w-8 mb-2" />
               <p className="font-extrabold text-sm">Arculathű és ütős dizájnokat kreálunk</p>
             </div>
           </SolutionCategory>
@@ -219,11 +229,17 @@ const Services = () => {
               </p>
             </div>
             <div className="bg-white rounded shadow-brand p-3">
-              <SolIcon2 className="w-8 mb-2" />
+              <SolIcon15 className="w-8 mb-2" />
+              <p className="font-extrabold text-sm">
+                Meghatározzuk többek között a kommunikáció célját, célközönségét, és a problémát, amelyet megold
+              </p>
+            </div>
+            <div className="bg-white rounded shadow-brand p-3">
+              <SolIcon9 className="w-8 mb-2" />
               <p className="font-extrabold text-sm">Megismerjük a márkád nyelvezetét, és hanghordozását</p>
             </div>
             <div className="bg-white rounded shadow-brand p-3">
-              <SolIcon5 className="w-8 mb-2" />
+              <SolIcon8 className="w-8 mb-2" />
               <p className="font-extrabold text-sm">Ütős szövegeket írunk</p>
             </div>
           </SolutionCategory>
@@ -246,29 +262,29 @@ const Services = () => {
               </p>
             </div>
             <div className="bg-white rounded shadow-brand p-3">
-              <SolIcon2 className="w-8 mb-2" />
+              <SolIcon16 className="w-8 mb-2" />
               <p className="font-extrabold text-sm">
                 Megismerjük a márkád arculatát, és a különböző vizuális irányokat
               </p>
             </div>
             <div className="bg-white rounded shadow-brand p-3">
-              <SolIcon3 className="w-8 mb-2" />
+              <SolIcon15 className="w-8 mb-2" />
               <p className="font-extrabold text-sm">
                 Meghatározzuk többek között a kommunikáció célját, célközönségét, és a problémát, amelyet megold
               </p>
             </div>
             <div className="bg-white rounded shadow-brand p-3">
-              <SolIcon4 className="w-8 mb-2" />
+              <SolIcon12 className="w-8 mb-2" />
               <p className="font-extrabold text-sm">
                 Közösen összegyűjtük/megtervezzük és elkészítjük a posztok tartalmakat
               </p>
             </div>
             <div className="bg-white rounded shadow-brand p-3">
-              <SolIcon5 className="w-8 mb-2" />
+              <SolIcon11 className="w-8 mb-2" />
               <p className="font-extrabold text-sm">Arculathű és ütős dizájnokat kreálunk</p>
             </div>
             <div className="bg-white rounded shadow-brand p-3">
-              <SolIcon5 className="w-8 mb-2" />
+              <SolIcon7 className="w-8 mb-2" />
               <p className="font-extrabold text-sm">Menedzseljük, és építjük a márkád Insta oldalát</p>
             </div>
           </SolutionCategory>
@@ -325,7 +341,7 @@ const Services = () => {
         <img src={Office} className="absolute z-0" />
         <div className="mb-32">
           <h2 className="font-display text-2xl font-extrabold mb-8">Így néz ki az együttműködésünk folyamata</h2>
-          <ul>
+          <ul className="text-lg font-light ">
             <li>1 Kapcsolatba lépünk egymással</li>
             <li>2 Felmérjük az igényeidet</li>
             <li>3 Azok alapján terveket készítünk</li>
