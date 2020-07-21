@@ -5,10 +5,8 @@ import Hero from '../components/hero';
 const PrivacyPage = () => {
   return (
     <Layout>
-      <Hero title="Adatvédelmi nyilatkozat" />
-      <div
-        className="elementor-text-editor
-   elementor-clearfix">
+      <Hero title="Adatvédelmi tájékoztató" />
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <h2>1, BEVEZETŐ</h2>
         <p>
           Számunkra nagyon fontos, hogy betartsuk az aktuálisan érvényes adatvédelmi szabályozást és törvényeket, így az

@@ -6,7 +6,7 @@ const CookiePage = () => {
   return (
     <Layout>
       <Hero title="Cookie Irányelvek" />
-      <div className="">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <h3>HATÁLYOS: 2019. JANUÁR 1.</h3>
         <h3>1. MIK AZOK A COOKIE-K (SÜTIK), ÉS HOGYAN TUDOD MÓDOSÍTANI A BEÁLLÍTÁSOKAT?</h3>
         <p>
