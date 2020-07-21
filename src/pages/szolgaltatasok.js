@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { graphql, useStaticQuery, Link } from 'gatsby';
 import Img from 'gatsby-image';
-import Office from '../images/office.png';
+// import Office from '../images/office.png';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Hero from '../components/hero';
@@ -338,20 +338,17 @@ const Services = () => {
       </section>
       <section className="container mx-auto px-4 sm:px-6 lg:px-8 mt-12">{renderContent(chosenCategory)}</section>
       <section className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
-        <img src={Office} className="absolute z-0" />
+        {/* <img src={Office} className="absolute z-0" /> */}
         <div className="mb-32">
           <h2 className="font-display text-2xl font-extrabold mb-8">Így néz ki az együttműködésünk folyamata</h2>
-          <ul className="text-lg font-light ">
-            <li>
-              <span className="border-full border-1 border-gray-900 mr-4 font-display font-extrabold">1</span>{' '}
-              Kapcsolatba lépünk egymással
+          <ul className="text-lg font-light timeline">
+            <li className="timeline-circle">Kapcsolatba lépünk egymással</li>
+            <li className="timeline-circle-2">Felmérjük az igényeidet</li>
+            <li className="timeline-circle-3">Azok alapján terveket készítünk</li>
+            <li className="timeline-circle-4">
+              Bemutatjuk, és ha kell módosítjuk, végtelenszer, felár nélkül, míg olyan nem lesz, amilyet elképzeltél
             </li>
-            <li>2 Felmérjük az igényeidet</li>
-            <li>3 Azok alapján terveket készítünk</li>
-            <li>
-              4 Bemutatjuk, és ha kell módosítjuk, végtelenszer, felár nélkül, míg olyan nem lesz, amilyet elképzeltél
-            </li>
-            <li>5 Átadjuk a kész anyagot</li>
+            <li className="timeline-circle-5">Átadjuk a kész anyagot</li>
           </ul>
         </div>
         <div className="-mt-16 rounded bg-gray-900 text-white text-2xl font-display font-extrabold inline-block px-8 py-4 pr-48 mb-8">
