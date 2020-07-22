@@ -1,6 +1,6 @@
 ---
 date: 2020-07-21T23:56:19.211Z
-thumbnail: frame-4.jpg
+thumbnail: frame-1.jpg
 title: Shoprenter UI dizájn
 slug: shoprenter-ui-dizajn
 client: Shoprenter
@@ -9,7 +9,7 @@ jobtime: 2020 június
 categories:
   - all
   - web
-images: frame-4.jpg
+images: frame-1.jpg
 ---
 Ha szeretsz videókat készíteni, a SNITT-et imádni fogod.
 
