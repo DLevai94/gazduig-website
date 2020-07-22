@@ -21,6 +21,7 @@ const Portfolio = () => {
               title
               jobtime
               categories
+              gradient
               thumbnail {
                 publicURL
               }
@@ -99,7 +100,10 @@ const Portfolio = () => {
                       <div
                         className="relative flex-shrink-0 overflow-hidden bg-gray-600 rounded h-56 bg-cover bg-no-repeat"
                         style={{
-                          background: `linear-gradient(0deg, rgba(227,32,116,1) 0%, rgba(227,32,116,0.5) 46%, rgba(227,32,116,0) 100%) bottom, url(${edge?.node?.frontmatter?.thumbnail?.publicURL}) no-repeat center`,
+                          background: `${
+                            edge?.node?.frontmatter?.gradient ||
+                            'linear-gradient(16deg, rgba(38,38,38,1) 0%, rgba(91,91,91,1) 23%, rgba(38,38,38,0) 100%)'
+                          } bottom, url(${edge?.node?.frontmatter?.thumbnail?.publicURL}) no-repeat center`,
                         }}>
                         <div className="absolute bottom-0 left-0 px-5 py-3 text-sm text-white">
                           <p className="font-light">{edge?.node?.frontmatter?.jobtime}</p>

@@ -59,9 +59,10 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-netlify`,
     {
-      resolve: `gatsby-plugin-netlify-cms`,
+      resolve: 'gatsby-plugin-netlify-cms',
       options: {
         publicPath: 'kathi',
+        modulePath: `${__dirname}/src/cms/cms.js`,
       },
     },
     {

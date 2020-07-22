@@ -4,8 +4,18 @@ backend:
 
 media_folder: static/assets
 public_folder: /assets
-logo_url: https://gazduig.com/static/logo.svg
+logo_url: src/favicon.svg
 locale: 'hu'
+
+media_library:
+  name: cloudinary
+  config:
+    cloud_name: gazduig
+    api_key: 178913774827294
+    default_transformations:
+      - - fetch_format: auto
+          quality: 70
+
 
 collections:
   - name: portfolio
@@ -24,7 +34,8 @@ collections:
       - { name: client, label: Ügyfél }
       - { name: solutions, label: Megoldások }
       - { name: jobtime, label: Ekkor készült }
-      - { name: categories, label: Kategória, widget: list, default: ['all', 'branding', 'web', 'print', 'copy', 'social', 'ig'] }
+      - { name: gradient, label: Gradient }
+      - { name: categories, label: Kategória, widget: select, options: ['all', 'branding', 'web', 'print', 'copy', 'social', 'ig'], multiple: true }
       - { name: "images", label: "Képek", widget: "image", allow_multiple: true}
       - { label: 'Tartalom', name: 'body', widget: 'markdown' }
 
