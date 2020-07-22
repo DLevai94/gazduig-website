@@ -6,7 +6,8 @@ slug: domain-foproba
 client: Teszt Mihaly
 solutions: Weboldal
 jobtime: 2020 julius
-gradient: linear-gradient(0deg, rgba(253,181,21,1) 0%, rgba(240,199,110,0.7777485994397759) 30%, rgba(246,178,30,0) 100%)
+gradient: linear-gradient(0deg, rgba(253,181,21,1) 0%,
+  rgba(240,199,110,0.7777485994397759) 30%, rgba(246,178,30,0) 100%)
 categories:
   - all
   - branding
