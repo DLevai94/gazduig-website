@@ -337,7 +337,7 @@ const Services = () => {
               categories={SERVICES}
               chosenCategory={chosenCategory}
               setCategory={setChosenCategory}
-              containerClass="mb-8"
+              containerClass="mb-16"
               textClass="lg:text-lg"
             />
           </div>
