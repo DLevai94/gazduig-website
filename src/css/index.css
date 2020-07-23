@@ -174,7 +174,7 @@
   }
 
   .portfolio-bg {
-    background: url('../images/purple-blob.svg') 120% -40% no-repeat,linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 40%, rgba(247,247,247,1) 41%, rgba(247,247,247,1) 100%);
+    background: url('../images/purple-blob.svg') 130% -10% no-repeat,linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(247,247,247,1) 51%, rgba(247,247,247,1) 100%);
     background-size: 50% 50%, auto auto;
   }
   .hero {

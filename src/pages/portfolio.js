@@ -3,7 +3,7 @@ import { graphql, useStaticQuery, Link } from 'gatsby';
 import Img from 'gatsby-image';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import Hero from '../components/hero';
+// import Hero from '../components/hero';
 import TabBar from '../components/tab-bar';
 import ContactForm from '../components/contact-form';
 import { CATEGORIES } from '../config/consts';
@@ -41,7 +41,11 @@ const Portfolio = () => {
 
   const renderCallout = () => (
     <div className="relative flex-col content-center flex-shrink-0 overflow-hidden bg-white rounded border-brand-red-500 border h-56 flex justify-center items-center">
-      <p className="font-extrabold text-center text-sm mb-4">Ezt a helyet neked tartjuk fenn!</p>
+      <p className="font-extrabold text-center text-sm mb-4">
+        Ezt a helyet neked
+        <br />
+        tartjuk fenn!
+      </p>
       <Link to="/contact">
         <button className="primary-btn">Dolgozzunk együtt</button>
       </Link>
@@ -65,20 +69,26 @@ const Portfolio = () => {
         ]}
         title="Ezeket csináltunk eddig"
       />
-      <Hero
-        title="Csináljuk is, nem csak beszélünk róla"
-        subtitle="Mindig azon vagyunk, hogy újat, maradandót és persze ütőset alkossunk. Íme pár korábbi példa."
-        icon={
-          data?.heroImg?.childImageSharp?.fluid ? (
+      <div className="portfolio-bg">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 my-16 h-64 bg-transparent flex justify-between">
+          <div className="w-full md:w-5/12 flex flex-col justify-center items-start">
+            <h1 className="text-5xl font-display font-extrabold leading-tight">
+              Csináljuk is, nem csak beszélünk róla
+            </h1>
+            <p className="text-light text-lg">
+              Mindig azon vagyunk, hogy újat, maradandót és persze ütőset alkossunk. Íme pár korábbi példa.
+            </p>
+          </div>
+          <div
+            className="hidden md:block md:w-5/12 flex items-center justify-end"
+            style={{ animation: 'float 4s ease-in-out infinite' }}>
             <Img
               fluid={data?.heroImg?.childImageSharp?.fluid}
               className="w-96"
               alt="Gazduig Creative Agency Portfolio"
             />
-          ) : null
-        }
-      />
-      <div className="portfolio-bg overflow-visible">
+          </div>
+        </div>
         <section className="container mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="font-display text-2xl font-extrabold">A te márkád is jól mutatna itt</h2>
           <div className="xl:-mx-16">
