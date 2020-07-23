@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { graphql, useStaticQuery, Link } from 'gatsby';
 import Img from 'gatsby-image';
-// import Office from '../images/office.png';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import TabBar from '../components/tab-bar';
@@ -338,45 +337,46 @@ const Services = () => {
               categories={SERVICES}
               chosenCategory={chosenCategory}
               setCategory={setChosenCategory}
-              containerClass="mb-8 inline-block"
+              containerClass="mb-8"
               textClass="lg:text-lg"
             />
           </div>
         </section>
         <section className="container mx-auto px-4 sm:px-6 lg:px-8 mt-12">{renderContent(chosenCategory)}</section>
         <section className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
-          {/* <img src={Office} className="absolute z-0" /> */}
-          <div className="mb-32">
-            <h2 className="font-display text-2xl font-extrabold mb-8">Így néz ki az együttműködésünk folyamata</h2>
-            <div className="info-timeline w-1/2">
-              <ul>
-                <li className="font-light text-lg">
-                  <span className="timeline-circle mr-6">01</span>Kapcsolatba lépünk egymással
-                </li>
-                <li className="font-light text-lg">
-                  <span className="timeline-circle mr-6">02</span>Felmérjük az igényeidet
-                </li>
-                <li className="font-light text-lg">
-                  <span className="timeline-circle mr-6">03</span>Azok alapján terveket készítünk
-                </li>
-                <li className="font-light text-lg">
-                  <span className="timeline-circle mr-6">04</span>Bemutatjuk, és ha kell módosítjuk, végtelenszer, felár
-                  nélkül, míg olyan nem lesz, amilyet elképzeltél
-                </li>
-                <li className="font-light text-lg">
-                  <span className="timeline-circle mr-6">05</span>Átadjuk a kész anyagot
-                </li>
-              </ul>
+          <div className="services-office-bg">
+            <div className="mb-32">
+              <h2 className="font-display text-2xl font-extrabold mb-8">Így néz ki az együttműködésünk folyamata</h2>
+              <div className="info-timeline w-1/2">
+                <ul>
+                  <li className="font-light text-lg">
+                    <span className="timeline-circle mr-6">01</span>Kapcsolatba lépünk egymással
+                  </li>
+                  <li className="font-light text-lg">
+                    <span className="timeline-circle mr-6">02</span>Felmérjük az igényeidet
+                  </li>
+                  <li className="font-light text-lg">
+                    <span className="timeline-circle mr-6">03</span>Azok alapján terveket készítünk
+                  </li>
+                  <li className="font-light text-lg">
+                    <span className="timeline-circle mr-6">04</span>Bemutatjuk, és ha kell módosítjuk, végtelenszer,
+                    felár nélkül, míg olyan nem lesz, amilyet elképzeltél
+                  </li>
+                  <li className="font-light text-lg">
+                    <span className="timeline-circle mr-6">05</span>Átadjuk a kész anyagot
+                  </li>
+                </ul>
+              </div>
             </div>
-          </div>
-          <div className="-mt-16 rounded bg-gray-900 text-white text-2xl font-display font-extrabold inline-block px-8 py-4 pr-48 mb-8">
-            <p>
-              Ez itt nem a mi irodánk. Viszont nagyon
-              <br />
-              szeretnénk egy hasonlót. Ehhez pedig a te
-              <br />
-              projekted is tökéletesen kell elkészítenünk!
-            </p>
+            <div className="-mt-16 rounded bg-gray-900 text-white text-2xl font-display font-extrabold inline-block px-8 py-4 pr-48 mb-8">
+              <p>
+                Ez itt nem a mi irodánk. Viszont nagyon
+                <br />
+                szeretnénk egy hasonlót. Ehhez pedig a te
+                <br />
+                projekted is tökéletesen kell elkészítenünk!
+              </p>
+            </div>
           </div>
         </section>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 my-32">
