@@ -1,12 +1,12 @@
 ---
 date: 2020-07-22T04:04:15.594Z
-thumbnail: https://res.cloudinary.com/gazduig/image/upload/q_80/v1595388903/sample.jpg
+thumbnail: https://res.cloudinary.com/gazduig/image/upload/q_80/v1595514155/upsqr7dh78c5mndkozfl.png
 title: Cloudinary fix test
 slug: cloudinary-fix-test
 client: Cloudinary
-solutions: Kepkezeles
 jobtime: 2020 Julius
 gradient: a
+solutions: Kepkezeles
 categories:
   - all
   - web
