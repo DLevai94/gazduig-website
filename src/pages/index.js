@@ -5,7 +5,7 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 import CalloutSection from '../components/callout-section';
 import TabBar from '../components/tab-bar';
-import YellowBlob from '../images/yellow-blob.png';
+import CTABlob from '../images/cta-blob.svg';
 // import Plant from '../images/plant.png';
 import Typewriter from '../images/the-great-typewriter.png';
 import Couch from '../images/couch.png';
@@ -191,7 +191,7 @@ function IndexPage() {
           <br />
           <div
             className="bg-white py-3 md:py-12 md:px-16 shadow-brand rounded flex flex-col md:flex-row md:justify-around items-center bg-right bg-no-repeat bg-contain"
-            style={{ backgroundImage: `url(${YellowBlob})` }}>
+            style={{ backgroundImage: `url(${CTABlob})` }}>
             <div className="mb-6 md:mb-0">
               <h3 className="font-extrabold mb-6 text-lg text-center md:text-left">
                 Írd meg, miben
