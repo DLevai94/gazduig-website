@@ -70,7 +70,9 @@ export default function Template({ data }) {
           </div>
         </div>
         <div className="md:px-16 mt-16 mb-32">
-          <img src={frontmatter?.images} alt={frontmatter?.title} className="w-100 rounded" />
+          {frontmatter?.images?.map((image) => (
+            <img key={image} src={image} alt={frontmatter?.title} className="w-100 rounded" />
+          ))}
         </div>
 
         <section className="bg-white md:rounded md:shadow-brand py-8 px-8 md:px-36 z-50">

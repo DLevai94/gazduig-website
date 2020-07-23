@@ -116,7 +116,7 @@ const Portfolio = () => {
                           background: `${
                             edge?.node?.frontmatter?.gradient ||
                             'linear-gradient(16deg, rgba(38,38,38,1) 0%, rgba(91,91,91,1) 23%, rgba(38,38,38,0) 100%)'
-                          } bottom, url(${edge?.node?.frontmatter?.thumbnail?.publicURL}) no-repeat center`,
+                          } bottom, url(${edge?.node?.frontmatter?.thumbnail?.[0]}) no-repeat center`,
                         }}>
                         <div className="absolute bottom-0 left-0 px-5 py-3 text-sm text-white">
                           <p className="font-light">{edge?.node?.frontmatter?.jobtime}</p>
