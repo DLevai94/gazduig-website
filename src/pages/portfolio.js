@@ -41,8 +41,10 @@ const Portfolio = () => {
 
   const renderCallout = () => (
     <div className="relative flex-col content-center flex-shrink-0 overflow-hidden bg-white rounded border-brand-red-500 border h-56 flex justify-center items-center">
-      <p className="font-extrabold text-center text-sm">Ezt a helyet neked tartjuk fenn!</p>
-      <button className="primary-btn">Dolgozzunk együtt</button>
+      <p className="font-extrabold text-center text-sm mb-4">Ezt a helyet neked tartjuk fenn!</p>
+      <Link to="/contact">
+        <button className="primary-btn">Dolgozzunk együtt</button>
+      </Link>
     </div>
   );
 
@@ -64,7 +66,7 @@ const Portfolio = () => {
         title="Ezeket csináltunk eddig"
       />
       <Hero
-        title="A tetteink többet érnek a szavainknál"
+        title="Csináljuk is, nem csak beszélünk róla"
         subtitle="Mindig azon vagyunk, hogy újat, maradandót és persze ütőset alkossunk. Íme pár korábbi példa."
         icon={
           data?.heroImg?.childImageSharp?.fluid ? (
@@ -76,7 +78,7 @@ const Portfolio = () => {
           ) : null
         }
       />
-      <div className="yellow-blob-bg" style={{ backgroundPosition: `-20% 70%` }}>
+      <div className="portfolio-bg">
         <section className="container mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="font-display text-2xl font-extrabold">A te márkád is jól mutatna itt</h2>
           <div className="xl:-mx-16">
@@ -85,6 +87,7 @@ const Portfolio = () => {
               chosenCategory={chosenCategory}
               setCategory={setChosenCategory}
               containerClass="mb-16"
+              textClass="text-lg"
             />
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
               {data?.posts?.edges

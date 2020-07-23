@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import { CATEGORIES } from '../config/consts';
+import { SERVICES } from '../config/consts';
 import Bence from '../images/bence-bw.png';
 import PurpleBlob from '../images/purple-blob.svg';
 
-const categories = CATEGORIES.slice(1);
-
-const ContactForm = () => {
+const ContactForm = ({ contactPageEdits }) => {
+  const [jobtype, setJobtype] = useState(null);
+  const [extraJobtype, setExtraJobtype] = useState(null);
   const [hasPrivacyAccepted, setHasPrivacyAccepted] = useState(false);
   return (
     <div className="mx-auto lg:grid lg:grid-cols-2 lg:col-gap-1">
@@ -58,11 +58,13 @@ const ContactForm = () => {
                   id="jobtype"
                   name="jobtype"
                   className="form-input block w-full py-3 px-4 placeholder-gray-500 border-gray-900 transition ease-in-out duration-150"
-                  defaultValue="Miben segíthetünk első körben?"
-                  onChange={(e) => console.log(e)}>
-                  {categories?.map((category) => (
-                    <option key={category.key} selected={category.key}>
-                      {category.name}
+                  onChange={(e) => setJobtype(e?.target?.value)}>
+                  <option value="" disabled selected hidden>
+                    Miben segíthetünk első körben?
+                  </option>
+                  {SERVICES?.map((category) => (
+                    <option key={category?.key} value={category?.key} selected={jobtype === category?.key}>
+                      {category?.name}
                     </option>
                   ))}
                 </select>
@@ -77,11 +79,13 @@ const ContactForm = () => {
                   id="extra-jobtype"
                   name="extra-jobtype"
                   className="form-input block w-full py-3 px-4 placeholder-gray-500 border-gray-900 transition ease-in-out duration-150"
-                  defaultValue="És ezen felül?"
-                  onChange={(e) => console.log(e)}>
-                  {categories?.map((category) => (
-                    <option key={category.key} selected={category.key}>
-                      {category.name}
+                  onChange={(e) => setExtraJobtype(e?.target?.value)}>
+                  <option value="" disabled selected hidden>
+                    És ezen felül?
+                  </option>
+                  {SERVICES?.map((category) => (
+                    <option key={category?.key} value={category?.key} selected={extraJobtype === category?.key}>
+                      {category?.name}
                     </option>
                   ))}
                 </select>
@@ -131,7 +135,7 @@ const ContactForm = () => {
           </form>
         </div>
       </div>
-      <div className="lg:col-span-1 flex justify-center items-baseline">
+      <div className={`lg:col-span-1 flex ${contactPageEdits || 'justify-center items-baseline'}`}>
         <div
           className="bg-white w-80 pl-6 pr-16 py-3 pb-80 md:shadow-brand rounded overflow-visible relative bg-no-repeat"
           style={{ backgroundImage: `url(${PurpleBlob})`, backgroundPosition: `0% 250%` }}>

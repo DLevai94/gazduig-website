@@ -30,7 +30,7 @@ function IgHacks() {
             </h2>
           </div>
           <div className="mb-32">
-            <div className="md:mx-4 lg:mx-auto md:bg-white md:rounded p-8 md:shadow-brand flex">
+            <div className="mx-auto flex">
               <div className="w-full md:w-1/2">
                 <h3 className="text-2xl leading-tight font-display font-extrabold mb-8">
                   Pötyögd be az e-mail címed, és már küldjük is!
@@ -103,7 +103,12 @@ function IgHacks() {
                 </form>
               </div>
               <div className="md:w-1/2 relative flex justify-end items-center">
-                <img className="absolute" src={Typewriter} alt="Irogep" />
+                <img
+                  className="absolute"
+                  src={Typewriter}
+                  alt="Irogep"
+                  style={{ animation: 'float 4s ease-in-out infinite' }}
+                />
               </div>
             </div>
           </div>

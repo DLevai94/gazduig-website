@@ -146,6 +146,10 @@
   background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 60%, rgba(247,247,247,1) 61%, rgba(247,247,247,1) 100%);
 }
 
+.portfolio-bg {
+  background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 40%, rgba(247,247,247,1) 41%, rgba(247,247,247,1) 100%);
+}
+
 @screen sm {
   .content-container {
     @apply rounded px-6;
@@ -167,6 +171,11 @@
 @screen lg {
   .home-contact-bg {
     background: url('../images/purple-blob.svg') 120% top no-repeat,linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 60%, rgba(247,247,247,1) 61%, rgba(247,247,247,1) 100%);
+  }
+
+  .portfolio-bg {
+    background: url('../images/purple-blob.svg') 120% -40% no-repeat,linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 40%, rgba(247,247,247,1) 41%, rgba(247,247,247,1) 100%);
+    background-size: 50% 50%, auto auto;
   }
   .hero {
     @apply relative bg-no-repeat bg-cover overflow-hidden h-screen;

@@ -101,25 +101,25 @@ function Team() {
       />
       <section className="container mx-auto px-4 sm:px-6 lg:px-8">
         <section className="flex flex-col md:flex-row justify-around items-center">
-          <div className="w-6/12">
-            <h1 className="text-5xl font-display font-extrabold leading-tight mb-8">
+          <div className="md:w-5/12">
+            <h1 className="text-4.5xl font-display font-extrabold leading-tight mb-8">
               Mi az a Gazduig, és miben rejlik az ütősség?
             </h1>
-            <ul className="grid grid-cols-1 md:grid-cols-2 md:grid-rows-2 gap-2 xl:gap-6 xl:col-gap-56">
-              <li className="flex items-start font-light">
-                <ListIcon className="w-16 mr-2" />
+            <ul className="grid grid-cols-1 md:grid-cols-2 md:grid-rows-2 gap-2 xl:gap-6 xl:col-gap-16">
+              <li className="flex items-start font-light max-w-8">
+                <ListIcon className="w-12 mr-2" />
                 Nem csak egy újabb ügynökség a többi mellé
               </li>
-              <li className="flex items-start font-light">
-                <ListIcon className="w-16 mr-2" />
+              <li className="flex items-start font-light max-w-8">
+                <ListIcon className="w-12 mr-2" />
                 Nem az a csapat, aki majd mindent beígér neked
               </li>
-              <li className="flex items-start font-light">
-                <ListIcon className="w-16 mr-2" />
+              <li className="flex items-start font-light max-w-8">
+                <ListIcon className="w-12 mr-2" />
                 Nem azok a tipikus kivitelezők, akikkel már találkoztál
               </li>
-              <li className="flex items-start font-light">
-                <ListIcon className="w-16 mr-2" />
+              <li className="flex items-start font-light max-w-8">
+                <ListIcon className="w-12 mr-2" />
                 Végképp nem pár művész, aki bűvészkedni akar
               </li>
             </ul>
@@ -224,9 +224,7 @@ function Team() {
       </section>
       <section className="bg-gray-100 -mt-28 pb-40 multi-blob-bg">
         <div className="container mx-auto pt-48 px-4 lg:px-8 xl:px-0">
-          <h2 className="font-display text-2xl font-extrabold my-8 lg:ml-8 xl:ml-0">
-            Ismerj meg minket pár perc alatt!
-          </h2>
+          <h2 className="font-display text-2xl font-extrabold my-8 ml-16">Ismerj meg minket pár perc alatt!</h2>
           <div className="bg-white shadow-brand rounded pl-16 pt-8 pr-8 flex flex-col mb-10">
             <h3 className="font-extrabold text-2xl mb-6">Gazdig Bence - CEO & Dizájner csávó</h3>
             <div className="flex">

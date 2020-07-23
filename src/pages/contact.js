@@ -28,7 +28,7 @@ function ContactPage() {
           </h2>
           <p className="font-light text-xl">Töltsd ki a lenti formot, és alkossunk együtt valami ütőset!</p>
         </div>
-        <Contact />
+        <Contact contactPageEdits="items-start justify-start" />
       </section>
     </Layout>
   );
