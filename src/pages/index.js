@@ -125,7 +125,7 @@ function IndexPage() {
         <section className="container max-w-7xl mx-auto md:flex-row flex-col items-center justify-start">
           <CalloutSection />
           <section>
-            <div className="container px-5 py-24 mx-auto">
+            <div className="container px-5 py-28 mx-auto">
               <div className="w-full mb-10">
                 <h2 className="ml-16 text-2xl font-extrabold font-display">
                   Nézz meg a fentiekből pár sikeres projektet
@@ -136,6 +136,7 @@ function IndexPage() {
                   chosenCategory={chosenCategory}
                   setCategory={setChosenCategory}
                   containerClass="mb-8"
+                  textClass="text-lg"
                 />
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:grid-rows-3 gap-8">
@@ -169,7 +170,7 @@ function IndexPage() {
             </div>
           </section>
 
-          <div className="container mt-5 flex w-full">
+          <div className="container flex w-full">
             <div className="mx-auto">
               <Link to="/portfolio">
                 <button className="primary-btn">Megnézem a többit is</button>
@@ -180,9 +181,9 @@ function IndexPage() {
       </div>
       <section
         style={{
-          background: `linear-gradient(360deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(247,247,247,1) 51%, rgba(247,247,247,1) 100%)`,
+          background: `linear-gradient(360deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 40%, rgba(247,247,247,1) 41%, rgba(247,247,247,1) 100%)`,
         }}>
-        <div className="container md:px-5 md:py-24 mx-auto">
+        <div className="container md:px-5 md:py-32 mx-auto mb-8">
           <h2 className="md:ml-16 text-2xl font-extrabold font-display text-center md:text-left">
             Hogy tetszettek a látottak?
             <br />
@@ -336,14 +337,16 @@ function IndexPage() {
       </section> */}
       <section className="pb-16 home-contact-bg">
         <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="heading mb-4 text-center md:text-left">
-            Írtunk egy összefoglalót arról, milyen módszerrel szerezzük
-            <br />
-            az ügyfeleink 90%-át Instáról
-          </h2>
-          <p className="font-light text-lg md:ml-16 md:mb-16 text-center md:text-left">
-            Olvass bele, hátha találsz benne valami érdekeset!
-          </p>
+          <div className="-mb-8">
+            <h2 className="heading mb-4 text-center md:text-left">
+              Írtunk egy összefoglalót arról, milyen módszerrel szerezzük
+              <br />
+              az ügyfeleink 90%-át Instáról
+            </h2>
+            <p className="font-light text-lg md:ml-16 md:mb-16 text-center md:text-left">
+              Olvass bele, hátha találsz benne valami érdekeset!
+            </p>
+          </div>
           <div className="md:bg-white md:rounded p-8 md:mx-8 md:shadow-brand flex">
             <div className="w-full md:w-1/2">
               <h3 className="text-2xl leading-tight font-display font-extrabold mb-8">
@@ -354,7 +357,7 @@ function IndexPage() {
                 netlify-honeypot="bot-field"
                 data-netlify="true"
                 name="ig-marketing"
-                className="grid grid-cols-1 row-gap-6"
+                className="grid grid-cols-1 row-gap-4"
                 netlify>
                 <input type="hidden" name="bot-field" />
                 <input type="hidden" name="form-name" value="ig-marketing" />
@@ -423,7 +426,7 @@ function IndexPage() {
         </div>
       </section>
       <section className="bg-gray-100">
-        <div className="py-10 lg:py-28 flex container mx-auto items-center justify-center md:justify-between">
+        <div className="py-10 lg:py-32 flex container mx-auto items-center justify-center md:justify-around">
           <div className="w-100 md:max-w-1/2 text-center md:text-left">
             <h2 className="heading mb-8">
               Á, az oldal alján vagy! Hadd mutatkozzunk
@@ -434,8 +437,8 @@ function IndexPage() {
               <button className="primary-btn md:text-left md:ml-16">Kattints ide</button>
             </Link>
           </div>
-          <div className="w-100 md:w-1/2 relative flex justify-end items-center">
-            <img className="absolute min-h-12 max-h-64" src={Couch} alt="Kanape" />
+          <div className="w-100 flex justify-end items-center">
+            <img className="min-h-12 max-h-64" src={Couch} alt="Kanape" />
           </div>
         </div>
       </section>

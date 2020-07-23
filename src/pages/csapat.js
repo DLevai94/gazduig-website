@@ -102,10 +102,10 @@ function Team() {
       <section className="container mx-auto px-4 sm:px-6 lg:px-8">
         <section className="flex flex-col md:flex-row justify-around items-center">
           <div className="md:w-5/12">
-            <h1 className="text-4.5xl font-display font-extrabold leading-tight mb-8">
+            <h1 className="text-4.5xl font-display font-extrabold leading-none mb-8">
               Mi az a Gazduig, és miben rejlik az ütősség?
             </h1>
-            <ul className="grid grid-cols-1 md:grid-cols-2 md:grid-rows-2 gap-2 xl:gap-6 xl:col-gap-16">
+            <ul className="grid grid-cols-1 md:grid-cols-2 md:grid-rows-2 gap-2 xl:gap-6 xl:col-gap-16 leading-tight">
               <li className="flex items-start font-light max-w-8">
                 <ListIcon className="w-12 mr-2" />
                 Nem csak egy újabb ügynökség a többi mellé
@@ -133,7 +133,7 @@ function Team() {
           </div>
         </section>
         <section>
-          <h2 className="font-display text-2xl font-extrabold my-16 lg:ml-8 xl:ml-0">
+          <h2 className="font-display text-2xl font-extrabold my-6 lg:ml-16">
             Mondatok, amelyek aranyat érnek számunkra
           </h2>
           <div className="xl:-mx-8 grid lg:grid-rows-2 lg:grid-cols-3 gap-8 mx-4 lg:mx-8 xl:mx-0">
@@ -222,9 +222,9 @@ function Team() {
           </div>
         </section>
       </section>
-      <section className="bg-gray-100 -mt-28 pb-40 multi-blob-bg">
+      <section className="bg-gray-100 -mt-28 pb-32 multi-blob-bg">
         <div className="container mx-auto pt-48 px-4 lg:px-8 xl:px-0">
-          <h2 className="font-display text-2xl font-extrabold my-8 ml-16">Ismerj meg minket pár perc alatt!</h2>
+          <h2 className="font-display text-2xl font-extrabold my-4 ml-16">Ismerj meg minket pár perc alatt!</h2>
           <div className="bg-white shadow-brand rounded pl-16 pt-8 pr-8 flex flex-col mb-10">
             <h3 className="font-extrabold text-2xl mb-6">Gazdig Bence - CEO & Dizájner csávó</h3>
             <div className="flex">
@@ -577,7 +577,7 @@ function Team() {
         </div>
       </section>
       <section className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="-mt-16 rounded bg-gray-900 text-white text-2xl font-display font-extrabold mx-2 md:ml-16 md:mr-0 inline-block px-8 py-4 pr-20 mb-8">
+        <div className="-mt-16 rounded bg-gray-900 text-white text-2xl font-display font-extrabold mx-2 md:ml-16 md:mr-0 inline-block px-8 py-4 pr-20 mb-10">
           <p>
             A kreatív dolgokban vagyunk otthon. Viszont
             <br /> vannak remek partnereink, akikkel kiegészülve
@@ -606,7 +606,7 @@ function Team() {
             description="Patrik és csapata felelnek azért, ami online marketing"
           />
         </div>
-        <div className="mx-auto rounded w-full lg:w-1/2 md:border-2 md:border-gray-900 bg-white p-8 mb-32 text-xl">
+        <div className="mx-auto rounded w-full lg:w-7/12 md:border-2 md:border-gray-900 bg-white p-8 mb-32 text-xl">
           <p className="font-light">
             Erre a helyre kerülnek majd a díjaink, amelyeket olyan projektekért kapunk, mint mondjuk a tiéd.
             <br /> Nagyon szeretnénk párat, így mindent megteszünk értük.

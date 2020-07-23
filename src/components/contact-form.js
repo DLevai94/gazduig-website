@@ -10,13 +10,13 @@ const ContactForm = ({ contactPageEdits }) => {
   return (
     <div className="mx-auto lg:grid lg:grid-cols-2 lg:col-gap-1">
       <div className="lg:col-span-1 lg:col-start-1 flex justify-center items-baseline">
-        <div className="max-w-lg">
+        <div className="max-w-md">
           <form
             netlify-honeypot="bot-field"
             data-netlify="true"
             name="contact"
             method="POST"
-            className="grid grid-cols-1 row-gap-6 items-center"
+            className="grid grid-cols-1 row-gap-4 items-center"
             netlify>
             <input type="hidden" name="bot-field" />
             <input type="hidden" name="form-name" value="contact" />
@@ -143,11 +143,7 @@ const ContactForm = ({ contactPageEdits }) => {
           <p className="font-light">
             Én válaszolok majd az üzenetedre. Ha kérdésed van, hívj fel bármikor a +36 30 270 5363-as számon!
           </p>
-          <img
-            src={Bence}
-            className="absolute bottom-0 left-1 object-contain object-center md:w-80"
-            alt="Gazdig Bence"
-          />
+          <img src={Bence} className="absolute bottom-0 left-1 object-center" alt="Gazdig Bence" />
         </div>
       </div>
     </div>

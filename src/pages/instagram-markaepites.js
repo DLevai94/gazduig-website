@@ -22,10 +22,10 @@ function IgHacks() {
         ]}
         title="Ezekt neked írtuk"
       />
-      <section className="purple-blob-bg" style={{ backgroundPosition: `140% 20%` }}>
+      <section className="purple-blob-bg" style={{ backgroundPosition: `130% 15%`, backgroundSize: `60% 90%` }}>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="px-8 xl:px-0 w-full lg:w-1/2 my-32">
-            <h2 className="text-2xl md:text-4xl xl:text-5xl leading-tight font-display font-extrabold">
+            <h2 className="text-2xl md:text-4xl xl:text-5xl leading-none font-display font-extrabold">
               Írtunk egy összefoglalót arról, milyen módszerrel szerezzük az ügyfeleink 90%-át Instáról
             </h2>
           </div>
@@ -40,7 +40,7 @@ function IgHacks() {
                   netlify-honeypot="bot-field"
                   data-netlify="true"
                   name="ig-marketing"
-                  className="grid grid-cols-1 row-gap-6"
+                  className="grid grid-cols-1 row-gap-4"
                   netlify>
                   <input type="hidden" name="bot-field" />
                   <input type="hidden" name="form-name" value="ig-marketing" />
@@ -113,7 +113,7 @@ function IgHacks() {
             </div>
           </div>
           <div className="mb-32 px-8 xl:px-0">
-            <h2 className="text-2xl leading-tight font-display font-extrabold mb-4">
+            <h2 className="text-2xl leading-tight font-display font-extrabold mb-10">
               Most inkább nézelődnél
               <br /> olvasás helyett? No problem!
             </h2>

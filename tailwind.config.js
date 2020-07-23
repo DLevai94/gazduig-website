@@ -1,4 +1,4 @@
-const { colors, fontFamily, fontSize } = require('tailwindcss/defaultTheme');
+const { colors, fontFamily, fontSize, lineHeight } = require('tailwindcss/defaultTheme');
 
 module.exports = {
   purge: ['./src/**/*.js', './src/**/*.jsx', './src/**/*.ts', './src/**/*.tsx'],
@@ -21,6 +21,10 @@ module.exports = {
       fontSize: {
         ...fontSize,
         '4.5xl': '2.6rem',
+      },
+      lineHeight: {
+        ...lineHeight,
+        brand: '1.125',
       },
       colors: {
         'brand-red': {
