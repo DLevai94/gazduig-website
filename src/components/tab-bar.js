@@ -3,7 +3,7 @@ import React from 'react';
 const TabBar = ({ containerClass, categories, chosenCategory, setCategory, textClass }) => {
   return (
     <div className={`overflow-hidden bg-white pt-2 px-16 shadow-brand rounded ${containerClass}`}>
-      <div className="sm:hidden">
+      <div className="lg:hidden">
         <select
           aria-label="Selected tab"
           className="mt-1 form-select block w-full pl-3 pr-10 py-2 text-base leading-6 border-gray-300 focus:outline-none focus:shadow-outline-brand-red-500 focus:border-brand-red-500 sm:text-sm sm:leading-5 transition ease-in-out duration-150"
@@ -15,7 +15,7 @@ const TabBar = ({ containerClass, categories, chosenCategory, setCategory, textC
           ))}
         </select>
       </div>
-      <div className="hidden sm:block overflow-scroll" id="tab-bar">
+      <div className="hidden lg:block overflow-scroll" id="tab-bar">
         <div className="border-b border-gray-200">
           <nav className="-mb-px flex">
             {categories?.map((category) => (

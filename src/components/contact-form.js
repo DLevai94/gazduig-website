@@ -137,7 +137,7 @@ const ContactForm = ({ contactPageEdits }) => {
       </div>
       <div className={`lg:col-span-1 flex ${contactPageEdits || 'justify-center items-baseline'}`}>
         <div
-          className="bg-white w-80 pl-6 pr-16 py-3 pb-80 md:shadow-brand rounded overflow-visible relative bg-no-repeat"
+          className="bg-white w-80 pl-6 pr-16 py-3 pb-72 md:shadow-brand rounded overflow-visible relative bg-no-repeat"
           style={{ backgroundImage: `url(${PurpleBlob})`, backgroundPosition: `0% 250%` }}>
           <p className="font-extrabold mb-4">Szia, Bence vagyok!</p>
           <p className="font-light">

@@ -325,7 +325,7 @@ const Services = () => {
             style={{ animation: 'float 4s ease-in-out infinite' }}>
             <Img
               fluid={data?.heroImg?.childImageSharp?.fluid}
-              style={{ width: '26rem' }}
+              style={{ maxWidth: '26rem' }}
               className="-mt-20"
               alt="Gazduig Creative Agency Szolgáltatások"
             />
@@ -339,7 +339,7 @@ const Services = () => {
               chosenCategory={chosenCategory}
               setCategory={setChosenCategory}
               containerClass="mb-8 inline-block"
-              textClass="text-lg"
+              textClass="lg:text-lg"
             />
           </div>
         </section>
@@ -348,15 +348,26 @@ const Services = () => {
           {/* <img src={Office} className="absolute z-0" /> */}
           <div className="mb-32">
             <h2 className="font-display text-2xl font-extrabold mb-8">Így néz ki az együttműködésünk folyamata</h2>
-            <ul className="text-lg font-light timeline">
-              <li className="timeline-circle">Kapcsolatba lépünk egymással</li>
-              <li className="timeline-circle-2">Felmérjük az igényeidet</li>
-              <li className="timeline-circle-3">Azok alapján terveket készítünk</li>
-              <li className="timeline-circle-4">
-                Bemutatjuk, és ha kell módosítjuk, végtelenszer, felár nélkül, míg olyan nem lesz, amilyet elképzeltél
-              </li>
-              <li className="timeline-circle-5">Átadjuk a kész anyagot</li>
-            </ul>
+            <div className="info-timeline w-1/2">
+              <ul>
+                <li className="font-light text-lg">
+                  <span className="timeline-circle mr-6">01</span>Kapcsolatba lépünk egymással
+                </li>
+                <li className="font-light text-lg">
+                  <span className="timeline-circle mr-6">02</span>Felmérjük az igényeidet
+                </li>
+                <li className="font-light text-lg">
+                  <span className="timeline-circle mr-6">03</span>Azok alapján terveket készítünk
+                </li>
+                <li className="font-light text-lg">
+                  <span className="timeline-circle mr-6">04</span>Bemutatjuk, és ha kell módosítjuk, végtelenszer, felár
+                  nélkül, míg olyan nem lesz, amilyet elképzeltél
+                </li>
+                <li className="font-light text-lg">
+                  <span className="timeline-circle mr-6">05</span>Átadjuk a kész anyagot
+                </li>
+              </ul>
+            </div>
           </div>
           <div className="-mt-16 rounded bg-gray-900 text-white text-2xl font-display font-extrabold inline-block px-8 py-4 pr-48 mb-8">
             <p>
