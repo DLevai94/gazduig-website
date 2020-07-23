@@ -70,7 +70,7 @@ export default function Template({ data }) {
         </div>
         <div className="md:px-16 mt-16 mb-32">
           {frontmatter?.images?.map((image) => (
-            <img key={image} src={image} alt={frontmatter?.title} className="w-100 rounded" />
+            <img key={image} src={image} alt={frontmatter?.title} className="w-100 rounded mx-auto" />
           ))}
         </div>
 

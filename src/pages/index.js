@@ -13,13 +13,13 @@ import LogoTSystems from '../images/logos/tsystems.svg';
 import LogoShoprenter from '../images/logos/shoprenter.svg';
 import LogoPensum from '../images/logos/pensum.svg';
 import LogoHD from '../images/logos/hdmarketing.png';
-import LogoDoupla from '../images/logos/doupla.png';
+// import LogoDoupla from '../images/logos/doupla.png';
 import LogoDigital from '../images/logos/welove.svg';
 import LogoGolden from '../images/logos/goldenbrothers.png';
 import LogoAllyos from '../images/logos/allyos.svg';
 import LogoEkata from '../images/logos/ekata.svg';
 import LogoInsimu from '../images/logos/insimu.svg';
-import LogoNetmetro from '../images/logos/netmetro.svg';
+// import LogoNetmetro from '../images/logos/netmetro.svg';
 import LogoSzaboKandallo from '../images/logos/szabokandallo.svg';
 import BenceImg from '../images/bence-bw.png';
 // import Cloud1 from '../images/cloud1.svg';
@@ -227,9 +227,9 @@ function IndexPage() {
             <div className="col-span-2 flex justify-center md:col-span-2 lg:col-span-1">
               <img className="h-12" src={LogoHD} alt="HD Marketing" />
             </div>
-            <div className="col-span-2 flex justify-center md:col-span-2 lg:col-span-1">
+            {/* <div className="col-span-2 flex justify-center md:col-span-2 lg:col-span-1">
               <img className="h-12" src={LogoDoupla} alt="Doupla" />
-            </div>
+            </div> */}
             <div className="col-span-2 flex justify-center md:col-span-2 lg:col-span-1">
               <img className="h-12" src={LogoDigital} alt="We Love Digital" />
             </div>
@@ -245,9 +245,9 @@ function IndexPage() {
             <div className="col-span-2 flex justify-center md:col-span-2 lg:col-span-1">
               <img className="h-12" src={LogoInsimu} alt="Insimu" />
             </div>
-            <div className="col-span-2 flex justify-center md:col-span-2 lg:col-span-1">
+            {/* <div className="col-span-2 flex justify-center md:col-span-2 lg:col-span-1">
               <img className="h-12" src={LogoNetmetro} alt="Netmetro" />
-            </div>
+            </div> */}
             <div className="col-span-2 flex justify-center md:col-span-2 lg:col-span-1">
               <img className="h-12" src={LogoSzaboKandallo} alt="Szabo Kandallo" />
             </div>
@@ -424,7 +424,7 @@ function IndexPage() {
         </div>
       </section>
       <section className="bg-gray-100">
-        <div className="py-10 lg:py-32 flex container mx-auto items-center justify-center md:justify-around">
+        <div className="py-10 lg:py-32 flex flex-col md:flex-row container mx-auto items-center justify-center md:justify-around">
           <div className="w-100 md:max-w-1/2 text-center md:text-left">
             <h2 className="heading mb-8">
               Á, az oldal alján vagy! Hadd mutatkozzunk

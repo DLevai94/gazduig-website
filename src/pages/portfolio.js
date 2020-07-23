@@ -70,7 +70,7 @@ const Portfolio = () => {
       <div className="portfolio-bg">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 my-16 h-64 bg-transparent flex justify-between">
           <div className="w-full md:w-5/12 flex flex-col justify-center items-start">
-            <h1 className="text-5xl font-display font-extrabold leading-tight">
+            <h1 className="text-5xl font-display font-extrabold leading-brand mb-6">
               Csináljuk is, nem csak beszélünk róla
             </h1>
             <p className="text-light text-lg">

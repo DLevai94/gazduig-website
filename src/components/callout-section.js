@@ -56,7 +56,7 @@ const data = [
 
 const CalloutSection = () => {
   return (
-    <section className="xl:-mt-64 z-50 relative">
+    <section className="relative">
       <div className="max-w-full mx-auto lg:px-6">
         <h2 className="font-display font-extrabold text-2xl mb-8 text-center md:text-left">Ez itt az eszköztárunk</h2>
 

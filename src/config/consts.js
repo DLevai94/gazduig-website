@@ -46,4 +46,8 @@ export const SERVICES = [
     key: 'ig-branding',
     name: 'Insta márkaépítés',
   },
+  {
+    key: 'other',
+    name: 'HHosszú, keressetek meg és kifejtem',
+  },
 ];
