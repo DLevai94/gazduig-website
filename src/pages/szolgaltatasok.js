@@ -22,6 +22,7 @@ import SolIcon13 from '../components/svg/solutions13';
 import SolIcon14 from '../components/svg/solutions14';
 import SolIcon15 from '../components/svg/solutions15';
 import SolIcon16 from '../components/svg/solutions16';
+import Office from '../images/office.png';
 import { SERVICES } from '../config/consts';
 
 const Services = () => {
@@ -368,13 +369,11 @@ const Services = () => {
                 </ul>
               </div>
             </div>
-            <div className="-mt-16 rounded bg-gray-900 text-white text-2xl font-display font-extrabold inline-block px-8 py-4 pr-48 mb-8">
+            <img src={Office} alt="Nem a mi irodank" className="block lg:hidden" />
+            <div className="-mt-28 w-8/12 rounded bg-gray-900 text-white text-2xl font-display font-extrabold inline-block px-8 py-4 lg:pr-40 mb-8">
               <p>
-                Ez itt nem a mi irodánk. Viszont nagyon
-                <br />
-                szeretnénk egy hasonlót. Ehhez pedig a te
-                <br />
-                projekted is tökéletesen kell elkészítenünk!
+                Ez itt nem a mi irodánk. Viszont nagyon <br />
+                szeretnénk egy hasonlót. Ehhez pedig a te projekted is tökéletesen kell elkészítenünk!
               </p>
             </div>
           </div>

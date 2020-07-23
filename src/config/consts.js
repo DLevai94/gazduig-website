@@ -48,6 +48,6 @@ export const SERVICES = [
   },
   {
     key: 'other',
-    name: 'HHosszú, keressetek meg és kifejtem',
+    name: 'Hosszú, keressetek meg és kifejtem',
   },
 ];
