@@ -1,4 +1,4 @@
-const { colors, fontFamily, fontSize, lineHeight } = require('tailwindcss/defaultTheme');
+const { colors, fontFamily, fontSize, lineHeight, width } = require('tailwindcss/defaultTheme');
 
 module.exports = {
   purge: ['./src/**/*.js', './src/**/*.jsx', './src/**/*.ts', './src/**/*.tsx'],
@@ -37,6 +37,10 @@ module.exports = {
           700: '#830F25',
           800: '#630B1C',
           900: '#420813',
+        },
+        width: {
+          ...width,
+          einstein: '10rem',
         },
         'brand-yellow': {
           100: '#FFF8E8',

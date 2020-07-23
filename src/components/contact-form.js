@@ -5,7 +5,7 @@ import PurpleBlob from '../images/purple-blob.svg';
 
 const ContactForm = ({ contactPageEdits }) => {
   const [jobtype, setJobtype] = useState(null);
-  const [extraJobtype, setExtraJobtype] = useState(null);
+  // const [extraJobtype, setExtraJobtype] = useState(null);
   const [hasPrivacyAccepted, setHasPrivacyAccepted] = useState(false);
   return (
     <div className="mx-auto lg:grid lg:grid-cols-2 lg:col-gap-1">
@@ -28,7 +28,7 @@ const ContactForm = ({ contactPageEdits }) => {
                 <input
                   id="full_name"
                   name="full_name"
-                  className="form-input block w-full py-3 px-4 placeholder-gray-500 border-gray-900 transition ease-in-out duration-150"
+                  className="form-input block w-full py-2 px-2 placeholder-gray-500 border-gray-900 transition ease-in-out duration-150"
                   placeholder="Hogy szólíthatunk?"
                   required
                 />
@@ -43,7 +43,7 @@ const ContactForm = ({ contactPageEdits }) => {
                   id="email"
                   name="email"
                   type="email"
-                  className="form-input block w-full py-3 px-4 placeholder-gray-500 border-gray-900 transition ease-in-out duration-150"
+                  className="form-input block w-full py-2 px-2 placeholder-gray-500 border-gray-900 transition ease-in-out duration-150"
                   placeholder="Milyen e-mail címen érünk el?"
                   required
                 />
@@ -51,16 +51,16 @@ const ContactForm = ({ contactPageEdits }) => {
             </div>
             <div>
               <label htmlFor="jobtype" className="sr-only">
-                Miben segíthetünk első körben?
+                Miben segíthetünk?
               </label>
               <div className="relative rounded-md">
                 <select
                   id="jobtype"
                   name="jobtype"
-                  className="form-input block w-full py-3 px-4 placeholder-gray-500 border-gray-900 transition ease-in-out duration-150"
+                  className="form-input block w-full py-2 px-2 placeholder-gray-500 border-gray-900 transition ease-in-out duration-150"
                   onChange={(e) => setJobtype(e?.target?.value)}>
                   <option value="" disabled selected hidden>
-                    Miben segíthetünk első körben?
+                    Miben segíthetünk?
                   </option>
                   {SERVICES?.map((category) => (
                     <option key={category?.key} value={category?.key} selected={jobtype === category?.key}>
@@ -70,7 +70,7 @@ const ContactForm = ({ contactPageEdits }) => {
                 </select>
               </div>
             </div>
-            <div>
+            {/* <div>
               <label htmlFor="extra-jobtype" className="sr-only">
                 És ezen felül?
               </label>
@@ -78,7 +78,7 @@ const ContactForm = ({ contactPageEdits }) => {
                 <select
                   id="extra-jobtype"
                   name="extra-jobtype"
-                  className="form-input block w-full py-3 px-4 placeholder-gray-500 border-gray-900 transition ease-in-out duration-150"
+                  className="form-input block w-full py-2 px-2 placeholder-gray-500 border-gray-900 transition ease-in-out duration-150"
                   onChange={(e) => setExtraJobtype(e?.target?.value)}>
                   <option value="" disabled selected hidden>
                     És ezen felül?
@@ -90,7 +90,7 @@ const ContactForm = ({ contactPageEdits }) => {
                   ))}
                 </select>
               </div>
-            </div>
+            </div> */}
 
             <div>
               <label htmlFor="message" className="sr-only">
@@ -101,7 +101,7 @@ const ContactForm = ({ contactPageEdits }) => {
                   id="message"
                   name="message"
                   rows="5"
-                  className="form-input block w-full py-3 px-4 placeholder-gray-500 border-gray-900 transition ease-in-out duration-150"
+                  className="form-input block w-full py-2 px-2 placeholder-gray-500 border-gray-900 transition ease-in-out duration-150"
                   placeholder="Ha már tudsz részleteket, pötyögd be őket pár szóban, és amint lehet, felkeresünk!"></textarea>
               </div>
             </div>

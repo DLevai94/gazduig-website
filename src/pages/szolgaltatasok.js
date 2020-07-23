@@ -4,7 +4,6 @@ import Img from 'gatsby-image';
 // import Office from '../images/office.png';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import Hero from '../components/hero';
 import TabBar from '../components/tab-bar';
 import ContactForm from '../components/contact-form';
 import SolutionCategory from '../components/solution-category';
@@ -311,78 +310,87 @@ const Services = () => {
         ]}
         title="Ebben segítünk"
       />
-      <Hero
-        title="Felejtsd el az unalmas ötleteket!"
-        subtitle="Van, aki csak beszél róla. Mi beszélünk róla, majd megcsináljuk. Olyanra, amilyet elképzeltél."
-        icon={
-          data?.heroImg?.childImageSharp?.fluid ? (
+      <div className="services-bg">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 my-16 h-64 bg-transparent flex justify-between">
+          <div className="w-full md:w-5/12 flex flex-col justify-center items-start">
+            <h1 className="text-5xl font-display font-extrabold leading-none mb-6">
+              Felejtsd el az unalmas ötleteket!
+            </h1>
+            <p className="text-light text-lg">
+              Van, aki csak beszél róla. Mi beszélünk róla, majd megcsináljuk. Olyanra, amilyet elképzeltél.
+            </p>
+          </div>
+          <div
+            className="hidden md:block md:w-5/12 flex items-center justify-end"
+            style={{ animation: 'float 4s ease-in-out infinite' }}>
             <Img
               fluid={data?.heroImg?.childImageSharp?.fluid}
-              className="w-80"
+              style={{ width: '26rem' }}
+              className="-mt-20"
               alt="Gazduig Creative Agency Szolgáltatások"
             />
-          ) : null
-        }
-      />
-      <section className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="font-display text-2xl font-extrabold">Találd meg, amire leginkább szükséged van!</h2>
-        <div className="xl:-mx-16">
-          <TabBar
-            categories={SERVICES}
-            chosenCategory={chosenCategory}
-            setCategory={setChosenCategory}
-            containerClass="mb-8 inline-block"
-            textClass="text-lg"
-          />
-        </div>
-      </section>
-      <section className="container mx-auto px-4 sm:px-6 lg:px-8 mt-12">{renderContent(chosenCategory)}</section>
-      <section className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
-        {/* <img src={Office} className="absolute z-0" /> */}
-        <div className="mb-32">
-          <h2 className="font-display text-2xl font-extrabold mb-8">Így néz ki az együttműködésünk folyamata</h2>
-          <ul className="text-lg font-light timeline">
-            <li className="timeline-circle">Kapcsolatba lépünk egymással</li>
-            <li className="timeline-circle-2">Felmérjük az igényeidet</li>
-            <li className="timeline-circle-3">Azok alapján terveket készítünk</li>
-            <li className="timeline-circle-4">
-              Bemutatjuk, és ha kell módosítjuk, végtelenszer, felár nélkül, míg olyan nem lesz, amilyet elképzeltél
-            </li>
-            <li className="timeline-circle-5">Átadjuk a kész anyagot</li>
-          </ul>
-        </div>
-        <div className="-mt-16 rounded bg-gray-900 text-white text-2xl font-display font-extrabold inline-block px-8 py-4 pr-48 mb-8">
-          <p>
-            Ez itt nem a mi irodánk. Viszont nagyon
-            <br />
-            szeretnénk egy hasonlót. Ehhez pedig a te
-            <br />
-            projekted is tökéletesen kell elkészítenünk!
-          </p>
-        </div>
-      </section>
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 my-32">
-        <section className="bg-white md:rounded md:shadow-brand py-8 px-8 md:px-36 z-50">
-          <div className="mb-16 max-w-2xl">
-            <h2 className="font-display font-extrabold text-2xl leading-tight">
-              Tetszettek a látottak? Töltsd ki a lenti formot, és alkossunk együtt valami ütőset!
-            </h2>
           </div>
-          <ContactForm />
+        </div>
+        <section className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="font-display text-2xl font-extrabold mb-6">Találd meg, amire leginkább szükséged van!</h2>
+          <div className="xl:-mx-16">
+            <TabBar
+              categories={SERVICES}
+              chosenCategory={chosenCategory}
+              setCategory={setChosenCategory}
+              containerClass="mb-8 inline-block"
+              textClass="text-lg"
+            />
+          </div>
+        </section>
+        <section className="container mx-auto px-4 sm:px-6 lg:px-8 mt-12">{renderContent(chosenCategory)}</section>
+        <section className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
+          {/* <img src={Office} className="absolute z-0" /> */}
+          <div className="mb-32">
+            <h2 className="font-display text-2xl font-extrabold mb-8">Így néz ki az együttműködésünk folyamata</h2>
+            <ul className="text-lg font-light timeline">
+              <li className="timeline-circle">Kapcsolatba lépünk egymással</li>
+              <li className="timeline-circle-2">Felmérjük az igényeidet</li>
+              <li className="timeline-circle-3">Azok alapján terveket készítünk</li>
+              <li className="timeline-circle-4">
+                Bemutatjuk, és ha kell módosítjuk, végtelenszer, felár nélkül, míg olyan nem lesz, amilyet elképzeltél
+              </li>
+              <li className="timeline-circle-5">Átadjuk a kész anyagot</li>
+            </ul>
+          </div>
+          <div className="-mt-16 rounded bg-gray-900 text-white text-2xl font-display font-extrabold inline-block px-8 py-4 pr-48 mb-8">
+            <p>
+              Ez itt nem a mi irodánk. Viszont nagyon
+              <br />
+              szeretnénk egy hasonlót. Ehhez pedig a te
+              <br />
+              projekted is tökéletesen kell elkészítenünk!
+            </p>
+          </div>
+        </section>
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 my-32">
+          <section className="bg-white md:rounded md:shadow-brand py-8 px-8 md:px-36 z-50">
+            <div className="mb-16 max-w-2xl">
+              <h2 className="font-display font-extrabold text-2xl leading-tight">
+                Tetszettek a látottak? Töltsd ki a lenti formot, és alkossunk együtt valami ütőset!
+              </h2>
+            </div>
+            <ContactForm />
+          </section>
+        </div>
+        <section className="md:-mt-64 pt-36 md:pt-96 pb-36">
+          <div className="container mx-auto text-center md:text-left sm:px-6 lg:px-48">
+            <h2 className="font-display font-extrabold text-2xl leading-tight mb-6">
+              Még nem vagy 100%-ig biztos a dologban?
+              <br />
+              Nézd meg pár korábbi munkánkat a témában!
+            </h2>
+            <Link to="/portfolio">
+              <button className="primary-btn">Irány a portfólió</button>
+            </Link>
+          </div>
         </section>
       </div>
-      <section className="md:-mt-64 pt-36 md:pt-96 pb-36">
-        <div className="container mx-auto text-center md:text-left sm:px-6 lg:px-48">
-          <h2 className="font-display font-extrabold text-2xl leading-tight mb-6">
-            Még nem vagy 100%-ig biztos a dologban?
-            <br />
-            Nézz meg pár hasonlót is!
-          </h2>
-          <Link to="/portfolio">
-            <button className="primary-btn">Irány a portfólió</button>
-          </Link>
-        </div>
-      </section>
     </Layout>
   );
 };
