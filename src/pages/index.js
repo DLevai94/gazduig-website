@@ -120,7 +120,7 @@ function IndexPage() {
         </div>
       </div>
       <div className="bg-gray-100">
-        <section className="container max-w-7xl mx-auto md:flex-row flex-col items-center justify-start">
+        <section className="container max-w-7xl mx-auto pt-16 md:flex-row flex-col items-center justify-start">
           <CalloutSection />
           <section>
             <div className="container px-5 py-28 mx-auto">
