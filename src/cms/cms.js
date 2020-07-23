@@ -16,6 +16,8 @@ CMS.init({
       config: {
         cloud_name: 'gazduig',
         api_key: '178913774827294',
+        multiple: true,
+        allow_multiple: true,
         default_transformations: [
           [
             {
@@ -27,7 +29,6 @@ CMS.init({
     },
     media_folder: 'static/assets',
     public_folder: '/assets',
-    logo_url: 'src/favicon.svg',
     locale: 'hu',
     collections: [
       {
