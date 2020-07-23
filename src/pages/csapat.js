@@ -227,8 +227,8 @@ function Team() {
           <h2 className="font-display text-2xl font-extrabold my-4 ml-16">Ismerj meg minket pár perc alatt!</h2>
           <div className="bg-white shadow-brand rounded pl-16 pt-8 pr-8 flex flex-col mb-10">
             <h3 className="font-extrabold text-2xl mb-6">Gazdig Bence - CEO & Dizájner csávó</h3>
-            <div className="flex">
-              <div className="w-8/12 grid md:grid-cols-2 md:grid-rows-4 col-gap-20 row-gap-10 mb-10">
+            <div className="flex flex-col lg:flex-row">
+              <div className="lg:w-8/12 grid md:grid-cols-2 md:grid-rows-4 col-gap-20 row-gap-10 mb-10">
                 <div className="flex items-start">
                   <div className="mr-4">
                     <RocketIcon className="w-10" />
@@ -311,22 +311,22 @@ function Team() {
                 </div>
               </div>
               <div className="w-4/12 relative">
-                <img src={Bence} className="absolute bottom-0 right-4" alt="Gazdig Bence" />
+                <img src={Bence} className="lg:absolute bottom-0 right-4" alt="Gazdig Bence" />
               </div>
-              <div className="self-center flex flex-col">
+              <div className="hidden lg:flex self-center md:flex-col">
                 <a href="https://instagram.com/gazduig" rel="noreferrer">
-                  <InstagramIcon className="w-8 mb-8 hover:opacity-50" />
+                  <InstagramIcon className="w-8 mr-8 md:mr-0 md:mb-8 hover:opacity-50" />
                 </a>
                 <a href="https://linkedin.com/in/gazduig" rel="noreferrer">
-                  <LinkedInIcon className="w-8 mt-8 hover:opacity-50" />
+                  <LinkedInIcon className="w-8 md:mt-8 hover:opacity-50" />
                 </a>
               </div>
             </div>
           </div>
           <div className="bg-white shadow-brand rounded pl-16 pt-8 pr-8 flex flex-col mb-10">
             <h3 className="font-extrabold text-2xl mb-6">Bergyár Gergő - Dizájner bajnok</h3>
-            <div className="flex">
-              <div className="w-8/12 grid md:grid-cols-2 md:grid-rows-4 col-gap-20 row-gap-10 mb-10">
+            <div className="flex flex-col lg:flex-row">
+              <div className="lg:w-8/12 grid md:grid-cols-2 md:grid-rows-4 col-gap-20 row-gap-10 mb-10">
                 <div className="flex items-start">
                   <div className="mr-4">
                     <GuitarIcon className="w-10" />
@@ -387,9 +387,9 @@ function Team() {
                 </div>
               </div>
               <div className="w-4/12 relative">
-                <img src={Gergo} className="absolute bottom-0 right-4" alt="Bergyár Gergő" />
+                <img src={Gergo} className="lg:absolute bottom-0 right-4" alt="Bergyár Gergő" />
               </div>
-              <div className="self-center flex flex-col">
+              <div className="hidden lg:flex self-center md:flex-col">
                 <a href="https://instagram.com/x" rel="noreferrer">
                   <InstagramIcon className="w-8 mb-8 hover:opacity-50" />
                 </a>
@@ -401,8 +401,8 @@ function Team() {
           </div>
           <div className="bg-white shadow-brand rounded pl-16 pt-8 pr-8 flex flex-col mb-10">
             <h3 className="font-extrabold text-2xl mb-6">Dabasi Réka - Sportdizájn specialista</h3>
-            <div className="flex">
-              <div className="w-8/12 grid md:grid-cols-2 md:grid-rows-4 col-gap-20 row-gap-10 mb-10">
+            <div className="flex flex-col lg:flex-row">
+              <div className="lg:w-8/12 grid md:grid-cols-2 md:grid-rows-4 col-gap-20 row-gap-10 mb-10">
                 <div className="flex items-start">
                   <div className="mr-4">
                     <MedalIcon className="w-10" />
@@ -452,9 +452,9 @@ function Team() {
                 </div>
               </div>
               <div className="w-4/12 relative">
-                <img src={Reka} className="absolute bottom-0 right-4" alt="Dabasi Réka" />
+                <img src={Reka} className="lg:absolute bottom-0 right-4" alt="Dabasi Réka" />
               </div>
-              <div className="self-center flex flex-col">
+              <div className="hidden lg:flex self-center md:flex-col">
                 <a href="https://instagram.com/x" rel="noreferrer">
                   <InstagramIcon className="w-8 mb-8 hover:opacity-50" />
                 </a>
@@ -466,8 +466,8 @@ function Team() {
           </div>
           <div className="bg-white shadow-brand rounded pl-16 pt-8 pr-8 flex flex-col mb-10">
             <h3 className="font-extrabold text-2xl mb-6">Tímár Dani - Minden szövegek írója</h3>
-            <div className="flex">
-              <div className="w-8/12 grid md:grid-cols-2 md:grid-rows-4 col-gap-20 row-gap-10 mb-10">
+            <div className="flex flex-col lg:flex-row">
+              <div className="lg:w-8/12 grid md:grid-cols-2 md:grid-rows-4 col-gap-20 row-gap-10 mb-10">
                 <div className="flex items-start">
                   <div className="mr-4">
                     <StarIcon className="w-10" />
@@ -562,9 +562,9 @@ function Team() {
                 </div>
               </div>
               <div className="w-4/12 relative">
-                <img src={Dani} className="absolute bottom-0 right-4" alt="Tímár Dani" />
+                <img src={Dani} className="lg:absolute bottom-0 right-4" alt="Tímár Dani" />
               </div>
-              <div className="self-center flex flex-col">
+              <div className="hidden lg:flex self-center md:flex-col">
                 <a href="https://instagram.com/x" rel="noreferrer">
                   <InstagramIcon className="w-8 mb-8 hover:opacity-50" />
                 </a>
