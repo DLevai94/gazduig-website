@@ -222,7 +222,7 @@ function Team() {
           </div>
         </section>
       </section>
-      <section className="bg-gray-200 -mt-28 pb-40 multi-blob-bg">
+      <section className="bg-gray-100 -mt-28 pb-40 multi-blob-bg">
         <div className="container mx-auto pt-48 px-4 lg:px-8 xl:px-0">
           <h2 className="font-display text-2xl font-extrabold my-8 lg:ml-8 xl:ml-0">
             Ismerj meg minket pár perc alatt!

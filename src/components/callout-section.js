@@ -58,10 +58,7 @@ const CalloutSection = () => {
   return (
     <section className="xl:-mt-80 z-50 relative">
       <div className="max-w-full mx-auto lg:px-6">
-        <h2 className="font-display font-extrabold text-2xl md:pl-16 mb-8  text-center md:text-left">
-          Ez itt az
-          <br /> eszköztárunk
-        </h2>
+        <h2 className="font-display font-extrabold text-2xl mb-8 text-center md:text-left">Ez itt az eszköztárunk</h2>
 
         <div className="md:grid md:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-4 lg:gap-8 px-4 lg:px-0">
           {data.map(({ title, description, icon, bgImage }, index) => (

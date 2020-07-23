@@ -142,6 +142,10 @@
   @apply mb-8 w-full rounded overflow-hidden bg-white p-4 shadow-brand flex flex-row justify-start items-center transition-all duration-300 ease-out;
 }
 
+.home-contact-bg {
+  background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 60%, rgba(247,247,247,1) 61%, rgba(247,247,247,1) 100%);
+}
+
 @screen sm {
   .content-container {
     @apply rounded px-6;
@@ -161,6 +165,9 @@
 }
 
 @screen lg {
+  .home-contact-bg {
+    background: url('../images/purple-blob.svg') 120% top no-repeat,linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 60%, rgba(247,247,247,1) 61%, rgba(247,247,247,1) 100%);
+  }
   .hero {
     @apply relative bg-no-repeat bg-cover overflow-hidden h-screen;
     background-image: url("../images/heroBG.jpg");

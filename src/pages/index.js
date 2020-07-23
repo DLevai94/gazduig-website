@@ -5,7 +5,7 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 import CalloutSection from '../components/callout-section';
 import TabBar from '../components/tab-bar';
-import Callout6 from '../components/svg/callout6.svg';
+import YellowBlob from '../images/yellow-blob.png';
 // import Plant from '../images/plant.png';
 import Typewriter from '../images/the-great-typewriter.png';
 import Couch from '../images/couch.png';
@@ -100,11 +100,11 @@ function IndexPage() {
         {/* <img src={Cloud1} alt="Felho" className="absolute top-0 right-0" />
         <img src={Cloud2} alt="Felho" className="absolute top-0 right-0" />
         <img src={Cloud3} alt="Felho" className="absolute top-0 right-0" /> */}
-        <div className="max-w-screen-xl mx-auto">
-          <div className="relative pb-8 sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
-            <main className="mt-10 mx-auto max-w-screen-xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-64 lg:px-8">
-              <div className="sm:text-center lg:text-left">
-                <h2 className="text-4xl font-display tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-6xl">
+        <div className="container mx-auto flex justify-center lg:justify-start items-center h-screen -mt-32">
+          <div className="my-10 md:my-16 lg:max-w-md">
+            <section className="px-4 lg:px-8">
+              <div className="text-center lg:text-left">
+                <h2 className="text-2xl lg:text-4xl font-display tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-6xl">
                   Ütős megoldások, ütős márkák számára
                 </h2>
                 <p className="mt-3 text-base sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0 font-light">
@@ -117,16 +117,16 @@ function IndexPage() {
                   </Link>
                 </div>
               </div>
-            </main>
+            </section>
           </div>
         </div>
       </div>
       <div className="bg-gray-100">
-        <section className="container max-w-7xl mx-auto md:flex-row flex-col items-center justify-start pb-64">
+        <section className="container max-w-7xl mx-auto md:flex-row flex-col items-center justify-start">
           <CalloutSection />
           <section>
             <div className="container px-5 py-24 mx-auto">
-              <div className="w-full mb-20">
+              <div className="w-full mb-10">
                 <h2 className="ml-16 text-2xl font-extrabold font-display">
                   Nézz meg a fentiekből pár sikeres projektet
                 </h2>
@@ -178,8 +178,11 @@ function IndexPage() {
           </div>
         </section>
       </div>
-      <section className="container md:px-5 md:py-24 mx-auto -mt-56">
-        <div className="w-full mb-20">
+      <section
+        style={{
+          background: `linear-gradient(360deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(247,247,247,1) 51%, rgba(247,247,247,1) 100%)`,
+        }}>
+        <div className="container md:px-5 md:py-24 mx-auto">
           <h2 className="md:ml-16 text-2xl font-extrabold font-display text-center md:text-left">
             Hogy tetszettek a látottak?
             <br />
@@ -188,7 +191,7 @@ function IndexPage() {
           <br />
           <div
             className="bg-white py-3 md:py-12 md:px-16 shadow-brand rounded flex flex-col md:flex-row md:justify-around items-center bg-right bg-no-repeat bg-contain"
-            style={{ backgroundImage: `url(${Callout6})` }}>
+            style={{ backgroundImage: `url(${YellowBlob})` }}>
             <div className="mb-6 md:mb-0">
               <h3 className="font-extrabold mb-6 text-lg text-center md:text-left">
                 Írd meg, miben
@@ -213,16 +216,16 @@ function IndexPage() {
             Néhány ügyfelünk, akik nem bánták meg, hogy velünk dolgoztak
           </h2>
           <div className="mx-16 grid grid-cols-2 gap-8 md:grid-cols-6">
-            <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
+            <div className="col-span-2 flex justify-center md:col-span-2 lg:col-span-1">
               <img className="h-12" src={LogoTSystems} alt="T-Systems" />
             </div>
-            <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
+            <div className="col-span-2 flex justify-center md:col-span-2 lg:col-span-1">
               <img className="h-12" src={LogoShoprenter} alt="Shoprenter" />
             </div>
-            <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
+            <div className="col-span-2 flex justify-center md:col-span-2 lg:col-span-1">
               <img className="h-12" src={LogoPensum} alt="Pensum Group" />
             </div>
-            <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
+            <div className="col-span-2 flex justify-center md:col-span-2 lg:col-span-1">
               <img className="h-12" src={LogoHD} alt="HD Marketing" />
             </div>
             <div className="col-span-2 flex justify-center md:col-span-2 lg:col-span-1">
@@ -331,8 +334,8 @@ function IndexPage() {
           </Link>
         </div>
       </section> */}
-      <section className="purple-blob-bg">
-        <div className="max-w-screen-xl mx-auto mb-32 px-4 sm:px-6 lg:px-8">
+      <section className="pb-16 home-contact-bg">
+        <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="heading mb-4 text-center md:text-left">
             Írtunk egy összefoglalót arról, milyen módszerrel szerezzük
             <br />
@@ -419,7 +422,7 @@ function IndexPage() {
           </div>
         </div>
       </section>
-      <section className="bg-gray-200">
+      <section className="bg-gray-100">
         <div className="py-10 lg:py-28 flex container mx-auto items-center justify-center md:justify-between">
           <div className="w-100 md:max-w-1/2 text-center md:text-left">
             <h2 className="heading mb-8">
