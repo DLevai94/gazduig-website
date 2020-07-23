@@ -10,7 +10,6 @@ import Contact from '../components/contact-form';
 export default function Template({ data }) {
   const { markdownRemark } = data;
   const { frontmatter, html } = markdownRemark;
-  console.log(frontmatter);
   return (
     <Layout>
       <SEO
@@ -111,13 +110,7 @@ export const pageQuery = graphql`
         client
         solutions
         jobtime
-        images {
-          childImageSharp {
-            fluid(maxWidth: 768) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
+        images
       }
     }
   }

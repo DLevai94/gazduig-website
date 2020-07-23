@@ -22,9 +22,7 @@ const Portfolio = () => {
               jobtime
               categories
               gradient
-              thumbnail {
-                publicURL
-              }
+              thumbnail
             }
           }
         }

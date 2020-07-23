@@ -42,9 +42,7 @@ function IndexPage() {
               slug
               jobtime
               gradient
-              thumbnail {
-                publicURL
-              }
+              thumbnail
             }
           }
         }
