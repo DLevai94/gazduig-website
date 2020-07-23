@@ -14,8 +14,8 @@ categories:
   - web
   - branding
 images:
+  - https://res.cloudinary.com/gazduig/image/upload/q_80/v1595514155/upsqr7dh78c5mndkozfl.png
   - https://res.cloudinary.com/gazduig/image/upload/q_80/v1595388903/sample.jpg
-  - https://res.cloudinary.com/gazduig/image/upload/q_80/v1595527181/Screenshot_2020-05-22_at_11.17.30_ofd8dm.png
 ---
 
 
