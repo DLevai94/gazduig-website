@@ -2,10 +2,10 @@
 date: 2020-07-24T16:12:07.575Z
 thumbnail:
   - https://res.cloudinary.com/gazduig/image/upload/q_80/v1595607232/Roborock/Frame_25_v770v5.webp
-title: Roborock sales oldal UI design
-slug: roborock-sales-oldal-ui-design
+title: Roborock sales oldal UI dizájn
+slug: roborock-sales-oldal-ui-dizajn
 client: Smarducks LTD
-solutions: UI design
+solutions: UI dizájn
 jobtime: 2020 június
 gradient: linear-gradient(5deg, rgba(195,41,41,1) 0%, rgba(53,58,149,0) 71%)
 categories:
