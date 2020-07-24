@@ -23,8 +23,10 @@ function ContactPage() {
       />
       <section className="container mx-auto px-4 sm:px-6 lg:px-8 mb-16">
         <div className="mb-16 md:mt-32 max-w-2xl ml-12">
-          <h2 className="font-display font-extrabold text-5xl leading-brand mb-4">
-            Kis lépés ez neked, de nagy lépés lehet a márkádnak!
+          <h2 className="font-display font-extrabold text-5xl uppercase leading-brand mb-4">
+            Kis lépés ez neked, de nagy
+            <br />
+            lépés lehet a márkádnak!
           </h2>
           <p className="font-light text-xl">Töltsd ki a lenti formot, és alkossunk együtt valami ütőset!</p>
         </div>

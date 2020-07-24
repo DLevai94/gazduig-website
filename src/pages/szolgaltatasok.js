@@ -318,8 +318,10 @@ const Services = () => {
       <div className="services-bg">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 my-16 h-64 bg-transparent flex justify-between">
           <div className="w-full md:w-5/12 flex flex-col justify-center items-start">
-            <h1 className="text-5xl font-display font-extrabold leading-none mb-6">
-              Felejtsd el az unalmas ötleteket!
+            <h1 className="text-5xl font-display font-extrabold leading-brand mb-6 uppercase">
+              Felejtsd el az
+              <br />
+              unalmas ötleteket!
             </h1>
             <p className="text-light text-lg">
               Van, aki csak beszél róla. Mi beszélünk róla, majd megcsináljuk. Olyanra, amilyet elképzeltél.
@@ -337,7 +339,9 @@ const Services = () => {
           </div>
         </div>
         <section className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="font-display text-2xl font-extrabold mb-6">Találd meg, amire leginkább szükséged van!</h2>
+          <h2 className="font-display leading-brand text-2xl font-extrabold mb-6 uppercase">
+            Találd meg, amire leginkább szükséged van!
+          </h2>
           <div className="xl:-mx-16">
             <TabBar
               categories={SERVICES.slice(0, -1)}
@@ -352,7 +356,9 @@ const Services = () => {
         <section className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="services-office-bg">
             <div className="mb-32">
-              <h2 className="font-display text-2xl font-extrabold mb-8">Így néz ki az együttműködésünk folyamata</h2>
+              <h2 className="font-display text-2xl font-extrabold mb-8 uppercase leading-brand">
+                Így néz ki az együttműködésünk folyamata
+              </h2>
               <div className="w-1/2">
                 <ul>
                   <li className="font-light text-lg flex justify-start items-center">
@@ -382,10 +388,12 @@ const Services = () => {
               </div>
             </div>
             <img src={Office} alt="Nem a mi irodank" className="block lg:hidden" />
-            <div className="-mt-28 w-8/12 rounded bg-gray-900 text-white text-2xl font-display font-extrabold inline-block px-8 py-4 lg:pr-40 mb-8">
+            <div className="-mt-28 w-8/12 rounded bg-gray-900 text-white text-2xl font-display font-extrabold inline-block px-8 py-4 lg:pr-40 mb-8 uppercase leading-brand">
               <p>
                 Ez itt nem a mi irodánk. Viszont nagyon <br />
-                szeretnénk egy hasonlót. Ehhez pedig a te projekted is tökéletesen kell elkészítenünk!
+                szeretnénk egy hasonlót. Ehhez pedig a te
+                <br />
+                projekted is tökéletesen kell elkészítenünk!
               </p>
             </div>
           </div>
@@ -393,8 +401,10 @@ const Services = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 my-32">
           <section className="bg-white md:rounded md:shadow-brand py-8 px-8 md:px-36 z-50">
             <div className="mb-16 max-w-2xl">
-              <h2 className="font-display font-extrabold text-2xl leading-tight">
-                Tetszettek a látottak? Töltsd ki a lenti formot, és alkossunk együtt valami ütőset!
+              <h2 className="font-display font-extrabold text-2xl uppercase leading-brand">
+                Tetszettek a látottak? Töltsd ki a lenti
+                <br />
+                formot, és alkossunk együtt valami ütőset!
               </h2>
             </div>
             <ContactForm />
@@ -402,7 +412,7 @@ const Services = () => {
         </div>
         <section className="md:-mt-64 pt-36 md:pt-96 pb-36">
           <div className="container mx-auto text-left sm:px-6 lg:px-48">
-            <h2 className="font-display font-extrabold text-2xl leading-tight mb-6">
+            <h2 className="font-display font-extrabold text-2xl leading-brand uppercase mb-6">
               Még nem vagy 100%-ig biztos a dologban?
               <br />
               Nézd meg pár korábbi munkánkat a témában!

@@ -30,7 +30,9 @@ export default function Template({ data }) {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="rounded w-100 p-6 md:pt-32 md:px-16 md:pb-12 mb-20 bg-gray-900 mt-8">
           <div className="max-w-8/12">
-            <h1 className="font-display text-white font-extrabold text-4xl max-w-7xl">{frontmatter?.title}</h1>
+            <h1 className="font-display text-white font-extrabold text-4xl max-w-7xl uppercase leading-brand">
+              {frontmatter?.title}
+            </h1>
           </div>
         </div>
         <div className="grid md:grid-cols-8 md:gap-12 md:px-16">
@@ -76,8 +78,10 @@ export default function Template({ data }) {
 
         <section className="bg-white md:rounded md:shadow-brand py-8 px-8 md:px-36 z-50">
           <div className="mb-16 max-w-2xl">
-            <h2 className="font-display font-extrabold text-2xl leading-tight">
-              Tetszettek a látottak? Töltsd ki a lenti formot, és alkossunk együtt valami ütőset!
+            <h2 className="font-display font-extrabold text-2xl  uppercase leading-brand">
+              Tetszettek a látottak? Töltsd ki a lenti
+              <br />
+              formot, és alkossunk együtt valami ütőset!
             </h2>
           </div>
           <Contact />
@@ -85,7 +89,7 @@ export default function Template({ data }) {
       </div>
       <section className="md:-mt-64 pt-36 md:pt-96 pb-36">
         <div className="container mx-auto text-left sm:px-6 lg:px-64">
-          <h2 className="font-display font-extrabold text-2xl leading-tight mb-6">
+          <h2 className="font-display font-extrabold text-2xl uppercase leading-brand mb-6">
             Még nem vagy 100%-ig biztos a dologban?
             <br />
             Nézz meg pár hasonlót is!

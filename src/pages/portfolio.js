@@ -70,8 +70,10 @@ const Portfolio = () => {
       <div className="portfolio-bg">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 my-16 h-64 bg-transparent flex justify-between">
           <div className="w-full md:w-5/12 flex flex-col justify-center items-start">
-            <h1 className="text-5xl font-display font-extrabold leading-brand mb-6">
-              Csináljuk is, nem csak beszélünk róla
+            <h1 className="text-5xl font-display font-extrabold uppercase leading-brand mb-6">
+              Csináljuk is, nem
+              <br />
+              csak beszélünk róla
             </h1>
             <p className="text-light text-lg">
               Mindig azon vagyunk, hogy újat, maradandót és persze ütőset alkossunk. Íme pár korábbi példa.
@@ -88,7 +90,9 @@ const Portfolio = () => {
           </div>
         </div>
         <section className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="font-display text-2xl font-extrabold">A te márkád is jól mutatna itt</h2>
+          <h2 className="font-display text-2xl font-extrabold uppercase leading-brand">
+            A te márkád is jól mutatna itt
+          </h2>
           <div className="xl:-mx-16">
             <TabBar
               categories={CATEGORIES}
@@ -130,8 +134,10 @@ const Portfolio = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-32 mg-gray-100">
           <section className="bg-white md:rounded md:shadow-brand py-8 px-8 md:px-36 z-50">
             <div className="mb-16 max-w-2xl">
-              <h2 className="font-display font-extrabold text-2xl leading-tight">
-                Tetszettek a látottak? Töltsd ki a lenti formot, és alkossunk együtt valami ütőset!
+              <h2 className="font-display font-extrabold text-2xl  uppercase leading-brand">
+                Tetszettek a látottak? Töltsd ki a lenti
+                <br />
+                formot, és alkossunk együtt valami ütőset!
               </h2>
             </div>
             <ContactForm />

@@ -102,8 +102,10 @@ function Team() {
       <section className="container mx-auto px-4 sm:px-6 lg:px-8">
         <section className="flex flex-col md:flex-row justify-around items-center">
           <div className="md:w-5/12">
-            <h1 className="text-4.5xl font-display font-extrabold leading-none mb-8">
-              Mi az a Gazduig, és miben rejlik az ütősség?
+            <h1 className="text-4.5xl font-display font-extrabold uppercase leading-brand mb-8">
+              Mi az a Gazduig, és
+              <br />
+              miben rejlik az ütősség?
             </h1>
             <ul className="grid grid-cols-1 md:grid-cols-2 md:grid-rows-2 gap-2 xl:gap-6 xl:col-gap-16 leading-tight">
               <li className="flex items-start font-light max-w-8">
@@ -133,7 +135,7 @@ function Team() {
           </div>
         </section>
         <section>
-          <h2 className="font-display text-2xl font-extrabold my-6 lg:ml-16">
+          <h2 className="font-display text-2xl font-extrabold my-6 lg:ml-16 uppercase leading-brand">
             Mondatok, amelyek aranyat érnek számunkra
           </h2>
           <div className="grid lg:grid-rows-2 lg:grid-cols-3 gap-8 mx-4 lg:mx-8 xl:mx-0">
@@ -224,7 +226,9 @@ function Team() {
       </section>
       <section className="bg-gray-100 -mt-28 pb-32 multi-blob-bg">
         <div className="container mx-auto pt-48 px-4 lg:px-8 xl:px-0">
-          <h2 className="font-display text-2xl font-extrabold my-4 ml-16">Ismerj meg minket pár perc alatt!</h2>
+          <h2 className="font-display text-2xl font-extrabold my-4 ml-16 uppercase leading-brand">
+            Ismerj meg minket pár perc alatt!
+          </h2>
           <div className="bg-white shadow-brand rounded pl-16 pt-8 pr-8 flex flex-col mb-10">
             <h3 className="font-extrabold text-2xl mb-6">Gazdig Bence - CEO & Dizájner csávó</h3>
             <div className="flex flex-row">
@@ -612,7 +616,9 @@ function Team() {
               Erre a helyre kerülnek majd a díjaink, amelyeket olyan projektekért kapunk, mint mondjuk a tiéd.
               <br /> Nagyon szeretnénk párat, így mindent megteszünk értük.
             </p>
-            <p className="font-extrabold font-display mt-6 mb-4">Nem hiszed? Dolgozzunk együtt, és meglátod!</p>
+            <p className="font-extrabold font-display mt-6 mb-4 uppercase leading-brand">
+              Nem hiszed? Dolgozzunk együtt, és meglátod!
+            </p>
             <Link to="/contact">
               <button className="primary-btn">Beszélgessünk</button>
             </Link>

@@ -25,14 +25,20 @@ function IgHacks() {
       <section className="purple-blob-bg" style={{ backgroundPosition: `130% 15%`, backgroundSize: `60% 90%` }}>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="px-8 xl:px-0 w-full lg:w-1/2 my-32">
-            <h2 className="text-2xl md:text-4xl xl:text-5xl leading-none font-display font-extrabold">
-              Írtunk egy összefoglalót arról, milyen módszerrel szerezzük az ügyfeleink 90%-át Instáról
+            <h2 className="text-2xl md:text-4xl xl:text-5xl uppercase leading-brand font-display font-extrabold">
+              Írtunk egy összefoglalót
+              <br />
+              arról, milyen módszerekkel
+              <br />
+              szerezzük az ügyfeleink
+              <br />
+              90%-át Instáról
             </h2>
           </div>
           <div className="mb-32">
             <div className="mx-auto flex">
               <div className="w-full md:w-1/2">
-                <h3 className="text-2xl leading-tight font-display font-extrabold mb-8">
+                <h3 className="text-2xl uppercase leading-brand font-display font-extrabold mb-8">
                   Pötyögd be az e-mail címed, és már küldjük is!
                 </h3>
                 <form
@@ -113,7 +119,7 @@ function IgHacks() {
             </div>
           </div>
           <div className="mb-32 px-8 xl:px-0">
-            <h2 className="text-2xl leading-tight font-display font-extrabold mb-10">
+            <h2 className="text-2xl uppercase leading-brand font-display font-extrabold mb-10">
               Most inkább nézelődnél
               <br /> olvasás helyett? No problem!
             </h2>

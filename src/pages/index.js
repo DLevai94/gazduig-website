@@ -102,8 +102,12 @@ function IndexPage() {
           <div className="my-10 md:my-16 lg:max-w-md">
             <section className="px-4 lg:px-8">
               <div className="text-left">
-                <h2 className="text-2xl lg:text-4xl font-display tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-6xl">
-                  Ütős megoldások, ütős márkák számára
+                <h2 className="text-2xl lg:text-4xl font-display tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-brand md:text-6xl uppercase">
+                  Ütős megoldások,
+                  <br />
+                  ütős márkák
+                  <br />
+                  számára
                 </h2>
                 <p className="mt-3 text-base sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0 font-light">
                   Szia! A Gazduig Creative Agency vagyunk Budapesről. Márkákat teszünk ismertebbé és feltűnőbbé, a
@@ -125,7 +129,7 @@ function IndexPage() {
           <section>
             <div className="container px-5 py-28 mx-auto">
               <div className="w-full mb-10">
-                <h2 className="ml-16 text-2xl font-extrabold font-display">
+                <h2 className="ml-16 text-2xl font-extrabold font-display uppercase">
                   Nézz meg a fentiekből pár sikeres projektet
                 </h2>
                 <br />
@@ -182,7 +186,7 @@ function IndexPage() {
           background: `linear-gradient(360deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 40%, rgba(247,247,247,1) 41%, rgba(247,247,247,1) 100%)`,
         }}>
         <div className="container md:px-5 md:py-32 mx-auto mb-8">
-          <h2 className="md:ml-16 text-2xl font-extrabold font-display text-left">
+          <h2 className="md:ml-16 text-2xl font-extrabold font-display text-left uppercase">
             Hogy tetszettek a látottak?
             <br />
             Készítsünk valami ütőset neked is?
@@ -211,7 +215,7 @@ function IndexPage() {
       </section>
       <section>
         <div className="max-w-screen-xl mx-auto mb-32 px-4 sm:px-6 lg:px-8">
-          <h2 className="heading text-left">Néhány ügyfelünk, akik nem bánták meg, hogy velünk dolgoztak</h2>
+          <h2 className="heading text-left uppercase">Néhány ügyfelünk, akikre büszkék vagyunk</h2>
           <div className="mx-16 grid grid-cols-2 gap-8 md:grid-cols-6">
             <div className="col-span-2 flex justify-center md:col-span-2 lg:col-span-1">
               <img className="h-12" src={LogoTSystems} alt="T-Systems" />
@@ -334,10 +338,10 @@ function IndexPage() {
       <section className="pb-16 home-contact-bg">
         <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="-mb-8">
-            <h2 className="heading mb-4 text-left">
-              Írtunk egy összefoglalót arról, milyen módszerrel szerezzük
+            <h2 className="heading mb-4 text-left uppercase leading-brand">
+              Írtunk egy összefoglalót arról, milyen módszerrel
               <br />
-              az ügyfeleink 90%-át Instáról
+              szerezzük az ügyfeleink 90%-át Instáról
             </h2>
             <p className="font-light text-lg md:ml-16 md:mb-16 text-left">
               Olvass bele, hátha találsz benne valami érdekeset!
@@ -345,8 +349,10 @@ function IndexPage() {
           </div>
           <div className="md:bg-white md:rounded p-8 md:mx-8 md:shadow-brand flex">
             <div className="w-full md:w-1/2">
-              <h3 className="text-2xl leading-tight font-display font-extrabold mb-8">
-                Pötyögd be az e-mail címed, és már küldjük is!
+              <h3 className="text-2xl leading-brand font-display font-extrabold mb-8 uppercase">
+                Pötyögd be az e-mail címed,
+                <br />
+                és már küldjük is!
               </h3>
               <form
                 method="POST"
@@ -424,13 +430,13 @@ function IndexPage() {
       <section className="bg-gray-100">
         <div className="py-10 lg:py-32 flex flex-col md:flex-row container mx-auto items-center justify-center md:justify-around">
           <div className="w-100 md:max-w-1/2 text-left">
-            <h2 className="heading mb-8">
+            <h2 className="heading ml-0 uppercase leading-brand">
               Á, az oldal alján vagy! Hadd mutatkozzunk
               <br />
               be, ha már legörgettél idáig!
             </h2>
             <Link to="/csapat">
-              <button className="primary-btn md:text-left md:ml-16">Kattints ide</button>
+              <button className="primary-btn">Kattints ide</button>
             </Link>
           </div>
           <div className="w-100 flex justify-end items-center">
