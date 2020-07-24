@@ -10,7 +10,7 @@ jobtime: 2019 december
 gradient: linear-gradient(5deg, rgba(48,41,195,1) 0%, rgba(149,53,53,0) 71%
 categories:
   - all
-  - copy
+  - print
 images:
   - https://res.cloudinary.com/gazduig/image/upload/q_80/v1595623611/Pensum/Frame_15_zjee3g.webp
   - https://res.cloudinary.com/gazduig/image/upload/q_80/v1595623610/Pensum/Frame_12_zakfep.webp
