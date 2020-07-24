@@ -301,18 +301,18 @@ function Team() {
                     <p className="font-light text-sm leading-tight">Esküszöm! Volt, hogy már mások is mondták!</p>
                   </div>
                 </div>
-                <div className="flex items-start">
+                {/* <div className="flex items-start">
                   <div className="mr-4">
                     <LazacIcon className="w-10" />
                   </div>
-                  {/* <div>
+                  <div>
                     <h4 className="font-extrabold text-sm leading-tight mb-2">Lazac</h4>
                     <p className="font-light text-sm leading-tight">
                       Fontosnak éreztem megosztani, hogy a lazac az egyik kedvenc ételem, ha már ilyen lazac sávó
                       vagyok.
                     </p>
-                  </div> */}
-                </div>
+                  </div>
+                </div> */}
               </div>
               <div className="md:w-4/12 w-10/12 relative">
                 <img src={Bence} className="lg:absolute bottom-0 right-4" alt="Gazdig Bence" />
