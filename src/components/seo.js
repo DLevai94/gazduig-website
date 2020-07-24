@@ -10,9 +10,10 @@ function SEO({ description, lang = 'hu', meta = [], keywords = [], title = '' })
           title
           description
           author
+          url
         }
       }
-      ogImageDefault: file(absolutePath: { regex: "/images/OG-image.jpg" }) {
+      ogImageDefault: file(relativePath: { eq: "OG-image.jpg" }) {
         childImageSharp {
           fixed(height: 630, width: 1200) {
             src
@@ -21,7 +22,7 @@ function SEO({ description, lang = 'hu', meta = [], keywords = [], title = '' })
       }
     }
   `);
-  const ogImage = `https://gazduig.com/${ogImageDefault?.childImageSharp?.fixed?.src}`;
+  const ogImage = `${site?.siteMetadata?.url}/${ogImageDefault?.childImageSharp?.fixed?.src}`;
 
   const metaDescription = description || site?.siteMetadata?.description;
 

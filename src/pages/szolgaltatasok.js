@@ -340,7 +340,7 @@ const Services = () => {
           <h2 className="font-display text-2xl font-extrabold mb-6">Találd meg, amire leginkább szükséged van!</h2>
           <div className="xl:-mx-16">
             <TabBar
-              categories={SERVICES}
+              categories={SERVICES.slice(0, -1)}
               chosenCategory={chosenCategory}
               setCategory={setChosenCategory}
               containerClass="mb-16"
