@@ -2,9 +2,9 @@
 date: 2020-07-24T21:29:29.667Z
 thumbnail:
   - https://res.cloudinary.com/gazduig/image/upload/q_80/v1595626214/MOI/Frame_82_wmybxx.webp
-title: Poszt dizájnok a MOI 2020 bécsi rendezvény számára
+title: Poszt dizájnok a Magic of Innovation számára
 slug: moi-2020-poszt-dizajnok
-client: Magic Of Innovation
+client: Magic of Innovation
 solutions: Social posztok dizájnja
 jobtime: 2020 június-július
 gradient: linear-gradient(5deg, rgba(133,41,195,1) 0%, rgba(149,53,53,0) 71%)
