@@ -2,10 +2,10 @@
 date: 2020-07-24T15:45:05.592Z
 thumbnail:
   - https://res.cloudinary.com/gazduig/image/upload/q_80/v1595605538/Fixi/Frame_12_zpvjpk.webp
-title: Fixlab.io arculat és UI design
-slug: fixlab-arculat-ui-design
+title: Fixlab.io arculat és UI dizájn
+slug: fixlab-arculat-ui-dizajn
 client: Fixlab.io
-solutions: Arculattervezés, UI design
+solutions: Arculattervezés, UI dizájn
 jobtime: 2020 május
 gradient: linear-gradient(5deg, rgba(110,41,195,1) 0%, rgba(53,58,149,0) 71%)
 categories:
