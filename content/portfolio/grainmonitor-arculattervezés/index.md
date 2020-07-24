@@ -12,8 +12,9 @@ categories:
   - all
   - branding
 images:
-  - https://res.cloudinary.com/gazduig/image/upload/q_80/v1595606353/GrainMonitor/Frame_15_fqjxcf.webp
+  - https://res.cloudinary.com/gazduig/image/upload/q_80/v1595607070/GrainMonitor/Frame_115_b1fq2q.webp
   - https://res.cloudinary.com/gazduig/image/upload/q_80/v1595606353/GrainMonitor/Frame_17_meqdkx.webp
+  - https://res.cloudinary.com/gazduig/image/upload/q_80/v1595606353/GrainMonitor/Frame_15_fqjxcf.webp
   - https://res.cloudinary.com/gazduig/image/upload/q_80/v1595606351/GrainMonitor/Frame_16_cujgnu.webp
   - https://res.cloudinary.com/gazduig/image/upload/q_80/v1595606348/GrainMonitor/Frame_14_dmaogl.webp
 ---
