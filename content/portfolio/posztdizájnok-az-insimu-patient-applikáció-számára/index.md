@@ -2,10 +2,10 @@
 date: 2020-07-24T21:16:09.972Z
 thumbnail:
   - https://res.cloudinary.com/gazduig/image/upload/q_80/v1595625472/Insimu/Frame_66_tcycgx.webp
-title: Posztdizájnok az Insimu Patient applikáció számára
-slug: insimu-patient-posztdizajnok
+title: Poszt dizájnok az Insimu Patient applikáció számára
+slug: insimu-patient-poszt-dizajnok
 client: Insimu Patient
-solutions: Social posztok dizájnolása
+solutions: Social media posztok dizájnja
 jobtime: 2019-2020
 gradient: linear-gradient(5deg, rgba(41,195,170,1) 0%, rgba(149,53,53,0) 71%)
 categories:
