@@ -2,10 +2,10 @@
 date: 2020-07-24T21:00:11.356Z
 thumbnail:
   - https://res.cloudinary.com/gazduig/image/upload/q_80/v1595624498/PW/Frame_38_ijxgr9.webp
-title: Posztdizájnok a Pannon-Work számára
+title: Poszt dizájnok a Pannon-Work számára
 slug: pannon-work-posztdizajnok
 client: Pannon-Work Zrt.
-solutions: Social media poszt design
+solutions: Social media posztok dizájnja
 jobtime: 2019 július
 gradient: linear-gradient(5deg, rgba(70,195,41,1) 0%, rgba(149,53,53,0) 71%)
 categories:
