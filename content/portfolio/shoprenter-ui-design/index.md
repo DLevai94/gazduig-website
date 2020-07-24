@@ -1,7 +1,7 @@
 ---
 date: 2020-07-24T14:07:13.630Z
 thumbnail:
-  - https://res.cloudinary.com/gazduig/image/upload/q_80/v1595599685/Shoprenter/Frame_4_t4u0td.jpg
+  - https://res.cloudinary.com/gazduig/image/upload/q_80/v1595600909/Shoprenter/Frame_4_nf0gcl.jpg
 title: Shoprenter UI design
 slug: shoprenter-ui-design
 client: Shoprenter.hu
@@ -11,10 +11,10 @@ categories:
   - all
   - web
 images:
-  - https://res.cloudinary.com/gazduig/image/upload/q_80/v1595599684/Shoprenter/Frame_1_kihskj.jpg
-  - https://res.cloudinary.com/gazduig/image/upload/q_80/v1595599685/Shoprenter/Frame_2_cqp1vb.jpg
-  - https://res.cloudinary.com/gazduig/image/upload/q_80/v1595599684/Shoprenter/Frame_3_joukit.jpg
-  - https://res.cloudinary.com/gazduig/image/upload/q_80/v1595599685/Shoprenter/Frame_5_oq9owp.jpg
+  - https://res.cloudinary.com/gazduig/image/upload/q_80/v1595600909/Shoprenter/Frame_2_apgmxt.jpg
+  - https://res.cloudinary.com/gazduig/image/upload/q_80/v1595600909/Shoprenter/Frame_5_q8j0ut.jpg
+  - https://res.cloudinary.com/gazduig/image/upload/q_80/v1595600909/Shoprenter/Frame_3_pqrog7.jpg
+  - https://res.cloudinary.com/gazduig/image/upload/q_80/v1595600908/Shoprenter/Frame_1_srvco8.jpg
 ---
 <!--StartFragment-->
 
