@@ -52,7 +52,7 @@ CMS.init({
           { name: 'client', label: 'Ügyfél' },
           { name: 'solutions', label: 'Megoldások' },
           { name: 'jobtime', label: 'Ekkor készült' },
-          { name: 'gradient', label: 'Gradient', required: false },
+          { name: 'gradient', label: 'Gradient' },
           {
             name: 'categories',
             label: 'Kategória',
