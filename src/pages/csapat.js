@@ -330,7 +330,7 @@ function Team() {
           <div className="bg-white shadow-brand rounded pl-16 pt-8 pr-8 flex flex-col mb-10">
             <h3 className="font-extrabold text-2xl mb-6">Bergyár Gergő - Dizájner bajnok</h3>
             <div className="flex flex-row">
-              <div className="hidden md:grid lg:w-8/12 grid md:grid-cols-2 md:grid-rows-4 col-gap-20 row-gap-10 mb-10">
+              <div className="hidden md:grid lg:w-8/12 grid md:grid-cols-2 md:grid-rows-3 col-gap-20 row-gap-10 mb-10">
                 <div className="flex items-start">
                   <div className="mr-4">
                     <GuitarIcon className="w-10" />
@@ -406,7 +406,7 @@ function Team() {
           <div className="bg-white shadow-brand rounded pl-16 pt-8 pr-8 flex flex-col mb-10">
             <h3 className="font-extrabold text-2xl mb-6">Dabasi Réka - Sportdizájn specialista</h3>
             <div className="flex flex-row">
-              <div className="hidden md:grid lg:w-8/12 grid md:grid-cols-2 md:grid-rows-4 col-gap-20 row-gap-10 mb-10">
+              <div className="hidden md:grid lg:w-8/12 grid md:grid-cols-2 md:grid-rows-2 col-gap-20 row-gap-10 mb-10">
                 <div className="flex items-start">
                   <div className="mr-4">
                     <MedalIcon className="w-10" />
