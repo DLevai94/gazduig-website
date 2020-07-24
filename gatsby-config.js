@@ -5,7 +5,7 @@ const fullConfig = resolveConfig(tailwindConfig);
 
 module.exports = {
   siteMetadata: {
-    title: `Gazduig Creative Agency`,
+    title: `Gazduig Creative Agency Budapest`,
     description: `Ütős megoldások, ütős márkák számára. Legyél feltűnőbb és menőbb a versenytársaidnál. Dolgozzunk együtt! Gazduig Creative Agency Budapest.`,
     author: `@gazduig`,
     url: 'https://gazduig.com',

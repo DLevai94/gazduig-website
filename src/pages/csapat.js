@@ -3,7 +3,7 @@ import { graphql, useStaticQuery, Link } from 'gatsby';
 import Img from 'gatsby-image';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import PartnerCard from '../components/partner-card';
+// import PartnerCard from '../components/partner-card';
 
 import InstagramIcon from '../components/svg/instagramIcon';
 import LinkedInIcon from '../components/svg/linkedInIcon';
@@ -38,9 +38,9 @@ import MicIcon from '../components/svg/teamicons28';
 import MountainsIcon from '../components/svg/teamicons29';
 import BookIcon from '../components/svg/teamicons30';
 import Bence from '../images/team-bence.png';
-import Reka from '../images/csapat-reka.png';
-import Dani from '../images/csapat-dani.png';
-import Gergo from '../images/csapat-gergo.png';
+import Reka from '../images/team-reka.png';
+import Dani from '../images/team-dani.png';
+import Gergo from '../images/team-gergo.png';
 
 function Team() {
   const data = useStaticQuery(graphql`
@@ -136,7 +136,7 @@ function Team() {
           <h2 className="font-display text-2xl font-extrabold my-6 lg:ml-16">
             Mondatok, amelyek aranyat érnek számunkra
           </h2>
-          <div className="xl:-mx-8 grid lg:grid-rows-2 lg:grid-cols-3 gap-8 mx-4 lg:mx-8 xl:mx-0">
+          <div className="grid lg:grid-rows-2 lg:grid-cols-3 gap-8 mx-4 lg:mx-8 xl:mx-0">
             <div className="bg-white rounded shadow-brand flex items-start p-4 xl:pr-24">
               <div className="mr-4">
                 <BrainIcon className="w-10" />
@@ -315,7 +315,7 @@ function Team() {
               </div>
               <div className="flex self-center w-2/12 flex-col">
                 <a href="https://instagram.com/gazduig" rel="noreferrer">
-                  <InstagramIcon className="w-8 mr-8 md:mr-0 md:mb-8 hover:opacity-50" />
+                  <InstagramIcon className="w-8 mb-8 hover:opacity-50" />
                 </a>
                 <a href="https://linkedin.com/in/gazduig" rel="noreferrer">
                   <LinkedInIcon className="w-8 md:mt-8 hover:opacity-50" />
@@ -394,7 +394,7 @@ function Team() {
                   <InstagramIcon className="w-8 mb-8 hover:opacity-50" />
                 </a>
                 <a href="https://linkedin.com/in/x" rel="noreferrer">
-                  <LinkedInIcon className="w-8 mt-8 hover:opacity-50" />
+                  <LinkedInIcon className="w-8 md:mt-8 hover:opacity-50" />
                 </a>
               </div>
             </div>
@@ -459,7 +459,7 @@ function Team() {
                   <InstagramIcon className="w-8 mb-8 hover:opacity-50" />
                 </a>
                 <a href="https://linkedin.com/in/x" rel="noreferrer">
-                  <LinkedInIcon className="w-8 mt-8 hover:opacity-50" />
+                  <LinkedInIcon className="w-8 md:mt-8 hover:opacity-50" />
                 </a>
               </div>
             </div>
@@ -467,7 +467,7 @@ function Team() {
           <div className="bg-white shadow-brand rounded pl-16 pt-8 pr-8 flex flex-col mb-10">
             <h3 className="font-extrabold text-2xl mb-6">Tímár Dani - Minden szövegek írója</h3>
             <div className="flex flex-row">
-              <div className="hidden md:grid lg:w-8/12 grid md:grid-cols-2 md:grid-rows-4 col-gap-20 row-gap-10 mb-10">
+              <div className="hidden md:grid lg:w-8/12 md:grid-cols-2 md:grid-rows-4 col-gap-20 row-gap-10 mb-10">
                 <div className="flex items-start">
                   <div className="mr-4">
                     <StarIcon className="w-10" />
@@ -569,15 +569,14 @@ function Team() {
                   <InstagramIcon className="w-8 mb-8 hover:opacity-50" />
                 </a>
                 <a href="https://linkedin.com/in/x" rel="noreferrer">
-                  <LinkedInIcon className="w-8 mt-8 hover:opacity-50" />
+                  <LinkedInIcon className="w-8 md:mt-8 hover:opacity-50" />
                 </a>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="-mt-16 rounded bg-gray-900 text-white text-2xl font-display font-extrabold mx-2 md:ml-16 md:mr-0 inline-block px-8 py-4 pr-20 mb-10">
+      {/* <div className="-mt-16 rounded bg-gray-900 text-white text-2xl font-display font-extrabold mx-2 md:ml-16 md:mr-0 inline-block px-8 py-4 pr-20 mb-10">
           <p>
             A kreatív dolgokban vagyunk otthon. Viszont
             <br /> vannak remek partnereink, akikkel kiegészülve
@@ -605,16 +604,19 @@ function Team() {
             title="Golden Brothers Zrt."
             description="Patrik és csapata felelnek azért, ami online marketing"
           />
-        </div>
-        <div className="mx-auto rounded w-full lg:w-7/12 md:border-2 md:border-gray-900 bg-white p-8 mb-32 text-xl">
-          <p className="font-light">
-            Erre a helyre kerülnek majd a díjaink, amelyeket olyan projektekért kapunk, mint mondjuk a tiéd.
-            <br /> Nagyon szeretnénk párat, így mindent megteszünk értük.
-          </p>
-          <p className="font-extrabold font-display mt-6 mb-4">Nem hiszed? Dolgozzunk együtt, és meglátod!</p>
-          <Link to="/contact">
-            <button className="primary-btn">Beszélgessünk</button>
-          </Link>
+        </div> */}
+      <section className="bg-gray-100">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 pb-32">
+          <div className="mx-auto rounded w-full lg:w-7/12 md:border-2 md:border-gray-900 bg-white p-8 text-xl">
+            <p className="font-light">
+              Erre a helyre kerülnek majd a díjaink, amelyeket olyan projektekért kapunk, mint mondjuk a tiéd.
+              <br /> Nagyon szeretnénk párat, így mindent megteszünk értük.
+            </p>
+            <p className="font-extrabold font-display mt-6 mb-4">Nem hiszed? Dolgozzunk együtt, és meglátod!</p>
+            <Link to="/contact">
+              <button className="primary-btn">Beszélgessünk</button>
+            </Link>
+          </div>
         </div>
       </section>
     </Layout>

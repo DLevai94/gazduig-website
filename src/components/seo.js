@@ -69,7 +69,6 @@ function SEO({ description, lang = 'hu', meta = [], keywords = [], title = '' })
             : []
         )
         .concat(meta)}
-      title={title}
       titleTemplate={`%s - ${site?.siteMetadata?.title}`}
     />
   );
