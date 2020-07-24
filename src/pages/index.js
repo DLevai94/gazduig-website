@@ -101,7 +101,7 @@ function IndexPage() {
         <div className="container mx-auto flex justify-center lg:justify-start items-center h-screen -mt-32">
           <div className="my-10 md:my-16 lg:max-w-md">
             <section className="px-4 lg:px-8">
-              <div className="text-center lg:text-left">
+              <div className="text-left">
                 <h2 className="text-2xl lg:text-4xl font-display tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-6xl">
                   Ütős megoldások, ütős márkák számára
                 </h2>
@@ -182,7 +182,7 @@ function IndexPage() {
           background: `linear-gradient(360deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 40%, rgba(247,247,247,1) 41%, rgba(247,247,247,1) 100%)`,
         }}>
         <div className="container md:px-5 md:py-32 mx-auto mb-8">
-          <h2 className="md:ml-16 text-2xl font-extrabold font-display text-center md:text-left">
+          <h2 className="md:ml-16 text-2xl font-extrabold font-display text-left">
             Hogy tetszettek a látottak?
             <br />
             Készítsünk valami ütőset neked is?
@@ -192,7 +192,7 @@ function IndexPage() {
             className="bg-white py-3 md:py-12 md:px-16 shadow-brand rounded flex flex-col md:flex-row md:justify-around items-center bg-right bg-no-repeat bg-contain"
             style={{ backgroundImage: `url(${CTABlob})` }}>
             <div className="mb-6 md:mb-0">
-              <h3 className="font-extrabold mb-6 text-lg text-center md:text-left">
+              <h3 className="font-extrabold mb-6 text-lg text-left">
                 Írd meg, miben
                 <br /> segíthetünk!
               </h3>
@@ -211,9 +211,7 @@ function IndexPage() {
       </section>
       <section>
         <div className="max-w-screen-xl mx-auto mb-32 px-4 sm:px-6 lg:px-8">
-          <h2 className="heading text-center md:text-left">
-            Néhány ügyfelünk, akik nem bánták meg, hogy velünk dolgoztak
-          </h2>
+          <h2 className="heading text-left">Néhány ügyfelünk, akik nem bánták meg, hogy velünk dolgoztak</h2>
           <div className="mx-16 grid grid-cols-2 gap-8 md:grid-cols-6">
             <div className="col-span-2 flex justify-center md:col-span-2 lg:col-span-1">
               <img className="h-12" src={LogoTSystems} alt="T-Systems" />
@@ -336,12 +334,12 @@ function IndexPage() {
       <section className="pb-16 home-contact-bg">
         <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="-mb-8">
-            <h2 className="heading mb-4 text-center md:text-left">
+            <h2 className="heading mb-4 text-left">
               Írtunk egy összefoglalót arról, milyen módszerrel szerezzük
               <br />
               az ügyfeleink 90%-át Instáról
             </h2>
-            <p className="font-light text-lg md:ml-16 md:mb-16 text-center md:text-left">
+            <p className="font-light text-lg md:ml-16 md:mb-16 text-left">
               Olvass bele, hátha találsz benne valami érdekeset!
             </p>
           </div>
@@ -425,7 +423,7 @@ function IndexPage() {
       </section>
       <section className="bg-gray-100">
         <div className="py-10 lg:py-32 flex flex-col md:flex-row container mx-auto items-center justify-center md:justify-around">
-          <div className="w-100 md:max-w-1/2 text-center md:text-left">
+          <div className="w-100 md:max-w-1/2 text-left">
             <h2 className="heading mb-8">
               Á, az oldal alján vagy! Hadd mutatkozzunk
               <br />

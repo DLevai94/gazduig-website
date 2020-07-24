@@ -6,7 +6,7 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ['Poppins', ...fontFamily.sans],
-        display: ['Roboto Slab', ...fontFamily.sans],
+        display: ['Poppins', ...fontFamily.sans],
         body: ['Poppins', ...fontFamily.sans],
       },
       borderRadius: {

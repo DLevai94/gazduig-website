@@ -257,7 +257,7 @@ const Services = () => {
           tegyük ezt a te márkáddal is?"
             description={`A tartalommarketing hatalmas fegyver, hiszen a folyamatos, érdekes és ütős tartalmak bevonzzák,
           megtartják, követőkké, majd vásárlókká alakítják az embereket.<br /><br />
-          Nem is mondunk többet, nézd meg az instánkat, és vond le a következtetést.<br /><br />
+          Nem is mondunk többet, <a href="https://instagram.com/gazduig" rel="noreferrer">nézd meg az instánkat</a>, és vond le a következtetést.<br /><br />
           Hogyha azt tapasztalod, amit a tiéd láttán is el akarsz érni, lépjünk kapcsolatba, és lássunk hozzá!`}>
             <div className="bg-white rounded shadow-brand p-3">
               <SolIcon1 className="w-8 mb-2" />
@@ -401,7 +401,7 @@ const Services = () => {
           </section>
         </div>
         <section className="md:-mt-64 pt-36 md:pt-96 pb-36">
-          <div className="container mx-auto text-center md:text-left sm:px-6 lg:px-48">
+          <div className="container mx-auto text-left sm:px-6 lg:px-48">
             <h2 className="font-display font-extrabold text-2xl leading-tight mb-6">
               Még nem vagy 100%-ig biztos a dologban?
               <br />

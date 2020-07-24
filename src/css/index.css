@@ -93,26 +93,6 @@
   @apply mb-8 w-full rounded overflow-hidden bg-white p-4 shadow-brand flex flex-row justify-start items-center transition-all duration-300 ease-out;
 }
 
-.info-timeline ul li span.timeline-circle {
-  @apply font-display relative border-2 font-extrabold bg-transparent inline-block text-center border-gray-900 text-lg;
-  border-radius: 100%;
-  width: 40px;
-  line-height: 40px;
-  text-align: center;
-  margin-top: 40px;
-  z-index: 2;
-}
-
-.info-timeline ul li:not(:first-of-type) span.timeline-circle::before {
-  @apply absolute border block border-gray-900;
-  width: 0;
-  height: 40px;
-  content: '';
-  left: 50%;
-  z-index: 1;
-  top: -42px;
-  margin-left: -1px;
-}
 
 .home-contact-bg {
   background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 60%, rgba(247,247,247,1) 61%, rgba(247,247,247,1) 100%);

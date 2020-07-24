@@ -84,7 +84,7 @@ export default function Template({ data }) {
         </section>
       </div>
       <section className="md:-mt-64 pt-36 md:pt-96 pb-36">
-        <div className="container mx-auto text-center md:text-left sm:px-6 lg:px-64">
+        <div className="container mx-auto text-left sm:px-6 lg:px-64">
           <h2 className="font-display font-extrabold text-2xl leading-tight mb-6">
             Még nem vagy 100%-ig biztos a dologban?
             <br />
