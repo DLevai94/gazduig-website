@@ -13,14 +13,14 @@ categories:
   - web
   - all
 images:
+  - https://res.cloudinary.com/gazduig/image/upload/q_80/v1595605538/Fixi/A.webp
+  - https://res.cloudinary.com/gazduig/image/upload/q_80/v1595605538/Fixi/B.webp
+  - https://res.cloudinary.com/gazduig/image/upload/q_80/v1595605538/Fixi/C.webp
+  - https://res.cloudinary.com/gazduig/image/upload/q_80/v1595605537/Fixi/D.webp
+  - https://res.cloudinary.com/gazduig/image/upload/q_80/v1595605537/Fixi/Fixi_1.webp
   - https://res.cloudinary.com/gazduig/image/upload/q_80/v1595605539/Fixi/Frame_10_ptin3l.webp
   - https://res.cloudinary.com/gazduig/image/upload/q_80/v1595605539/Fixi/Frame_6_tstxxk.webp
-  - https://res.cloudinary.com/gazduig/image/upload/q_80/v1595605538/Fixi/Frame_12_zpvjpk.webp
-  - https://res.cloudinary.com/gazduig/image/upload/q_80/v1595605538/Fixi/Frame_13_dbwqqa.webp
   - https://res.cloudinary.com/gazduig/image/upload/q_80/v1595605537/Fixi/Frame_8_emz9ou.webp
-  - https://res.cloudinary.com/gazduig/image/upload/q_80/v1595605537/Fixi/Frame_7_qxqkob.webp
-  - https://res.cloudinary.com/gazduig/image/upload/q_80/v1595605537/Fixi/Frame_9_y4xciy.webp
-  - https://res.cloudinary.com/gazduig/image/upload/q_80/v1595605538/Fixi/Frame_11_blbyxd.webp
 ---
 <!--StartFragment-->
 
