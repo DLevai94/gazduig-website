@@ -5,7 +5,7 @@ thumbnail:
 title: MBM Solvers könyvborító és print
 slug: mbm-solvers-konyvborito-es-print
 client: MBM Solvers
-solutions: Könyvborító tervezése, Print anyagok tervezése
+solutions: Könyvborító tervezése, Print anyagok dizájnolása
 jobtime: 2020 január
 gradient: linear-gradient(5deg, rgba(41,47,195,1) 0%, rgba(53,58,149,0) 71%)
 categories:
