@@ -3,9 +3,9 @@ date: 2020-07-24T20:46:08.591Z
 thumbnail:
   - https://res.cloudinary.com/gazduig/image/upload/q_80/v1595623610/Pensum/Frame_11_pxdqjm.webp
 title: Cégbemutató a Pensum Group számára
-slug: pensum-group-print-design
+slug: pensum-group-print-dizajn
 client: Pensum Group
-solutions: Print design tervezése
+solutions: Print dizájn tervezése
 jobtime: 2019 december
 gradient: linear-gradient(5deg, rgba(48,41,195,1) 0%, rgba(149,53,53,0) 71%
 categories:
