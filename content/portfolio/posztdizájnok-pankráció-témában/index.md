@@ -4,7 +4,7 @@ thumbnail:
   - https://res.cloudinary.com/gazduig/image/upload/q_80/v1595625172/Pankr%C3%A1ci%C3%B3/Frame_56_bh3h3w.webp
 title: Posztdizájnok pankráció témában
 slug: pankracio-posztdizajnok
-client: Küzdősport Egyesület
+client: HCW Hungary
 solutions: Social posztok dizájnja
 jobtime: 2019 november
 gradient: linear-gradient(5deg, rgba(195,41,41,1) 0%, rgba(149,53,53,0) 71%)
