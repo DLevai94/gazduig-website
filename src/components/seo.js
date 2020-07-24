@@ -3,7 +3,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 
 function SEO({ description, lang = 'hu', meta = [], keywords = [], title = '' }) {
-  const { site } = useStaticQuery(graphql`
+  const { site, ogImageDefault } = useStaticQuery(graphql`
     query DefaultSEOQuery {
       site {
         siteMetadata {
@@ -12,8 +12,16 @@ function SEO({ description, lang = 'hu', meta = [], keywords = [], title = '' })
           author
         }
       }
+      ogImageDefault: file(absolutePath: { regex: "/images/OG-image.jpg" }) {
+        childImageSharp {
+          fixed(height: 630, width: 1200) {
+            src
+          }
+        }
+      }
     }
   `);
+  const ogImage = `https://gazduig.com/${ogImageDefault?.childImageSharp?.fixed?.src}`;
 
   const metaDescription = description || site?.siteMetadata?.description;
 
@@ -41,7 +49,15 @@ function SEO({ description, lang = 'hu', meta = [], keywords = [], title = '' })
         },
         {
           property: `og:image`,
-          content: `/OG-image.jpg`,
+          content: ogImage,
+        },
+        {
+          property: `twitter:image`,
+          content: ogImage,
+        },
+        {
+          property: `image`,
+          content: ogImage,
         },
         {
           name: `twitter:card`,
