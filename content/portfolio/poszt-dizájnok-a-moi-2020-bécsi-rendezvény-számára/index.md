@@ -5,7 +5,7 @@ thumbnail:
 title: Poszt dizájnok a Magic of Innovation számára
 slug: moi-2020-poszt-dizajnok
 client: Magic of Innovation
-solutions: Social posztok dizájnja
+solutions: Social media posztok dizájnja
 jobtime: 2020 június-július
 gradient: linear-gradient(5deg, rgba(133,41,195,1) 0%, rgba(149,53,53,0) 71%)
 categories:
