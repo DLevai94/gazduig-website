@@ -6,7 +6,7 @@ title: Poszt dizájnok az Allyos applikáció számára
 slug: allyos-poszt-dizajnok
 client: Allyos App
 solutions: Social media posztok dizájnja
-jobtime: 2019 decemberétől folyamatosan
+jobtime: 2019-2020
 gradient: linear-gradient(5deg, rgba(41,195,66,1) 0%, rgba(149,53,53,0) 71%)
 categories:
   - all
