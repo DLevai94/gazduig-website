@@ -20,7 +20,7 @@ import LightBulbIcon from '../components/svg/lightbulbIcon';
 import NightIcon from '../components/svg/teamicons12';
 import UnitedIcon from '../components/svg/teamicons13';
 import MetalIcon from '../components/svg/teamicons14';
-import LazacIcon from '../components/svg/teamicons32';
+// import LazacIcon from '../components/svg/teamicons32';
 import GuitarIcon from '../components/svg/teamicons15';
 import ComicIcon from '../components/svg/teamicons16';
 import PankratorIcon from '../components/svg/teamicons17';
