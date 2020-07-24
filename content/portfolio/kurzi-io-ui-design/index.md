@@ -2,10 +2,10 @@
 date: 2020-07-24T16:27:01.666Z
 thumbnail:
   - https://res.cloudinary.com/gazduig/image/upload/q_80/v1595608058/Kurzi/Frame_44_fhl2nc.webp
-title: Kurzi.io UI design
-slug: kurzi-ui-design
+title: Kurzi.io UI dizájn
+slug: kurzi-ui-dizajn
 client: Kurzi.io
-solutions: UI design
+solutions: UI dizájn
 jobtime: 2020 március
 gradient: linear-gradient(5deg, rgba(136,41,195,1) 0%, rgba(53,58,149,0) 71%)
 categories:
