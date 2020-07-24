@@ -2,8 +2,8 @@
 date: 2020-07-24T21:25:17.488Z
 thumbnail:
   - https://res.cloudinary.com/gazduig/image/upload/q_80/v1595626006/R%C3%A9ka%203/Frame_74_pusio7.webp
-title: Social media poszt dizájnok sport témában 1. rész
-slug: social-media-poszt-dizajnok-sport-temaban-1
+title: Poszt dizájnok sport témában 1. rész
+slug: poszt-dizajnok-sport-temaban-1
 client: Az instagram közössége
 solutions: Social media posztok dizájnja
 jobtime: 2019-2020
