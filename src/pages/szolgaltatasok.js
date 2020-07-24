@@ -22,6 +22,11 @@ import SolIcon13 from '../components/svg/solutions13';
 import SolIcon14 from '../components/svg/solutions14';
 import SolIcon15 from '../components/svg/solutions15';
 import SolIcon16 from '../components/svg/solutions16';
+import List1 from '../images/1.svg';
+import List2 from '../images/2.svg';
+import List3 from '../images/3.svg';
+import List4 from '../images/4.svg';
+import List5 from '../images/5.svg';
 import Office from '../images/office.png';
 import { SERVICES } from '../config/consts';
 
@@ -348,23 +353,30 @@ const Services = () => {
           <div className="services-office-bg">
             <div className="mb-32">
               <h2 className="font-display text-2xl font-extrabold mb-8">Így néz ki az együttműködésünk folyamata</h2>
-              <div className="info-timeline w-1/2">
+              <div className="w-1/2">
                 <ul>
-                  <li className="font-light text-lg">
-                    <span className="timeline-circle mr-6">01</span>Kapcsolatba lépünk egymással
+                  <li className="font-light text-lg flex justify-start items-center">
+                    <img src={List1} className="w-10 inline-block mr-4" />
+                    <span className="-mt-10">Kapcsolatba lépünk egymással</span>
                   </li>
-                  <li className="font-light text-lg">
-                    <span className="timeline-circle mr-6">02</span>Felmérjük az igényeidet
+                  <li className="font-light text-lg flex justify-start items-center">
+                    <img src={List2} className="w-10 inline-block mr-4" />
+                    <span className="-mt-10">Felmérjük az igényeidet</span>
                   </li>
-                  <li className="font-light text-lg">
-                    <span className="timeline-circle mr-6">03</span>Azok alapján terveket készítünk
+                  <li className="font-light text-lg flex justify-start items-center">
+                    <img src={List3} className="w-10 inline-block mr-4" />
+                    <span className="-mt-10">Azok alapján terveket készítünk</span>
                   </li>
-                  <li className="font-light text-lg">
-                    <span className="timeline-circle mr-6">04</span>Bemutatjuk, és ha kell módosítjuk, végtelenszer,
-                    felár nélkül, míg olyan nem lesz, amilyet elképzeltél
+                  <li className="font-light text-lg flex justify-start items-center">
+                    <img src={List4} className="w-10 inline-block mr-4" />
+                    <span className="-mt-10">
+                      Bemutatjuk, és ha kell módosítjuk, végtelenszer, felár nélkül, míg olyan nem lesz, amilyet
+                      elképzeltél
+                    </span>
                   </li>
-                  <li className="font-light text-lg">
-                    <span className="timeline-circle mr-6">05</span>Átadjuk a kész anyagot
+                  <li className="font-light text-lg flex justify-start items-center">
+                    <img src={List5} className="w-10 inline-block mr-4" />
+                    <span>Átadjuk a kész anyagot</span>
                   </li>
                 </ul>
               </div>
