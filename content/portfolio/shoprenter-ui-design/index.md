@@ -7,7 +7,7 @@ slug: shoprenter-ui-design
 client: Shoprenter.hu
 solutions: UI design
 jobtime: 2020 március
-gradient: ''
+gradient: linear-gradient(5deg, rgba(52,195,41,1) 0%, rgba(53,149,75,0) 71%)
 categories:
   - all
   - web
