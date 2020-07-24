@@ -3,9 +3,9 @@ date: 2020-07-24T20:39:20.946Z
 thumbnail:
   - https://res.cloudinary.com/gazduig/image/upload/q_80/v1595623424/HD%20Marketing/Frame_8_zvxvuu.webp
 title: Marketing Fesztivál offline megjelenés
-slug: hd-marketing-print-design
+slug: hd-marketing-print-dizajn
 client: HD Marketing
-solutions: Szórólap és rollup design, 3D tervezés
+solutions: Szórólap és rollup dizájn, 3D tervezés
 jobtime: 2019 december
 gradient: linear-gradient(5deg, rgba(195,41,41,1) 0%, rgba(149,53,53,0) 71%)
 categories:
