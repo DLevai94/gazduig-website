@@ -1,5 +1,5 @@
 ---
-date: 2020-07-24T14:07:13.630Z
+date: 2020-07-24T15:19:24.576Z
 thumbnail:
   - https://res.cloudinary.com/gazduig/image/upload/q_80/v1595600909/Shoprenter/Frame_4_nf0gcl.jpg
 title: Shoprenter UI design
@@ -7,7 +7,7 @@ slug: shoprenter-ui-design
 client: Shoprenter.hu
 solutions: UI design
 jobtime: 2020 március
-gradient: ''
+gradient: linear-gradient(5deg, rgba(52,195,41,1) 0%, rgba(53,149,75,0) 71%)
 categories:
   - all
   - web
