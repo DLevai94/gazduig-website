@@ -2,10 +2,10 @@
 date: 2020-07-24T21:06:24.793Z
 thumbnail:
   - https://res.cloudinary.com/gazduig/image/upload/q_80/v1595624850/Allyos/Frame_54_pape55.webp
-title: Posztdizájnok az Allyos applikáció számára
-slug: allyos-posztdizajnok
+title: Poszt dizájnok az Allyos applikáció számára
+slug: allyos-poszt-dizajnok
 client: Allyos App
-solutions: Social posztok dizájnja
+solutions: Social media posztok dizájnja
 jobtime: 2019 decemberétől folyamatosan
 gradient: linear-gradient(5deg, rgba(41,195,66,1) 0%, rgba(149,53,53,0) 71%)
 categories:
