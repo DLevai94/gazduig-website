@@ -5,7 +5,7 @@ thumbnail:
 title: Marketing Fesztivál offline megjelenés
 slug: hd-marketing-print-design
 client: HD Marketing
-solutions: Print design
+solutions: Szórólap és rollup design, 3D tervezés
 jobtime: 2019 december
 gradient: linear-gradient(5deg, rgba(195,41,41,1) 0%, rgba(149,53,53,0) 71%)
 categories:
