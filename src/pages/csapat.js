@@ -232,7 +232,7 @@ function Team() {
           <div className="bg-white shadow-brand rounded pl-16 pt-8 pr-8 flex flex-col mb-10">
             <h3 className="font-extrabold text-2xl mb-6">Gazdig Bence - CEO & Dizájner csávó</h3>
             <div className="flex flex-row">
-              <div className="hidden md:grid lg:w-8/12 md:grid-cols-2 md:grid-rows-4 col-gap-20 row-gap-10 mb-10">
+              <div className="hidden md:grid lg:w-8/12 md:grid-cols-2 md:grid-rows-3 col-gap-20 row-gap-10 mb-10">
                 <div className="flex items-start">
                   <div className="mr-4">
                     <RocketIcon className="w-10" />
@@ -305,13 +305,13 @@ function Team() {
                   <div className="mr-4">
                     <LazacIcon className="w-10" />
                   </div>
-                  <div>
+                  {/* <div>
                     <h4 className="font-extrabold text-sm leading-tight mb-2">Lazac</h4>
                     <p className="font-light text-sm leading-tight">
                       Fontosnak éreztem megosztani, hogy a lazac az egyik kedvenc ételem, ha már ilyen lazac sávó
                       vagyok.
                     </p>
-                  </div>
+                  </div> */}
                 </div>
               </div>
               <div className="md:w-4/12 w-10/12 relative">
@@ -394,10 +394,10 @@ function Team() {
                 <img src={Gergo} className="lg:absolute bottom-0 right-4" alt="Bergyár Gergő" />
               </div>
               <div className="flex self-center w-2/12 flex-col">
-                <a href="https://instagram.com/x" rel="noreferrer">
+                <a href="https://www.instagram.com/gangstro.graphics/" rel="noreferrer">
                   <InstagramIcon className="w-8 mb-8 hover:opacity-50" />
                 </a>
-                <a href="https://linkedin.com/in/x" rel="noreferrer">
+                <a href="https://www.linkedin.com/in/gerg%C5%91-bergy%C3%A1r-4195b31b0/" rel="noreferrer">
                   <LinkedInIcon className="w-8 md:mt-8 hover:opacity-50" />
                 </a>
               </div>
@@ -459,10 +459,10 @@ function Team() {
                 <img src={Reka} className="lg:absolute bottom-0 right-4" alt="Dabasi Réka" />
               </div>
               <div className="flex self-center w-2/12 flex-col">
-                <a href="https://instagram.com/x" rel="noreferrer">
+                <a href="https://www.instagram.com/1r5.design/" rel="noreferrer">
                   <InstagramIcon className="w-8 mb-8 hover:opacity-50" />
                 </a>
-                <a href="https://linkedin.com/in/x" rel="noreferrer">
+                <a href="https://www.linkedin.com/in/r%C3%A9ka-dabasi15/" rel="noreferrer">
                   <LinkedInIcon className="w-8 md:mt-8 hover:opacity-50" />
                 </a>
               </div>
@@ -569,10 +569,10 @@ function Team() {
                 <img src={Dani} className="lg:absolute bottom-0 right-4" alt="Tímár Dani" />
               </div>
               <div className="flex self-center w-2/12 flex-col">
-                <a href="https://instagram.com/x" rel="noreferrer">
+                <a href="https://www.instagram.com/uzletifarkas/" rel="noreferrer">
                   <InstagramIcon className="w-8 mb-8 hover:opacity-50" />
                 </a>
-                <a href="https://linkedin.com/in/x" rel="noreferrer">
+                <a href="https://www.linkedin.com/in/daniel-tim%C3%A1r-b2267a175/" rel="noreferrer">
                   <LinkedInIcon className="w-8 md:mt-8 hover:opacity-50" />
                 </a>
               </div>
