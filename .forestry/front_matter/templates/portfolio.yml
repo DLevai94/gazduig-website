@@ -48,5 +48,6 @@ fields:
   name: images
   label: Képek
 pages:
+- content/portfolio/fixlab.io-arculat-es-ui-dizajn.md
 - content/portfolio/sajat-weboldal.md
 - content/portfolio/ui-dizajn-a-shoprenter-szamara.md
