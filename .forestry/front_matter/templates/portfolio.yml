@@ -51,3 +51,5 @@ fields:
 - type: image_gallery
   name: images
   label: Képek
+pages:
+- content/portfolio/sajat-weboldal.md
