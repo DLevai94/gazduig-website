@@ -18,3 +18,14 @@ images:
 - https://res.cloudinary.com/gazduig/image/upload/v1595806400/cms/Frame_1_ztqbmt.webp
 
 ---
+A GlassView-val dolgozni mindig is nagy élmény volt, és most is az. Minden egyes alkalommal, amikor új projektünk van, igazán menő dolgokat alkothatunk.
+
+A GlassView és a Designatives közös története néhány éve kezdődött egy weboldal redesignnal. Egyszerű, egyértelmű feladat volt.
+
+Azóta újraterveztük a teljes GlassView arculatot, új logót terveztünk a cégnek, és rengeteg márkázott anyagot készítettünk: névjegykártyákat, prezentációkat, almárkákat, stb. A GlassView mappastruktúránk hatalmasra duzzadt!
+
+A rebranding után átterveztük a cég weboldalát, hogy harmonizáljon az új arculattal, és bevezettük a saját backend és CMS rendszerünket, hogy a GlassView gyorsan és rugalmasan menedzselhesse weboldala tartalmát.
+
+És ha ez nem lenne elég, jó pár videót is készítettünk, köztük a vállalati kultúra és a termékbemutató videót, amiket New York-ban forgattunk. Imádtunk ott lenni, találkozni a csapattal és elvégezni a feladatot.
+
+Örülünk, hogy ilyen nagy szerepet játszhatunk abban, hogy a GlassView brand globális márkává válhasson.
