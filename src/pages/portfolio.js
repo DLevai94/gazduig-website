@@ -12,7 +12,7 @@ const Portfolio = () => {
   const [chosenCategory, setChosenCategory] = useState('all');
   const data = useStaticQuery(graphql`
     query {
-      posts: allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }, limit: 12) {
+      posts: allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }, limit: 24) {
         edges {
           node {
             id
