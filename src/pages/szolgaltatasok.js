@@ -359,7 +359,7 @@ const Services = () => {
               <h2 className="font-display text-2xl font-extrabold mb-8 uppercase leading-brand">
                 Így néz ki az együttműködésünk folyamata
               </h2>
-              <div className="w-1/2">
+              <div className="w-full md:w-1/2">
                 <ul>
                   <li className="font-light text-lg flex justify-start items-center">
                     <img src={List1} className="w-10 inline-block mr-4" />
@@ -388,7 +388,7 @@ const Services = () => {
               </div>
             </div>
             <img src={Office} alt="Nem a mi irodank" className="block lg:hidden" />
-            <div className="-mt-28 w-8/12 rounded bg-gray-900 text-white text-2xl font-display font-extrabold inline-block px-8 py-4 lg:pr-40 mb-8 uppercase leading-brand">
+            <div className="-mt-8 md:-mt-28 md:w-8/12 rounded bg-gray-900 text-white text-2xl font-display font-extrabold inline-block px-8 py-4 lg:pr-40 mb-8 uppercase leading-brand">
               <p>
                 Ez itt nem a mi irodánk. Viszont nagyon <br />
                 szeretnénk egy hasonlót. Ehhez pedig a te

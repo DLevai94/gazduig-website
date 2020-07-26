@@ -127,7 +127,7 @@ function IndexPage() {
         <section className="container max-w-7xl mx-auto pt-16 md:flex-row flex-col items-center justify-start">
           <CalloutSection />
           <section>
-            <div className="container px-5 py-28 mx-auto">
+            <div className="container px-5 pt-28 pb-10 mx-auto">
               <div className="w-full mb-10">
                 <h2 className="ml-16 text-2xl font-extrabold font-display uppercase">
                   Nézz meg a fentiekből pár sikeres projektet
@@ -141,7 +141,30 @@ function IndexPage() {
                   textClass="text-lg"
                 />
               </div>
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:grid-rows-3 gap-8">
+              <div className="md:hidden grid grid-cols-1 gap-8">
+                {data?.posts?.edges
+                  ?.filter(
+                    (edge) => edge?.node?.frontmatter?.categories?.includes(chosenCategory) || chosenCategory === 'all'
+                  )
+                  ?.map((edge) => (
+                    <Link key={edge?.node?.id} to={`portfolio/${edge?.node?.frontmatter?.slug}`}>
+                      <div
+                        className={`h-48 hover:-mt-2 hover:opacity-75 transition-all duration-300 ease-in-out relative flex-shrink-0 overflow-hidden bg-gray-600 rounded bg-cover bg-no-repeat`}
+                        style={{
+                          background: `${
+                            edge?.node?.frontmatter?.gradient ||
+                            'linear-gradient(16deg, rgba(38,38,38,1) 0%, rgba(91,91,91,1) 23%, rgba(38,38,38,0) 100%)'
+                          } bottom, url(${edge?.node?.frontmatter?.thumbnail}) no-repeat center`,
+                        }}>
+                        <div className="absolute bottom-0 left-0 px-5 py-3 text-white">
+                          <p className="font-light">{edge?.node?.frontmatter?.jobtime}</p>
+                          <p className="font-extrabold">{edge?.node?.frontmatter?.title}</p>
+                        </div>
+                      </div>
+                    </Link>
+                  ))}
+              </div>
+              <div className="hidden md:grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:grid-rows-3 gap-8">
                 {data?.posts?.edges
                   ?.filter(
                     (edge) => edge?.node?.frontmatter?.categories?.includes(chosenCategory) || chosenCategory === 'all'
@@ -193,7 +216,7 @@ function IndexPage() {
           </h2>
           <br />
           <div
-            className="bg-white py-3 md:py-12 md:px-16 shadow-brand rounded flex flex-col md:flex-row md:justify-around items-center bg-right bg-no-repeat bg-contain"
+            className="bg-white py-3 md:py-12 md:px-16 shadow-brand rounded flex flex-col md:flex-row md:justify-around items-center md:bg-right md:bg-no-repeat bmd:g-contain"
             style={{ backgroundImage: `url(${CTABlob})` }}>
             <div className="mb-6 md:mb-0">
               <h3 className="font-extrabold mb-6 text-lg text-left">
@@ -343,7 +366,7 @@ function IndexPage() {
               <br />
               szerezzük az ügyfeleink 90%-át Instáról
             </h2>
-            <p className="font-light text-lg md:ml-16 md:mb-16 text-left">
+            <p className="font-light text-lg md:ml-16 md:mb-16 text-left mb-8">
               Olvass bele, hátha találsz benne valami érdekeset!
             </p>
           </div>
@@ -429,8 +452,8 @@ function IndexPage() {
       </section>
       <section className="bg-gray-100">
         <div className="py-10 lg:py-32 flex flex-col md:flex-row container mx-auto items-center justify-center md:justify-around">
-          <div className="w-100 md:max-w-1/2 text-left">
-            <h2 className="heading ml-0 uppercase leading-brand">
+          <div className="w-100 ml-4 md:max-w-1/2 text-left">
+            <h2 className="heading uppercase leading-brand">
               Á, az oldal alján vagy! Hadd mutatkozzunk
               <br />
               be, ha már legörgettél idáig!
