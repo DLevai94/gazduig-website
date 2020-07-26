@@ -25,13 +25,18 @@ fields:
 - type: text
   name: client
   label: Ügyfél
-- name: solutions
+- name: categories
   type: tag_list
   default:
   - branding
   - web
   - print
   - social
+  label: Kategóriák
+- name: solutions
+  type: text
+  config:
+    required: false
   label: Megoldások
 - type: text
   name: jobtime
