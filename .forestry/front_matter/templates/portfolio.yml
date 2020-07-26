@@ -4,10 +4,12 @@ hide_body: false
 fields:
 - type: datetime
   name: date
-  label: date
-- type: image_gallery
-  name: thumbnail
-  label: thumbnail
+  label: Datum
+- name: thumbnail
+  type: file
+  config:
+    maxSize: 64
+  label: Thumbnail
 - type: text
   name: title
   label: title
@@ -17,9 +19,22 @@ fields:
 - type: text
   name: client
   label: client
-- type: text
-  name: solutions
-  label: solutions
+- name: solutions
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - branding
+    - web
+    - social
+    - print
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Solution
 - type: text
   name: jobtime
   label: jobtime
