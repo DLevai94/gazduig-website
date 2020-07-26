@@ -1,7 +1,6 @@
 ---
 date: 2020-07-24T16:12:07.575Z
-thumbnail:
-  - https://res.cloudinary.com/gazduig/image/upload/q_80/v1595607232/Roborock/Frame_25_v770v5.webp
+thumbnail: https://res.cloudinary.com/gazduig/image/upload/q_80/v1595607232/Roborock/Frame_25_v770v5.webp
 title: Roborock sales oldal UI dizájn
 slug: roborock-sales-oldal-ui-dizajn
 client: Smarducks LTD

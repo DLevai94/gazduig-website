@@ -1,7 +1,6 @@
 ---
 date: 2020-07-24T21:18:51.902Z
-thumbnail:
-  - https://res.cloudinary.com/gazduig/image/upload/q_80/v1595625573/R%C3%A9ka%201/Frame_69_npccgb.webp
+thumbnail: https://res.cloudinary.com/gazduig/image/upload/q_80/v1595625573/R%C3%A9ka%201/Frame_69_npccgb.webp
 title: Poszt dizájnok sport témában 2. rész
 slug: poszt-dizajnok-sport-temaban-2
 client: Az Instagram közössége

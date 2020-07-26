@@ -1,7 +1,6 @@
 ---
 date: 2020-07-24T15:45:05.592Z
-thumbnail:
-  - https://res.cloudinary.com/gazduig/image/upload/q_80/v1595605538/Fixi/Frame_12_zpvjpk.webp
+thumbnail: https://res.cloudinary.com/gazduig/image/upload/q_80/v1595605538/Fixi/Frame_12_zpvjpk.webp
 title: Fixlab.io arculat és UI dizájn
 slug: fixlab-arculat-ui-dizajn
 client: Fixlab.io

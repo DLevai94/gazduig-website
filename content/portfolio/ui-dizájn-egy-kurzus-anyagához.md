@@ -1,7 +1,6 @@
 ---
 date: 2020-07-24T21:49:44.125Z
-thumbnail:
-  - https://res.cloudinary.com/gazduig/image/upload/q_80/v1595627475/Korner/Frame_106_uh3j9e.webp
+thumbnail: https://res.cloudinary.com/gazduig/image/upload/q_80/v1595627475/Korner/Frame_106_uh3j9e.webp
 title: UI dizájn egy kurzus anyagához
 slug: korner-etterem-ui-dizajn
 client: A UI dizájn kurzusunk

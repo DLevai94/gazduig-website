@@ -1,7 +1,6 @@
 ---
 date: 2020-07-24T21:06:24.793Z
-thumbnail:
-  - https://res.cloudinary.com/gazduig/image/upload/q_80/v1595624850/Allyos/Frame_54_pape55.webp
+thumbnail: https://res.cloudinary.com/gazduig/image/upload/q_80/v1595624850/Allyos/Frame_54_pape55.webp
 title: Poszt dizájnok az Allyos applikáció számára
 slug: allyos-poszt-dizajnok
 client: Allyos App

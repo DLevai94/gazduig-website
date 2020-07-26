@@ -1,7 +1,6 @@
 ---
 date: 2020-07-24T15:56:06.969Z
-thumbnail:
-  - https://res.cloudinary.com/gazduig/image/upload/q_80/v1595606353/GrainMonitor/Frame_15_fqjxcf.webp
+thumbnail: https://res.cloudinary.com/gazduig/image/upload/q_80/v1595606353/GrainMonitor/Frame_15_fqjxcf.webp
 title: GrainMonitor arculattervezés
 slug: grainmonitor-arculattervezes
 client: GrainMonitor

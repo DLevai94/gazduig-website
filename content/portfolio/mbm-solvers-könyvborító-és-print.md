@@ -1,7 +1,6 @@
 ---
 date: 2020-07-24T16:23:22.708Z
-thumbnail:
-  - https://res.cloudinary.com/gazduig/image/upload/q_80/v1595607844/MBM/Frame_31_iggm1c.webp
+thumbnail: https://res.cloudinary.com/gazduig/image/upload/q_80/v1595607844/MBM/Frame_31_iggm1c.webp
 title: MBM Solvers könyvborító és print
 slug: mbm-solvers-konyvborito-es-print
 client: MBM Solvers

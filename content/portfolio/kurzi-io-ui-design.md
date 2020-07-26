@@ -1,7 +1,6 @@
 ---
 date: 2020-07-24T16:27:01.666Z
-thumbnail:
-  - https://res.cloudinary.com/gazduig/image/upload/q_80/v1595608058/Kurzi/Frame_44_fhl2nc.webp
+thumbnail: https://res.cloudinary.com/gazduig/image/upload/q_80/v1595608058/Kurzi/Frame_44_fhl2nc.webp
 title: Kurzi.io UI dizájn
 slug: kurzi-ui-dizajn
 client: Kurzi.io
@@ -28,7 +27,7 @@ We’ve had the pleasure to work together with Digicomstory on several projects 
 
 Our approach was to create a cool design that fits their target audience and communicates how they work and what they are like as a team.
 
-We went our of our way to draw plenty of icons for the content provided to create a fun experience for the viewer. 
+We went our of our way to draw plenty of icons for the content provided to create a fun experience for the viewer.
 
 
 

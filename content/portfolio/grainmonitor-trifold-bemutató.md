@@ -1,7 +1,6 @@
 ---
 date: 2020-07-24T16:04:25.264Z
-thumbnail:
-  - https://res.cloudinary.com/gazduig/image/upload/q_80/v1595606737/GrainMonitor/Frame_20_u8p7vt.webp
+thumbnail: https://res.cloudinary.com/gazduig/image/upload/q_80/v1595606737/GrainMonitor/Frame_20_u8p7vt.webp
 title: GrainMonitor trifold bemutató
 slug: grainmonitor-trifold
 client: GrainMonitor

@@ -1,7 +1,6 @@
 ---
 date: 2020-07-24T21:47:33.077Z
-thumbnail:
-  - https://res.cloudinary.com/gazduig/image/upload/q_80/v1595627352/Classy/Frame_111_ckgdht.webp
+thumbnail: https://res.cloudinary.com/gazduig/image/upload/q_80/v1595627352/Classy/Frame_111_ckgdht.webp
 title: UI dizájn a Classy Agency számára
 slug: classy-agency-ui-dizajn
 client: Classy Agency

@@ -1,7 +1,6 @@
 ---
 date: 2020-07-24T20:55:33.454Z
-thumbnail:
-  - https://res.cloudinary.com/gazduig/image/upload/q_80/v1595624319/Logofolio%203/C.webp
+thumbnail: https://res.cloudinary.com/gazduig/image/upload/q_80/v1595624319/Logofolio%203/C.webp
 title: Logofolio 3. rész
 slug: gazduig-logofolio-3
 client: 4 remek ügyfél

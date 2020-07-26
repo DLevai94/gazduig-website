@@ -1,7 +1,6 @@
 ---
 date: 2020-07-24T21:02:29.480Z
-thumbnail:
-  - https://res.cloudinary.com/gazduig/image/upload/q_80/v1595624643/T-Systems/Frame_44_bnjdvq.webp
+thumbnail: https://res.cloudinary.com/gazduig/image/upload/q_80/v1595624643/T-Systems/Frame_44_bnjdvq.webp
 title: UI kit & logótervezés a T-Systems számára
 slug: t-systems-ui-kit-logo
 client: T-Systems

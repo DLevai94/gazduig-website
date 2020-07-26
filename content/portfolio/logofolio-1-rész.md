@@ -1,7 +1,6 @@
 ---
 date: 2020-07-24T21:40:37.474Z
-thumbnail:
-  - https://res.cloudinary.com/gazduig/image/upload/q_80/v1595626921/Logofolio%201/Frame_13_jpout8.jpg
+thumbnail: https://res.cloudinary.com/gazduig/image/upload/q_80/v1595626921/Logofolio%201/Frame_13_jpout8.jpg
 title: Logofolio 1. rész
 slug: gazduig-logofolio-1
 client: 5 remek ügyfél

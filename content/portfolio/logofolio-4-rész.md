@@ -1,7 +1,6 @@
 ---
 date: 2020-07-24T21:34:49.072Z
-thumbnail:
-  - https://res.cloudinary.com/gazduig/image/upload/q_80/v1595626606/Logofolio%204/Frame_26_dugbzs.jpg
+thumbnail: https://res.cloudinary.com/gazduig/image/upload/q_80/v1595626606/Logofolio%204/Frame_26_dugbzs.jpg
 title: Logofolio 4. rész
 slug: gazduig-logofolio-4
 client: 2 remek ügyfél

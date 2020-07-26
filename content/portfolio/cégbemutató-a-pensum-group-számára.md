@@ -1,7 +1,6 @@
 ---
 date: 2020-07-24T20:46:08.591Z
-thumbnail:
-  - https://res.cloudinary.com/gazduig/image/upload/q_80/v1595623610/Pensum/Frame_11_pxdqjm.webp
+thumbnail: https://res.cloudinary.com/gazduig/image/upload/q_80/v1595623610/Pensum/Frame_11_pxdqjm.webp
 title: Cégbemutató a Pensum Group számára
 slug: pensum-group-print-dizajn
 client: Pensum Group

@@ -1,7 +1,6 @@
 ---
 date: 2020-07-24T21:16:09.972Z
-thumbnail:
-  - https://res.cloudinary.com/gazduig/image/upload/q_80/v1595625472/Insimu/Frame_66_tcycgx.webp
+thumbnail: https://res.cloudinary.com/gazduig/image/upload/q_80/v1595625472/Insimu/Frame_66_tcycgx.webp
 title: Poszt dizájnok az Insimu Patient applikáció számára
 slug: insimu-patient-poszt-dizajnok
 client: Insimu Patient

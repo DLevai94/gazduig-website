@@ -1,7 +1,6 @@
 ---
 date: 2020-07-24T21:00:11.356Z
-thumbnail:
-  - https://res.cloudinary.com/gazduig/image/upload/q_80/v1595624498/PW/Frame_38_ijxgr9.webp
+thumbnail: https://res.cloudinary.com/gazduig/image/upload/q_80/v1595624498/PW/Frame_38_ijxgr9.webp
 title: Poszt dizájnok a Pannon-Work számára
 slug: pannon-work-posztdizajnok
 client: Pannon-Work Zrt.

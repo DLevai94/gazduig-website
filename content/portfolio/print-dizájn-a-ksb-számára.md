@@ -1,7 +1,6 @@
 ---
 date: 2020-07-24T21:44:43.471Z
-thumbnail:
-  - https://res.cloudinary.com/gazduig/image/upload/q_80/v1595627118/KSB/Frame_41_syfcrq.jpg
+thumbnail: https://res.cloudinary.com/gazduig/image/upload/q_80/v1595627118/KSB/Frame_41_syfcrq.jpg
 title: Print dizájn a KSB számára
 slug: ksb-print-dizajn
 client: KSB Hungary Kft.

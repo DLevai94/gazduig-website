@@ -1,7 +1,6 @@
 ---
 date: 2020-07-24T21:10:30.320Z
-thumbnail:
-  - https://res.cloudinary.com/gazduig/image/upload/q_80/v1595625172/Pankr%C3%A1ci%C3%B3/Frame_56_bh3h3w.webp
+thumbnail: https://res.cloudinary.com/gazduig/image/upload/q_80/v1595625172/Pankr%C3%A1ci%C3%B3/Frame_56_bh3h3w.webp
 title: Poszt dizájnok pankráció témában
 slug: pankracio-poszt-dizajnok
 client: HCW Hungary

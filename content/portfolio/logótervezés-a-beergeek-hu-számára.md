@@ -1,7 +1,6 @@
 ---
 date: 2020-07-24T21:42:56.728Z
-thumbnail:
-  - https://res.cloudinary.com/gazduig/image/upload/q_80/v1595627013/Beergeek/Frame_34_pwdjrz.jpg
+thumbnail: https://res.cloudinary.com/gazduig/image/upload/q_80/v1595627013/Beergeek/Frame_34_pwdjrz.jpg
 title: Logótervezés a Beergeek.hu számára
 slug: beergeekhu-logo
 client: Beergeek.hu
