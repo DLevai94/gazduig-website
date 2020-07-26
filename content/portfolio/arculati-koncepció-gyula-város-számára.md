@@ -1,7 +1,6 @@
 ---
 date: 2020-07-24T22:53:37.961+00:00
-thumbnail:
-- https://res.cloudinary.com/gazduig/image/upload/q_80/v1595623945/Gyula/Frame_16_txawpv.webp
+thumbnail: https://res.cloudinary.com/gazduig/image/upload/q_80/v1595623945/Gyula/Frame_16_txawpv.webp
 title: Arculati koncepció Gyula város számára
 slug: gyula-arculat
 client: Gyula Város
