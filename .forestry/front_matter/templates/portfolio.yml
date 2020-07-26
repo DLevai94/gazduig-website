@@ -4,31 +4,50 @@ hide_body: false
 fields:
 - type: datetime
   name: date
-  label: date
-- type: image_gallery
-  name: thumbnail
-  label: thumbnail
+  label: Dátum
+  config:
+    date_format: YYY/MM/DD
+    required: true
+  default: now
+- name: thumbnail
+  type: file
+  config:
+    maxSize: 64
+  label: Promo kép
 - type: text
   name: title
-  label: title
+  label: Cím
+  config:
+    required: true
 - type: text
   name: slug
-  label: slug
+  label: Slug
 - type: text
   name: client
-  label: client
-- type: text
-  name: solutions
-  label: solutions
+  label: Ügyfél
+- name: solutions
+  type: select
+  default: branding
+  config:
+    required: true
+    options:
+    - branding
+    - web
+    - social
+    - print
+    - all
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Megoldások
 - type: text
   name: jobtime
-  label: jobtime
+  label: Munka dátuma
 - type: text
   name: gradient
-  label: gradient
-- type: list
-  name: categories
-  label: categories
+  label: Gradient
 - type: image_gallery
   name: images
-  label: images
+  label: Képek
