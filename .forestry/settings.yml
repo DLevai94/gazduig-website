@@ -11,7 +11,7 @@ sections:
   match: "**/*"
   templates:
   - portfolio
-upload_dir: https://res.cloudinary.com/gazduig/image/upload
+upload_dir: cms
 public_path: https://res.cloudinary.com/gazduig/image/upload
 front_matter_path: ''
 use_front_matter_path: 
