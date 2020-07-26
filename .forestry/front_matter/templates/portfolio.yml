@@ -26,21 +26,12 @@ fields:
   name: client
   label: Ügyfél
 - name: solutions
-  type: select
-  default: branding
-  config:
-    required: true
-    options:
-    - branding
-    - web
-    - social
-    - print
-    - all
-    source:
-      type: simple
-      section: 
-      file: 
-      path: 
+  type: tag_list
+  default:
+  - branding
+  - web
+  - print
+  - social
   label: Megoldások
 - type: text
   name: jobtime
