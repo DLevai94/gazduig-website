@@ -13,10 +13,10 @@ gradient: linear-gradient(0deg, rgba(0,110,180,0.8326681014202556) 0%, rgba(53,1
 images:
 - https://res.cloudinary.com/gazduig/image/upload/v1595811796/cms/mock2_dygtpu.jpg
 - https://res.cloudinary.com/gazduig/image/upload/v1595808233/cms/Frame_15_c1h6fw.webp
-- https://res.cloudinary.com/gazduig/image/upload/v1595808233/cms/Frame_13_f4cnnf.webp
 - https://res.cloudinary.com/gazduig/image/upload/v1595808233/cms/Frame_12_mvkiqp.webp
 - https://res.cloudinary.com/gazduig/image/upload/v1595808232/cms/Frame_11_d9vmj2.webp
 - https://res.cloudinary.com/gazduig/image/upload/v1595808233/cms/Frame_10_ltmgic.webp
+- https://res.cloudinary.com/gazduig/image/upload/v1595808233/cms/Frame_13_f4cnnf.webp
 
 ---
 We’ve had the pleasure to work together with Digicomstory on several projects in the past and we were super happy when they asked us to create a new brand and web design for their agency.
