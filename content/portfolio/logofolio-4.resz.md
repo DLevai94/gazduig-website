@@ -11,10 +11,10 @@ jobtime: 2019-2020
 gradient: linear-gradient(0deg, rgba(31,33,82,0.8858893899356618) 0%, rgba(53,149,130,0)
   45%)
 images:
+- https://res.cloudinary.com/gazduig/image/upload/v1595813219/cms/m4_rnvusv.jpg
+- https://res.cloudinary.com/gazduig/image/upload/v1595813217/cms/bc6_pwqyt9.jpg
 - https://res.cloudinary.com/gazduig/image/upload/v1595808511/cms/Frame_30_yne2ak.webp
 - https://res.cloudinary.com/gazduig/image/upload/v1595808512/cms/Frame_29_tal2dx.webp
-- https://res.cloudinary.com/gazduig/image/upload/v1595808511/cms/Frame_28_kju9qs.webp
-- https://res.cloudinary.com/gazduig/image/upload/v1595808512/cms/Frame_27_s2m4cz.webp
 - https://res.cloudinary.com/gazduig/image/upload/v1595808512/cms/Frame_26_qqqpes.webp
 - https://res.cloudinary.com/gazduig/image/upload/v1595808512/cms/Frame_25_xmujy4.webp
 - https://res.cloudinary.com/gazduig/image/upload/v1595808511/cms/Frame_24_rlveb7.webp
