@@ -20,7 +20,7 @@ images:
 - https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1595858874/cms/5_qaqw9h.jpg
 
 ---
-Hallgatsz online kurzusokat? Képzeld, egy csomó oktató szembesül azzal, hogy ésszerű keretek közt nem igazán van alkalma jelentősebb anyagi befektetés nélkül árusítania az anyagait, mert egészen egyszerűen nincs erre megfelelő rendszer, ami a magyar vásárló(és oktató)közösség körülményeinek is jórészt megfelelhet.
+Nézel online kurzusokat? Képzeld, egy csomó oktató szembesül azzal, hogy ésszerű keretek közt nem igazán van alkalma jelentősebb anyagi befektetés nélkül árusítania az anyagait, mert egészen egyszerűen nincs erre megfelelő rendszer, ami a magyar vásárló(és oktató)közösség körülményeinek is jórészt megfelelhet.
 
 <br>
 
