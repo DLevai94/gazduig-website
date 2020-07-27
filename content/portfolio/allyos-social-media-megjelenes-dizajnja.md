@@ -21,8 +21,8 @@ images:
 - https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1595808919/cms/Frame_47_uwq7z3.webp
 
 ---
-We’ve had the pleasure to work together with Digicomstory on several projects in the past and we were super happy when they asked us to create a new brand and web design for their agency.
+Ismered az Allyos-t? Ez az az app, amelyik elhivatottan dolgozik azon, hogy megreformálja az emberek vásárlási szokásait, méghozzá a közösségi vásárlás eszközével.
 
-Our approach was to create a cool design that fits their target audience and communicates how they work and what they are like as a team.
+Az Allyos-on prémium termékeket találsz, amelyek ára simán nevezhető felső kategóriásnak, viszont a fent említett módon bárki megszerezheti őket, csupán $1 bedobásával.
 
-We went our of our way to draw plenty of icons for the content provided to create a fun experience for the viewer. The animations that were added in development completed the experience that we were looking to achieve with the new brand.
+Rengeteget kommunikálnak és sok hirdetést futtatnak a közösségi médiában, mi pedig ezekhez a hirdetésekhez készítünk számukra kreatívokat, már 2019 decembere óta.
