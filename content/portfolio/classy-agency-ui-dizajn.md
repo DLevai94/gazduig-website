@@ -18,8 +18,8 @@ images:
 - https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1595858533/cms/allasajanlat_bqxrki.jpg
 
 ---
-We’ve had the pleasure to work together with Digicomstory on several projects in the past and we were super happy when they asked us to create a new brand and web design for their agency.
+A Classy-t és a srácokat, akik mögötte állnak, valahogy úgy lehet a legjobban leírni, ha egy példával illusztráljuk. Mondasz nekik egy teljesen véletlenszerű dolgot egy appal/weboldallal kapcsolatban, eltelik egy kis idő, ők pedig szólnak, hogy kész.
 
-Our approach was to create a cool design that fits their target audience and communicates how they work and what they are like as a team.
+Nemcsak, hogy értenek IT nyelven, de tökéletesen is beszélik azt, gyors, erős, és biztonságos appokat és weboldalakat készítenek, olyan modern technológiákat használva, amiket most nem írunk körül - mert mi nem beszélünk IT nyelven.
 
-We went our of our way to draw plenty of icons for the content provided to create a fun experience for the viewer. The animations that were added in development completed the experience that we were looking to achieve with the new brand.
+Számukra készítettünk UI dizájnt a weboldaluk megújításának elején.
