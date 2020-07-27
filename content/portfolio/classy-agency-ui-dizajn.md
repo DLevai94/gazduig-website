@@ -1,5 +1,5 @@
 ---
-date: 2020-07-27T02:36:24+02:00
+date: 2020-07-27T02:36:24.000+02:00
 categories:
 - web
 thumbnail: https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1595812417/cms/PENS-1_cn1ra0.png
@@ -10,12 +10,12 @@ solutions: UI dizájn
 jobtime: 2020 március
 gradient: linear-gradient(0deg, rgba(165,79,235,1) 0%, rgba(53,149,130,0) 45%)
 images:
-- https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1595810279/cms/Frame_113_lecu1h.webp
-- https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1595810278/cms/Frame_108_y9nymf.webp
-- https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1595810278/cms/Frame_109_fcqaln.webp
-- https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1595810278/cms/Frame_112_qltxlz.webp
-- https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1595810278/cms/Frame_110_hujss4.webp
-- https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1595810278/cms/Frame_114_nhojeq.webp
+- https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1595858534/cms/fooldal_wtzub1.jpg
+- https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1595858534/cms/szolgaltatasok_ifqj9x.jpg
+- https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1595858534/cms/rolunk_bsheux.jpg
+- https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1595858534/cms/melo_template_ilkxoz.jpg
+- https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1595858534/cms/csapat_xf6d31.jpg
+- https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1595858533/cms/allasajanlat_bqxrki.jpg
 
 ---
 We’ve had the pleasure to work together with Digicomstory on several projects in the past and we were super happy when they asked us to create a new brand and web design for their agency.
