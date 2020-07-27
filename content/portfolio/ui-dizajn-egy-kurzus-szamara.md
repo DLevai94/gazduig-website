@@ -19,8 +19,12 @@ images:
 - https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1595810175/cms/Frame_104_f4dbib.webp
 
 ---
-We’ve had the pleasure to work together with Digicomstory on several projects in the past and we were super happy when they asked us to create a new brand and web design for their agency.
+2020 februárjában készítettünk egy videókurzust, ami a UI dizájn fortélyaiba hivatott bevezetni a hallgatókat, abszolút az alapokról, és végigvezetni egy weboldal tervezésének, dizájnolásának, valamint fejlesztők felé való átadásának folyamatán.
 
-Our approach was to create a cool design that fits their target audience and communicates how they work and what they are like as a team.
+<br>
 
-We went our of our way to draw plenty of icons for the content provided to create a fun experience for the viewer. The animations that were added in development completed the experience that we were looking to achieve with the new brand.
+A kurzusban a hallgatókkal együtt a fiktív, Korner Étterem weboldalát készítjük el, ennek az oldalnak a UI dizájnját láthatod itt.
+
+<br>
+
+Jó étvágyat hozzá!
