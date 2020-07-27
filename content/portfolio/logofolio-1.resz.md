@@ -2,7 +2,7 @@
 date: 2020-07-27T02:28:22+02:00
 categories:
 - branding
-thumbnail: https://res.cloudinary.com/gazduig/image/upload/v1595809715/cms/Frame_13_x2uofo.jpg
+thumbnail: https://res.cloudinary.com/gazduig/image/upload/v1595811150/cms/HD_u6ha0b.png
 title: Logofolio 1. rész
 slug: gazduig-logofolio-1
 client: 5 remek ügyfél
