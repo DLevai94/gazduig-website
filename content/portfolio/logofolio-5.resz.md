@@ -10,8 +10,8 @@ solutions: Logótervezés
 jobtime: 2019-2020
 gradient: linear-gradient(0deg, rgba(134,32,228,1) 0%, rgba(53,149,130,0) 45%)
 images:
+- https://res.cloudinary.com/gazduig/image/upload/v1595813150/cms/1_crrmyn.jpg
 - https://res.cloudinary.com/gazduig/image/upload/v1595809192/cms/Frame_74_ulatew.webp
-- https://res.cloudinary.com/gazduig/image/upload/v1595809193/cms/Frame_73_eaayfn.webp
 - https://res.cloudinary.com/gazduig/image/upload/v1595809193/cms/Frame_72_sbim0v.webp
 - https://res.cloudinary.com/gazduig/image/upload/v1595809192/cms/Frame_71_xhebcp.webp
 - https://res.cloudinary.com/gazduig/image/upload/v1595809192/cms/Frame_62_hns9my.webp
