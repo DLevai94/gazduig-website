@@ -3,7 +3,7 @@ date: 2020-07-27T02:35:02+02:00
 categories:
 - web
 - branding
-thumbnail: https://res.cloudinary.com/gazduig/image/upload/v1595810110/cms/Frame_106_iassub.webp
+thumbnail: https://res.cloudinary.com/gazduig/image/upload/v1595812486/cms/PENS_samt9g.png
 title: UI dizájn egy kurzus számára
 slug: ui-dizajn-korner-etterem
 client: UI dizájn kurzus
