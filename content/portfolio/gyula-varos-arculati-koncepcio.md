@@ -1,5 +1,5 @@
 ---
-date: 2020-07-27T02:05:54+02:00
+date: 2020-07-27T02:05:54.000+02:00
 categories:
 - branding
 - print
@@ -22,8 +22,12 @@ images:
 - https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1595808425/cms/Frame_14_xs1pav.webp
 
 ---
-We’ve had the pleasure to work together with Digicomstory on several projects in the past and we were super happy when they asked us to create a new brand and web design for their agency.
+2019-ben Gyula városa pályázatot hirdetett arculatuk, és "az arculat arcának", azaz logójának megújítására, amely versenybe aztán mi is beszálltunk.
 
-Our approach was to create a cool design that fits their target audience and communicates how they work and what they are like as a team.
+<br>
 
-We went our of our way to draw plenty of icons for the content provided to create a fun experience for the viewer. The animations that were added in development completed the experience that we were looking to achieve with the new brand.
+Végül csak a részvételért járó gratulációt sikerült bezsebelnünk, érdekes volt egy város márkájának megjelenésén dolgozni.
+
+<br>
+
+A logóval kapcsolatban a fő elvárás az volt, hogy jelenleg meg benne a város neve, annak fő szimbóluma, a vár, valamint legyen szervesen hozzáilleszthető a település szlogenje, vagyis a "történelmi fürdőváros".
