@@ -1,8 +1,8 @@
 ---
-date: 2020-07-27T02:20:16+02:00
+date: 2020-07-27T02:20:16.000+02:00
 categories:
 - social
-thumbnail: https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1595809226/cms/Frame_65_gjdr7m.webp
+thumbnail: https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1595856689/cms/HD_jghudc.png
 title: Insimu Patient social media megjelenés dizájnja
 slug: insimu-patient-social-media-dizajn
 client: Insimu Patient
