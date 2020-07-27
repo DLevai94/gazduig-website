@@ -10,12 +10,12 @@ solutions: UI dizájn
 jobtime: 2020 március
 gradient: linear-gradient(0deg, rgba(165,79,235,1) 0%, rgba(53,149,130,0) 45%)
 images:
-- https://res.cloudinary.com/gazduig/image/upload/v1595810278/cms/Frame_114_nhojeq.webp
 - https://res.cloudinary.com/gazduig/image/upload/v1595810279/cms/Frame_113_lecu1h.webp
+- https://res.cloudinary.com/gazduig/image/upload/v1595810278/cms/Frame_108_y9nymf.webp
+- https://res.cloudinary.com/gazduig/image/upload/v1595810278/cms/Frame_109_fcqaln.webp
 - https://res.cloudinary.com/gazduig/image/upload/v1595810278/cms/Frame_112_qltxlz.webp
 - https://res.cloudinary.com/gazduig/image/upload/v1595810278/cms/Frame_110_hujss4.webp
-- https://res.cloudinary.com/gazduig/image/upload/v1595810278/cms/Frame_109_fcqaln.webp
-- https://res.cloudinary.com/gazduig/image/upload/v1595810278/cms/Frame_108_y9nymf.webp
+- https://res.cloudinary.com/gazduig/image/upload/v1595810278/cms/Frame_114_nhojeq.webp
 
 ---
 We’ve had the pleasure to work together with Digicomstory on several projects in the past and we were super happy when they asked us to create a new brand and web design for their agency.
