@@ -1,8 +1,8 @@
 ---
-date: 2020-07-27T02:26:57+02:00
+date: 2020-07-27T02:26:57.000+02:00
 categories:
 - social
-thumbnail: https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1595809624/cms/Frame_79_shqyjy.webp
+thumbnail: https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1595856793/cms/PENS_lbpjiu.png
 title: MOI2020 social media megjelenés dizájnja
 slug: moi-2020-social-media-megjelenes-dizajnja
 client: Magic of Innovation
