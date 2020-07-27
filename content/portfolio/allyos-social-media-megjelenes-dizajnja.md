@@ -1,6 +1,7 @@
 ---
-date: 2020-07-27T02:14:00+02:00
+date: 2020-07-27T02:14:00.000+02:00
 categories:
+- all
 - social
 thumbnail: https://res.cloudinary.com/gazduig/image/upload/v1595808854/cms/Frame_54_nfbvpa.webp
 title: Allyos social media megjelenés dizájnja
