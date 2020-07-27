@@ -20,8 +20,12 @@ images:
 - https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1595860907/cms/Frame_71_jjqpwr.webp
 
 ---
-We’ve had the pleasure to work together with Digicomstory on several projects in the past and we were super happy when they asked us to create a new brand and web design for their agency.
+Réka kolléganőnk már igen sok sportban kipróbálta magát, és ért el nem kisebb sikereket, mint egy korosztályos világbajnoki cím bezsebelése jégkorongban.
 
-Our approach was to create a cool design that fits their target audience and communicates how they work and what they are like as a team.
+<br>
 
-We went our of our way to draw plenty of icons for the content provided to create a fun experience for the viewer. The animations that were added in development completed the experience that we were looking to achieve with the new brand.
+Ahogyan az lenni szokott, a sporttal kéz a kézben járnak a sérülések is, ő is összeszedett egy igen komolyat 2019 végén. Mondhatni szerencsés sérülés volt, ugyanis ebben a fizikailag igen passzív időszakban ismerkedett meg a sportdizájn világával, és hála az égnek, el is mélyült benne.
+
+<br>
+
+Olyannyira, hogy azóta felépített egy igen nagy és aktív követőtábort [instagramon](https://www.instagram.com/1r5.design/ "Réka instája"), akiket nap mint nap ellát olyan sport tematikájú, ütős dizájnokkal, mint amiket itt is láthatsz.
