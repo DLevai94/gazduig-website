@@ -1,5 +1,5 @@
 ---
-date: 2020-07-27T01:30:33+02:00
+date: 2020-07-27T01:30:33.000+02:00
 categories:
 - web
 - all
@@ -18,14 +18,8 @@ images:
 - https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1595807214/cms/temak_ajacd5.png
 
 ---
-A GlassView-val dolgozni mindig is nagy élmény volt, és most is az. Minden egyes alkalommal, amikor új projektünk van, igazán menő dolgokat alkothatunk.
+A Shoprenter, az ország vezető webáruház-bérbeadója arculatváltáson esik át 2020-ban, aminek jelentős részét képzi az igen szerteágazó weboldaluk felújítása is.
 
-A GlassView és a Designatives közös története néhány éve kezdődött egy weboldal redesignnal. Egyszerű, egyértelmű feladat volt.
+<br>
 
-Azóta újraterveztük a teljes GlassView arculatot, új logót terveztünk a cégnek, és rengeteg márkázott anyagot készítettünk: névjegykártyákat, prezentációkat, almárkákat, stb. A GlassView mappastruktúránk hatalmasra duzzadt!
-
-A rebranding után átterveztük a cég weboldalát, hogy harmonizáljon az új arculattal, és bevezettük a saját backend és CMS rendszerünket, hogy a GlassView gyorsan és rugalmasan menedzselhesse weboldala tartalmát.
-
-És ha ez nem lenne elég, jó pár videót is készítettünk, köztük a vállalati kultúra és a termékbemutató videót, amiket New York-ban forgattunk. Imádtunk ott lenni, találkozni a csapattal és elvégezni a feladatot.
-
-Örülünk, hogy ilyen nagy szerepet játszhatunk abban, hogy a GlassView brand globális márkává válhasson.
+Ebben az izgalmas és összetett folyamatban volt lehetőségünk részt venni, és hozzájárulni váltáshoz, a főoldal, az értékesítési, valamint növekedési, illetve a dizájn témákat tartalmazó aloldal UI dizájnjával.
