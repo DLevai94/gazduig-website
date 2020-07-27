@@ -28,4 +28,4 @@ Ahogyan az lenni szokott, a sporttal kéz a kézben járnak a sérülések is, �
 
 <br>
 
-Olyannyira, hogy azóta felépített egy igen nagy és aktív követőtábort [instagramon](https://www.instagram.com/1r5.design/ "Réka instája"), akiket nap mint nap ellát olyan sport tematikájú, ütős dizájnokkal, mint amiket itt is láthatsz.
+Olyannyira, hogy azóta felépített egy igen nagy és aktív követőtábort [**instagramon**](https://www.instagram.com/1r5.design/ "Réka instája"), akiket nap mint nap ellát olyan sport tematikájú, ütős dizájnokkal, mint amiket itt is láthatsz.
