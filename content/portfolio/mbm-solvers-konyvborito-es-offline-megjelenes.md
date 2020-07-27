@@ -3,7 +3,7 @@ date: 2020-07-27T01:57:11+02:00
 categories:
 - print
 - all
-thumbnail: https://res.cloudinary.com/gazduig/image/upload/v1595807840/cms/Frame_31_kgf82a.webp
+thumbnail: https://res.cloudinary.com/gazduig/image/upload/v1595810806/cms/MBM_l3xzpy.png
 title: MBM Solvers könyvborító és offline megjelenés
 slug: mbm-solvers-borito-offline-megjelenes
 client: MBM Solvers
