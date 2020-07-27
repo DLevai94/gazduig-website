@@ -1,8 +1,8 @@
 ---
-date: 2020-07-27T02:25:41+02:00
+date: 2020-07-27T02:25:41.000+02:00
 categories:
 - social
-thumbnail: https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1595809550/cms/Frame_71_mh2qou.webp
+thumbnail: https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1595856765/cms/MBM-1_xubzra.png
 title: Social media kreatívok sport témában 2. rész
 slug: social-media-sport
 client: Az Insta közössége
