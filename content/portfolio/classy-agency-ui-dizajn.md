@@ -2,7 +2,7 @@
 date: 2020-07-27T02:36:24+02:00
 categories:
 - web
-thumbnail: https://res.cloudinary.com/gazduig/image/upload/v1595810197/cms/Frame_111_s5mvtw.webp
+thumbnail: https://res.cloudinary.com/gazduig/image/upload/v1595812417/cms/PENS-1_cn1ra0.png
 title: Classy Agency UI dizájn
 slug: classy-agency-ui-dizajn
 client: Classy Agency
