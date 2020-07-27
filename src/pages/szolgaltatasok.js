@@ -411,7 +411,7 @@ const Services = () => {
           </section>
         </div>
         <section className="md:-mt-64 pt-36 md:pt-96 pb-36">
-          <div className="container mx-auto text-left sm:px-6 lg:px-48">
+          <div className="container mx-auto text-left sm:px-6 lg:px-48 ml-8 sm:ml-0">
             <h2 className="font-display font-extrabold text-2xl leading-brand uppercase mb-6">
               Még nem vagy 100%-ig biztos a dologban?
               <br />

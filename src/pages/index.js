@@ -267,14 +267,14 @@ function IndexPage() {
           background: `linear-gradient(360deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 40%, rgba(247,247,247,1) 41%, rgba(247,247,247,1) 100%)`,
         }}>
         <div className="container md:px-5 md:py-32 mx-auto mb-8">
-          <h2 className="md:ml-16 text-2xl font-extrabold font-display text-left uppercase">
+          <h2 className=" ml-6 sm:ml-0 md:ml-16 text-2xl font-extrabold font-display text-left uppercase">
             Hogy tetszettek a látottak?
             <br />
             Készítsünk valami ütőset neked is?
           </h2>
           <br />
           <div
-            className="bg-white py-3 md:py-12 md:px-16 shadow-brand rounded flex flex-col md:flex-row md:justify-around items-center md:bg-right md:bg-no-repeat bmd:g-contain"
+            className="bg-white py-3 md:py-12 md:px-16 shadow-brand rounded flex flex-col md:flex-row md:justify-around items-center sm:bg-right sm:bg-no-repeat sm:bg-contain"
             style={{ backgroundImage: `url(${CTABlob})` }}>
             <div className="mb-6 md:mb-0">
               <h3 className="font-extrabold mb-6 text-lg text-left">
