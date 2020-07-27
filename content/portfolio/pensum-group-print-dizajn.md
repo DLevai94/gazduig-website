@@ -1,5 +1,5 @@
 ---
-date: 2020-07-27T02:02:35+02:00
+date: 2020-07-27T02:02:35.000+02:00
 categories:
 - print
 thumbnail: https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1595810819/cms/PENS_xg3wov.png
@@ -19,8 +19,8 @@ images:
 - https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1595808233/cms/Frame_13_f4cnnf.webp
 
 ---
-We’ve had the pleasure to work together with Digicomstory on several projects in the past and we were super happy when they asked us to create a new brand and web design for their agency.
+A Pensum Group igen nagy fejlődésen ment át az elmúlt években, 2020 elején a tőzsdére is bejegyezték a céget, amelyet megelőzően készült néhány cégbemutató kiajánlójuk is.
 
-Our approach was to create a cool design that fits their target audience and communicates how they work and what they are like as a team.
+<br>
 
-We went our of our way to draw plenty of icons for the content provided to create a fun experience for the viewer. The animations that were added in development completed the experience that we were looking to achieve with the new brand.
+Ezt a kiajánlót volt lehetőségünk megtervezni 2019 őszén.
