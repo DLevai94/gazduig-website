@@ -21,8 +21,8 @@ images:
 - https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1595808649/cms/Frame_34_g5ltna.webp
 
 ---
-We’ve had the pleasure to work together with Digicomstory on several projects in the past and we were super happy when they asked us to create a new brand and web design for their agency.
+A Pannon-Work Zrt. már több, mint 30 éve van jelen a magyar munkaerő-piacon. Jó pár éve már iskolaszövetkezettel is rendelkeznek, 2019 nyarán pedig lehetőségünk volt egy egész kampányt lebonyolítani számukra.
 
-Our approach was to create a cool design that fits their target audience and communicates how they work and what they are like as a team.
+<br>
 
-We went our of our way to draw plenty of icons for the content provided to create a fun experience for the viewer. The animations that were added in development completed the experience that we were looking to achieve with the new brand.
+A diákmunka népszerűsítését és a ledolgozott óraszámokat fektettük le célul, amelyet egy 3 héten át tartó kommunikációs kampánnyal, nyereményként kisorsolt Strand Fesztivál bérletekkel, az S.Oszkár Egyetemista Facebook oldal bevonásával, szövegírással, valamint a lent látható kreatívokkal sikerült kiviteleznünk.
