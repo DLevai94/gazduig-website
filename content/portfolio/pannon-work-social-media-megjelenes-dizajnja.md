@@ -1,8 +1,8 @@
 ---
-date: 2020-07-27T02:08:53+02:00
+date: 2020-07-27T02:08:53.000+02:00
 categories:
 - social
-thumbnail: https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1595808547/cms/Frame_38_s8cvtw.webp
+thumbnail: https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1595856710/cms/MBM_iohbtv.png
 title: Pannon-Work social media megjelenés dizájnja
 slug: pannon-work-social-media-megjelenes
 client: Pannon-Work Zrt.
