@@ -23,6 +23,8 @@ images:
 ---
 Ismered az Allyos-t? Ez az app, amelyik elhivatottan dolgozik azon, hogy megreformálja az emberek vásárlási szokásait, méghozzá a közösségi vásárlás erejével.
 
+<br>
+
 Az Allyos-on prémium termékeket találsz, amelyek ára simán nevezhető felső kategóriásnak, viszont a fent említett módon bárki megszerezheti őket, csupán $1 bedobásával.
 
 <br>

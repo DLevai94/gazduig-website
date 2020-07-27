@@ -20,6 +20,8 @@ images:
 ---
 A Classy-t és a srácokat, akik mögötte állnak, valahogy úgy lehet a legjobban leírni, ha egy példával illusztráljuk. Mondasz nekik egy teljesen véletlenszerű dolgot egy appal/weboldallal kapcsolatban, eltelik egy kis idő, ők pedig szólnak, hogy kész.
 
+<br>
+
 Nemcsak, hogy értenek IT nyelven, de tökéletesen is beszélik azt, gyors, erős, és biztonságos appokat és weboldalakat készítenek, olyan modern technológiákat használva, amiket most nem írunk körül - mert mi nem beszélünk IT nyelven.
 
 <br>
