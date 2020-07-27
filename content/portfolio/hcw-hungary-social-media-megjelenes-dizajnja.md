@@ -19,4 +19,4 @@ Gergő kollégánk mindig is közel állt a küzdősportokhoz, azon belül is f�
 
 <br>
 
-Nemrég alkalma nyílt két szenvedélyét összekapcsolni, amikor a HCW Hungary névre keresztelt sportegyesül számára készített kreatívokat.
+Nemrég alkalma nyílt két szenvedélyét összekapcsolni, amikor a HCW Hungary névre keresztelt sportegyesület számára készített social media kreatívokat - és dobta fel velük azok online megjelenését.
