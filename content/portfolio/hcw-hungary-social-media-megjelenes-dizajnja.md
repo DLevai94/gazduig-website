@@ -15,7 +15,7 @@ images:
 - https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1595809110/cms/Frame_55_i4zsy3.webp
 
 ---
-Gergő kollégánk mindig közel állt a küzdősportokhoz, azon belül is főként a pankrációhoz, amely sportot űzi is becsülettel.
+Gergő kollégánk mindig is közel állt a küzdősportokhoz, azon belül is főként a pankrációhoz, amely sportot űzi is becsülettel.
 
 <br>
 
