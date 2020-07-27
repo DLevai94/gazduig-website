@@ -2,7 +2,7 @@
 date: 2020-07-27T02:18:40+02:00
 categories:
 - branding
-thumbnail: https://res.cloudinary.com/gazduig/image/upload/v1595809193/cms/Frame_73_eaayfn.webp
+thumbnail: https://res.cloudinary.com/gazduig/image/upload/v1595811315/cms/megint_kdxklw.png
 title: Logofolio 5. rész
 slug: logofolio-5
 client: 3 remek ügyfél
