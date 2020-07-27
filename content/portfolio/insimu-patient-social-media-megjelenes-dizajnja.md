@@ -20,8 +20,8 @@ images:
 - https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1595809280/cms/Frame_63_eb3gin.webp
 
 ---
-We’ve had the pleasure to work together with Digicomstory on several projects in the past and we were super happy when they asked us to create a new brand and web design for their agency.
+Az Insimu Patient egy elképesztően izgalmas, újító és hasznos startup, egy remek applikációval. Az app orvostan-hallgatók számára készült, mégpedig azért, hogy virtuális betegek kezelésének lehetőségével segítse őket a mindennapos felkészülésben, elősegítve azt, hogy a lehető legjobb doktorokká és doktornőkké válhassanak.
 
-Our approach was to create a cool design that fits their target audience and communicates how they work and what they are like as a team.
+<br>
 
-We went our of our way to draw plenty of icons for the content provided to create a fun experience for the viewer. The animations that were added in development completed the experience that we were looking to achieve with the new brand.
+Az Insimu a folyamatos közösségi média kommunikáció mellett diagnosztizáló versenyeket is rendez, nekünk pedig már több alkalommal is lehetőségünk volt segíteni a kommunikációjukat különböző kreatívokkal.
