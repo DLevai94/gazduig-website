@@ -11,12 +11,12 @@ jobtime: 2020 január
 gradient: linear-gradient(0deg, rgba(180,0,0,0.8326681014202556) 0%, rgba(53,149,130,0)
   45%)
 images:
-- https://res.cloudinary.com/gazduig/image/upload/v1595811851/cms/hd2_w3rdb4.jpg
 - https://res.cloudinary.com/gazduig/image/upload/v1595808129/cms/Frame_4_a6uwll.webp
 - https://res.cloudinary.com/gazduig/image/upload/v1595808130/cms/Frame_3_myzlnk.webp
 - https://res.cloudinary.com/gazduig/image/upload/v1595808129/cms/Frame_1_tkvraj.webp
 - https://res.cloudinary.com/gazduig/image/upload/v1595808127/cms/Frame_2_gahqam.webp
 - https://res.cloudinary.com/gazduig/image/upload/v1595808129/cms/Frame_8_yhff3y.webp
+- https://res.cloudinary.com/gazduig/image/upload/v1595811851/cms/hd2_w3rdb4.jpg
 - https://res.cloudinary.com/gazduig/image/upload/v1595808129/cms/Frame_6_jonks5.webp
 - https://res.cloudinary.com/gazduig/image/upload/v1595808130/cms/Frame_5_inkv7n.webp
 
