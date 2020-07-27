@@ -3,7 +3,7 @@ date: 2020-07-27T02:05:54+02:00
 categories:
 - branding
 - print
-thumbnail: https://res.cloudinary.com/gazduig/image/upload/v1595808370/cms/Frame_18_pf6vwa.webp
+thumbnail: https://res.cloudinary.com/gazduig/image/upload/v1595810763/cms/PENS-1_wntelu.png
 title: Gyula város arculati koncepció
 slug: gyula-varos-arculati-koncepcio
 client: Gyula Város
