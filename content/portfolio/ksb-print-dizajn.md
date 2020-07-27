@@ -1,5 +1,5 @@
 ---
-date: 2020-07-27T02:33:38+02:00
+date: 2020-07-27T02:33:38.000+02:00
 categories:
 - print
 thumbnail: https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1595810791/cms/PENS-2_dvnnwd.png
@@ -7,7 +7,7 @@ title: KSB print dizájn
 slug: ksb-print-dizajn
 client: KSB Hungary Kft.
 solutions: Offline anyag dizájnja
-jobtime: 2020 április
+jobtime: 2020 március
 gradient: linear-gradient(0deg, rgba(32,43,228,1) 0%, rgba(53,149,130,0) 45%)
 images:
 - https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1595810092/cms/Frame_41_fdqema.jpg
@@ -16,8 +16,8 @@ images:
 - https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1595810093/cms/Frame_38_nkmxfj.jpg
 
 ---
-We’ve had the pleasure to work together with Digicomstory on several projects in the past and we were super happy when they asked us to create a new brand and web design for their agency.
+A KSB nemzetközi nagyvállalatként 1992 óta van jelen Magyarországon, és mára már 30 szakemberrel dolgozik azon, hogy a szivattyúk, és azok szervizelésének legjobbja legyen.
 
-Our approach was to create a cool design that fits their target audience and communicates how they work and what they are like as a team.
+<br>
 
-We went our of our way to draw plenty of icons for the content provided to create a fun experience for the viewer. The animations that were added in development completed the experience that we were looking to achieve with the new brand.
+Két új akciójuk támogatásaként volt lehetőségünk print dizájnokat készíteni számukra 2020 tavaszán.
