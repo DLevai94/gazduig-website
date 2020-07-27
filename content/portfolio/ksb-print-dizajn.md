@@ -2,7 +2,7 @@
 date: 2020-07-27T02:33:38+02:00
 categories:
 - print
-thumbnail: https://res.cloudinary.com/gazduig/image/upload/v1595810034/cms/Frame_41_ojjzyg.jpg
+thumbnail: https://res.cloudinary.com/gazduig/image/upload/v1595810791/cms/PENS-2_dvnnwd.png
 title: KSB print dizájn
 slug: ksb-print-dizajn
 client: KSB Hungary Kft.
