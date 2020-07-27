@@ -1,5 +1,5 @@
 ---
-date: 2020-07-27T02:32:07+02:00
+date: 2020-07-27T02:32:07.000+02:00
 categories:
 - branding
 thumbnail: https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1595811338/cms/MBM_mvqvre.png
@@ -20,8 +20,4 @@ images:
 - https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1595810000/cms/Frame_26_vsvgdm.jpg
 
 ---
-We’ve had the pleasure to work together with Digicomstory on several projects in the past and we were super happy when they asked us to create a new brand and web design for their agency.
-
-Our approach was to create a cool design that fits their target audience and communicates how they work and what they are like as a team.
-
-We went our of our way to draw plenty of icons for the content provided to create a fun experience for the viewer. The animations that were added in development completed the experience that we were looking to achieve with the new brand.
+A logós projektjeinket bemutató logofolio 3. részében megtalálod a beergeek.hu, kézműves söröket forgalmazó webshop logóját, a Szevaszfaszi, férfiblog emblémáját, valamint a JD Quest marketing ügynökség arculatának legfőbb elemét.
