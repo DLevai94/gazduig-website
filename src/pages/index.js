@@ -32,7 +32,7 @@ function IndexPage() {
   const [hasPrivacyAccepted, setHasPrivacyAccepted] = useState(false);
   const data = useStaticQuery(graphql`
     {
-      posts: allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }, limit: 6) {
+      posts: allMarkdownRemark {
         edges {
           node {
             id
@@ -141,7 +141,7 @@ function IndexPage() {
                   textClass="text-lg"
                 />
               </div>
-              <div className="md:hidden grid grid-cols-1 gap-8">
+              <div className="lg:hidden grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
                 {data?.posts?.edges
                   ?.filter(
                     (edge) => edge?.node?.frontmatter?.categories?.includes(chosenCategory) || chosenCategory === 'all'
@@ -155,6 +155,9 @@ function IndexPage() {
                             edge?.node?.frontmatter?.gradient ||
                             'linear-gradient(16deg, rgba(38,38,38,1) 0%, rgba(91,91,91,1) 23%, rgba(38,38,38,0) 100%)'
                           } bottom, url(${edge?.node?.frontmatter?.thumbnail}) no-repeat center`,
+                          backgroundRepeat: 'no-repeat',
+                          backgroundSize: 'cover, contain',
+                          backgroundPosition: 'bottom, center',
                         }}>
                         <div className="absolute bottom-0 left-0 px-5 py-3 text-white">
                           <p className="font-light">{edge?.node?.frontmatter?.jobtime}</p>
@@ -164,7 +167,7 @@ function IndexPage() {
                     </Link>
                   ))}
               </div>
-              <div className="hidden md:grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:grid-rows-3 gap-8">
+              <div className="hidden lg:grid grid-cols-1 lg:grid-cols-4 lg:grid-rows-3 gap-8">
                 {data?.posts?.edges
                   ?.filter(
                     (edge) => edge?.node?.frontmatter?.categories?.includes(chosenCategory) || chosenCategory === 'all'
@@ -183,6 +186,9 @@ function IndexPage() {
                             edge?.node?.frontmatter?.gradient ||
                             'linear-gradient(16deg, rgba(38,38,38,1) 0%, rgba(91,91,91,1) 23%, rgba(38,38,38,0) 100%)'
                           } bottom, url(${edge?.node?.frontmatter?.thumbnail}) no-repeat center`,
+                          backgroundRepeat: 'no-repeat',
+                          backgroundSize: 'cover, contain',
+                          backgroundPosition: 'bottom, center',
                         }}>
                         <div className="absolute bottom-0 left-0 px-5 py-3 text-white">
                           <p className="font-light">{edge?.node?.frontmatter?.jobtime}</p>

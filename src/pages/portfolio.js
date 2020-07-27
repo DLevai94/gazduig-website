@@ -12,7 +12,7 @@ const Portfolio = () => {
   const [chosenCategory, setChosenCategory] = useState('all');
   const data = useStaticQuery(graphql`
     query {
-      posts: allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }, limit: 24) {
+      posts: allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
         edges {
           node {
             id
@@ -93,7 +93,7 @@ const Portfolio = () => {
           <h2 className="font-display text-2xl font-extrabold uppercase leading-brand">
             A te márkád is jól mutatna itt
           </h2>
-          <div className="xl:-mx-16">
+          <div className="">
             <TabBar
               categories={CATEGORIES}
               chosenCategory={chosenCategory}
@@ -119,6 +119,9 @@ const Portfolio = () => {
                             edge?.node?.frontmatter?.gradient ||
                             'linear-gradient(16deg, rgba(38,38,38,1) 0%, rgba(91,91,91,1) 23%, rgba(38,38,38,0) 100%)'
                           } bottom, url(${edge?.node?.frontmatter?.thumbnail}) no-repeat center`,
+                          backgroundRepeat: 'no-repeat',
+                          backgroundSize: 'cover, contain',
+                          backgroundPosition: 'bottom, center',
                         }}>
                         <div className="absolute bottom-0 left-0 px-5 py-3 text-sm text-white">
                           <p className="font-light">{edge?.node?.frontmatter?.jobtime}</p>
