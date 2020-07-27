@@ -3,7 +3,7 @@ date: 2020-07-27T01:30:33+02:00
 categories:
 - web
 - all
-thumbnail: https://res.cloudinary.com/gazduig/image/upload/v1595806256/cms/Frame_4_cmk1ek.webp
+thumbnail: https://res.cloudinary.com/gazduig/image/upload/v1595812887/cms/shopi_myxh3u.jpg
 title: UI dizájn a Shoprenter számára
 slug: shoprenter-ui-dizajn
 client: Shoprenter
