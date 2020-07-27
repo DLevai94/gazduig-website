@@ -2,7 +2,7 @@
 date: 2020-07-27T02:00:54+02:00
 categories:
 - print
-thumbnail: https://res.cloudinary.com/gazduig/image/upload/v1595808069/cms/Frame_2_x2erfc.webp
+thumbnail: https://res.cloudinary.com/gazduig/image/upload/v1595810777/cms/HD_ra9adj.png
 title: HD Marketing offline megjelenés
 slug: hd-marketing-offline-megjelenés
 client: HD Marketing
