@@ -2,7 +2,7 @@
 date: 2020-07-27T02:32:07+02:00
 categories:
 - branding
-thumbnail: https://res.cloudinary.com/gazduig/image/upload/v1595809939/cms/Frame_28_kqmavc.jpg
+thumbnail: https://res.cloudinary.com/gazduig/image/upload/v1595811177/cms/PENS-2_ehwpvs.png
 title: Logofolio 3. rész
 slug: gazduig-logofolio-3
 client: 3 remek ügyfél
