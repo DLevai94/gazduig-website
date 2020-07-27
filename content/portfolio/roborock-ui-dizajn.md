@@ -3,7 +3,7 @@ date: 2020-07-27T01:55:50+02:00
 categories:
 - web
 - all
-thumbnail: https://res.cloudinary.com/gazduig/image/upload/v1595807759/cms/Frame_25_gtp5av.webp
+thumbnail: https://res.cloudinary.com/gazduig/image/upload/v1595812465/cms/MBM_aegofs.png
 title: Roborock UI dizájn
 slug: roborock-ui-dizajn
 client: SmartDucks Ltd.
