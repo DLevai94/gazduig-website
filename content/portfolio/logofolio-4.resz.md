@@ -2,7 +2,7 @@
 date: 2020-07-27T02:07:21+02:00
 categories:
 - branding
-thumbnail: https://res.cloudinary.com/gazduig/image/upload/v1595808453/cms/Frame_23_vm4kct.webp
+thumbnail: https://res.cloudinary.com/gazduig/image/upload/v1595811243/cms/PENS-3_h6iptr.png
 title: Logofolio 4. rész
 slug: gazduig-logofolio-4
 client: 4 remek ügyfél
