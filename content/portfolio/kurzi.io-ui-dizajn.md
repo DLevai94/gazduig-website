@@ -2,7 +2,7 @@
 date: 2020-07-27T01:59:20+02:00
 categories:
 - web
-thumbnail: https://res.cloudinary.com/gazduig/image/upload/v1595807973/cms/Frame_44_u8pxiu.webp
+thumbnail: https://res.cloudinary.com/gazduig/image/upload/v1595812437/cms/HD_eqnmg7.png
 title: Kurzi.io UI dizájn
 slug: kurzi-io-ui-dizajn
 client: Kurzio.io
