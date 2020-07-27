@@ -2,7 +2,7 @@
 date: 2020-07-27T02:02:35+02:00
 categories:
 - print
-thumbnail: https://res.cloudinary.com/gazduig/image/upload/v1595810819/cms/PENS_xg3wov.png
+thumbnail: https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1595810819/cms/PENS_xg3wov.png
 title: Pensum Group print dizájn
 slug: pensum-group-print-dizajn
 client: Pensum Group
@@ -11,12 +11,12 @@ jobtime: 2019 október
 gradient: linear-gradient(0deg, rgba(0,110,180,0.8326681014202556) 0%, rgba(53,149,130,0)
   45%)
 images:
-- https://res.cloudinary.com/gazduig/image/upload/v1595811796/cms/mock2_dygtpu.jpg
-- https://res.cloudinary.com/gazduig/image/upload/v1595808233/cms/Frame_15_c1h6fw.webp
-- https://res.cloudinary.com/gazduig/image/upload/v1595808233/cms/Frame_12_mvkiqp.webp
-- https://res.cloudinary.com/gazduig/image/upload/v1595808232/cms/Frame_11_d9vmj2.webp
-- https://res.cloudinary.com/gazduig/image/upload/v1595808233/cms/Frame_10_ltmgic.webp
-- https://res.cloudinary.com/gazduig/image/upload/v1595808233/cms/Frame_13_f4cnnf.webp
+- https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1595811796/cms/mock2_dygtpu.jpg
+- https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1595808233/cms/Frame_15_c1h6fw.webp
+- https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1595808233/cms/Frame_12_mvkiqp.webp
+- https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1595808232/cms/Frame_11_d9vmj2.webp
+- https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1595808233/cms/Frame_10_ltmgic.webp
+- https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1595808233/cms/Frame_13_f4cnnf.webp
 
 ---
 We’ve had the pleasure to work together with Digicomstory on several projects in the past and we were super happy when they asked us to create a new brand and web design for their agency.
