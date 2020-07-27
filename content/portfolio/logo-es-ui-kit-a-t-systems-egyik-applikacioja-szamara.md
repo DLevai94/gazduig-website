@@ -3,7 +3,7 @@ date: 2020-07-27T02:11:38+02:00
 categories:
 - branding
 - web
-thumbnail: https://res.cloudinary.com/gazduig/image/upload/v1595808710/cms/Frame_45_hvflbx.webp
+thumbnail: https://res.cloudinary.com/gazduig/image/upload/v1595811547/cms/tsys_ona6qt.png
 title: Logó és UI kit a T-Systems egyik applikációja számára
 slug: t-systems-ui-kit-logo
 client: T-Systems
