@@ -1,8 +1,8 @@
 ---
-date: 2020-07-27T02:15:34+02:00
+date: 2020-07-27T02:15:34.000+02:00
 categories:
 - social
-thumbnail: https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1595808950/cms/Frame_56_v7sns9.webp
+thumbnail: https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1595856668/cms/PENS-2_eiyupr.png
 title: HCW Hungary social media megjelenés dizájnja
 slug: hcw-hungary-social-media-dizajn
 client: HCW Hungary
