@@ -21,7 +21,7 @@ images:
 - https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1595808919/cms/Frame_47_uwq7z3.webp
 
 ---
-Ismered az Allyos-t? Ez az az app, amelyik elhivatottan dolgozik azon, hogy megreformálja az emberek vásárlási szokásait, méghozzá a közösségi vásárlás eszközével.
+Ismered az Allyos-t? Ez az app, amelyik elhivatottan dolgozik azon, hogy megreformálja az emberek vásárlási szokásait, méghozzá a közösségi vásárlás erejével.
 
 Az Allyos-on prémium termékeket találsz, amelyek ára simán nevezhető felső kategóriásnak, viszont a fent említett módon bárki megszerezheti őket, csupán $1 bedobásával.
 
