@@ -3,7 +3,7 @@ date: 2020-07-27T01:51:55+02:00
 categories:
 - branding
 - all
-thumbnail: https://res.cloudinary.com/gazduig/image/upload/v1595807533/cms/Frame_15_zfebvv.webp
+thumbnail: https://res.cloudinary.com/gazduig/image/upload/v1595811128/cms/PENS-1_mpnzsy.png
 title: GrainMonitor arculattervezés
 slug: grainmonitor-arculattervezes
 client: GrainMonitor
