@@ -22,4 +22,6 @@ A Classy-t és a srácokat, akik mögötte állnak, valahogy úgy lehet a legjob
 
 Nemcsak, hogy értenek IT nyelven, de tökéletesen is beszélik azt, gyors, erős, és biztonságos appokat és weboldalakat készítenek, olyan modern technológiákat használva, amiket most nem írunk körül - mert mi nem beszélünk IT nyelven.
 
+<br>
+
 Számukra készítettünk UI dizájnt a weboldaluk megújításának elején.
