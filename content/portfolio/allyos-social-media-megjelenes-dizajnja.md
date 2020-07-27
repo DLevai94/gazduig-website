@@ -3,7 +3,7 @@ date: 2020-07-27T02:14:00.000+02:00
 categories:
 - all
 - social
-thumbnail: https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1595808854/cms/Frame_54_nfbvpa.webp
+thumbnail: https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1595856636/cms/HD-1_lwmfi3.png
 title: Allyos social media megjelenés dizájnja
 slug: allyos-social-media-dizajn
 client: Allyos App.
