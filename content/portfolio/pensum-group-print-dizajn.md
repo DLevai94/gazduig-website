@@ -2,7 +2,7 @@
 date: 2020-07-27T02:02:35+02:00
 categories:
 - print
-thumbnail: https://res.cloudinary.com/gazduig/image/upload/v1595808165/cms/Frame_11_tkafhs.webp
+thumbnail: https://res.cloudinary.com/gazduig/image/upload/v1595810819/cms/PENS_xg3wov.png
 title: Pensum Group print dizájn
 slug: pensum-group-print-dizajn
 client: Pensum Group
