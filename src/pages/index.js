@@ -32,7 +32,67 @@ function IndexPage() {
   const [hasPrivacyAccepted, setHasPrivacyAccepted] = useState(false);
   const data = useStaticQuery(graphql`
     {
-      posts: allMarkdownRemark {
+      allPosts: allMarkdownRemark(limit: 6) {
+        edges {
+          node {
+            id
+            frontmatter {
+              categories
+              title
+              slug
+              jobtime
+              gradient
+              thumbnail
+            }
+          }
+        }
+      }
+      webPosts: allMarkdownRemark(limit: 6, filter: { frontmatter: { categories: { eq: "web" } } }) {
+        edges {
+          node {
+            id
+            frontmatter {
+              categories
+              title
+              slug
+              jobtime
+              gradient
+              thumbnail
+            }
+          }
+        }
+      }
+      brandingPosts: allMarkdownRemark(limit: 6, filter: { frontmatter: { categories: { eq: "branding" } } }) {
+        edges {
+          node {
+            id
+            frontmatter {
+              categories
+              title
+              slug
+              jobtime
+              gradient
+              thumbnail
+            }
+          }
+        }
+      }
+      socialPosts: allMarkdownRemark(limit: 6, filter: { frontmatter: { categories: { eq: "social" } } }) {
+        edges {
+          node {
+            id
+            frontmatter {
+              categories
+              title
+              slug
+              jobtime
+              gradient
+              thumbnail
+            }
+          }
+        }
+      }
+      printPosts: allMarkdownRemark(limit: 6, filter: { frontmatter: { categories: { eq: "print" } } }) {
         edges {
           node {
             id
@@ -142,61 +202,53 @@ function IndexPage() {
                 />
               </div>
               <div className="lg:hidden grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-                {data?.posts?.edges
-                  ?.filter(
-                    (edge) => edge?.node?.frontmatter?.categories?.includes(chosenCategory) || chosenCategory === 'all'
-                  )
-                  ?.map((edge) => (
-                    <Link key={edge?.node?.id} to={`portfolio/${edge?.node?.frontmatter?.slug}`}>
-                      <div
-                        className={`h-48 hover:-mt-2 hover:opacity-75 transition-all duration-300 ease-in-out relative flex-shrink-0 overflow-hidden bg-gray-600 rounded bg-cover bg-no-repeat`}
-                        style={{
-                          background: `${
-                            edge?.node?.frontmatter?.gradient ||
-                            'linear-gradient(16deg, rgba(38,38,38,1) 0%, rgba(91,91,91,1) 23%, rgba(38,38,38,0) 100%)'
-                          } bottom, url(${edge?.node?.frontmatter?.thumbnail}) no-repeat center`,
-                          backgroundRepeat: 'no-repeat',
-                          backgroundSize: 'cover, contain',
-                          backgroundPosition: 'bottom, center',
-                        }}>
-                        <div className="absolute bottom-0 left-0 px-5 py-3 text-white">
-                          <p className="font-light">{edge?.node?.frontmatter?.jobtime}</p>
-                          <p className="font-extrabold">{edge?.node?.frontmatter?.title}</p>
-                        </div>
+                {data?.[`${chosenCategory}Posts`]?.edges?.map((edge) => (
+                  <Link key={edge?.node?.id} to={`portfolio/${edge?.node?.frontmatter?.slug}`}>
+                    <div
+                      className={`h-48 hover:-mt-2 hover:opacity-75 transition-all duration-300 ease-in-out relative flex-shrink-0 overflow-hidden bg-gray-600 rounded bg-cover bg-no-repeat`}
+                      style={{
+                        background: `${
+                          edge?.node?.frontmatter?.gradient ||
+                          'linear-gradient(16deg, rgba(38,38,38,1) 0%, rgba(91,91,91,1) 23%, rgba(38,38,38,0) 100%)'
+                        } bottom, url(${edge?.node?.frontmatter?.thumbnail}) no-repeat center`,
+                        backgroundRepeat: 'no-repeat',
+                        backgroundSize: 'cover, contain',
+                        backgroundPosition: 'bottom, center',
+                      }}>
+                      <div className="absolute bottom-0 left-0 px-5 py-3 text-white">
+                        <p className="font-light">{edge?.node?.frontmatter?.jobtime}</p>
+                        <p className="font-extrabold">{edge?.node?.frontmatter?.title}</p>
                       </div>
-                    </Link>
-                  ))}
+                    </div>
+                  </Link>
+                ))}
               </div>
               <div className="hidden lg:grid grid-cols-1 lg:grid-cols-4 lg:grid-rows-3 gap-8">
-                {data?.posts?.edges
-                  ?.filter(
-                    (edge) => edge?.node?.frontmatter?.categories?.includes(chosenCategory) || chosenCategory === 'all'
-                  )
-                  ?.map((edge, index) => (
-                    <Link
-                      key={edge?.node?.id}
-                      to={`portfolio/${edge?.node?.frontmatter?.slug}`}
-                      style={checkIndexAndApplyToContainer(index)}>
-                      <div
-                        className={`hover:-mt-2 hover:opacity-75 transition-all duration-300 ease-in-out relative flex-shrink-0 overflow-hidden bg-gray-600 rounded bg-cover bg-no-repeat ${checkIndexAndApplyToCard(
-                          index
-                        )}`}
-                        style={{
-                          background: `${
-                            edge?.node?.frontmatter?.gradient ||
-                            'linear-gradient(16deg, rgba(38,38,38,1) 0%, rgba(91,91,91,1) 23%, rgba(38,38,38,0) 100%)'
-                          } bottom, url(${edge?.node?.frontmatter?.thumbnail}) no-repeat center`,
-                          backgroundRepeat: 'no-repeat',
-                          backgroundSize: 'cover, contain',
-                          backgroundPosition: 'bottom, center',
-                        }}>
-                        <div className="absolute bottom-0 left-0 px-5 py-3 text-white">
-                          <p className="font-light">{edge?.node?.frontmatter?.jobtime}</p>
-                          <p className="font-extrabold">{edge?.node?.frontmatter?.title}</p>
-                        </div>
+                {data?.[`${chosenCategory}Posts`]?.edges?.map((edge, index) => (
+                  <Link
+                    key={edge?.node?.id}
+                    to={`portfolio/${edge?.node?.frontmatter?.slug}`}
+                    style={checkIndexAndApplyToContainer(index)}>
+                    <div
+                      className={`hover:-mt-2 hover:opacity-75 transition-all duration-300 ease-in-out relative flex-shrink-0 overflow-hidden bg-gray-600 rounded bg-cover bg-no-repeat ${checkIndexAndApplyToCard(
+                        index
+                      )}`}
+                      style={{
+                        background: `${
+                          edge?.node?.frontmatter?.gradient ||
+                          'linear-gradient(16deg, rgba(38,38,38,1) 0%, rgba(91,91,91,1) 23%, rgba(38,38,38,0) 100%)'
+                        } bottom, url(${edge?.node?.frontmatter?.thumbnail}) no-repeat center`,
+                        backgroundRepeat: 'no-repeat',
+                        backgroundSize: 'cover, contain',
+                        backgroundPosition: 'bottom, center',
+                      }}>
+                      <div className="absolute bottom-0 left-0 px-5 py-3 text-white">
+                        <p className="font-light">{edge?.node?.frontmatter?.jobtime}</p>
+                        <p className="font-extrabold">{edge?.node?.frontmatter?.title}</p>
                       </div>
-                    </Link>
-                  ))}
+                    </div>
+                  </Link>
+                ))}
               </div>
             </div>
           </section>
