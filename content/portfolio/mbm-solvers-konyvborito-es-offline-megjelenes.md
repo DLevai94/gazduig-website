@@ -1,5 +1,5 @@
 ---
-date: 2020-07-27T01:57:11+02:00
+date: 2020-07-27T01:57:11.000+02:00
 categories:
 - print
 - all
@@ -20,8 +20,8 @@ images:
 - https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1595807908/cms/Frame_26_al0bov.webp
 
 ---
-We’ve had the pleasure to work together with Digicomstory on several projects in the past and we were super happy when they asked us to create a new brand and web design for their agency.
+Az MBM Solvers-es srácok, Ádám és Zsolti voltak az elsők, akik Instagram témában könyvet írtak Magyarországon.
 
-Our approach was to create a cool design that fits their target audience and communicates how they work and what they are like as a team.
+<br>
 
-We went our of our way to draw plenty of icons for the content provided to create a fun experience for the viewer. The animations that were added in development completed the experience that we were looking to achieve with the new brand.
+2017-ben kezdték, 2020-ban már ők voltak az Instagram téma előadói a Magyar Marketing Fesztiválon, ahova offline megjelenésüket, valamint a könyvük új kiadásának borítóját volt lehetőségünk megtervezni.
