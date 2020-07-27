@@ -12,6 +12,7 @@ jobtime: 2020 április
 gradient: linear-gradient(0deg, rgba(101,180,0,0.8326681014202556) 0%, rgba(53,149,130,0)
   45%)
 images:
+- https://res.cloudinary.com/gazduig/image/upload/v1595813462/cms/Frame_115_kjqofe.webp
 - https://res.cloudinary.com/gazduig/image/upload/v1595807597/cms/Frame_17_bmkik9.webp
 - https://res.cloudinary.com/gazduig/image/upload/v1595807597/cms/Frame_16_ldbbvr.webp
 - https://res.cloudinary.com/gazduig/image/upload/v1595807596/cms/Frame_15_mup9ou.webp
