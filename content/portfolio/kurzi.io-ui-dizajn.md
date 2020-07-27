@@ -20,8 +20,8 @@ images:
 - https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1595858874/cms/5_qaqw9h.jpg
 
 ---
-We’ve had the pleasure to work together with Digicomstory on several projects in the past and we were super happy when they asked us to create a new brand and web design for their agency.
+Hallgatsz online kurzusokat? Képzeld, egy csomó oktató szembesül azzal, hogy ésszerű keretek közt nem igazán van alkalma jelentősebb anyagi befektetés nélkül árusítania az anyagait, mert egészen egyszerűen nincs erre megfelelő rendszer, ami a magyar vásárló(és oktató)közösség körülményeinek is jórészt megfelelhet.
 
-Our approach was to create a cool design that fits their target audience and communicates how they work and what they are like as a team.
+<br>
 
-We went our of our way to draw plenty of icons for the content provided to create a fun experience for the viewer. The animations that were added in development completed the experience that we were looking to achieve with the new brand.
+A kurzi.io egy olyan innovatív platform lesz, ahol megfizethető havidíjért cserébe bárki árulhatja és népszerűsítheti videókurzusait, különösebb informatikai hozzáértés nélkül. 
