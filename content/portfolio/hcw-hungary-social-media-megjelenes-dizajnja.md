@@ -15,8 +15,8 @@ images:
 - https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1595809110/cms/Frame_55_i4zsy3.webp
 
 ---
-We’ve had the pleasure to work together with Digicomstory on several projects in the past and we were super happy when they asked us to create a new brand and web design for their agency.
+Gergő kollégánk mindig közel állt a küzdősportokhoz, azon belül is főként a pankrációhoz, amely sportot űzi is becsülettel.
 
-Our approach was to create a cool design that fits their target audience and communicates how they work and what they are like as a team.
+<br>
 
-We went our of our way to draw plenty of icons for the content provided to create a fun experience for the viewer. The animations that were added in development completed the experience that we were looking to achieve with the new brand.
+Nemrég alkalma nyílt két szenvedélyét összekapcsolni, amikor a HCW Hungary névre keresztelt sportegyesül számára készített kreatívokat.
