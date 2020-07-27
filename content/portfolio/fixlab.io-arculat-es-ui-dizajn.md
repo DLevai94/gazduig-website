@@ -1,5 +1,5 @@
 ---
-date: 2020-07-27T01:47:32+02:00
+date: 2020-07-27T01:47:32.000+02:00
 categories:
 - branding
 - web
@@ -22,14 +22,12 @@ images:
 - https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1595807347/cms/Frame_8_syzfdw.webp
 
 ---
-A GlassView-val dolgozni mindig is nagy élmény volt, és most is az. Minden egyes alkalommal, amikor új projektünk van, igazán menő dolgokat alkothatunk.
+Az utóbbi időben viszonylag sokat találkozhattunk az "ezekben az időkben" és a "jelenlegi helyzetben" kifejezésekkel. Ennek örömére, folytassuk is ezekkel a leírást: Ezekben az időkben, és a jelenlegi helyzetben a kelleténél több vállalat és munkavállaló életében fordult elő, hogy bele-bele kellett kóstolniuk a távmunka világába.
 
-A GlassView és a Designatives közös története néhány éve kezdődött egy weboldal redesignnal. Egyszerű, egyértelmű feladat volt.
+<br>
 
-Azóta újraterveztük a teljes GlassView arculatot, új logót terveztünk a cégnek, és rengeteg márkázott anyagot készítettünk: névjegykártyákat, prezentációkat, almárkákat, stb. A GlassView mappastruktúránk hatalmasra duzzadt!
+Ez sokak számára olyan felismerésekhez vezetett, mint a személyes jelenlét túlértékeltsége, vagy éppen a teljes munkaviszony feleslegessége. Pontosan számukra kínál remek megoldást a Fixlab, amely azokat a munkaadókat hivatott összekötni, akik projekt jelleggel keresnek szakembereket, méghozzá olyan szakemberekkel, akik szintén látják a fantáziát és potenciált a projektmunkában.
 
-A rebranding után átterveztük a cég weboldalát, hogy harmonizáljon az új arculattal, és bevezettük a saját backend és CMS rendszerünket, hogy a GlassView gyorsan és rugalmasan menedzselhesse weboldala tartalmát.
+<br>
 
-És ha ez nem lenne elég, jó pár videót is készítettünk, köztük a vállalati kultúra és a termékbemutató videót, amiket New York-ban forgattunk. Imádtunk ott lenni, találkozni a csapattal és elvégezni a feladatot.
-
-Örülünk, hogy ilyen nagy szerepet játszhatunk abban, hogy a GlassView brand globális márkává válhasson.
+A Fixlab arculatát, valamint UI dizájnját volt lehetőségünk elkészíteni ebben a projektben.
