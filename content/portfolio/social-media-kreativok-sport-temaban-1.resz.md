@@ -10,14 +10,14 @@ solutions: Social media kreatívok dizájnja
 jobtime: 2019-2020
 gradient: linear-gradient(0deg, rgba(32,109,228,1) 0%, rgba(53,149,130,0) 45%)
 images:
-- https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1595809528/cms/Frame_70_d9qqtp.webp
-- https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1595809528/cms/Frame_69_sxtejx.webp
-- https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1595809529/cms/Frame_68_pth2am.webp
-- https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1595809528/cms/Frame_67_wyceq7.webp
-- https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1595809528/cms/Frame_66_hcc1yk.webp
-- https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1595809528/cms/Frame_65_wurumw.webp
-- https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1595809528/cms/Frame_64_hdra1b.webp
-- https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1595809528/cms/Frame_63_joex2r.webp
+- https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1595859608/cms/Frame_70_v9pdxh.webp
+- https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1595859607/cms/Frame_66_huybbb.webp
+- https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1595859607/cms/Frame_68_wfjk33.webp
+- https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1595859607/cms/Frame_67_eknihc.webp
+- https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1595859608/cms/Frame_69_enkedc.webp
+- https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1595859608/cms/Frame_65_y2xsli.webp
+- https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1595859607/cms/Frame_64_s0k2v2.webp
+- https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1595859607/cms/Frame_63_cxbvut.webp
 
 ---
 We’ve had the pleasure to work together with Digicomstory on several projects in the past and we were super happy when they asked us to create a new brand and web design for their agency.
