@@ -3,7 +3,7 @@ date: 2020-07-27T02:24:00.000+02:00
 categories:
 - social
 thumbnail: https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1595856747/cms/PENS-1_qst8z9.png
-title: Social media kreatívok sport témában 1. rész
+title: Social media kreatívok sport témában
 slug: social-media-sport
 client: Az Insta közössége
 solutions: Social media kreatívok dizájnja
