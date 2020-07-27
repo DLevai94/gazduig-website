@@ -1,5 +1,5 @@
 ---
-date: 2020-07-27T02:30:15+02:00
+date: 2020-07-27T02:30:15.000+02:00
 categories:
 - branding
 thumbnail: https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1595811161/cms/PENS_glhtft.png
@@ -20,8 +20,8 @@ images:
 - https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1595809902/cms/Frame_17_kjzkrt.jpg
 
 ---
-We’ve had the pleasure to work together with Digicomstory on several projects in the past and we were super happy when they asked us to create a new brand and web design for their agency.
+A logofolio 2. részében megismerheted a CBD termékeket forgalmazó Hempy, Hegedűs Tibor szoftverfejlesztő, valamint a parospolok.com pólós oldal logóit.
 
-Our approach was to create a cool design that fits their target audience and communicates how they work and what they are like as a team.
+<br>
 
-We went our of our way to draw plenty of icons for the content provided to create a fun experience for the viewer. The animations that were added in development completed the experience that we were looking to achieve with the new brand.
+No meg persze a Fitt Detektívét is, akik (online) személyi edzéssel hivatottak javítani az ügyfeleik egészségügyi, és ezáltal lelki állapotán.
