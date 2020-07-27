@@ -15,8 +15,8 @@ images:
 - https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1595859703/cms/Frame_73_pqziou.webp
 - https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1595859734/cms/Frame_77_eponoc.webp
 - https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1595859726/cms/Frame_76_hlxbeg.webp
-- https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1595859695/cms/Frame_72_s934rp.webp
 - https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1595859718/cms/Frame_75_kiq2kb.webp
+- https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1595859695/cms/Frame_72_s934rp.webp
 - https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1595859688/cms/Frame_71_pk89dl.webp
 
 ---
