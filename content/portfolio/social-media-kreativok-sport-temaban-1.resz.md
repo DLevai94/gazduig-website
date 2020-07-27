@@ -1,0 +1,27 @@
+---
+date: 2020-07-27T02:24:00+02:00
+categories:
+- social
+thumbnail: https://res.cloudinary.com/gazduig/image/upload/v1595809455/cms/Frame_65_mx1g2n.webp
+title: Social media kreatívok sport témában 1. rész
+slug: social-media-sport
+client: Az Insta közössége
+solutions: Social media kreatívok dizájnja
+jobtime: 2019-2020
+gradient: linear-gradient(0deg, rgba(32,109,228,1) 0%, rgba(53,149,130,0) 45%)
+images:
+- https://res.cloudinary.com/gazduig/image/upload/v1595809528/cms/Frame_70_d9qqtp.webp
+- https://res.cloudinary.com/gazduig/image/upload/v1595809528/cms/Frame_69_sxtejx.webp
+- https://res.cloudinary.com/gazduig/image/upload/v1595809529/cms/Frame_68_pth2am.webp
+- https://res.cloudinary.com/gazduig/image/upload/v1595809528/cms/Frame_67_wyceq7.webp
+- https://res.cloudinary.com/gazduig/image/upload/v1595809528/cms/Frame_66_hcc1yk.webp
+- https://res.cloudinary.com/gazduig/image/upload/v1595809528/cms/Frame_65_wurumw.webp
+- https://res.cloudinary.com/gazduig/image/upload/v1595809528/cms/Frame_64_hdra1b.webp
+- https://res.cloudinary.com/gazduig/image/upload/v1595809528/cms/Frame_63_joex2r.webp
+
+---
+We’ve had the pleasure to work together with Digicomstory on several projects in the past and we were super happy when they asked us to create a new brand and web design for their agency.
+
+Our approach was to create a cool design that fits their target audience and communicates how they work and what they are like as a team.
+
+We went our of our way to draw plenty of icons for the content provided to create a fun experience for the viewer. The animations that were added in development completed the experience that we were looking to achieve with the new brand.
