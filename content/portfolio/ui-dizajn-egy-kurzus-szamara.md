@@ -19,11 +19,15 @@ images:
 - https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1595810175/cms/Frame_104_f4dbib.webp
 
 ---
-2020 februárjában készítettünk egy videókurzust, ami a UI dizájn fortélyaiba hivatott bevezetni a hallgatókat, abszolút az alapokról, és végigvezetni egy weboldal tervezésének, dizájnolásának, valamint fejlesztők felé való átadásának folyamatán.
+2020 februárjában készítettünk egy, a UI dizájn rejtelmeibe bevezető videókurzust.
 
 <br>
 
-A kurzusban a hallgatókkal együtt a fiktív, Korner Étterem weboldalát készítjük el, ennek az oldalnak a UI dizájnját láthatod itt.
+Az oktatóanyagok végigvezetik a hallgatókat az alapoktól a jól konvertáló weboldal tervezésének, dizájnolásának, valamint fejlesztők felé való átadásának folyamatán.
+
+<br>
+
+A kurzusban a fiktív, Korner Étterem weboldalának UI dizájnját készítjük el, ezt láthatod itt.
 
 <br>
 
