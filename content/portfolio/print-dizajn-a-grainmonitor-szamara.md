@@ -1,5 +1,5 @@
 ---
-date: 2020-07-27T01:53:43+02:00
+date: 2020-07-27T01:53:43.000+02:00
 categories:
 - print
 - all
@@ -17,8 +17,8 @@ images:
 - https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1595807694/cms/Frame_18_axvzco.webp
 
 ---
-We’ve had the pleasure to work together with Digicomstory on several projects in the past and we were super happy when they asked us to create a new brand and web design for their agency.
+A GrainMonitor az okos gabonaszonda. Egy könnyen telepíthető, egyszerűen használható, és elképesztően hasznos termék, amelyet szemes termények felügyeletére hoztak létre.
 
-Our approach was to create a cool design that fits their target audience and communicates how they work and what they are like as a team.
+<br>
 
-We went our of our way to draw plenty of icons for the content provided to create a fun experience for the viewer. The animations that were added in development completed the experience that we were looking to achieve with the new brand.
+Korábban a logójukat, ebben a projektben pedig az első cégbemutató print anyagukat terveztük meg, amit lent láthatsz.
