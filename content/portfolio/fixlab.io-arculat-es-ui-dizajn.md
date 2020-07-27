@@ -3,7 +3,6 @@ date: 2020-07-27T01:47:32+02:00
 categories:
 - branding
 - web
-- all
 thumbnail: https://res.cloudinary.com/gazduig/image/upload/v1595807278/cms/Frame_12_w1b09k.webp
 title: Fixlab.io arculat és UI dizájn
 slug: fixlab-io-arculat-ui-dizajn
