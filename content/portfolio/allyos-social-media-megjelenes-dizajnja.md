@@ -25,4 +25,6 @@ Ismered az Allyos-t? Ez az app, amelyik elhivatottan dolgozik azon, hogy megrefo
 
 Az Allyos-on prémium termékeket találsz, amelyek ára simán nevezhető felső kategóriásnak, viszont a fent említett módon bárki megszerezheti őket, csupán $1 bedobásával.
 
+<br>
+
 Rengeteget kommunikálnak és sok hirdetést futtatnak a közösségi médiában, mi pedig ezekhez a hirdetésekhez készítünk számukra kreatívokat, már 2019 decembere óta.
