@@ -12,10 +12,10 @@ jobtime: 2020 június
 gradient: linear-gradient(0deg, rgba(110,180,0,0.8326681014202556) 0%, rgba(53,149,130,0)
   45%)
 images:
-- https://res.cloudinary.com/gazduig/image/upload/v1595807156/cms/F%C5%91oldal-01_wbvgxe.jpg
-- https://res.cloudinary.com/gazduig/image/upload/v1595807214/cms/temak_ajacd5.png
-- https://res.cloudinary.com/gazduig/image/upload/v1595807214/cms/noveked_fr9m94.png
 - https://res.cloudinary.com/gazduig/image/upload/v1595807214/cms/ertekes_rkl0lg.png
+- https://res.cloudinary.com/gazduig/image/upload/v1595807156/cms/F%C5%91oldal-01_wbvgxe.jpg
+- https://res.cloudinary.com/gazduig/image/upload/v1595807214/cms/noveked_fr9m94.png
+- https://res.cloudinary.com/gazduig/image/upload/v1595807214/cms/temak_ajacd5.png
 
 ---
 A GlassView-val dolgozni mindig is nagy élmény volt, és most is az. Minden egyes alkalommal, amikor új projektünk van, igazán menő dolgokat alkothatunk.
