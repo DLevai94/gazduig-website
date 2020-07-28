@@ -170,7 +170,7 @@ function IndexPage() {
                   számára
                 </h2>
                 <p className="mt-3 text-base sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0 font-light">
-                  Szia! A Gazduig Creative Agency vagyunk Budapesről. Márkákat teszünk ismertebbé és feltűnőbbé, a
+                  Szia! A Gazduig Creative Agency vagyunk Budapestről. Márkákat teszünk ismertebbé és feltűnőbbé, a
                   dizájn erejét használva.
                 </p>
                 <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
