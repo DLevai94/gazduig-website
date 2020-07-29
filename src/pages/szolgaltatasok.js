@@ -60,7 +60,7 @@ const Services = () => {
         Hogyha a megjelenés képviseli azt, amit a márka személyisége jelent, hiteles, megbízható, és érdekes lesz.
         <br />
         <br />
-        Ezt a pár hatalmas előnyt érhetjük el számodra egy ütős és márkahű arculattal.`}>
+        Ez a pár hatalmas előnyt érhetjük el számodra egy ütős és márkahű arculattal.`}>
             <div className="bg-white rounded shadow-brand p-3">
               <SolIcon1 className="w-8 mb-2" />
               <p className="font-extrabold text-sm">
@@ -138,10 +138,10 @@ const Services = () => {
       case 'social':
         return (
           <SolutionCategory
-            name="Social posztok dizánja"
             excerpt="Az ember vizuális lény. Ami külsőre tetszik neki, az már mélyen tudat alatt érdekelni kezdi. A dizájn
         erejével a legunalmasabb dolgot is izgalmassá lehet tenni. Az izgalmas pedig mindjárt érdekesebb,
         nemde?"
+            fullName="Social anyagok dizájnolása közben általában ezeket csináljuk"
             description={`Lehet az ember profi abban, amit csinál, árulhat elképesztően jó minőségű terméket, és értékesíthet
         fantasztikus szolgáltatást is. Hogyha a márkája online megjelenése úgy néz ki, mint amit Paintben és
         Wordben dizájnoltak, egyszerűen gagyi hatást kelt.<br /><br />
@@ -178,10 +178,10 @@ const Services = () => {
       case 'print':
         return (
           <SolutionCategory
-            name="Print anyagok dizánja"
             excerpt="Mikor olvastál el utoljára szórólapot? Na és plakátot, roll-upot, vagy bármi ronda céges brosúrát? Az
         offline anyagok ma épp azért számíthatnak különlegesnek, mert senki sem veszi őket komolyan. A
         tiéd lehet más."
+            fullName="Print anyagok dizájnolása közben általában ezeket csináljuk"
             description={`Mivel az offline marketinganyagok elkészítése, terjesztése, hasznuk nyomon követése, és
         felhasználásuk egyszerűsége is elmarad az online-tól, így érthető módon a használatuk gyakorisága is
         jóval kisebb annál.<br /><br />
@@ -207,7 +207,7 @@ const Services = () => {
             </div>
             <div className="bg-white rounded shadow-brand p-3">
               <SolIcon10 className="w-8 mb-2" />
-              <p className="font-extrabold text-sm">Közösen összegyűjtük/elkészítjük az anyagok tartalmakat</p>
+              <p className="font-extrabold text-sm">Közösen összegyűjtük/elkészítjük az anyagok tartalmait</p>
             </div>
             <div className="bg-white rounded shadow-brand p-3">
               <SolIcon11 className="w-8 mb-2" />
@@ -280,7 +280,7 @@ const Services = () => {
             <div className="bg-white rounded shadow-brand p-3">
               <SolIcon12 className="w-8 mb-2" />
               <p className="font-extrabold text-sm">
-                Közösen összegyűjtük/megtervezzük és elkészítjük a posztok tartalmakat
+                Közösen összegyűjtük/megtervezzük és elkészítjük a posztok tartalmait
               </p>
             </div>
             <div className="bg-white rounded shadow-brand p-3">

@@ -11,7 +11,7 @@ const ImpressPage = () => {
         <br />
         Szolgáltató székhelye, telephelye: 8427 Bakonybél Fürdő utca 7.
         <br />
-        mail: bence@gazduig.com
+        mail: szevasz@gazduig.com
         <br />
         Adószám: 6987652-1-39
         <br />

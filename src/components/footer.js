@@ -25,8 +25,8 @@ const Footer = () => {
                 </a>
               </li>
               <li className="mb-1 text-sm">
-                <a className="flex flex-row" href="mailto:bence@gazduig.com">
-                  <FooterMail className="w-4 mr-4" /> bence@gazduig.com
+                <a className="flex flex-row" href="mailto:szevasz@gazduig.com">
+                  <FooterMail className="w-4 mr-4" /> szevasz@gazduig.com
                 </a>
               </li>
             </ul>

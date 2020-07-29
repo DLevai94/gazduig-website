@@ -37,6 +37,7 @@ import FootballIcon from '../components/svg/teamicons27';
 import MicIcon from '../components/svg/teamicons28';
 import MountainsIcon from '../components/svg/teamicons29';
 import BookIcon from '../components/svg/teamicons30';
+import ChampIcon from '../components/svg/teamicons36';
 import Bence from '../images/team-bence.png';
 import Reka from '../images/team-reka.png';
 import Dani from '../images/team-dani.png';
@@ -406,7 +407,7 @@ function Team() {
           <div className="bg-white shadow-brand rounded pl-16 pt-8 pr-8 flex flex-col mb-10">
             <h3 className="font-extrabold text-2xl mb-6">Dabasi Réka - Sportdizájn specialista</h3>
             <div className="flex flex-row">
-              <div className="hidden md:grid lg:w-8/12 grid md:grid-cols-2 md:grid-rows-2 col-gap-20 row-gap-10 mb-10">
+              <div className="hidden md:grid lg:w-8/12 grid md:grid-cols-2 md:grid-rows-3 col-gap-20 row-gap-10 mb-10">
                 <div className="flex items-start">
                   <div className="mr-4">
                     <MedalIcon className="w-10" />
@@ -451,6 +452,19 @@ function Team() {
                     <p className="font-light text-sm leading-tight">
                       Non-formális oktatási keretek között is folyamatosan fejlesztem magam, igyekszem minél jobban
                       szélesíteni az ismereteimet.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <div className="mr-4">
+                    <ChampIcon className="w-10" />
+                  </div>
+                  <div>
+                    <h4 className="font-extrabold text-sm leading-tight mb-2">Sikerek</h4>
+                    <p className="font-light text-sm leading-tight">
+                      A sportban már sok sikert magaménak tudhatok, voltam már több, mint 10 világbajnokságon, és a
+                      csapatommal is többszörös országos bajnokok vagyunk, így a célom, hogy az üzleti szférában is
+                      legalább ennyire sikeres legyek!
                     </p>
                   </div>
                 </div>

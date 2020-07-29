@@ -23,7 +23,7 @@ const PrivacyPage = () => {
         </p>
         <p>
           <span>
-            <b>E-mail cím: bence@gazduig.com</b>
+            <b>E-mail cím: szevasz@gazduig.com</b>
           </span>
         </p>
         <p>
@@ -179,7 +179,7 @@ const PrivacyPage = () => {
         <p>
           A hozzájárulás felfüggesztését, és az üzenetekről való leiratkozást minden esetben jól látható módon lehetővé
           tesszük. Minden egyes e-mail alján megtalálható a leiratkozáshoz szükséges link, vagy az adatbázisból való
-          eltávolítás kérhető az <b>bence@gazduig.com</b>&nbsp;e-mail címen.
+          eltávolítás kérhető az <b>szevasz@gazduig.com</b>&nbsp;e-mail címen.
         </p>
         <p>
           A marketing kommunikációról való leiratkozás esetén is küldhetünk üzeneteket, de csak a rendelések
@@ -274,13 +274,13 @@ const PrivacyPage = () => {
         </p>
         <p>Adatigénylés / Adattörlés /Adatkorlátozás</p>
         <p>
-          <b>bence@gazduig.com</b>
+          <b>szevasz@gazduig.com</b>
         </p>
         <p>b, Személyes adatok módosítása</p>
         <p>
           Amennyiben a személyes adatok módosultak, vagy tévesen lettek megadva, a felhasználóknak joga van az adatok
           módosítását kérni. A személyes adatok módosításához kérjük keressen fel minket az a&nbsp;
-          <span>bence@gazdig.com</span>&nbsp; e-mail címen.
+          <span>szevasz@gazdig.com</span>&nbsp; e-mail címen.
         </p>
         <p>c, Személyes adatok törlésének kérése</p>
         <p>
