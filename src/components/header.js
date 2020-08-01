@@ -13,6 +13,7 @@ function Header() {
             <div className="flex-shrink-0 flex items-center">
               <Link to="/">
                 <MenuLogo className="w-24 sm:w-32" />
+              <p className="sr-only">Gazduig Creative Agency Budapest</p>
               </Link>
             </div>
             <div className="hidden sm:ml-6 sm:flex">

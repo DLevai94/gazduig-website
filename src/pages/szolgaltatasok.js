@@ -362,32 +362,37 @@ const Services = () => {
               <div className="w-full md:w-1/2">
                 <ul>
                   <li className="font-light text-lg flex justify-start items-center">
-                    <img src={List1} className="w-10 inline-block mr-4" />
+                    <img src={List1} className="w-10 inline-block mr-4" alt="Kapcsolatba lépünk egymással" />
                     <span className="-mt-10">Kapcsolatba lépünk egymással</span>
                   </li>
                   <li className="font-light text-lg flex justify-start items-center">
-                    <img src={List2} className="w-10 inline-block mr-4" />
+                    <img src={List2} className="w-10 inline-block mr-4" alt="Felmérjük az igényeidet" />
                     <span className="-mt-10">Felmérjük az igényeidet</span>
                   </li>
                   <li className="font-light text-lg flex justify-start items-center">
-                    <img src={List3} className="w-10 inline-block mr-4" />
+                    <img src={List3} className="w-10 inline-block mr-4" alt="Azok alapján terveket készítünk" />
                     <span className="-mt-10">Azok alapján terveket készítünk</span>
                   </li>
                   <li className="font-light text-lg flex justify-start items-center">
-                    <img src={List4} className="w-10 inline-block mr-4" />
+                    <img
+                      src={List4}
+                      className="w-10 inline-block mr-4"
+                      alt="Bemutatjuk, és ha kell módosítjuk, végtelenszer, felár nélkül, míg olyan nem lesz, amilyet
+                      elképzeltél"
+                    />
                     <span className="-mt-10">
                       Bemutatjuk, és ha kell módosítjuk, végtelenszer, felár nélkül, míg olyan nem lesz, amilyet
                       elképzeltél
                     </span>
                   </li>
                   <li className="font-light text-lg flex justify-start items-center">
-                    <img src={List5} className="w-10 inline-block mr-4" />
+                    <img src={List5} className="w-10 inline-block mr-4" alt="Átadjuk a kész anyagot" />
                     <span>Átadjuk a kész anyagot</span>
                   </li>
                 </ul>
               </div>
             </div>
-            <img src={Office} alt="Nem a mi irodank" className="block lg:hidden" />
+            <img src={Office} alt="Nem a mi irodánk" className="block lg:hidden" />
             <div className="-mt-8 md:-mt-28 md:w-8/12 rounded bg-gray-900 text-white text-2xl font-display font-extrabold inline-block px-8 py-4 lg:pr-40 mb-8 uppercase leading-brand">
               <p>
                 Ez itt nem a mi irodánk. Viszont nagyon <br />

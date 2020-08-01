@@ -14,6 +14,7 @@ const Footer = () => {
           <div>
             <Link to="/" className="">
               <FooterLogo className="w-32" />
+              <p className="sr-only">Gazduig Creative Agency Budapest</p>
             </Link>
           </div>
           <div>

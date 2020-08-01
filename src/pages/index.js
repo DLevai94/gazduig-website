@@ -289,7 +289,7 @@ function IndexPage() {
                 <p className="font-light text-sm mb-2">Gazdig Bence - CEO & Designer csávó</p>
                 <p className="font-extrabold text-sm">+36 30 270 5363</p>
               </div>
-              <img src={BenceImg} className="absolute bottom-0 right-2 h-32 overflow-visible" />
+              <img src={BenceImg} className="absolute bottom-0 right-2 h-32 overflow-visible" alt="Gazdig Bence" />
             </div>
           </div>
         </div>
@@ -510,18 +510,18 @@ function IndexPage() {
       </section>
       <section className="bg-gray-100">
         <div className="py-10 lg:py-32 flex flex-col md:flex-row container mx-auto items-center justify-center md:justify-around">
-          <div className="w-100 ml-4 md:max-w-1/2 text-left">
-            <h2 className="heading uppercase leading-brand">
+          <div className="w-100 md:max-w-1/2 text-left">
+            <h2 className="heading uppercase leading-brand ml-4">
               Á, az oldal alján vagy! Hadd mutatkozzunk
               <br />
               be, ha már legörgettél idáig!
             </h2>
             <Link to="/csapat">
-              <button className="primary-btn">Kattints ide</button>
+              <button className="primary-btn ml-4">Kattints ide</button>
             </Link>
           </div>
           <div className="w-100 flex justify-end items-center">
-            <img className="min-h-12 max-h-64" src={Couch} alt="Kanape" />
+            <img className="min-h-12 max-h-64" src={Couch} alt="Kanapén ül a Gazduig csapata" />
           </div>
         </div>
       </section>
