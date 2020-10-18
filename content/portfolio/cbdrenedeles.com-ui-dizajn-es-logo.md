@@ -23,6 +23,10 @@ images:
 ---
 Hogy fűről van-e szó ebben a dizájnban? Természetesen nem. A CBD a marihuána azon származéka, ami nem okoz hallucinációt, ellenben remek gyógyító hatása van.
 
+<br>
+
 A sokat sejtető névvel bíró cbdrendeles.com weboldalán pontosan ilyen CBD készítmények vásárolhatóak, amelyeket felhasználva könnyedén javíthatunk az egészségi állapotunkon.
 
-A weboldal kifejezetten seo-ra optimalizált, számukra készítettünk átfogó, új UI-t és logót. Íme az embléma, és néhány olyan screen, ahol a szöveg mellett több dizájn-elem is megtalálható. 
+<br>
+
+A weboldal kifejezetten seo-ra optimalizált, számukra készítettünk átfogó, új UI-t és logót. Íme az embléma, és néhány olyan screen, ahol a szöveg mellett több dizájn-elem is megtalálható.
