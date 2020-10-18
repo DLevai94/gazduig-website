@@ -3,7 +3,7 @@ date: 2020-10-18T11:29:32+02:00
 categories:
 - branding
 - web
-thumbnail: https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1603014298/cms/time_anark2.jpg
+thumbnail: https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1603015083/cms/time_voaxud.jpg
 title: CBDrenedeles.com UI dizájn és logó
 slug: cbdrendeles-ui-logo
 client: cbdrendeles.com
