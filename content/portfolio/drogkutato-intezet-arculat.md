@@ -26,4 +26,6 @@ images:
 ---
 A Drogkutató Intézet gondolt egy nagyot, és eldöntötte, hogy mostantól kezdve bizony ütős arculattal fognak működni az online és offline térben.
 
+<br>
+
 Számukra készítettünk kisarculatot, és UI dizájnt, aminek az arculat részét láthatod a következő néhány képen.
