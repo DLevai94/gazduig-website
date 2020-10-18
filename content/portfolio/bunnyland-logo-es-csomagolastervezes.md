@@ -21,6 +21,10 @@ images:
 ---
 2020 nyarán egészen új területre tévedtünk. Kicsit félretettük az ütősséget, és valami sokkal lágyabb, babásabb vonalat ismertünk meg.
 
+<br>
+
 Ennek apropója a Bunnyland arculatának és legújabb termékei csomagolásának elkészítése volt. Egy kedves, puha, ölelgetni való logó, és az abból kialakuló külső borítás tervezése, és 3D modellezése szerepelt a listánkon.
+
+<br>
 
 Nézd meg, hogy sikerült!
