@@ -3,7 +3,7 @@ date: 2020-10-18T11:17:52+02:00
 categories:
 - branding
 - print
-thumbnail: https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1603012830/cms/Csoport_1_p0yv27.png
+thumbnail: https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1603015734/cms/szar_qvqygw.jpg
 title: Bunnyland logó és csomagolástervezés
 slug: bunnyland-logo-arculat
 client: Bunnyland
