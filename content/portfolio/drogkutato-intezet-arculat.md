@@ -5,7 +5,7 @@ categories:
 - print
 thumbnail: https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1603015958/cms/sugardaddy_zbcvvc.jpg
 title: Drogkutató Intézet arculat
-slug: drogkutato-intezet-ui
+slug: drogkutato-intezet-arculat
 client: Drogkutató Intézet
 solutions: Arculattervezés
 jobtime: 2020 szeptember
