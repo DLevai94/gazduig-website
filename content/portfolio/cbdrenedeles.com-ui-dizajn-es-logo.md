@@ -9,7 +9,7 @@ slug: cbdrendeles-ui-logo
 client: cbdrendeles.com
 solutions: UI dizájn, Logótervezés
 jobtime: 2020 augusztus
-gradient: linear-gradient(0deg, rgba(222,230,238,1) 0%, rgba(222,230,238,1) 45%)
+gradient: linear-gradient(0deg, rgba(27,202,113,1) 0%, rgba(27,202,113,0) 45%)
 images:
 - https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1603013397/cms/cbd_kxn319.jpg
 - https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1603013989/cms/Fooldal_fwycf6.jpg
