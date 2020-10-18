@@ -15,8 +15,8 @@ images:
 - https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1595809783/cms/Frame_12_qae5y7.jpg
 - https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1595809783/cms/Frame_15_eq37r0.jpg
 - https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1595809782/cms/Frame_11_fqaiin.jpg
-- https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1595809782/cms/Frame_14_qoyogs.jpg
-- https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1595809782/cms/Frame_10_qdp7zb.jpg
+- https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1603012637/cms/mock1_bwukxs.jpg
+- https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1603012639/cms/mock2_dxmvwa.jpg
 - https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1595809783/cms/Frame_13_bqqleo.jpg
 
 ---
@@ -28,4 +28,4 @@ A Sales University egy értékesítők számára létrehozott oktatási felület
 
 <br>
 
-Rajtuk kívül a Joblinken, újonnan induló HR szoftver, valmint a ProgNinjas, programozóképzés logóját láthatod ebben az összegzésben.
+Rajtuk kívül a Pozi.io, újonnan induló innovációs találkozópont, valmint a ProgNinjas, programozóképzés logóját láthatod ebben az összegzésben.
