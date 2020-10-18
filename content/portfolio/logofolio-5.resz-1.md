@@ -3,8 +3,8 @@ date: 2020-10-18T12:44:42+02:00
 categories:
 - branding
 thumbnail: https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1603018073/cms/logofolio5_fvqjrm.jpg
-title: Logofolio 5. rész
-slug: logofolio-5
+title: Logofolio 6. rész
+slug: logofolio-6
 client: 3 remek ügyfél
 solutions: Logótervezés
 jobtime: "2020"
@@ -24,7 +24,7 @@ images:
 - https://res.cloudinary.com/gazduig/image/upload/f_auto,q_auto:good/v1603018171/cms/6_drgmuv.jpg
 
 ---
-A logós projektjeinket bemutató logofolio 5. részében sportosra vettük a figurát.
+A logós projektjeinket bemutató logofolio 6. részében sportosra vettük a figurát.
 
 <br>
 
