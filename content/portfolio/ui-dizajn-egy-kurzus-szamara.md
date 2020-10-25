@@ -21,14 +21,8 @@ images:
 ---
 2020 februárjában készítettünk egy, a UI dizájn rejtelmeibe bevezető videókurzust.
 
-<br>
-
 Az oktatóanyagok végigvezetik a hallgatókat az alapoktól a jól konvertáló weboldal tervezésének, dizájnolásának, valamint fejlesztők felé való átadásának folyamatán.
 
-<br>
-
 A kurzusban a fiktív, Korner Étterem weboldalának UI dizájnját készítjük el, ezt láthatod itt.
-
-<br>
 
 Jó étvágyat hozzá!
