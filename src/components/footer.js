@@ -21,12 +21,12 @@ const Footer = () => {
             <p className="text-sm font-extrabold mb-4">Gazduig Creative Agency</p>
             <ul className="font-light">
               <li className="mb-1 text-sm">
-                <a className="flex flex-row" href="tel:+36302705363">
+                <a className="flex flex-row items-center content-center" href="tel:+36302705363">
                   <FooterPhone className="w-3 mr-4" /> +36 30 270 5363
                 </a>
               </li>
               <li className="mb-1 text-sm">
-                <a className="flex flex-row" href="mailto:szevasz@gazduig.com">
+                <a className="flex flex-row  items-center content-center" href="mailto:szevasz@gazduig.com">
                   <FooterMail className="w-4 mr-4" /> szevasz@gazduig.com
                 </a>
               </li>
@@ -56,12 +56,12 @@ const Footer = () => {
             <p className="text-sm font-extrabold">Dobj egy pacsit valahol</p>
             <ul className="font-light">
               <li className="mb-1 text-sm">
-                <a className="flex flex-row" target="_blank" rel="noreferrer" href="https://instagram.com/gazduig">
+                <a className="flex flex-row items-center content-center" target="_blank" rel="noreferrer" href="https://instagram.com/gazduig">
                   <FooterInsta className="w-4 mr-4" /> gazduig
                 </a>
               </li>
               <li className="mb-1  text-sm">
-                <a className="flex flex-row" target="_blank" rel="noreferrer" href="https://linkedin.com/in/gazduig">
+                <a className="flex flex-row items-center content-center" target="_blank" rel="noreferrer" href="https://linkedin.com/in/gazduig">
                   <FooterLinkedin className="w-4 mr-4" /> in/gazduig
                 </a>
               </li>

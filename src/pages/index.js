@@ -14,13 +14,24 @@ import LogoShoprenter from '../images/logos/shoprenter.svg';
 import LogoPensum from '../images/logos/pensum.svg';
 import LogoHD from '../images/logos/hdmarketing.png';
 // import LogoDoupla from '../images/logos/doupla.png';
-import LogoDigital from '../images/logos/welove.svg';
-import LogoGolden from '../images/logos/goldenbrothers.png';
-import LogoAllyos from '../images/logos/allyos.svg';
+// import LogoDigital from '../images/logos/welove.svg';
+// import LogoGolden from '../images/logos/goldenbrothers.png';
+// import LogoAllyos from '../images/logos/allyos.svg';
 import LogoEkata from '../images/logos/ekata.svg';
 import LogoInsimu from '../images/logos/insimu.svg';
+// import LogoTSystems from '../images/logos/t-logo.png';
+// import LogoShoprenter from '../images/logos/shoprenter-logo.png';
+// import LogoPensum from '../images/logos/pensum-logo.png';
+// import LogoHD from '../images/logos/hdmarketing-logo.png';
+import LogoEcom from '../images/logos/ecommerce-logo.png';
+// import LogoEkata from '../images/logos/ekata-logo.png';
+import LogoKSB from '../images/logos/ksb-logo.png';
+// import LogoInsimu from '../images/logos/insimu-logo.png';
+import LogoActive from '../images/logos/active-logo.png';
+import LogoDo from '../images/logos/domarketing-logo.png';
+import LogoAndersen from '../images/logos/andersen-logo.png';
 // import LogoNetmetro from '../images/logos/netmetro.svg';
-import LogoSzaboKandallo from '../images/logos/szabokandallo.svg';
+// import LogoSzaboKandallo from '../images/logos/szabokandallo.svg';
 import BenceImg from '../images/bence-bw.png';
 // import Cloud1 from '../images/cloud1.svg';
 // import Cloud2 from '../images/cloud2.svg';
@@ -154,10 +165,10 @@ function IndexPage() {
           'gazduig',
         ]}
       />
+      {/* <img src={Cloud1} alt="Felho" className="absolute top-0 right-0 w-64 h-auto" />
+      <img src={Cloud2} alt="Felho" className="absolute top-20 right-40 w-56 h-auto" />
+      <img src={Cloud3} alt="Felho" className="absolute top-150 right-60 w-96 h-auto" /> */}
       <div className="hero">
-        {/* <img src={Cloud1} alt="Felho" className="absolute top-0 right-0" />
-        <img src={Cloud2} alt="Felho" className="absolute top-0 right-0" />
-        <img src={Cloud3} alt="Felho" className="absolute top-0 right-0" /> */}
         <div className="container mx-auto flex justify-center lg:justify-start items-center h-screen -mt-32">
           <div className="my-10 md:my-16 lg:max-w-md">
             <section className="px-4 lg:px-8">
@@ -298,7 +309,7 @@ function IndexPage() {
         <div className="max-w-screen-xl mx-auto mb-32 px-4 sm:px-6 lg:px-8">
           <h2 className="heading text-left uppercase">Néhány ügyfelünk, akikre büszkék vagyunk</h2>
           <div className="mx-16 grid grid-cols-2 gap-8 md:grid-cols-6">
-            <div className="col-span-2 flex justify-center md:col-span-2 lg:col-span-1">
+            <div className="col-span-2 flex justify-center md:col-span-2">
               <img className="h-12" src={LogoTSystems} alt="T-Systems" />
             </div>
             <div className="col-span-2 flex justify-center md:col-span-2 lg:col-span-1">
@@ -314,25 +325,25 @@ function IndexPage() {
               <img className="h-12" src={LogoDoupla} alt="Doupla" />
             </div> */}
             <div className="col-span-2 flex justify-center md:col-span-2 lg:col-span-1">
-              <img className="h-12" src={LogoDigital} alt="We Love Digital" />
-            </div>
-            <div className="col-span-2 flex justify-center md:col-span-2 lg:col-span-1">
-              <img className="h-12" src={LogoGolden} alt="Golden Brothers" />
-            </div>
-            <div className="col-span-2 flex justify-center md:col-span-2 lg:col-span-1">
-              <img className="h-12" src={LogoAllyos} alt="Allyos" />
+              <img className="h-12" src={LogoEcom} alt="Ecommerce Expo" />
             </div>
             <div className="col-span-2 flex justify-center md:col-span-2 lg:col-span-1">
               <img className="h-12" src={LogoEkata} alt="Ekata" />
             </div>
             <div className="col-span-2 flex justify-center md:col-span-2 lg:col-span-1">
+              <img className="h-12" src={LogoKSB} alt="KSB" />
+            </div>
+            <div className="col-span-2 flex justify-center md:col-span-2 lg:col-span-1">
               <img className="h-12" src={LogoInsimu} alt="Insimu" />
             </div>
-            {/* <div className="col-span-2 flex justify-center md:col-span-2 lg:col-span-1">
-              <img className="h-12" src={LogoNetmetro} alt="Netmetro" />
-            </div> */}
             <div className="col-span-2 flex justify-center md:col-span-2 lg:col-span-1">
-              <img className="h-12" src={LogoSzaboKandallo} alt="Szabo Kandallo" />
+              <img className="h-12" src={LogoActive} alt="Active" />
+            </div>
+            <div className="col-span-2 flex justify-center md:col-span-2 lg:col-span-1">
+              <img className="h-12" src={LogoDo} alt="Do Marketing" />
+            </div>
+            <div className="col-span-2 flex justify-center md:col-span-2 lg:col-span-1">
+              <img className="h-12" src={LogoAndersen} alt="Andersen Global" />
             </div>
           </div>
         </div>

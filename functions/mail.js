@@ -1,18 +1,18 @@
-import sendgrid from '@sendgrid/mail';
+import sendgrid from '@sendgrid/client';
 
 sendgrid.setApiKey(process.env.SENDGRID_API_KEY);
 
 module.exports = async (event, context) => {
-  try {
-    await sendgrid.send({
-      to: context.emailAddress,
-      from: 'bence@gazduig.com',
-      subject: 'IG Esettanulmany',
-      text: 'Hello, world!',
-    });
-  } catch (error) {
-    return res.status(error.statusCode || 500).json({ error: error.message });
-  }
+  // try {
+  //   await sendgrid.send({
+  //     to: context.emailAddress,
+  //     from: 'bence@gazduig.com',
+  //     subject: 'IG Esettanulmany',
+  //     text: 'Hello, world!',
+  //   });
+  // } catch (error) {
+  //   return res.status(error.statusCode || 500).json({ error: error.message });
+  // }
 
   return {
     statusCode: 200,
