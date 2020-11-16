@@ -31,13 +31,11 @@ export default function Template({ data }) {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="w-100 p-6 md:pt-32 md:px-16 mt-8">
           <div className="max-w-8/12">
-            <h1 className="font-display font-extrabold text-4xl max-w-7xl uppercase leading-brand">
-              {frontmatter?.title}
-            </h1>
+            <h1 className="font-display font-black text-4xl max-w-7xl uppercase leading-brand">{frontmatter?.title}</h1>
           </div>
         </div>
 
-        <div className="flex flex-col md:flex-row w-100 p-6 md:px-16 md:pb-12 mt-8">
+        <div className="flex flex-col md:flex-row w-100 md:px-10 md:pb-12">
           <div className="md:rounded md:bg-white mb-4 md:mb-12 md:mx-6 flex flex-row p-4 md:shadow-brand justify-start items-center">
             <div className="icon">
               <CrownIcon className="w-8 mr-3" />
@@ -71,7 +69,7 @@ export default function Template({ data }) {
 
         <div className="md:px-16">
           <div>
-            <p className="font-extrabold">Egy rövid összefoglaló</p>
+            <p className="text-2xl font-black">Egy rövid összefoglaló</p>
             <div className="mt-8 font-light" dangerouslySetInnerHTML={{ __html: html }} />
           </div>
         </div>

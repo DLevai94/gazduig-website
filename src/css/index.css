@@ -45,11 +45,11 @@
   font-display: swap;
   src: local('SofiaPro Light'), local('SofiaPro-Light'), url('../fonts/Sofia\ Pro\ Light\ Az.otf');
 }
-/* sofiapro-800 */
+/* sofiapro-900 */
 @font-face {
   font-family: 'Sofia-Pro';
   font-style: normal;
-  font-weight: 800;
+  font-weight: 900;
   font-display: swap;
   src: local('SofiaPro Black'), local('SofiaPro-Black'), url('../fonts/Sofia\ Pro\ Black\ Az.otf');
 }
