@@ -5,9 +5,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Poppins', ...fontFamily.sans],
-        display: ['Poppins', ...fontFamily.sans],
-        body: ['Poppins', ...fontFamily.sans],
+        sans: ['Sofia-Pro', ...fontFamily.sans],
+        display: ['Sofia-Pro', ...fontFamily.sans],
+        body: ['Sofia-Pro', ...fontFamily.sans],
       },
       borderRadius: {
         default: '10px',
