@@ -27,52 +27,55 @@ export default function Template({ data }) {
           'gazduig',
         ]}
       />
+
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="rounded w-100 p-6 md:pt-32 md:px-16 md:pb-12 mb-20 bg-gray-900 mt-8">
+        <div className="w-100 p-6 md:pt-32 md:px-20 mt-8">
           <div className="max-w-8/12">
-            <h1 className="font-display text-white font-extrabold text-4xl max-w-7xl uppercase leading-brand">
-              {frontmatter?.title}
-            </h1>
+            <h1 className="font-display font-black text-4xl max-w-7xl leading-brand">{frontmatter?.title}</h1>
           </div>
         </div>
-        <div className="grid md:grid-cols-8 md:gap-12 md:px-16">
-          <div className="col-span-2">
-            <div className="md:rounded md:bg-white mb-4 md:mb-12 flex flex-row p-4 md:shadow-brand justify-start items-center">
-              <div className="icon">
-                <CrownIcon className="w-8 mr-3" />
-              </div>
-              <div className="flex flex-col justify-center items-start">
-                <p className="font-light text-xs">Ügyfél</p>
-                <p className="font-extrabold text-sm leading-tight">{frontmatter?.client}</p>
-              </div>
+
+        <div className="flex flex-col md:flex-row w-100 md:px-14 md:pb-12">
+          <div className="md:rounded md:bg-white mb-4 md:mb-12 md:mx-6 flex flex-row p-4 md:shadow-brand justify-start items-center">
+            <div className="icon">
+              <CrownIcon className="w-8 mr-3" />
             </div>
-            <div className="md:rounded md:bg-white mb-4 md:mb-12 flex flex-row p-4 md:shadow-brand justify-start items-center">
-              <div className="icon">
-                <KeyIcon className="w-8 mr-3" />
-              </div>
-              <div className="flex flex-col justify-center items-start">
-                <p className="font-light text-xs">Megoldások</p>
-                <p className="font-extrabold text-sm leading-tight">{frontmatter?.solutions}</p>
-              </div>
-            </div>
-            <div className="md:rounded md:bg-white mb-4 md:mb-12 flex flex-row p-4 md:shadow-brand justify-start items-center">
-              <div className="icon">
-                <CalendarIcon className="w-8 mr-3" />
-              </div>
-              <div className="flex flex-col justify-center items-start">
-                <p className="font-light text-xs">Ekkor készült</p>
-                <p className="font-extrabold text-sm leading-tight">{frontmatter?.jobtime}</p>
-              </div>
+            <div className="flex flex-col justify-center items-start">
+              <p className="font-light text-xs">Ügyfél</p>
+              <p className="font-extrabold text-sm leading-tight">{frontmatter?.client}</p>
             </div>
           </div>
-          <div className="col-span-6">
-            <p className="font-extrabold">Egy rövid összefoglaló</p>
-            <div className="mt-8 font-light" dangerouslySetInnerHTML={{ __html: html }} />
+
+          <div className="md:rounded md:bg-white mb-4 md:mb-12 flex flex-row p-4 md:shadow-brand justify-start items-center">
+            <div className="icon">
+              <KeyIcon className="w-8 mr-3" />
+            </div>
+            <div className="flex flex-col justify-center items-start">
+              <p className="font-light text-xs">Megoldások</p>
+              <p className="font-extrabold text-sm leading-tight">{frontmatter?.solutions}</p>
+            </div>
+          </div>
+
+          <div className="md:rounded md:bg-white mb-4 md:mb-12 md:mx-6 flex flex-row p-4 md:shadow-brand justify-start items-center">
+            <div className="icon">
+              <CalendarIcon className="w-8 mr-3" />
+            </div>
+            <div className="flex flex-col justify-center items-start">
+              <p className="font-light text-xs">Ekkor készült</p>
+              <p className="font-extrabold text-sm leading-tight">{frontmatter?.jobtime}</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="md:px-20 bg-gray-100 p-16">
+          <div>
+            <p className="text-2xl font-black">Egy rövid összefoglaló</p>
+            <div className="mt-8 md:pr-64 font-light" dangerouslySetInnerHTML={{ __html: html }} />
           </div>
         </div>
         <div className="md:px-16 mt-16 mb-32">
           {frontmatter?.images?.map((image) => (
-            <img key={image} src={image} alt={frontmatter?.title} className="w-100 rounded mx-auto mb-8" />
+            <img key={image} src={image} alt={frontmatter?.title} className="w-100 mx-auto mb-8" />
           ))}
         </div>
 
@@ -87,6 +90,7 @@ export default function Template({ data }) {
           <Contact />
         </section>
       </div>
+
       <section className="md:-mt-64 pt-36 md:pt-96 pb-36">
         <div className="container mx-auto text-left sm:px-6 lg:px-64">
           <h2 className="font-display font-extrabold text-2xl uppercase leading-brand mb-6">
