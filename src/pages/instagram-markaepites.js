@@ -20,26 +20,35 @@ function IgHacks() {
           'kreatív ügynökség budapest',
           'gazduig',
         ]}
-        title="Ezekt neked írtuk"
+        title="Ezeket neked írtuk"
       />
       <section className="purple-blob-bg" style={{ backgroundPosition: `130% 15%`, backgroundSize: `60% 90%` }}>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="px-8 xl:px-0 w-full lg:w-1/2 my-32">
-            <h2 className="text-2xl md:text-4xl xl:text-5xl leading-brand font-extrabold">
-              Az ügyfeleink 90%-át
-              <br />
-              Instáról szerezzük
-            </h2>
-            <p className="text-xl md:text-xl leading-brand">
-              Írtunk is erről egy összefoglalót. Olvass bele, hátha találsz benne valami érdekeset!
-            </p>
-          </div>
           <div className="mb-32">
-            <div className="mx-auto flex">
+            <div className="mx-auto flex mt-36">
+              <div className="md:w-1/2 relative flex justify-end items-center">
+                <img
+                  className="absolute"
+                  src={Typewriter}
+                  alt="Irogep"
+                  style={{ animation: 'float 4s ease-in-out infinite' }}
+                />
+              </div>
+
               <div className="w-full md:w-1/2">
-                <h3 className="text-2xl uppercase leading-brand font-display font-extrabold mb-8">
+                <div>
+                  <h2 className="text-4xl md:text-5xl leading-brand font-extrabold">
+                    Az ügyfeleink 90%-át Instáról szerezzük
+                  </h2>
+                  <p className="text-md md:text-lg font-display-300 mt-4 mb-10">
+                    Írtunk is erről egy összefoglalót. Olvass bele, hátha találsz benne valami érdekeset!
+                  </p>
+                </div>
+
+                <h3 className="text-2xl leading-brand font-display font-extrabold my-8">
                   Pötyögd be a mail címed, és már küldjük is!
                 </h3>
+
                 <form
                   method="POST"
                   netlify-honeypot="bot-field"
@@ -107,25 +116,17 @@ function IgHacks() {
                   </div>
                 </form>
               </div>
-              <div className="md:w-1/2 relative flex justify-end items-center">
-                <img
-                  className="absolute"
-                  src={Typewriter}
-                  alt="Irogep"
-                  style={{ animation: 'float 4s ease-in-out infinite' }}
-                />
-              </div>
             </div>
           </div>
-          <div className="mb-32 px-8 xl:px-0">
-            <h2 className="text-2xl uppercase leading-brand font-display font-extrabold mb-10">
-              Most inkább nézelődnél
-              <br /> olvasás helyett? No problem!
-            </h2>
-            <Link to="/portfolio">
-              <button className="primary-btn">Irány a portfólió</button>
-            </Link>
-          </div>
+        </div>
+        <div className="mb-32 px-8 xl:px-0">
+          <h2 className="text-2xl uppercase leading-brand font-display font-extrabold mb-10">
+            Most inkább nézelődnél
+            <br /> olvasás helyett? No problem!
+          </h2>
+          <Link to="/portfolio">
+            <button className="primary-btn">Irány a portfólió</button>
+          </Link>
         </div>
       </section>
     </Layout>
