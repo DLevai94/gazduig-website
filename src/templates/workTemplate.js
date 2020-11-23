@@ -31,7 +31,7 @@ export default function Template({ data }) {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="w-100 p-6 md:pt-32 md:px-20 mt-8">
           <div className="max-w-8/12">
-            <h1 className="font-display font-black text-4xl max-w-7xl leading-brand">{frontmatter?.title}</h1>
+            <h1 className="font-display font-black text-5xl max-w-7xl leading-brand">{frontmatter?.title}</h1>
           </div>
         </div>
 
@@ -69,7 +69,7 @@ export default function Template({ data }) {
 
         <div className="md:px-20 bg-gray-100 p-16">
           <div>
-            <p className="text-2xl font-black">Egy rövid összefoglaló</p>
+            <p className="text-4xl font-black">Egy rövid összefoglaló</p>
             <div className="mt-8 md:pr-64 font-light" dangerouslySetInnerHTML={{ __html: html }} />
           </div>
         </div>

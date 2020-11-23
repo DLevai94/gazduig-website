@@ -25,21 +25,20 @@ function IgHacks() {
       <section className="purple-blob-bg" style={{ backgroundPosition: `130% 15%`, backgroundSize: `60% 90%` }}>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="px-8 xl:px-0 w-full lg:w-1/2 my-32">
-            <h2 className="text-2xl md:text-4xl xl:text-5xl uppercase leading-brand font-display font-extrabold">
-              Írtunk egy összefoglalót
+            <h2 className="text-2xl md:text-4xl xl:text-5xl leading-brand font-extrabold">
+              Az ügyfeleink 90%-át
               <br />
-              arról, milyen módszerekkel
-              <br />
-              szerezzük az ügyfeleink
-              <br />
-              90%-át Instáról
+              Instáról szerezzük
             </h2>
+            <p className="text-xl md:text-xl leading-brand">
+              Írtunk is erről egy összefoglalót. Olvass bele, hátha találsz benne valami érdekeset!
+            </p>
           </div>
           <div className="mb-32">
             <div className="mx-auto flex">
               <div className="w-full md:w-1/2">
                 <h3 className="text-2xl uppercase leading-brand font-display font-extrabold mb-8">
-                  Pötyögd be az e-mail címed, és már küldjük is!
+                  Pötyögd be a mail címed, és már küldjük is!
                 </h3>
                 <form
                   method="POST"
