@@ -67,20 +67,20 @@ const Portfolio = () => {
         ]}
         title="Ezeket csináltunk eddig"
       />
-      <div className="portfolio-bg">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 my-16 h-64 bg-transparent flex justify-between">
-          <div className="w-full md:w-5/12 flex flex-col justify-center items-start">
-            <h1 className="text-5xl font-display font-extrabold uppercase leading-brand mb-6">
-              Csináljuk is, nem
-              <br />
-              csak beszélünk róla
+      <div>
+        <div className="container mx-auto px-4 md:px-32 my-16 h-64 bg-transparent flex justify-between">
+          <div className="container w-full md:w-1/2 flex flex-col justify-center items-start">
+            <h1 className="text-5xl font-display font-extrabold leading-brand mb-6">
+              Csináljuk is, nemcsak beszélünk róla.
             </h1>
-            <p className="text-light text-lg">
-              Mindig azon vagyunk, hogy újat, maradandót és persze ütőset alkossunk. Íme pár korábbi példa.
+            <p className="md:w-2/3 text-light text-lg">
+              Mindig azon vagyunk, hogy újat, maradandót és persze ütőset alkossunk.
+              <br />
+              Íme pár korábbi példa.
             </p>
           </div>
           <div
-            className="hidden md:block md:w-5/12 flex items-center justify-end"
+            className="hidden md:block md:w-1/3 flex items-center justify-end"
             style={{ animation: 'float 4s ease-in-out infinite' }}>
             <Img
               fluid={data?.heroImg?.childImageSharp?.fluid}
@@ -90,10 +90,11 @@ const Portfolio = () => {
           </div>
         </div>
         <section className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="font-display text-2xl font-extrabold uppercase leading-brand">
-            A te márkád is jól mutatna itt
-          </h2>
-          <div className="">
+          <div className="md:px-24">
+            <h2 className="font-display text-2xl font-extrabold uppercase leading-brand">
+              A te márkád is jól mutatna itt
+            </h2>
+
             <TabBar
               categories={CATEGORIES}
               chosenCategory={chosenCategory}
@@ -101,37 +102,37 @@ const Portfolio = () => {
               containerClass="mb-16"
               textClass="text-lg"
             />
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-              {data?.posts?.edges
-                ?.filter(
-                  (edge) => edge?.node?.frontmatter?.categories?.includes(chosenCategory) || chosenCategory === 'all'
-                )
-                ?.map((edge, index) => {
-                  if (index === 5) {
-                    return renderCallout();
-                  }
-                  return (
-                    <Link key={edge?.node?.id} to={`${edge?.node?.frontmatter?.slug}`}>
-                      <div
-                        className="relative flex-shrink-0 overflow-hidden bg-gray-600 rounded h-56 bg-cover bg-no-repeat"
-                        style={{
-                          background: `${
-                            edge?.node?.frontmatter?.gradient ||
-                            'linear-gradient(16deg, rgba(38,38,38,1) 0%, rgba(91,91,91,1) 23%, rgba(38,38,38,0) 100%)'
-                          } bottom, url(${edge?.node?.frontmatter?.thumbnail}) no-repeat center`,
-                          backgroundRepeat: 'no-repeat',
-                          backgroundSize: 'cover, contain',
-                          backgroundPosition: 'bottom, center',
-                        }}>
-                        <div className="absolute bottom-0 left-0 px-5 py-3 text-sm text-white">
-                          <p className="font-light">{edge?.node?.frontmatter?.jobtime}</p>
-                          <p className="font-extrabold">{edge?.node?.frontmatter?.title}</p>
-                        </div>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+            {data?.posts?.edges
+              ?.filter(
+                (edge) => edge?.node?.frontmatter?.categories?.includes(chosenCategory) || chosenCategory === 'all'
+              )
+              ?.map((edge, index) => {
+                if (index === 5) {
+                  return renderCallout();
+                }
+                return (
+                  <Link key={edge?.node?.id} to={`${edge?.node?.frontmatter?.slug}`}>
+                    <div
+                      className="relative flex-shrink-0 overflow-hidden bg-gray-600 rounded h-56 bg-cover bg-no-repeat"
+                      style={{
+                        background: `${
+                          edge?.node?.frontmatter?.gradient ||
+                          'linear-gradient(16deg, rgba(38,38,38,1) 0%, rgba(91,91,91,1) 23%, rgba(38,38,38,0) 100%)'
+                        } bottom, url(${edge?.node?.frontmatter?.thumbnail}) no-repeat center`,
+                        backgroundRepeat: 'no-repeat',
+                        backgroundSize: 'cover, contain',
+                        backgroundPosition: 'bottom, center',
+                      }}>
+                      <div className="absolute bottom-0 left-0 px-5 py-3 text-sm text-white">
+                        <p className="font-light">{edge?.node?.frontmatter?.jobtime}</p>
+                        <p className="font-extrabold">{edge?.node?.frontmatter?.title}</p>
                       </div>
-                    </Link>
-                  );
-                })}
-            </div>
+                    </div>
+                  </Link>
+                );
+              })}
           </div>
         </section>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-32 mg-gray-100">
