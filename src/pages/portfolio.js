@@ -27,7 +27,7 @@ const Portfolio = () => {
           }
         }
       }
-      heroImg: file(relativePath: { eq: "pizza.png" }) {
+      heroImg: file(relativePath: { eq: "chair.png" }) {
         childImageSharp {
           fluid(maxHeight: 350) {
             ...GatsbyImageSharpFluid
@@ -38,11 +38,13 @@ const Portfolio = () => {
   `);
 
   const renderCallout = () => (
-    <div className="relative flex-col content-center flex-shrink-0 overflow-hidden bg-white rounded border-brand-red-500 border h-56 flex justify-center items-center">
+    /* TODO: ADD BRAND BLUE COLOR */
+
+    <div className="relative flex-col content-center flex-shrink-0 overflow-hidden bg-blue-700 text-white h-56 flex justify-center items-center">
       <p className="font-extrabold text-center text-sm mb-4">
-        Ezt a helyet neked
+        Ezt a helyet
         <br />
-        tartjuk fenn!
+        neked tartjuk fenn!
       </p>
       <Link to="/contact">
         <button className="primary-btn">Dolgozzunk együtt</button>
@@ -80,7 +82,7 @@ const Portfolio = () => {
             </p>
           </div>
           <div
-            className="hidden md:block md:w-1/3 flex items-center justify-end"
+            className="hidden md:flex md:w-1/3 items-center justify-end"
             style={{ animation: 'float 4s ease-in-out infinite' }}>
             <Img
               fluid={data?.heroImg?.childImageSharp?.fluid}
@@ -115,7 +117,7 @@ const Portfolio = () => {
                 return (
                   <Link key={edge?.node?.id} to={`${edge?.node?.frontmatter?.slug}`}>
                     <div
-                      className="relative flex-shrink-0 overflow-hidden bg-gray-600 rounded h-56 bg-cover bg-no-repeat"
+                      className="relative flex-shrink-0 overflow-hidden bg-gray-600 h-56 bg-cover bg-no-repeat"
                       style={{
                         background: `${
                           edge?.node?.frontmatter?.gradient ||
@@ -125,7 +127,7 @@ const Portfolio = () => {
                         backgroundSize: 'cover, contain',
                         backgroundPosition: 'bottom, center',
                       }}>
-                      <div className="absolute bottom-0 left-0 px-5 py-3 text-sm text-white">
+                      <div className="absolute bottom-0 left-0 px-5 py-3 text-sm">
                         <p className="font-light">{edge?.node?.frontmatter?.jobtime}</p>
                         <p className="font-extrabold">{edge?.node?.frontmatter?.title}</p>
                       </div>
