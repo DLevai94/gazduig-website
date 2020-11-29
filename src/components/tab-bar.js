@@ -2,7 +2,7 @@ import React from 'react';
 
 const TabBar = ({ containerClass, categories, chosenCategory, setCategory, textClass }) => {
   return (
-    <div className={`overflow-hidden bg-white pt-2 px-16 shadow-brand rounded ${containerClass}`}>
+    <div className={`overflow-hidden bg-white pt-2 ${containerClass}`}>
       <div className="lg:hidden">
         <select
           aria-label="Selected tab"
@@ -16,7 +16,7 @@ const TabBar = ({ containerClass, categories, chosenCategory, setCategory, textC
         </select>
       </div>
       <div className="hidden lg:block overflow-scroll" id="tab-bar">
-        <div className="border-b border-gray-200">
+        <div>
           <nav className="-mb-px flex">
             {categories?.map((category) => (
               <button
