@@ -10,7 +10,7 @@ module.exports = {
         body: ['Sofia-Pro', ...fontFamily.sans],
       },
       borderRadius: {
-        default: '10px',
+        default: '3px',
       },
       boxShadow: {
         brand: '3px 3px 10px rgba(0, 0, 0, 0.101)',
@@ -27,7 +27,7 @@ module.exports = {
         brand: '1.125',
       },
       colors: {
-        'brand-red': {
+        'brand-blue': {
           100: '#EFE8FA',
           200: '#D7C5F3',
           300: '#BEA2EC',

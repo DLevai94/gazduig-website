@@ -46,11 +46,11 @@
 }
 
 .primary-btn {
-  @apply inline-flex text-white bg-brand-red-500 border-0 py-1 px-6 rounded-lg font-extrabold text-sm;
+  @apply inline-flex text-white bg-brand-blue-500 border-0 py-1 px-6 rounded font-extrabold text-sm;
 }
 
 .primary-btn:hover {
-  @apply bg-brand-red-400;
+  @apply bg-brand-blue-400;
 }
 
 .callout-card {

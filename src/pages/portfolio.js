@@ -40,7 +40,7 @@ const Portfolio = () => {
   const renderCallout = () => (
     /* TODO: ADD BRAND BLUE COLOR */
 
-    <div className="relative flex-col content-center flex-shrink-0 overflow-hidden bg-brand-red-500 text-white h-56 flex justify-center items-center">
+    <div className="relative flex-col content-center flex-shrink-0 overflow-hidden bg-brand-blue-500 text-white h-56 flex justify-center items-center">
       <p className="font-extrabold text-center text-sm mb-4">
         Ezt a helyet
         <br />
@@ -120,17 +120,17 @@ const Portfolio = () => {
                       <div
                         className="relative flex-shrink-0 overflow-hidden bg-gray-600 h-56 bg-cover bg-no-repeat"
                         style={{
-                          background: `${
-                            edge?.node?.frontmatter?.gradient ||
-                            'linear-gradient(16deg, rgba(38,38,38,1) 0%, rgba(91,91,91,1) 23%, rgba(38,38,38,0) 100%)'
-                          } bottom, url(${edge?.node?.frontmatter?.thumbnail}) no-repeat center`,
+                          background: `${'linear-gradient(0deg, rgb(255,255,255) 0%, rgb(255,255,255) 30%,rgba(255,255,255,0) 31%, rgba(255,255,255,0) 100%)'} bottom, url(${
+                            edge?.node?.frontmatter?.thumbnail
+                          }) no-repeat center`,
                           backgroundRepeat: 'no-repeat',
                           backgroundSize: 'cover, contain',
                           backgroundPosition: 'bottom, center',
-                        }}></div>
-                      <div className="absolute bottom-0 left-0 px-5 py-3 text-sm">
-                        <p className="font-light">{edge?.node?.frontmatter?.jobtime}</p>
-                        <p className="font-extrabold">{edge?.node?.frontmatter?.title}</p>
+                        }}>
+                        <div className="absolute bottom-0 left-0 py-3 text-sm max-w-xs">
+                          <p className="font-light truncate">{edge?.node?.frontmatter?.jobtime}</p>
+                          <p className="font-extrabold truncate">{edge?.node?.frontmatter?.title}</p>
+                        </div>
                       </div>
                     </div>
                   </Link>

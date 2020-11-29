@@ -491,7 +491,7 @@ function IndexPage() {
                       name="privacy"
                       type="checkbox"
                       className={`form-input mr-2 rounded-full p-1 transition ease-in-out duration-150 ${
-                        hasPrivacyAccepted && 'bg-brand-red-500'
+                        hasPrivacyAccepted && 'bg-brand-blue-500'
                       }`}
                       required
                       onChange={() => setHasPrivacyAccepted(!hasPrivacyAccepted)}
