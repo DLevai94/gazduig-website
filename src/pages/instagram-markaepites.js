@@ -1,11 +1,40 @@
+/* eslint-disable no-unused-vars */
 import React, { useState } from 'react';
+import { useForm } from 'react-hook-form';
 import { Link } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Typewriter from '../images/new-typewriter.png';
 
-function IgHacks() {
+function IgHacks({ custom = '' }) {
+  const { register, handleSubmit, errors, formState } = useForm();
   const [hasPrivacyAccepted, setHasPrivacyAccepted] = useState(false);
+
+  const onSubmit = (data) => {
+    try {
+      //Need to rename a few fields to get this to work with activecampaign
+      let preppedData = { 'field[14]': data.custom, ...data };
+
+      //Remove the old custom field (renamed above)
+      const { custom, ...cleaned } = preppedData;
+
+      //Convert to FormData
+      let form_data = new FormData();
+      for (let key in cleaned) {
+        form_data.append(key, cleaned[key]);
+      }
+
+      fetch('https://gazduig71616.activehosted.com/proc.php', {
+        method: 'POST',
+        mode: 'no-cors',
+        cache: 'no-cache',
+        body: form_data,
+      });
+    } catch (error) {
+      // handle server errors
+      console.log('Request failed', error);
+    }
+  };
 
   return (
     <Layout>
@@ -50,69 +79,84 @@ function IgHacks() {
 
               <form
                 method="POST"
-                netlify-honeypot="bot-field"
-                data-netlify="true"
+                onSubmit={handleSubmit(onSubmit)}
                 name="ig-marketing"
-                className="grid grid-cols-1 row-gap-4"
-                netlify>
-                <input type="hidden" name="bot-field" />
-                <input type="hidden" name="form-name" value="ig-marketing" />
-                <div className="md:w-96">
-                  <label htmlFor="full_name" className="sr-only">
-                    Hogy szólíthatunk?
-                  </label>
-                  <div className="relative rounded-md">
-                    <input
-                      id="full_name"
-                      name="full_name"
-                      className="form-input block w-full py-3 px-4 placeholder-gray-500 border-gray-900 transition ease-in-out duration-150"
-                      placeholder="Hogy szólíthatunk?"
-                      required
-                    />
-                  </div>
-                </div>
-                <div className="md:w-96">
-                  <label htmlFor="email" className="sr-only">
-                    Milyen e-mail címen érünk el?
-                  </label>
-                  <div className="relative rounded-md">
-                    <input
-                      id="email"
-                      name="email"
-                      type="email"
-                      className="form-input block w-full py-3 px-4 placeholder-gray-500 border-gray-900 transition ease-in-out duration-150"
-                      placeholder="Milyen e-mail címen érünk el?"
-                      required
-                    />
-                  </div>
-                </div>
-                <div className="md:w-96">
-                  <label htmlFor="privacy" className="font-light text-xs">
-                    <input
-                      id="privacy"
-                      name="privacy"
-                      type="checkbox"
-                      className={`form-input mr-2 rounded-full p-1 transition ease-in-out duration-150 ${
-                        hasPrivacyAccepted && 'bg-brand-red-500'
-                      }`}
-                      required
-                      onChange={() => setHasPrivacyAccepted(!hasPrivacyAccepted)}
-                      checked={hasPrivacyAccepted}
-                    />
-                    Elfogadom az adatvédelmi nyilatkozatot és engedélyezem, hogy a megadott elérhetőségeken felvegyétek
-                    velem a kapcsolatot.
-                  </label>
-                </div>
-                <div>
-                  <span className="inline-flex rounded-md">
-                    <button
-                      type="submit"
-                      disabled={!hasPrivacyAccepted}
-                      className={`primary-btn ${!hasPrivacyAccepted && 'bg-gray-500'}`}>
-                      Jöhet
-                    </button>
-                  </span>
-                </div>
+                className="grid grid-cols-1 row-gap-4">
+                {formState.isSubmitting ? (
+                  <p>Azonnal...</p>
+                ) : formState.isSubmitSuccessful ? (
+                  <p>Készen is vagyunk...</p>
+                ) : (
+                  <>
+                    <input type="hidden" name="u" value="1" ref={register({ required: true })} />
+                    <input type="hidden" name="f" value="1" ref={register({ required: true })} />
+                    <input type="hidden" name="s" ref={register({})} />
+                    <input type="hidden" name="c" value="0" ref={register({ required: true })} />
+                    <input type="hidden" name="m" value="0" ref={register({ required: true })} />
+                    <input type="hidden" name="act" value="sub" ref={register({ required: true })} />
+                    <input type="hidden" name="v" value="2" ref={register({ required: true })} />
+
+                    <input type="hidden" name="custom" value={custom} ref={register({ required: false })} />
+                    <div className="md:w-96">
+                      <label htmlFor="full_name" className="sr-only">
+                        Hogy szólíthatunk?
+                      </label>
+                      <div className="relative rounded-md">
+                        <input
+                          id="fullname"
+                          name="fullname"
+                          className="form-input block w-full py-3 px-4 placeholder-gray-500 border-gray-900 transition ease-in-out duration-150"
+                          placeholder="Hogy szólíthatunk?"
+                          ref={register({ required: true, maxLength: 80 })}
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div className="md:w-96">
+                      <label htmlFor="email" className="sr-only">
+                        Milyen e-mail címen érünk el?
+                      </label>
+                      <div className="relative rounded-md">
+                        <input
+                          id="email"
+                          name="email"
+                          type="email"
+                          className="form-input block w-full py-3 px-4 placeholder-gray-500 border-gray-900 transition ease-in-out duration-150"
+                          placeholder="Milyen e-mail címen érünk el?"
+                          ref={register({ required: true, pattern: /^\S+@\S+$/i })}
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div className="md:w-96">
+                      <label htmlFor="privacy" className="font-light text-xs">
+                        <input
+                          id="privacy"
+                          name="privacy"
+                          type="checkbox"
+                          className={`form-input mr-2 rounded-full p-1 transition ease-in-out duration-150 ${
+                            hasPrivacyAccepted && 'bg-brand-red-500'
+                          }`}
+                          required
+                          onChange={() => setHasPrivacyAccepted(!hasPrivacyAccepted)}
+                          checked={hasPrivacyAccepted}
+                        />
+                        Elfogadom az adatvédelmi nyilatkozatot és engedélyezem, hogy a megadott elérhetőségeken
+                        felvegyétek velem a kapcsolatot.
+                      </label>
+                    </div>
+                    <div>
+                      <span className="inline-flex rounded-md">
+                        <input
+                          type="submit"
+                          disabled={!hasPrivacyAccepted}
+                          className={`primary-btn ${!hasPrivacyAccepted && 'bg-gray-500'}`}
+                          value="Jöhet"
+                        />
+                      </span>
+                    </div>
+                  </>
+                )}
               </form>
             </div>
           </div>
