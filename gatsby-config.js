@@ -23,7 +23,7 @@ module.exports = {
         lang: 'hu',
         start_url: `/`,
         background_color: fullConfig.theme.colors.white,
-        theme_color: fullConfig.theme.colors['brand-red']['500'],
+        theme_color: fullConfig.theme.colors['brand-blue']['500'],
         display: `minimal-ui`,
         icon: `src/images/favicon.svg`,
       },

@@ -20,6 +20,31 @@
 
 @tailwind components;
 
+.menu-link {
+  position: relative;
+  z-index: 1;
+}
+
+.menu-link::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: -0.25em;
+  right: -0.25em;
+  background-color: #fc2f70;
+  transform-origin: bottom center;
+  transform: scaleY(0.1);
+  transition: all 0.1s ease-in-out;
+}
+
+.menu-link:hover::before {
+  transform: scaleY(1);
+  background-color: hsla(341, 97%, 59%, 0.75);
+}
+
+
 #tab-bar::-webkit-scrollbar {
   display: none;
 }
@@ -46,11 +71,11 @@
 }
 
 .primary-btn {
-  @apply inline-flex text-white bg-brand-red-500 border-0 py-1 px-6 rounded-lg font-extrabold text-sm;
+  @apply inline-flex text-white bg-brand-blue-500 border-0 py-1 px-6 rounded font-extrabold text-sm;
 }
 
 .primary-btn:hover {
-  @apply bg-brand-red-400;
+  @apply bg-brand-blue-400;
 }
 
 .callout-card {

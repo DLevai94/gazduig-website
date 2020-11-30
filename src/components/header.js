@@ -13,7 +13,7 @@ function Header() {
             <div className="flex-shrink-0 flex items-center">
               <Link to="/">
                 <MenuLogo className="w-24 sm:w-32" />
-              <p className="sr-only">Gazduig Creative Agency Budapest</p>
+                <p className="sr-only">Gazduig Creative Agency Budapest</p>
               </Link>
             </div>
             <div className="hidden sm:ml-6 sm:flex">
@@ -36,16 +36,16 @@ function Header() {
                 },
               ].map((link) => (
                 <Link
-                  activeClassName="text-sm font-extrabold ml-8 inline-flex items-center px-1 pt-1 bor0 text-brand-red-500 -b-2-5 focus:outline-none hover:text-brand-red-500 hover:border-brand-red-500 focus:text-brand-red-500 focus:border-brand-red-500 transition duration-150 ease-in-out border-brand-red-500"
+                  activeClassName="menu-link text-sm font-extrabold ml-8 inline-flex items-center px-1 pt-1 bor0 text-brand-blue-500 -b-2-5 focus:outline-none hover:text-brand-blue-500 hover:border-brand-blue-500 focus:text-brand-blue-500 focus:border-brand-blue-500 transition duration-150 ease-in-out border-brand-blue-500"
                   getProps={({ isPartiallyCurrent }) =>
                     isPartiallyCurrent
                       ? {
                           className:
-                            'text-sm font-extrabold ml-8 inline-flex items-center px-1 pt-1 bor0 text-brand-red-500 -b-2-5 focus:outline-none hover:text-brand-red-500 hover:border-brand-red-500 focus:text-brand-red-500 focus:border-brand-red-500 transition duration-150 ease-in-out border-brand-red-500',
+                            'menu-link text-sm font-extrabold ml-8 inline-flex items-center px-1 pt-1 bor0 text-brand-blue-500 -b-2-5 focus:outline-none hover:text-brand-blue-500 hover:border-brand-blue-500 focus:text-brand-blue-500 focus:border-brand-blue-500 transition duration-150 ease-in-out border-brand-blue-500',
                         }
                       : {}
                   }
-                  className="ml-8 inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium leading-5 focus:outline-none hover:text-brand-red-700 hover:border-brand-red-300 focus:text-brand-red-700 focus:border-brand-red-700 transition duration-150 ease-in-out"
+                  className="ml-8 inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium leading-5 focus:outline-none hover:text-brand-blue-700 hover:border-brand-blue-300 focus:text-brand-blue-700 focus:border-brand-blue-700 transition duration-150 ease-in-out menu-link"
                   key={link.title}
                   to={link.route}>
                   {link.title}
@@ -102,12 +102,12 @@ function Header() {
               },
             ].map((link) => (
               <Link
-                activeClassName="text-sm font-extrabold mt-1 block pl-3 pr-4 py-2 border-0 text-brand-red-500 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300 focus:outline-none focus:text-gray-800 focus:bg-gray-50 focus:border-gray-300 transition duration-150 ease-in-out"
+                activeClassName="text-sm font-extrabold mt-1 block pl-3 pr-4 py-2 border-0 text-brand-blue-500 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300 focus:outline-none focus:text-gray-800 focus:bg-gray-50 focus:border-gray-300 transition duration-150 ease-in-out"
                 getProps={({ isPartiallyCurrent }) =>
                   isPartiallyCurrent
                     ? {
                         className:
-                          'text-sm font-extrabold mt-1 block pl-3 pr-4 py-2 border-0 text-brand-red-500 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300 focus:outline-none focus:text-gray-800 focus:bg-gray-50 focus:border-gray-300 transition duration-150 ease-in-out',
+                          'text-sm font-extrabold mt-1 block pl-3 pr-4 py-2 border-0 text-brand-blue-500 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300 focus:outline-none focus:text-gray-800 focus:bg-gray-50 focus:border-gray-300 transition duration-150 ease-in-out',
                       }
                     : {}
                 }
