@@ -41,13 +41,13 @@ const Portfolio = () => {
     /* TODO: ADD BRAND BLUE COLOR */
 
     <div className="relative flex-col content-center flex-shrink-0 overflow-hidden bg-brand-blue-500 text-white h-56 flex justify-center items-center">
-      <p className="font-extrabold text-center text-sm mb-4">
+      <p className="font-extrabold text-center text-lg mb-4">
         Ezt a helyet
         <br />
         neked tartjuk fenn!
       </p>
       <Link to="/contact">
-        <button className="primary-btn">Dolgozzunk együtt</button>
+        <button className="secondary-btn">Dolgozzunk együtt</button>
       </Link>
     </div>
   );
@@ -127,9 +127,9 @@ const Portfolio = () => {
                           backgroundSize: 'cover, contain',
                           backgroundPosition: 'bottom, center',
                         }}>
-                        <div className="absolute bottom-0 left-0 py-3 text-sm max-w-xs">
-                          <p className="font-light truncate">{edge?.node?.frontmatter?.jobtime}</p>
-                          <p className="font-extrabold truncate">{edge?.node?.frontmatter?.title}</p>
+                        <div className="absolute bottom-0 left-0 py-3 max-w-xs">
+                          <p className="font-light truncate text-sm">{edge?.node?.frontmatter?.jobtime}</p>
+                          <p className="font-extrabold truncate text-lg">{edge?.node?.frontmatter?.title}</p>
                         </div>
                       </div>
                     </div>
