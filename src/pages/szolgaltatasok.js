@@ -315,119 +315,121 @@ const Services = () => {
         ]}
         title="Ebben segítünk"
       />
-      <div className="services-bg">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 my-16 h-64 bg-transparent flex justify-between">
-          <div className="w-full md:w-5/12 flex flex-col justify-center items-start">
-            <h1 className="text-5xl font-display font-extrabold leading-brand mb-6 uppercase">
-              Felejtsd el az
+
+      <div className="container mx-auto px-4 sm:px-6 md:px-32 my-16 h-64 bg-transparent flex justify-between">
+        <div className="w-full md:w-5/12 flex flex-col justify-center items-start">
+          <h1 className="text-5xl font-display font-extrabold leading-brand mb-6">
+            Felejtsd el az
+            <br />
+            unalmas ötleteket!
+          </h1>
+          <p className="text-light text-lg">
+            Van, aki csak beszél róla.
+            <br />
+            Mi beszélünk róla, majd megcsináljuk.
+            <br />
+            Olyanra, amilyet elképzeltél.
+          </p>
+        </div>
+        <div
+          className="hidden md:block md:w-5/12 flex items-center justify-end"
+          style={{ animation: 'float 4s ease-in-out infinite' }}>
+          <Img
+            fluid={data?.heroImg?.childImageSharp?.fluid}
+            style={{ maxWidth: '26rem' }}
+            className="-mt-20"
+            alt="Gazduig Creative Agency Szolgáltatások"
+          />
+        </div>
+      </div>
+      <section className="container mx-auto px-4 sm:px-6 md:px-32">
+        <h2 className="font-display leading-brand text-4xl font-extrabold mb-6">
+          Találd meg, amire leginkább szükséged van!
+        </h2>
+        <div className="md:px-16 xl:-mx-16">
+          <TabBar
+            categories={SERVICES.slice(0, -1)}
+            chosenCategory={chosenCategory}
+            setCategory={setChosenCategory}
+            containerClass="mb-16"
+            textClass="lg:text-lg"
+          />
+        </div>
+      </section>
+      <section className="container mx-auto px-4 sm:px-6 md:px-32 mt-12">{renderContent(chosenCategory)}</section>
+      <section className="container mx-auto px-4 sm:px-6 md:px-32 relative">
+        <div className="services-office-bg">
+          <div className="mb-32">
+            <h2 className="font-display text-2xl font-extrabold mb-8 uppercase leading-brand">
+              Így néz ki az együttműködésünk folyamata
+            </h2>
+            <div className="w-full md:w-1/2">
+              <ul>
+                <li className="font-light text-lg flex justify-start items-center">
+                  <img src={List1} className="w-10 inline-block mr-4" alt="Kapcsolatba lépünk egymással" />
+                  <span className="-mt-10">Kapcsolatba lépünk egymással</span>
+                </li>
+                <li className="font-light text-lg flex justify-start items-center">
+                  <img src={List2} className="w-10 inline-block mr-4" alt="Felmérjük az igényeidet" />
+                  <span className="-mt-10">Felmérjük az igényeidet</span>
+                </li>
+                <li className="font-light text-lg flex justify-start items-center">
+                  <img src={List3} className="w-10 inline-block mr-4" alt="Azok alapján terveket készítünk" />
+                  <span className="-mt-10">Azok alapján terveket készítünk</span>
+                </li>
+                <li className="font-light text-lg flex justify-start items-center">
+                  <img
+                    src={List4}
+                    className="w-10 inline-block mr-4"
+                    alt="Bemutatjuk, és ha kell módosítjuk, végtelenszer, felár nélkül, míg olyan nem lesz, amilyet
+                      elképzeltél"
+                  />
+                  <span className="-mt-10">
+                    Bemutatjuk, és ha kell módosítjuk, végtelenszer, felár nélkül, míg olyan nem lesz, amilyet
+                    elképzeltél
+                  </span>
+                </li>
+                <li className="font-light text-lg flex justify-start items-center">
+                  <img src={List5} className="w-10 inline-block mr-4" alt="Átadjuk a kész anyagot" />
+                  <span>Átadjuk a kész anyagot</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <img src={Office} alt="Nem a mi irodánk" className="block lg:hidden" />
+          <div className="-mt-8 md:-mt-28 md:w-8/12 rounded bg-gray-900 text-white text-2xl font-display font-extrabold inline-block px-8 py-4 lg:pr-40 mb-8 uppercase leading-brand">
+            <p>
+              Ja ez? Ez itt nem a mi irodánk. Viszont nagyon szeretnénk egy hasonlót.
               <br />
-              unalmas ötleteket!
-            </h1>
-            <p className="text-light text-lg">
-              Van, aki csak beszél róla. Mi beszélünk róla, majd megcsináljuk. Olyanra, amilyet elképzeltél.
+              Ehhez pedig a te projekted is sikerre kell vinnünk!
             </p>
           </div>
-          <div
-            className="hidden md:block md:w-5/12 flex items-center justify-end"
-            style={{ animation: 'float 4s ease-in-out infinite' }}>
-            <Img
-              fluid={data?.heroImg?.childImageSharp?.fluid}
-              style={{ maxWidth: '26rem' }}
-              className="-mt-20"
-              alt="Gazduig Creative Agency Szolgáltatások"
-            />
-          </div>
         </div>
-        <section className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="font-display leading-brand text-2xl font-extrabold mb-6 uppercase">
-            Találd meg, amire leginkább szükséged van!
-          </h2>
-          <div className="xl:-mx-16">
-            <TabBar
-              categories={SERVICES.slice(0, -1)}
-              chosenCategory={chosenCategory}
-              setCategory={setChosenCategory}
-              containerClass="mb-16"
-              textClass="lg:text-lg"
-            />
-          </div>
-        </section>
-        <section className="container mx-auto px-4 sm:px-6 lg:px-8 mt-12">{renderContent(chosenCategory)}</section>
-        <section className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
-          <div className="services-office-bg">
-            <div className="mb-32">
-              <h2 className="font-display text-2xl font-extrabold mb-8 uppercase leading-brand">
-                Így néz ki az együttműködésünk folyamata
-              </h2>
-              <div className="w-full md:w-1/2">
-                <ul>
-                  <li className="font-light text-lg flex justify-start items-center">
-                    <img src={List1} className="w-10 inline-block mr-4" alt="Kapcsolatba lépünk egymással" />
-                    <span className="-mt-10">Kapcsolatba lépünk egymással</span>
-                  </li>
-                  <li className="font-light text-lg flex justify-start items-center">
-                    <img src={List2} className="w-10 inline-block mr-4" alt="Felmérjük az igényeidet" />
-                    <span className="-mt-10">Felmérjük az igényeidet</span>
-                  </li>
-                  <li className="font-light text-lg flex justify-start items-center">
-                    <img src={List3} className="w-10 inline-block mr-4" alt="Azok alapján terveket készítünk" />
-                    <span className="-mt-10">Azok alapján terveket készítünk</span>
-                  </li>
-                  <li className="font-light text-lg flex justify-start items-center">
-                    <img
-                      src={List4}
-                      className="w-10 inline-block mr-4"
-                      alt="Bemutatjuk, és ha kell módosítjuk, végtelenszer, felár nélkül, míg olyan nem lesz, amilyet
-                      elképzeltél"
-                    />
-                    <span className="-mt-10">
-                      Bemutatjuk, és ha kell módosítjuk, végtelenszer, felár nélkül, míg olyan nem lesz, amilyet
-                      elképzeltél
-                    </span>
-                  </li>
-                  <li className="font-light text-lg flex justify-start items-center">
-                    <img src={List5} className="w-10 inline-block mr-4" alt="Átadjuk a kész anyagot" />
-                    <span>Átadjuk a kész anyagot</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <img src={Office} alt="Nem a mi irodánk" className="block lg:hidden" />
-            <div className="-mt-8 md:-mt-28 md:w-8/12 rounded bg-gray-900 text-white text-2xl font-display font-extrabold inline-block px-8 py-4 lg:pr-40 mb-8 uppercase leading-brand">
-              <p>
-                Ez itt nem a mi irodánk. Viszont nagyon <br />
-                szeretnénk egy hasonlót. Ehhez pedig a te
-                <br />
-                projekted is tökéletesen kell elkészítenünk!
-              </p>
-            </div>
-          </div>
-        </section>
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 my-32">
-          <section className="bg-white md:rounded md:shadow-brand py-8 px-8 md:px-36 z-50">
-            <div className="mb-16 max-w-2xl">
-              <h2 className="font-display font-extrabold text-2xl uppercase leading-brand">
-                Tetszettek a látottak? Töltsd ki a lenti
-                <br />
-                formot, és alkossunk együtt valami ütőset!
-              </h2>
-            </div>
-            <ContactForm />
-          </section>
-        </div>
-        <section className="md:-mt-64 pt-36 md:pt-96 pb-36">
-          <div className="container mx-auto text-left sm:px-6 lg:px-48 ml-8 sm:ml-0">
-            <h2 className="font-display font-extrabold text-2xl leading-brand uppercase mb-6">
-              Még nem vagy 100%-ig biztos a dologban?
+      </section>
+      <div className="container mx-auto px-4 sm:px-6 md:px-32 my-32">
+        <section className="bg-white md:rounded md:shadow-brand py-8 px-8 md:px-36 z-50">
+          <div className="mb-16 max-w-2xl">
+            <h2 className="font-display font-extrabold text-4xl leading-brand">
+              Tetszettek a látottak?
               <br />
-              Nézd meg pár korábbi munkánkat a témában!
+              Töltsd ki a lenti formot, és alkossunk együtt valami ütőset neked is!
             </h2>
-            <Link to="/portfolio">
-              <button className="primary-btn">Irány a portfólió</button>
-            </Link>
           </div>
+          <ContactForm />
         </section>
       </div>
+      <section className="md:-mt-64 pt-36 md:pt-96 pb-36 md:px-32">
+        <div className="container mx-auto text-left sm:px-6 lg:px-48 ml-8 sm:ml-0">
+          <h2 className="font-display font-extrabold text-4xl leading-brand mb-8">
+            Még nem vagy 100%-ig biztos a dologban?
+            <br />
+            No problem! Nézd meg pár korábbi munkánkat a témában, és dönts utána!
+          </h2>
+          <Link to="/portfolio">
+            <button className="primary-btn">Irány a portfólió</button>
+          </Link>
+        </div>
+      </section>
     </Layout>
   );
 };
