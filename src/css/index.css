@@ -44,7 +44,6 @@
   background-color: hsla(341, 97%, 59%, 0.75);
 }
 
-
 #tab-bar::-webkit-scrollbar {
   display: none;
 }
@@ -76,6 +75,14 @@
 
 .primary-btn:hover {
   @apply bg-brand-blue-400;
+}
+
+.secondary-btn {
+  @apply inline-flex bg-white text-brand-red-500 border-0 py-1 px-6 rounded-sm font-extrabold text-sm;
+}
+
+.secondary-btn:hover {
+  @apply bg-brand-red-200 text-brand-red-500;
 }
 
 .callout-card {
