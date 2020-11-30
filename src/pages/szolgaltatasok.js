@@ -22,11 +22,7 @@ import SolIcon13 from '../components/svg/solutions13';
 import SolIcon14 from '../components/svg/solutions14';
 import SolIcon15 from '../components/svg/solutions15';
 import SolIcon16 from '../components/svg/solutions16';
-import List1 from '../images/1.svg';
-import List2 from '../images/2.svg';
-import List3 from '../images/3.svg';
-import List4 from '../images/4.svg';
-import List5 from '../images/5.svg';
+import Office from '../images/not-our-office.png';
 import { SERVICES } from '../config/consts';
 
 const Services = () => {
@@ -358,46 +354,56 @@ const Services = () => {
       <section className="container mx-auto px-4 sm:px-6 md:px-32 mt-12">{renderContent(chosenCategory)}</section>
       <section className="container mx-auto px-4 sm:px-6 md:px-32 relative">
         <div className="mb-32">
-          <h2 className="font-display text-2xl font-extrabold mb-8 leading-brand">
+          <h2 className="font-display text-4xl font-extrabold mb-32 leading-brand">
             Így néz ki az együttműködésünk folyamata
           </h2>
           <div className="flex">
-            <div className="w-full md:w-1/2">
-              <ul>
-                <li className="font-light text-lg flex justify-start items-center">
-                  <img src={List1} className="w-10 inline-block mr-4" alt="Kapcsolatba lépünk egymással" />
-                  <span className="-mt-10">Kapcsolatba lépünk egymással</span>
+            <div className="w-full md:w-1/2 pr-10 text-xl">
+              <ol>
+                <li className="justify-start items-center">
+                  <div className="flex">
+                    <p className="text-3xl font-black">01</p>
+                    <div className="w-10 border-b-4 border-black ml-4"></div>
+                  </div>
+                  <p className="">Kapcsolatba lépünk egymással</p>
                 </li>
-                <li className="font-light text-lg flex justify-start items-center">
-                  <img src={List2} className="w-10 inline-block mr-4" alt="Felmérjük az igényeidet" />
-                  <span className="-mt-10">Felmérjük az igényeidet</span>
+                <li className="justify-start items-center">
+                  <div className="flex">
+                    <p className="text-3xl font-black">02</p>
+                    <div className="w-10 border-b-4 border-black ml-4"></div>
+                  </div>
+                  <p className="">Felmérjük az igényeidet</p>
                 </li>
-                <li className="font-light text-lg flex justify-start items-center">
-                  <img src={List3} className="w-10 inline-block mr-4" alt="Azok alapján terveket készítünk" />
-                  <span className="-mt-10">Azok alapján terveket készítünk</span>
+                <li className="justify-start items-center">
+                  <div className="flex">
+                    <p className="text-3xl font-black">03</p>
+                    <div className="w-10 border-b-4 border-black ml-4"></div>
+                  </div>
+                  <p className="">Azok alapján terveket készítünk</p>
                 </li>
-                <li className="font-light text-lg flex justify-start items-center">
-                  <img
-                    src={List4}
-                    className="w-10 inline-block mr-4"
-                    alt="Bemutatjuk, és ha kell módosítjuk, végtelenszer, felár nélkül, míg olyan nem lesz, amilyet
-                      elképzeltél"
-                  />
-                  <span className="-mt-10">
+                <li className="justify-start items-center">
+                  <div className="flex">
+                    <p className="text-3xl font-black">04</p>
+                    <div className="w-10 border-b-4 border-black ml-4"></div>
+                  </div>
+                  <p className="">
                     Bemutatjuk, és ha kell módosítjuk, végtelenszer, felár nélkül, míg olyan nem lesz, amilyet
                     elképzeltél
-                  </span>
+                  </p>
                 </li>
-                <li className="font-light text-lg flex justify-start items-center">
-                  <img src={List5} className="w-10 inline-block mr-4" alt="Átadjuk a kész anyagot" />
-                  <span>Átadjuk a kész anyagot</span>
+                <li className="justify-start items-center">
+                  <div className="flex">
+                    <p className="text-3xl font-black">05</p>
+                    <div className="w-10 border-b-4 border-black ml-4"></div>
+                  </div>
+                  <p>Átadjuk a kész anyagot</p>
                 </li>
-              </ul>
+              </ol>
             </div>
 
             <div>
-              <img src="" alt="" />
-              <p>
+              <img src={Office} alt="A picture repesenting an office space we want to achieve by working with you" />
+              <p className="font-black">
                 Ja ez? Ez itt nem a mi irodánk. Viszont nagyon szeretnénk egy hasonlót.
                 <br />
                 Ehhez pedig a te projekted is sikerre kell vinnünk!
