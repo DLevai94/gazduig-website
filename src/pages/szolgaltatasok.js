@@ -27,7 +27,6 @@ import List2 from '../images/2.svg';
 import List3 from '../images/3.svg';
 import List4 from '../images/4.svg';
 import List5 from '../images/5.svg';
-import Office from '../images/office.png';
 import { SERVICES } from '../config/consts';
 
 const Services = () => {
@@ -358,11 +357,11 @@ const Services = () => {
       </section>
       <section className="container mx-auto px-4 sm:px-6 md:px-32 mt-12">{renderContent(chosenCategory)}</section>
       <section className="container mx-auto px-4 sm:px-6 md:px-32 relative">
-        <div className="services-office-bg">
-          <div className="mb-32">
-            <h2 className="font-display text-2xl font-extrabold mb-8 uppercase leading-brand">
-              Így néz ki az együttműködésünk folyamata
-            </h2>
+        <div className="mb-32">
+          <h2 className="font-display text-2xl font-extrabold mb-8 leading-brand">
+            Így néz ki az együttműködésünk folyamata
+          </h2>
+          <div className="flex">
             <div className="w-full md:w-1/2">
               <ul>
                 <li className="font-light text-lg flex justify-start items-center">
@@ -395,14 +394,15 @@ const Services = () => {
                 </li>
               </ul>
             </div>
-          </div>
-          <img src={Office} alt="Nem a mi irodánk" className="block lg:hidden" />
-          <div className="-mt-8 md:-mt-28 md:w-8/12 rounded bg-gray-900 text-white text-2xl font-display font-extrabold inline-block px-8 py-4 lg:pr-40 mb-8 uppercase leading-brand">
-            <p>
-              Ja ez? Ez itt nem a mi irodánk. Viszont nagyon szeretnénk egy hasonlót.
-              <br />
-              Ehhez pedig a te projekted is sikerre kell vinnünk!
-            </p>
+
+            <div>
+              <img src="" alt="" />
+              <p>
+                Ja ez? Ez itt nem a mi irodánk. Viszont nagyon szeretnénk egy hasonlót.
+                <br />
+                Ehhez pedig a te projekted is sikerre kell vinnünk!
+              </p>
+            </div>
           </div>
         </div>
       </section>
