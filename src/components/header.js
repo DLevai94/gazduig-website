@@ -36,16 +36,16 @@ function Header() {
                 },
               ].map((link) => (
                 <Link
-                  activeClassName="text-sm font-extrabold ml-8 inline-flex items-center px-1 pt-1 bor0 text-brand-blue-500 -b-2-5 focus:outline-none hover:text-brand-blue-500 hover:border-brand-blue-500 focus:text-brand-blue-500 focus:border-brand-blue-500 transition duration-150 ease-in-out border-brand-blue-500"
+                  activeClassName="menu-link text-sm font-extrabold ml-8 inline-flex items-center px-1 pt-1 bor0 text-brand-blue-500 -b-2-5 focus:outline-none hover:text-brand-blue-500 hover:border-brand-blue-500 focus:text-brand-blue-500 focus:border-brand-blue-500 transition duration-150 ease-in-out border-brand-blue-500"
                   getProps={({ isPartiallyCurrent }) =>
                     isPartiallyCurrent
                       ? {
                           className:
-                            'text-sm font-extrabold ml-8 inline-flex items-center px-1 pt-1 bor0 text-brand-blue-500 -b-2-5 focus:outline-none hover:text-brand-blue-500 hover:border-brand-blue-500 focus:text-brand-blue-500 focus:border-brand-blue-500 transition duration-150 ease-in-out border-brand-blue-500',
+                            'menu-link text-sm font-extrabold ml-8 inline-flex items-center px-1 pt-1 bor0 text-brand-blue-500 -b-2-5 focus:outline-none hover:text-brand-blue-500 hover:border-brand-blue-500 focus:text-brand-blue-500 focus:border-brand-blue-500 transition duration-150 ease-in-out border-brand-blue-500',
                         }
                       : {}
                   }
-                  className="ml-8 inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium leading-5 focus:outline-none hover:text-brand-blue-700 hover:border-brand-blue-300 focus:text-brand-blue-700 focus:border-brand-blue-700 transition duration-150 ease-in-out"
+                  className="ml-8 inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium leading-5 focus:outline-none hover:text-brand-blue-700 hover:border-brand-blue-300 focus:text-brand-blue-700 focus:border-brand-blue-700 transition duration-150 ease-in-out menu-link"
                   key={link.title}
                   to={link.route}>
                   {link.title}
