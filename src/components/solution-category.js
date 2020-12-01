@@ -2,9 +2,9 @@ import React from 'react';
 
 const SolutionCategory = ({ excerpt, description, children, name, fullName }) => {
   return (
-    <div className="bg-gray-100">
+    <div className="bg-gray-100 mb-32">
       <div
-        className="leading-snug"
+        className="leading-snug md:px-32 md:py-16"
         // style={{
         //   background:
         //     'linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 40%, rgba(247,247,247,1) 41%, rgba(247,247,247,1) 100%)',

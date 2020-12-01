@@ -283,8 +283,8 @@ const Services = () => {
         title="Ebben segítünk"
       />
 
-      <div className="container mx-auto px-4 sm:px-6 md:px-32 my-16 h-64 bg-transparent flex justify-between">
-        <div className="w-full md:w-5/12 flex flex-col justify-center items-start">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 my-16 h-64 bg-transparent flex justify-between">
+        <div className="w-full md:w-1/2 flex flex-col justify-center items-start md:pl-32">
           <h1 className="text-5xl font-display font-extrabold leading-brand mb-6">
             Felejtsd el az
             <br />
@@ -299,33 +299,33 @@ const Services = () => {
           </p>
         </div>
         <div
-          className="hidden md:block md:w-1/4 flex items-center justify-end"
+          className="hidden md:block md:w-1/3 flex items-center justify-end md:pr-32"
           style={{ animation: 'float 4s ease-in-out infinite' }}>
           <Img
             fluid={data?.heroImg?.childImageSharp?.fluid}
             style={{ maxWidth: '26rem' }}
-            className="-mt-30"
+            className="-mt-25"
             alt="Gazduig Creative Agency Szolgáltatások"
           />
         </div>
       </div>
-      <section className="container mx-auto px-4 sm:px-6 md:px-32">
-        <h2 className="font-display leading-brand text-4xl font-extrabold mb-6">
+      <section className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 className="font-display leading-brand text-4xl font-extrabold mb-6 md:px-32">
           Találd meg, amire leginkább szükséged van!
         </h2>
-        <div className="md:px-16 xl:-mx-16">
+        <div className="md:px-48 xl:-mx-16">
           <TabBar
             categories={SERVICES.slice(0, -1)}
             chosenCategory={chosenCategory}
             setCategory={setChosenCategory}
             containerClass="mb-16"
-            textClass="lg:text-lg"
+            textClass="lg:text-md"
           />
         </div>
       </section>
-      <section className="container mx-auto px-4 sm:px-6 md:px-32 mt-12">{renderContent(chosenCategory)}</section>
-      <section className="container mx-auto px-4 sm:px-6 md:px-32 relative">
-        <div className="mb-32">
+      <section className="container mx-auto px-4 sm:px-6 lg:px-8 mt-12">{renderContent(chosenCategory)}</section>
+      <section className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
+        <div className="mb-32 md:px-32">
           <h2 className="font-display text-4xl font-extrabold mb-32 leading-brand">
             Így néz ki az együttműködésünk folyamata
           </h2>
@@ -335,28 +335,28 @@ const Services = () => {
                 <li className="justify-start items-center">
                   <div className="flex">
                     <p className="text-3xl font-black">01</p>
-                    <div className="w-10 border-b-4 border-black ml-4"></div>
+                    <div className="w-10 border-b-4 border-black ml-4 mb-4"></div>
                   </div>
                   <p className="">Kapcsolatba lépünk egymással</p>
                 </li>
                 <li className="justify-start items-center">
                   <div className="flex">
                     <p className="text-3xl font-black">02</p>
-                    <div className="w-10 border-b-4 border-black ml-4"></div>
+                    <div className="w-10 border-b-4 border-black ml-4 mb-4"></div>
                   </div>
                   <p className="">Felmérjük az igényeidet</p>
                 </li>
                 <li className="justify-start items-center">
                   <div className="flex">
                     <p className="text-3xl font-black">03</p>
-                    <div className="w-10 border-b-4 border-black ml-4"></div>
+                    <div className="w-10 border-b-4 border-black ml-4 mb-4"></div>
                   </div>
                   <p className="">Azok alapján terveket készítünk</p>
                 </li>
                 <li className="justify-start items-center">
                   <div className="flex">
                     <p className="text-3xl font-black">04</p>
-                    <div className="w-10 border-b-4 border-black ml-4"></div>
+                    <div className="w-10 border-b-4 border-black ml-4 mb-4"></div>
                   </div>
                   <p className="">
                     Bemutatjuk, és ha kell módosítjuk, végtelenszer, felár nélkül, míg olyan nem lesz, amilyet
@@ -366,16 +366,15 @@ const Services = () => {
                 <li className="justify-start items-center">
                   <div className="flex">
                     <p className="text-3xl font-black">05</p>
-                    <div className="w-10 border-b-4 border-black ml-4"></div>
+                    <div className="w-10 border-b-4 border-black ml-4 mb-4"></div>
                   </div>
                   <p>Átadjuk a kész anyagot</p>
                 </li>
               </ol>
             </div>
 
-            <div>
-              <img src={Office} alt="A picture repesenting an office space we want to achieve by working with you" />
-              <p className="font-black">
+            <div className="bg-no-repeat" style={{ backgroundImage: `url(${Office})` }}>
+              <p className="font-black text-white text-lg px-16 relative top-1/2">
                 Ja ez? Ez itt nem a mi irodánk. Viszont nagyon szeretnénk egy hasonlót.
                 <br />
                 Ehhez pedig a te projekted is sikerre kell vinnünk!
@@ -384,7 +383,7 @@ const Services = () => {
           </div>
         </div>
       </section>
-      <div className="container mx-auto px-4 sm:px-6 md:px-32 my-32">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 my-32 bg-gray-100">
         <section className="bg-white md:rounded md:shadow-brand py-8 px-8 md:px-36 z-50">
           <div className="mb-16 max-w-2xl">
             <h2 className="font-display font-extrabold text-4xl leading-brand">
@@ -396,8 +395,8 @@ const Services = () => {
           <ContactForm />
         </section>
       </div>
-      <section className="md:-mt-64 pt-36 md:pt-96 pb-36 md:px-32">
-        <div className="container mx-auto text-left sm:px-6 lg:px-48 ml-8 sm:ml-0">
+      <section className="md:-mt-64 pt-36 md:pt-96 pb-36 px-4 sm:px-6 lg:px-8">
+        <div className="container mx-auto text-left md:px-56 ml-8 sm:ml-0">
           <h2 className="font-display font-extrabold text-4xl leading-brand mb-8">
             Még nem vagy 100%-ig biztos a dologban?
             <br />
