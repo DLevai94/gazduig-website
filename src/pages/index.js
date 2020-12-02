@@ -6,7 +6,6 @@ import SEO from '../components/seo';
 import CalloutSection from '../components/callout-section';
 import TabBar from '../components/tab-bar';
 import CTABlob from '../images/cta-blob.svg';
-// import Plant from '../images/plant.png';
 import Typewriter from '../images/the-great-typewriter.png';
 import Couch from '../images/couch.png';
 import LogoTSystems from '../images/logos/tsystems.svg';
@@ -33,9 +32,6 @@ import LogoAndersen from '../images/logos/andersen-logo.png';
 // import LogoNetmetro from '../images/logos/netmetro.svg';
 // import LogoSzaboKandallo from '../images/logos/szabokandallo.svg';
 import BenceImg from '../images/bence-bw.png';
-// import Cloud1 from '../images/cloud1.svg';
-// import Cloud2 from '../images/cloud2.svg';
-// import Cloud3 from '../images/cloud3.svg';
 import { CATEGORIES } from '../config/consts';
 
 function IndexPage() {
@@ -165,21 +161,16 @@ function IndexPage() {
           'gazduig',
         ]}
       />
-      {/* <img src={Cloud1} alt="Felho" className="absolute top-0 right-0 w-64 h-auto" />
-      <img src={Cloud2} alt="Felho" className="absolute top-20 right-40 w-56 h-auto" />
-      <img src={Cloud3} alt="Felho" className="absolute top-150 right-60 w-96 h-auto" /> */}
-      <div className="hero">
+      <div className="h-screen">
         <div className="container mx-auto flex justify-center lg:justify-start items-center h-screen -mt-32">
-          <div className="my-10 md:my-16 lg:max-w-md">
+          <div className="my-10 md:my-16 lg:max-w-xl">
             <section className="px-4 lg:px-8">
               <div className="text-left">
-                <h2 className="text-2xl lg:text-4xl font-display tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-brand md:text-6xl uppercase">
+                <h1 className="text-3xl lg:text-5xl font-display tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-brand md:text-6xl">
                   Ütős megoldások,
                   <br />
-                  ütős márkák
-                  <br />
-                  számára
-                </h2>
+                  ütős márkák számára.
+                </h1>
                 <p className="mt-3 text-base sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0 font-light">
                   Szia! A Gazduig Creative Agency vagyunk Budapestről. Márkákat teszünk ismertebbé és feltűnőbbé, a
                   dizájn erejét használva.
@@ -191,7 +182,9 @@ function IndexPage() {
                 </div>
               </div>
             </section>
+            <div>Logo</div>
           </div>
+          <div>images</div>
         </div>
       </div>
       <div className="bg-gray-100">
@@ -519,16 +512,14 @@ function IndexPage() {
           </div>
         </div>
       </section>
-      <section className="bg-gray-100">
+      <section>
         <div className="py-10 lg:py-32 flex flex-col md:flex-row container mx-auto items-center justify-center md:justify-around">
-          <div className="w-100 md:max-w-1/2 text-left">
-            <h2 className="heading uppercase leading-brand ml-4">
-              Á, az oldal alján vagy! Hadd mutatkozzunk
-              <br />
-              be, ha már legörgettél idáig!
+          <div className="w-100 md:max-w-xs text-left">
+            <h2 className="heading leading-brand ml-4">
+              Üdv az oldal alján! Hadd mutatkozzunk be, ha legörgettél idáig!
             </h2>
             <Link to="/csapat">
-              <button className="primary-btn ml-4">Kattints ide</button>
+              <button className="primary-btn ml-4">Ismerj meg minket</button>
             </Link>
           </div>
           <div className="w-100 flex justify-end items-center">

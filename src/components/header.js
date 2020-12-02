@@ -36,12 +36,12 @@ function Header() {
                 },
               ].map((link) => (
                 <Link
-                  activeClassName="menu-link text-sm font-extrabold ml-8 inline-flex items-center px-1 pt-1 bor0 text-brand-blue-500 -b-2-5 focus:outline-none hover:text-brand-blue-500 hover:border-brand-blue-500 focus:text-brand-blue-500 focus:border-brand-blue-500 transition duration-150 ease-in-out border-brand-blue-500"
+                  activeClassName=" ml-8 inline-flex items-center px-1 pt-1 bor0 text-brand-blue-500 -b-2-5 focus:outline-none hover:text-brand-blue-500 hover:border-brand-blue-500 focus:text-brand-blue-500 focus:border-brand-blue-500 transition duration-150 ease-in-out border-brand-blue-500"
                   getProps={({ isPartiallyCurrent }) =>
                     isPartiallyCurrent
                       ? {
                           className:
-                            'menu-link text-sm font-extrabold ml-8 inline-flex items-center px-1 pt-1 bor0 text-brand-blue-500 -b-2-5 focus:outline-none hover:text-brand-blue-500 hover:border-brand-blue-500 focus:text-brand-blue-500 focus:border-brand-blue-500 transition duration-150 ease-in-out border-brand-blue-500',
+                            'ml-8 inline-flex items-center px-1 pt-1 bor0 text-brand-blue-500 -b-2-5 focus:outline-none hover:text-brand-blue-500 hover:border-brand-blue-500 focus:text-brand-blue-500 focus:border-brand-blue-500 transition duration-150 ease-in-out border-brand-blue-500',
                         }
                       : {}
                   }
