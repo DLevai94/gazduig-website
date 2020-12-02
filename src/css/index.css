@@ -78,11 +78,11 @@
 }
 
 .secondary-btn {
-  @apply inline-flex bg-white text-brand-red-500 border-0 py-1 px-6 rounded-sm font-extrabold text-sm;
+  @apply inline-flex bg-white text-brand-blue-500 border-0 py-1 px-6 rounded-sm font-extrabold text-sm;
 }
 
 .secondary-btn:hover {
-  @apply bg-brand-red-200 text-brand-red-500;
+  @apply bg-brand-blue-200 text-brand-blue-500;
 }
 
 .callout-card {

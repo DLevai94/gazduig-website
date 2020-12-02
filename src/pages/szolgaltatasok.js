@@ -22,19 +22,14 @@ import SolIcon13 from '../components/svg/solutions13';
 import SolIcon14 from '../components/svg/solutions14';
 import SolIcon15 from '../components/svg/solutions15';
 import SolIcon16 from '../components/svg/solutions16';
-import List1 from '../images/1.svg';
-import List2 from '../images/2.svg';
-import List3 from '../images/3.svg';
-import List4 from '../images/4.svg';
-import List5 from '../images/5.svg';
-import Office from '../images/office.png';
+import Office from '../images/not-our-office.png';
 import { SERVICES } from '../config/consts';
 
 const Services = () => {
   const [chosenCategory, setChosenCategory] = useState('branding');
   const data = useStaticQuery(graphql`
     query {
-      heroImg: file(relativePath: { eq: "einstein.png" }) {
+      heroImg: file(relativePath: { eq: "services-einstein.png" }) {
         childImageSharp {
           fluid(maxHeight: 350) {
             ...GatsbyImageSharpFluid
@@ -63,40 +58,34 @@ const Services = () => {
         Ez a pár hatalmas előnyt érhetjük el számodra egy ütős és márkahű arculattal.`}>
             <div className="bg-white rounded shadow-brand p-3">
               <SolIcon1 className="w-8 mb-2" />
-              <p className="font-extrabold text-sm">
-                Felmérjük az igényeidet, valamint megismerjük a márkád személyiségét
-              </p>
+              <p className="text-sm">Felmérjük az igényeidet, valamint megismerjük a márkád személyiségét</p>
             </div>
             <div className="bg-white rounded shadow-brand p-3">
               <SolIcon2 className="w-8 mb-2" />
-              <p className="font-extrabold text-sm">Színeket, betűtípust, vizuális kommunikációs stílust választunk</p>
+              <p className="text-sm">Színeket, betűtípust, vizuális kommunikációs stílust választunk</p>
             </div>
             <div className="bg-white rounded shadow-brand p-3">
               <SolIcon3 className="w-8 mb-2" />
-              <p className="font-extrabold text-sm">Logót tervezünk, ami a márkád hű arca lehet</p>
+              <p className="text-sm">Logót tervezünk, ami a márkád hű arca lehet</p>
             </div>
             <div className="bg-white rounded shadow-brand p-3">
               <SolIcon4 className="w-8 mb-2" />
-              <p className="font-extrabold text-sm">
-                Arculathű posztdizájnokat, és más online reklámanyagokat készítünk
-              </p>
+              <p className="text-sm">Arculathű posztdizájnokat, és más online reklámanyagokat készítünk</p>
             </div>
             <div className="bg-white rounded shadow-brand p-3">
               <SolIcon5 className="w-8 mb-2" />
-              <p className="font-extrabold text-sm">Nyomdai anyagokat kreálunk, a lehető legnagyobb pontossággal</p>
+              <p className="text-sm">Nyomdai anyagokat kreálunk, a lehető legnagyobb pontossággal</p>
             </div>
             <div className="bg-white rounded shadow-brand p-3">
               <SolIcon6 className="w-8 mb-2" />
-              <p className="font-extrabold text-sm">
-                Arculati kézikönyvet készítünk, hogy mindenki megértse a miérteket
-              </p>
+              <p className="text-sm">Arculati kézikönyvet készítünk, hogy mindenki megértse a miérteket</p>
             </div>
           </SolutionCategory>
         );
       case 'web':
         return (
           <SolutionCategory
-            name="Web-, és appdizájn"
+            name="Web, és appdizájn"
             excerpt="Mindenki elsőre ítél. Hogyha a kezdés rossz, nehéz megváltoztatni a véleményt. A weboldal pedig
         épp az a hely, ahol a legtöbb márka jó, vagy épp szörnyű első benyomást tehet. A tiéd milyen érzést
         kelt?"
@@ -107,31 +96,25 @@ const Services = () => {
         megfelelő irányba tereli az oldal látogatóit.`}>
             <div className="bg-white rounded shadow-brand p-3">
               <SolIcon1 className="w-8 mb-2" />
-              <p className="font-extrabold text-sm">
-                Felmérjük az igényeidet, valamint megismerjük a márkád személyiségét
-              </p>
+              <p className="text-sm">Felmérjük az igényeidet, valamint megismerjük a márkád személyiségét</p>
             </div>
             <div className="bg-white rounded shadow-brand p-3">
               <SolIcon16 className="w-8 mb-2" />
-              <p className="font-extrabold text-sm">
-                Megismerjük a márkád arculatát, és a különböző vizuális irányokat
-              </p>
+              <p className="text-sm">Megismerjük a márkád arculatát, és a különböző vizuális irányokat</p>
             </div>
             <div className="bg-white rounded shadow-brand p-3">
               <SolIcon15 className="w-8 mb-2" />
-              <p className="font-extrabold text-sm">
+              <p className="text-sm">
                 Meghatározzuk többek között a weboldal célját, célközönségét, és a problémát, amelyet megold
               </p>
             </div>
             <div className="bg-white rounded shadow-brand p-3">
               <SolIcon14 className="w-8 mb-2" />
-              <p className="font-extrabold text-sm">
-                Közösen összegyűjtük/elkészítjük az oldalon megjelenő tartalmakat
-              </p>
+              <p className="text-sm">Közösen összegyűjtük/elkészítjük az oldalon megjelenő tartalmakat</p>
             </div>
             <div className="bg-white rounded shadow-brand p-3">
               <SolIcon13 className="w-8 mb-2" />
-              <p className="font-extrabold text-sm">Minden képernyőnézetre passzoló, arculathű dizájnt készítünk</p>
+              <p className="text-sm">Minden képernyőnézetre passzoló, arculathű dizájnt készítünk</p>
             </div>
           </SolutionCategory>
         );
@@ -149,29 +132,25 @@ const Services = () => {
         profizmust.`}>
             <div className="bg-white rounded shadow-brand p-3">
               <SolIcon1 className="w-8 mb-2" />
-              <p className="font-extrabold text-sm">
-                Felmérjük az igényeidet, valamint megismerjük a márkád személyiségét
-              </p>
+              <p className="text-sm">Felmérjük az igényeidet, valamint megismerjük a márkád személyiségét</p>
             </div>
             <div className="bg-white rounded shadow-brand p-3">
               <SolIcon16 className="w-8 mb-2" />
-              <p className="font-extrabold text-sm">
-                Megismerjük a márkád arculatát, és a különböző vizuális irányokat
-              </p>
+              <p className="text-sm">Megismerjük a márkád arculatát, és a különböző vizuális irányokat</p>
             </div>
             <div className="bg-white rounded shadow-brand p-3">
               <SolIcon15 className="w-8 mb-2" />
-              <p className="font-extrabold text-sm">
+              <p className="text-sm">
                 Meghatározzuk többek között a kommunikáció célját, célközönségét, és a problémát, amelyet megold
               </p>
             </div>
             <div className="bg-white rounded shadow-brand p-3">
               <SolIcon12 className="w-8 mb-2" />
-              <p className="font-extrabold text-sm">Közösen összegyűjtük/elkészítjük a posztok tartalmakat</p>
+              <p className="text-sm">Közösen összegyűjtük/elkészítjük a posztok tartalmakat</p>
             </div>
             <div className="bg-white rounded shadow-brand p-3">
               <SolIcon11 className="w-8 mb-2" />
-              <p className="font-extrabold text-sm">Arculathű és ütős dizájnokat kreálunk</p>
+              <p className="text-sm">Arculathű és ütős dizájnokat kreálunk</p>
             </div>
           </SolutionCategory>
         );
@@ -189,29 +168,25 @@ const Services = () => {
         A tiéd lehet a kivétel.`}>
             <div className="bg-white rounded shadow-brand p-3">
               <SolIcon1 className="w-8 mb-2" />
-              <p className="font-extrabold text-sm">
-                Felmérjük az igényeidet, valamint megismerjük a márkád személyiségét
-              </p>
+              <p className="text-sm">Felmérjük az igényeidet, valamint megismerjük a márkád személyiségét</p>
             </div>
             <div className="bg-white rounded shadow-brand p-3">
               <SolIcon16 className="w-8 mb-2" />
-              <p className="font-extrabold text-sm">
-                Megismerjük a márkád arculatát, és a különböző vizuális irányokat
-              </p>
+              <p className="text-sm">Megismerjük a márkád arculatát, és a különböző vizuális irányokat</p>
             </div>
             <div className="bg-white rounded shadow-brand p-3">
               <SolIcon15 className="w-8 mb-2" />
-              <p className="font-extrabold text-sm">
+              <p className="text-sm">
                 Meghatározzuk többek között a kommunikáció célját, célközönségét, és a problémát, amelyet megold
               </p>
             </div>
             <div className="bg-white rounded shadow-brand p-3">
               <SolIcon10 className="w-8 mb-2" />
-              <p className="font-extrabold text-sm">Közösen összegyűjtük/elkészítjük az anyagok tartalmait</p>
+              <p className="text-sm">Közösen összegyűjtük/elkészítjük az anyagok tartalmait</p>
             </div>
             <div className="bg-white rounded shadow-brand p-3">
               <SolIcon11 className="w-8 mb-2" />
-              <p className="font-extrabold text-sm">Arculathű és ütős dizájnokat kreálunk</p>
+              <p className="text-sm">Arculathű és ütős dizájnokat kreálunk</p>
             </div>
           </SolutionCategory>
         );
@@ -228,23 +203,21 @@ const Services = () => {
         eséllyel érheti el a célját.`}>
             <div className="bg-white rounded shadow-brand p-3">
               <SolIcon1 className="w-8 mb-2" />
-              <p className="font-extrabold text-sm">
-                Felmérjük az igényeidet, valamint megismerjük a márkád személyiségét
-              </p>
+              <p className="text-sm">Felmérjük az igényeidet, valamint megismerjük a márkád személyiségét</p>
             </div>
             <div className="bg-white rounded shadow-brand p-3">
               <SolIcon15 className="w-8 mb-2" />
-              <p className="font-extrabold text-sm">
+              <p className="text-sm">
                 Meghatározzuk többek között a kommunikáció célját, célközönségét, és a problémát, amelyet megold
               </p>
             </div>
             <div className="bg-white rounded shadow-brand p-3">
               <SolIcon9 className="w-8 mb-2" />
-              <p className="font-extrabold text-sm">Megismerjük a márkád nyelvezetét, és hanghordozását</p>
+              <p className="text-sm">Megismerjük a márkád nyelvezetét, és hanghordozását</p>
             </div>
             <div className="bg-white rounded shadow-brand p-3">
               <SolIcon8 className="w-8 mb-2" />
-              <p className="font-extrabold text-sm">Ütős szövegeket írunk</p>
+              <p className="text-sm">Ütős szövegeket írunk</p>
             </div>
           </SolutionCategory>
         );
@@ -261,35 +234,29 @@ const Services = () => {
           Hogyha azt tapasztalod, amit a tiéd láttán is el akarsz érni, lépjünk kapcsolatba, és lássunk hozzá!`}>
             <div className="bg-white rounded shadow-brand p-3">
               <SolIcon1 className="w-8 mb-2" />
-              <p className="font-extrabold text-sm">
-                Felmérjük az igényeidet, valamint megismerjük a márkád személyiségét
-              </p>
+              <p className="text-sm">Felmérjük az igényeidet, valamint megismerjük a márkád személyiségét</p>
             </div>
             <div className="bg-white rounded shadow-brand p-3">
               <SolIcon16 className="w-8 mb-2" />
-              <p className="font-extrabold text-sm">
-                Megismerjük a márkád arculatát, és a különböző vizuális irányokat
-              </p>
+              <p className="text-sm">Megismerjük a márkád arculatát, és a különböző vizuális irányokat</p>
             </div>
             <div className="bg-white rounded shadow-brand p-3">
               <SolIcon15 className="w-8 mb-2" />
-              <p className="font-extrabold text-sm">
+              <p className="text-sm">
                 Meghatározzuk többek között a kommunikáció célját, célközönségét, és a problémát, amelyet megold
               </p>
             </div>
             <div className="bg-white rounded shadow-brand p-3">
               <SolIcon12 className="w-8 mb-2" />
-              <p className="font-extrabold text-sm">
-                Közösen összegyűjtük/megtervezzük és elkészítjük a posztok tartalmait
-              </p>
+              <p className="text-sm">Közösen összegyűjtük/megtervezzük és elkészítjük a posztok tartalmait</p>
             </div>
             <div className="bg-white rounded shadow-brand p-3">
               <SolIcon11 className="w-8 mb-2" />
-              <p className="font-extrabold text-sm">Arculathű és ütős dizájnokat kreálunk</p>
+              <p className="text-sm">Arculathű és ütős dizájnokat kreálunk</p>
             </div>
             <div className="bg-white rounded shadow-brand p-3">
               <SolIcon7 className="w-8 mb-2" />
-              <p className="font-extrabold text-sm">Menedzseljük, és építjük a márkád Insta oldalát</p>
+              <p className="text-sm">Menedzseljük, és építjük a márkád Insta oldalát</p>
             </div>
           </SolutionCategory>
         );
@@ -315,119 +282,131 @@ const Services = () => {
         ]}
         title="Ebben segítünk"
       />
-      <div className="services-bg">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 my-16 h-64 bg-transparent flex justify-between">
-          <div className="w-full md:w-5/12 flex flex-col justify-center items-start">
-            <h1 className="text-5xl font-display font-extrabold leading-brand mb-6 uppercase">
-              Felejtsd el az
-              <br />
-              unalmas ötleteket!
-            </h1>
-            <p className="text-light text-lg">
-              Van, aki csak beszél róla. Mi beszélünk róla, majd megcsináljuk. Olyanra, amilyet elképzeltél.
-            </p>
-          </div>
-          <div
-            className="hidden md:block md:w-5/12 flex items-center justify-end"
-            style={{ animation: 'float 4s ease-in-out infinite' }}>
-            <Img
-              fluid={data?.heroImg?.childImageSharp?.fluid}
-              style={{ maxWidth: '26rem' }}
-              className="-mt-20"
-              alt="Gazduig Creative Agency Szolgáltatások"
-            />
-          </div>
+
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 my-16 h-64 bg-transparent flex justify-between">
+        <div className="w-full md:w-1/2 flex flex-col justify-center items-start md:pl-32">
+          <h1 className="text-5xl font-display font-extrabold leading-brand mb-6">
+            Felejtsd el az
+            <br />
+            unalmas ötleteket!
+          </h1>
+          <p className="text-light text-lg">
+            Van, aki csak beszél róla.
+            <br />
+            Mi beszélünk róla, majd megcsináljuk.
+            <br />
+            Olyanra, amilyet elképzeltél.
+          </p>
         </div>
-        <section className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="font-display leading-brand text-2xl font-extrabold mb-6 uppercase">
-            Találd meg, amire leginkább szükséged van!
+        <div
+          className="hidden md:block md:w-1/3 flex items-center justify-end md:pr-32"
+          style={{ animation: 'float 4s ease-in-out infinite' }}>
+          <Img
+            fluid={data?.heroImg?.childImageSharp?.fluid}
+            style={{ maxWidth: '26rem' }}
+            className="-mt-25"
+            alt="Gazduig Creative Agency Szolgáltatások"
+          />
+        </div>
+      </div>
+      <section className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 className="font-display leading-brand text-4xl font-extrabold mb-6 md:px-32">
+          Találd meg, amire leginkább szükséged van!
+        </h2>
+        <div className="md:px-48 xl:-mx-16">
+          <TabBar
+            categories={SERVICES.slice(0, -1)}
+            chosenCategory={chosenCategory}
+            setCategory={setChosenCategory}
+            containerClass="mb-16"
+            textClass="lg:text-md"
+          />
+        </div>
+      </section>
+      <section className="container mx-auto px-4 sm:px-6 lg:px-8 mt-12">{renderContent(chosenCategory)}</section>
+      <section className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
+        <div className="mb-32 md:px-32">
+          <h2 className="font-display text-4xl font-extrabold mb-32 leading-brand">
+            Így néz ki az együttműködésünk folyamata
           </h2>
-          <div className="xl:-mx-16">
-            <TabBar
-              categories={SERVICES.slice(0, -1)}
-              chosenCategory={chosenCategory}
-              setCategory={setChosenCategory}
-              containerClass="mb-16"
-              textClass="lg:text-lg"
-            />
-          </div>
-        </section>
-        <section className="container mx-auto px-4 sm:px-6 lg:px-8 mt-12">{renderContent(chosenCategory)}</section>
-        <section className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
-          <div className="services-office-bg">
-            <div className="mb-32">
-              <h2 className="font-display text-2xl font-extrabold mb-8 uppercase leading-brand">
-                Így néz ki az együttműködésünk folyamata
-              </h2>
-              <div className="w-full md:w-1/2">
-                <ul>
-                  <li className="font-light text-lg flex justify-start items-center">
-                    <img src={List1} className="w-10 inline-block mr-4" alt="Kapcsolatba lépünk egymással" />
-                    <span className="-mt-10">Kapcsolatba lépünk egymással</span>
-                  </li>
-                  <li className="font-light text-lg flex justify-start items-center">
-                    <img src={List2} className="w-10 inline-block mr-4" alt="Felmérjük az igényeidet" />
-                    <span className="-mt-10">Felmérjük az igényeidet</span>
-                  </li>
-                  <li className="font-light text-lg flex justify-start items-center">
-                    <img src={List3} className="w-10 inline-block mr-4" alt="Azok alapján terveket készítünk" />
-                    <span className="-mt-10">Azok alapján terveket készítünk</span>
-                  </li>
-                  <li className="font-light text-lg flex justify-start items-center">
-                    <img
-                      src={List4}
-                      className="w-10 inline-block mr-4"
-                      alt="Bemutatjuk, és ha kell módosítjuk, végtelenszer, felár nélkül, míg olyan nem lesz, amilyet
-                      elképzeltél"
-                    />
-                    <span className="-mt-10">
-                      Bemutatjuk, és ha kell módosítjuk, végtelenszer, felár nélkül, míg olyan nem lesz, amilyet
-                      elképzeltél
-                    </span>
-                  </li>
-                  <li className="font-light text-lg flex justify-start items-center">
-                    <img src={List5} className="w-10 inline-block mr-4" alt="Átadjuk a kész anyagot" />
-                    <span>Átadjuk a kész anyagot</span>
-                  </li>
-                </ul>
-              </div>
+          <div className="flex flex-col md:flex-row">
+            <div className="w-full md:w-1/2 pr-10 text-xl mb-12">
+              <ol>
+                <li className="justify-start items-center">
+                  <div className="flex">
+                    <p className="text-3xl font-black">01</p>
+                    <div className="w-10 border-b-4 border-black ml-4 mb-4"></div>
+                  </div>
+                  <p className="">Kapcsolatba lépünk egymással</p>
+                </li>
+                <li className="justify-start items-center">
+                  <div className="flex">
+                    <p className="text-3xl font-black">02</p>
+                    <div className="w-10 border-b-4 border-black ml-4 mb-4"></div>
+                  </div>
+                  <p className="">Felmérjük az igényeidet</p>
+                </li>
+                <li className="justify-start items-center">
+                  <div className="flex">
+                    <p className="text-3xl font-black">03</p>
+                    <div className="w-10 border-b-4 border-black ml-4 mb-4"></div>
+                  </div>
+                  <p className="">Azok alapján terveket készítünk</p>
+                </li>
+                <li className="justify-start items-center">
+                  <div className="flex">
+                    <p className="text-3xl font-black">04</p>
+                    <div className="w-10 border-b-4 border-black ml-4 mb-4"></div>
+                  </div>
+                  <p className="">
+                    Bemutatjuk, és ha kell módosítjuk, végtelenszer, felár nélkül, míg olyan nem lesz, amilyet
+                    elképzeltél
+                  </p>
+                </li>
+                <li className="justify-start items-center">
+                  <div className="flex">
+                    <p className="text-3xl font-black">05</p>
+                    <div className="w-10 border-b-4 border-black ml-4 mb-4"></div>
+                  </div>
+                  <p>Átadjuk a kész anyagot</p>
+                </li>
+              </ol>
             </div>
-            <img src={Office} alt="Nem a mi irodánk" className="block lg:hidden" />
-            <div className="-mt-8 md:-mt-28 md:w-8/12 rounded bg-gray-900 text-white text-2xl font-display font-extrabold inline-block px-8 py-4 lg:pr-40 mb-8 uppercase leading-brand">
-              <p>
-                Ez itt nem a mi irodánk. Viszont nagyon <br />
-                szeretnénk egy hasonlót. Ehhez pedig a te
+
+            <div className="bg-no-repeat" style={{ backgroundImage: `url(${Office})` }}>
+              <p className="font-black text-white text-lg px-16 relative top-1/2">
+                Ja ez? Ez itt nem a mi irodánk. Viszont nagyon szeretnénk egy hasonlót.
                 <br />
-                projekted is tökéletesen kell elkészítenünk!
+                Ehhez pedig a te projekted is sikerre kell vinnünk!
               </p>
             </div>
           </div>
-        </section>
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 my-32">
-          <section className="bg-white md:rounded md:shadow-brand py-8 px-8 md:px-36 z-50">
-            <div className="mb-16 max-w-2xl">
-              <h2 className="font-display font-extrabold text-2xl uppercase leading-brand">
-                Tetszettek a látottak? Töltsd ki a lenti
-                <br />
-                formot, és alkossunk együtt valami ütőset!
-              </h2>
-            </div>
-            <ContactForm />
-          </section>
         </div>
-        <section className="md:-mt-64 pt-36 md:pt-96 pb-36">
-          <div className="container mx-auto text-left sm:px-6 lg:px-48 ml-8 sm:ml-0">
-            <h2 className="font-display font-extrabold text-2xl leading-brand uppercase mb-6">
-              Még nem vagy 100%-ig biztos a dologban?
+      </section>
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 my-32 bg-gray-100">
+        <section className="bg-white md:rounded md:shadow-brand py-8 px-8 md:px-36 z-50">
+          <div className="mb-16 max-w-2xl">
+            <h2 className="font-display font-extrabold text-4xl leading-brand">
+              Tetszettek a látottak?
               <br />
-              Nézd meg pár korábbi munkánkat a témában!
+              Töltsd ki a lenti formot, és alkossunk együtt valami ütőset neked is!
             </h2>
-            <Link to="/portfolio">
-              <button className="primary-btn">Irány a portfólió</button>
-            </Link>
           </div>
+          <ContactForm />
         </section>
       </div>
+      <section className="md:-mt-64 pt-36 md:pt-96 pb-36 px-4 sm:px-6 lg:px-8">
+        <div className="container mx-auto text-left md:px-56 ml-8 sm:ml-0">
+          <h2 className="font-display font-extrabold text-4xl leading-brand mb-8">
+            Még nem vagy 100%-ig biztos a dologban?
+            <br />
+            No problem! Nézd meg pár korábbi munkánkat a témában, és dönts utána!
+          </h2>
+          <Link to="/portfolio">
+            <button className="primary-btn">Irány a portfólió</button>
+          </Link>
+        </div>
+      </section>
     </Layout>
   );
 };
