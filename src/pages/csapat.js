@@ -131,13 +131,13 @@ function Team() {
           </div>
         </section>
         <section>
-          <h2 className="font-display text-4xl font-extrabold my-6 lg:ml-24 leading-brand">
+          <h2 className="font-display text-4xl font-extrabold my-6 lg:ml-20 leading-brand">
             6 mondat, amely
             <br />
             aranyat ér számunkra
           </h2>
           <div className="flex flex-col lg:mx-20 w-7/12">
-            <div className="flex flex-col items-start p-4 xl:pr-24">
+            <div className="flex flex-col items-start py-4 xl:pr-24">
               <div className="flex flex-row align-middle content-center items-center">
                 <p className="text-3xl font-black">01</p>
                 <div className="w-10 h-1 bg-gray-900 ml-4"></div>
@@ -151,7 +151,7 @@ function Team() {
                 </p>
               </div>
             </div>
-            <div className="flex flex-col items-start p-4 xl:pr-24">
+            <div className="flex flex-col items-start py-4 xl:pr-24">
               <div className="flex flex-row align-middle content-center items-center">
                 <p className="text-3xl font-black">02</p>
                 <div className="w-10 h-1 bg-gray-900 ml-4"></div>
@@ -166,7 +166,7 @@ function Team() {
                 </p>
               </div>
             </div>
-            <div className="flex flex-col items-start p-4 xl:pr-24">
+            <div className="flex flex-col items-start py-4 xl:pr-24">
               <div className="flex flex-row align-middle content-center items-center">
                 <p className="text-3xl font-black">03</p>
                 <div className="w-10 h-1 bg-gray-900 ml-4"></div>
@@ -179,7 +179,7 @@ function Team() {
                 </p>
               </div>
             </div>
-            <div className="flex flex-col items-start p-4 xl:pr-24">
+            <div className="flex flex-col items-start py-4 xl:pr-24">
               <div className="flex flex-row align-middle content-center items-center">
                 <p className="text-3xl font-black">04</p>
                 <div className="w-10 h-1 bg-gray-900 ml-4"></div>
@@ -192,7 +192,7 @@ function Team() {
                 </p>
               </div>
             </div>
-            <div className="flex flex-col items-start p-4 xl:pr-24">
+            <div className="flex flex-col items-start py-4 xl:pr-24">
               <div className="flex flex-row align-middle content-center items-center">
                 <p className="text-3xl font-black">05</p>
                 <div className="w-10 h-1 bg-gray-900 ml-4"></div>
@@ -207,7 +207,7 @@ function Team() {
                 </p>
               </div>
             </div>
-            <div className="flex flex-col items-start p-4 xl:pr-24">
+            <div className="flex flex-col items-start py-4 xl:pr-24">
               <div className="flex flex-row align-middle content-center items-center">
                 <p className="text-3xl font-black">06</p>
                 <div className="w-10 h-1 bg-gray-900 ml-4"></div>
