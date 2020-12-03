@@ -8,12 +8,7 @@ import SEO from '../components/seo';
 import InstagramIcon from '../components/svg/instagramIcon';
 import LinkedInIcon from '../components/svg/linkedInIcon';
 import ListIcon from '../components/svg/listIcon';
-import BrainIcon from '../components/svg/brainIcon';
-import TimeIcon from '../components/svg/timeIcon';
-import DataIcon from '../components/svg/dataIcon';
-import ChatIcon from '../components/svg/chatIcon';
-import FistsIcon from '../components/svg/fistsIcon';
-import FireIcon from '../components/svg/fireIcon';
+
 import RocketIcon from '../components/svg/rocketIcon';
 import TheatreIcon from '../components/svg/theatreIcon';
 import LightBulbIcon from '../components/svg/lightbulbIcon';
@@ -46,7 +41,7 @@ import Gergo from '../images/team-gergo.png';
 function Team() {
   const data = useStaticQuery(graphql`
     query {
-      heroImg: file(relativePath: { eq: "team-metal.png" }) {
+      heroImg: file(relativePath: { eq: "boxing-gloves.png" }) {
         childImageSharp {
           fluid(maxHeight: 350) {
             ...GatsbyImageSharpFluid
@@ -103,19 +98,19 @@ function Team() {
       <section className="container mx-auto px-4 sm:px-6 lg:px-8">
         <section className="flex flex-col md:flex-row justify-around items-center">
           <div className="md:w-5/12">
-            <h1 className="text-4.5xl font-display font-extrabold uppercase leading-brand mb-8">
+            <h1 className="text-5xl font-display font-extrabold leading-brand mb-8">
               Mi az a Gazduig, és
               <br />
               miben rejlik az ütősség?
             </h1>
-            <ul className="grid grid-cols-1 md:grid-cols-2 md:grid-rows-2 gap-2 xl:gap-6 xl:col-gap-16 leading-tight">
+            <ul className="grid grid-cols-1 md:grid-cols-2 md:grid-rows-2 gap-2 xl:gap-6 xl:col-gap-16 leading-tight text-lg">
               <li className="flex items-start font-light max-w-8">
                 <ListIcon className="w-12 mr-2" />
-                Nem csak egy újabb ügynökség a többi mellé
+                Nemcsak egy újabb ügynökség a többi mellé
               </li>
               <li className="flex items-start font-light max-w-8">
                 <ListIcon className="w-12 mr-2" />
-                Nem az a csapat, aki majd mindent beígér neked
+                Nem az a csapat, aki mindent csak beígér neked
               </li>
               <li className="flex items-start font-light max-w-8">
                 <ListIcon className="w-12 mr-2" />
@@ -127,97 +122,102 @@ function Team() {
               </li>
             </ul>
           </div>
-          <div className="hidden md:block" style={{ animation: 'float 4s ease-in-out infinite' }}>
+          <div className="hidden md:block">
             <Img
               fluid={data?.heroImg?.childImageSharp?.fluid}
-              className="md:w-48 lg:w-96"
+              className="md:w-48 lg:w-80"
               alt="Gazduig Creative Agency Rolunk"
             />
           </div>
         </section>
         <section>
-          <h2 className="font-display text-2xl font-extrabold my-6 lg:ml-16 uppercase leading-brand">
-            Mondatok, amelyek aranyat érnek számunkra
+          <h2 className="font-display text-4xl font-extrabold my-6 lg:ml-24 leading-brand">
+            6 mondat, amely
+            <br />
+            aranyat ér számunkra
           </h2>
-          <div className="grid lg:grid-rows-2 lg:grid-cols-3 gap-8 mx-4 lg:mx-8 xl:mx-0">
-            <div className="bg-white rounded shadow-brand flex items-start p-4 xl:pr-24">
-              <div className="mr-4">
-                <BrainIcon className="w-10" />
+          <div className="flex flex-col lg:mx-20 w-7/12">
+            <div className="flex flex-col items-start p-4 xl:pr-24">
+              <div className="flex flex-row align-middle content-center items-center">
+                <p className="text-3xl font-black">01</p>
+                <div className="w-10 h-1 bg-gray-900 ml-4"></div>
               </div>
               <div>
-                <h3 className="font-extrabold text-sm leading-tight mb-2">Ha nem megy így, majd megy úgy.</h3>
-                <p className="font-light text-sm leading-tight">
-                  Az esetek 99%-ában újító szándékkal állunk a dolgokhoz..
-                  <br />
+                <h3 className="font-extrabold text-lg leading-tight mb-2">Ha nem megy így, majd megy úgy.</h3>
+                <p className="font-light text-lg leading-tight">
+                  Az esetek 99%-ában újító szándékkal állunk a dolgokhoz.
                   <br />
                   Olyat akarunk letenni eléd, amit eddig még nem láttál.
                 </p>
               </div>
             </div>
-            <div className="bg-white rounded shadow-brand flex items-start p-4 xl:pr-24">
-              <div className="mr-4">
-                <TimeIcon className="w-10" />
+            <div className="flex flex-col items-start p-4 xl:pr-24">
+              <div className="flex flex-row align-middle content-center items-center">
+                <p className="text-3xl font-black">02</p>
+                <div className="w-10 h-1 bg-gray-900 ml-4"></div>
               </div>
               <div>
-                <h3 className="font-extrabold text-sm leading-tight mb-2">
+                <h3 className="font-extrabold text-lg leading-tight mb-2">
                   Jó munkához nem idő kell, hanem szakértelem.
                 </h3>
-                <p className="font-light text-sm leading-tight">
-                  Nem hisszük el, hogy mindennek napokig/hetekig/hónapokig kell tartania ahhoz, hogy jó legyen.
-                  <br />
-                  <br />
-                  Nem kapkodunk, de az időd pénz.
+                <p className="font-light text-lg leading-tight">
+                  Nem hisszük el, hogy mindennek napokig/hetekig/hónapokig kell tartania ahhoz, hogy jó legyen. Nem
+                  kapkodunk, de az időd pénz.
                 </p>
               </div>
             </div>
-            <div className="bg-white rounded shadow-brand flex items-start p-4 xl:pr-24">
-              <div className="mr-4">
-                <DataIcon className="w-10" />
+            <div className="flex flex-col items-start p-4 xl:pr-24">
+              <div className="flex flex-row align-middle content-center items-center">
+                <p className="text-3xl font-black">03</p>
+                <div className="w-10 h-1 bg-gray-900 ml-4"></div>
               </div>
               <div>
-                <h3 className="font-extrabold text-sm leading-tight mb-2">Adat nélkül a dizájnolás csak díszítés.</h3>
-                <p className="font-light text-sm leading-tight">
+                <h3 className="font-extrabold text-lg leading-tight mb-2">Adat nélkül a dizájnolás csak díszítés.</h3>
+                <p className="font-light text-lg leading-tight">
                   Minden munkánk adatvezérelt úton készül el. Sok kérdést teszünk fel a projekt előtt és közben, hogy a
                   végén ne csak valami szépet, de hasznosat kapj.
                 </p>
               </div>
             </div>
-            <div className="bg-white rounded shadow-brand flex items-start p-4 xl:pr-24">
-              <div className="mr-4">
-                <ChatIcon className="w-10" />
+            <div className="flex flex-col items-start p-4 xl:pr-24">
+              <div className="flex flex-row align-middle content-center items-center">
+                <p className="text-3xl font-black">04</p>
+                <div className="w-10 h-1 bg-gray-900 ml-4"></div>
               </div>
               <div>
-                <h3 className="font-extrabold text-sm leading-tight mb-2">Nem kell a zsargonok csapdájába esnünk.</h3>
-                <p className="font-light text-sm leading-tight">
+                <h3 className="font-extrabold text-lg leading-tight mb-2">Nem kell a zsargonok csapdájába esnünk.</h3>
+                <p className="font-light text-lg leading-tight">
                   Attól, hogy komoly dolgokról beszélgetünk, és üzleti okokból találkozunk, még teremthetünk egy baráti,
                   laza légkört, ahol nem baj, ha az ember nem tökéletes.
                 </p>
               </div>
             </div>
-            <div className="bg-white rounded shadow-brand flex items-start p-4 xl:pr-24">
-              <div className="mr-4">
-                <FistsIcon className="w-10" />
+            <div className="flex flex-col items-start p-4 xl:pr-24">
+              <div className="flex flex-row align-middle content-center items-center">
+                <p className="text-3xl font-black">05</p>
+                <div className="w-10 h-1 bg-gray-900 ml-4"></div>
               </div>
               <div>
-                <h3 className="font-extrabold text-sm leading-tight mb-2">
+                <h3 className="font-extrabold text-lg leading-tight mb-2">
                   Nem az vagy, amit hiszel, az vagy, amit elérsz.
                 </h3>
-                <p className="font-light text-sm leading-tight">
+                <p className="font-light text-lg leading-tight">
                   Hangzik el a DSP zenekar Kirakat című számában. Azon vagyunk, hogy telepakoljuk az asztalt, mintsem
                   hazudjuk azt, hogy tele van.
                 </p>
               </div>
             </div>
-            <div className="bg-white rounded shadow-brand flex items-start p-4 xl:pr-24">
-              <div className="mr-4">
-                <FireIcon className="w-10" />
+            <div className="flex flex-col items-start p-4 xl:pr-24">
+              <div className="flex flex-row align-middle content-center items-center">
+                <p className="text-3xl font-black">06</p>
+                <div className="w-10 h-1 bg-gray-900 ml-4"></div>
               </div>
               <div>
-                <h3 className="font-extrabold text-sm leading-tight mb-2">
+                <h3 className="font-extrabold text-lg leading-tight mb-2">
                   Ha más meg tudja csinálni, akkor én is meg tudom csinálni. Ha senki sem képes rá, én csak azért is
                   megcsinálom.
                 </h3>
-                <p className="font-light text-sm leading-tight">
+                <p className="font-light text-lg leading-tight">
                   Így állunk hozzá mindenhez, legyen az munka, vagy nem munka. A veled közös projektet is így kezeljük.
                 </p>
               </div>
