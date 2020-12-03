@@ -5,7 +5,7 @@
 @font-face {
   font-family: 'Sofia-Pro';
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   font-display: swap;
   src: local('SofiaPro Light'), local('SofiaPro-Light'), url('../fonts/Sofia\ Pro\ Light\ Az.otf');
 }
@@ -25,36 +25,8 @@
   z-index: 1;
 }
 
-.menu-link::before {
-  content: '';
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  bottom: 0;
-  left: -0.25em;
-  right: -0.25em;
-  background-color: #fc2f70;
-  transform-origin: bottom center;
-  transform: scaleY(0.1);
-  transition: all 0.1s ease-in-out;
-}
-
-.menu-link:hover::before {
-  transform: scaleY(1);
-  background-color: hsla(341, 97%, 59%, 0.75);
-}
-
 #tab-bar::-webkit-scrollbar {
   display: none;
-}
-
-.purple-blob-bg {
-}
-.yellow-blob-bg {
-}
-.green-blob-bg {
-}
-.multi-blob-bg {
 }
 
 .heading {
@@ -70,7 +42,7 @@
 }
 
 .primary-btn {
-  @apply inline-flex text-white bg-brand-blue-500 border-0 py-1 px-6 rounded font-extrabold text-sm;
+  @apply inline-flex text-white bg-brand-blue-500 border-0 py-3 px-6 rounded font-extrabold;
 }
 
 .primary-btn:hover {
@@ -78,7 +50,7 @@
 }
 
 .secondary-btn {
-  @apply inline-flex bg-white text-brand-blue-500 border-0 py-1 px-6 rounded-sm font-extrabold text-sm;
+  @apply inline-flex bg-white text-brand-blue-500 border-0 py-3 px-6 rounded-sm font-extrabold;
 }
 
 .secondary-btn:hover {
@@ -185,10 +157,6 @@
     background-size: 60%;
   }
 
-  .hero {
-    @apply relative bg-no-repeat bg-cover overflow-hidden h-screen;
-    background-image: url('../images/heroBG.jpg');
-  }
   .purple-blob-bg {
     @apply bg-no-repeat;
     background-image: url('../images/purple-blob.svg');

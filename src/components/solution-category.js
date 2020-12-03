@@ -3,13 +3,7 @@ import React from 'react';
 const SolutionCategory = ({ excerpt, description, children, name, fullName }) => {
   return (
     <div className="bg-gray-100 mb-32">
-      <div
-        className="leading-snug md:px-32 md:py-16 flex"
-        // style={{
-        //   background:
-        //     'linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 40%, rgba(247,247,247,1) 41%, rgba(247,247,247,1) 100%)',
-        // }}
-      >
+      <div className="leading-snug md:px-32 md:py-16 flex flex-col">
         <h2 className="font-black text-3xl block w-full">{`${name}`}</h2>
         <div>
           <h3 className="max-w-4xl font-display text-2xl font-extrabold mb-4 leading-brand">

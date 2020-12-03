@@ -139,7 +139,7 @@ const Portfolio = () => {
           </div>
         </section>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-32 mg-gray-100">
-          <section className="bg-white md:rounded md:shadow-brand py-8 px-8 md:px-36 z-50">
+          <section className="py-8 px-8 md:px-36 z-50">
             <div className="mb-16 max-w-2xl">
               <h2 className="font-display font-extrabold text-2xl  uppercase leading-brand">
                 Tetszettek a látottak? Töltsd ki a lenti

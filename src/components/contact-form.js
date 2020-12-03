@@ -1,11 +1,9 @@
 import React, { useState } from 'react';
 import { SERVICES } from '../config/consts';
-import Bence from '../images/bence-bw.png';
-import PurpleBlob from '../images/purple-blob.svg';
+import Bence from '../images/contact-phone.png';
 
 const ContactForm = ({ contactPageEdits }) => {
   const [jobtype, setJobtype] = useState(null);
-  // const [extraJobtype, setExtraJobtype] = useState(null);
   const [hasPrivacyAccepted, setHasPrivacyAccepted] = useState(false);
   return (
     <div className="mx-auto lg:grid lg:grid-cols-2 lg:col-gap-1">
@@ -28,7 +26,7 @@ const ContactForm = ({ contactPageEdits }) => {
                 <input
                   id="full_name"
                   name="full_name"
-                  className="form-input block w-full py-2 px-2 placeholder-gray-500 border-gray-900 transition ease-in-out duration-150"
+                  className="bg-transparent form-input block w-full py-2 px-2 placeholder-gray-700 border-gray-900 transition ease-in-out duration-150"
                   placeholder="Hogy szólíthatunk?"
                   required
                 />
@@ -43,7 +41,7 @@ const ContactForm = ({ contactPageEdits }) => {
                   id="email"
                   name="email"
                   type="email"
-                  className="form-input block w-full py-2 px-2 placeholder-gray-500 border-gray-900 transition ease-in-out duration-150"
+                  className="bg-transparent form-input block w-full py-2 px-2 placeholder-gray-700 border-gray-900 transition ease-in-out duration-150"
                   placeholder="Milyen e-mail címen érünk el?"
                   required
                 />
@@ -57,10 +55,10 @@ const ContactForm = ({ contactPageEdits }) => {
                 <select
                   id="jobtype"
                   name="jobtype"
-                  className="form-input block w-full py-2 px-2 placeholder-gray-500 border-gray-900 transition ease-in-out duration-150"
+                  className="bg-transparent form-input block w-full py-2 px-2 text-brand-blue-700 font-extrabold border-gray-900 transition ease-in-out duration-150"
                   onChange={(e) => setJobtype(e?.target?.value)}>
                   <option value="" disabled selected hidden>
-                    Miben segíthetünk?
+                    Miben segíthetünk? ▼
                   </option>
                   {SERVICES?.map((category) => (
                     <option key={category?.key} value={category?.key} selected={jobtype === category?.key}>
@@ -70,28 +68,6 @@ const ContactForm = ({ contactPageEdits }) => {
                 </select>
               </div>
             </div>
-            {/* <div>
-              <label htmlFor="extra-jobtype" className="sr-only">
-                És ezen felül?
-              </label>
-              <div className="relative rounded-md">
-                <select
-                  id="extra-jobtype"
-                  name="extra-jobtype"
-                  className="form-input block w-full py-2 px-2 placeholder-gray-500 border-gray-900 transition ease-in-out duration-150"
-                  onChange={(e) => setExtraJobtype(e?.target?.value)}>
-                  <option value="" disabled selected hidden>
-                    És ezen felül?
-                  </option>
-                  {SERVICES?.map((category) => (
-                    <option key={category?.key} value={category?.key} selected={extraJobtype === category?.key}>
-                      {category?.name}
-                    </option>
-                  ))}
-                </select>
-              </div>
-            </div> */}
-
             <div>
               <label htmlFor="message" className="sr-only">
                 Ha már tudsz részleteket, pötyögd be őket pár szóban, és amint lehet, felkeresünk!
@@ -101,7 +77,7 @@ const ContactForm = ({ contactPageEdits }) => {
                   id="message"
                   name="message"
                   rows="5"
-                  className="form-input block w-full py-2 px-2 placeholder-gray-500 border-gray-900 transition ease-in-out duration-150"
+                  className="bg-transparent form-input block w-full py-2 px-2 placeholder-gray-700 border-gray-900 transition ease-in-out duration-150"
                   placeholder="Ha már tudsz részleteket, pötyögd be őket pár szóban, és amint lehet, felkeresünk!"></textarea>
               </div>
             </div>
@@ -111,7 +87,7 @@ const ContactForm = ({ contactPageEdits }) => {
                   id="privacy"
                   name="privacy"
                   type="checkbox"
-                  className={`form-input mr-2 rounded-full p-1 transition ease-in-out duration-150 ${
+                  className={`bg-transparent form-input mr-2 rounded-full p-1 transition ease-in-out duration-150 ${
                     hasPrivacyAccepted && 'bg-brand-blue-500'
                   }`}
                   required
@@ -136,14 +112,8 @@ const ContactForm = ({ contactPageEdits }) => {
         </div>
       </div>
       <div className={`lg:col-span-1 flex ${contactPageEdits || 'justify-center items-baseline'}`}>
-        <div
-          className="bg-white w-80 pl-6 pr-16 py-3 pb-72 md:shadow-brand rounded overflow-visible relative bg-no-repeat"
-          style={{ backgroundImage: `url(${PurpleBlob})`, backgroundPosition: `0% 250%` }}>
-          <p className="font-extrabold mb-4">Szia, Bence vagyok!</p>
-          <p className="font-light">
-            Én válaszolok majd az üzenetedre. Ha kérdésed van, hívj fel bármikor a +36 30 270 5363-as számon!
-          </p>
-          <img src={Bence} className="absolute bottom-0 left-1 object-center" alt="Gazdig Bence" />
+        <div className="w-80">
+          <img src={Bence} className="" alt="Gazdig Bence" />
         </div>
       </div>
     </div>
