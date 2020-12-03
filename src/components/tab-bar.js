@@ -22,7 +22,7 @@ const TabBar = ({ containerClass, categories, chosenCategory, setCategory, textC
               <button
                 key={category?.key}
                 onClick={() => setCategory(category?.key)}
-                className={`whitespace-no-wrap mr-4 py-4 px-1 border-b-2 ${
+                className={`whitespace-no-wrap mr-4 pt-4 pb-1 px-1 border-b-2 ${
                   category.key !== chosenCategory
                     ? 'border-transparent font-medium'
                     : 'border-brand-blue-500 font-extrabold text-brand-blue-500'

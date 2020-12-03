@@ -333,30 +333,30 @@ const Services = () => {
             <div className="w-full md:w-1/2 pr-10 text-xl mb-12">
               <ol>
                 <li className="justify-start items-center">
-                  <div className="flex">
+                  <div className="flex flex-row align-middle content-center items-center">
                     <p className="text-3xl font-black">01</p>
-                    <div className="w-10 border-b-4 border-black ml-4 mb-4"></div>
+                    <div className="w-10 h-1 bg-gray-900 ml-5"></div>
                   </div>
                   <p className="">Kapcsolatba lépünk egymással</p>
                 </li>
                 <li className="justify-start items-center">
-                  <div className="flex">
+                  <div className="flex flex-row align-middle content-center items-center">
                     <p className="text-3xl font-black">02</p>
-                    <div className="w-10 border-b-4 border-black ml-4 mb-4"></div>
+                    <div className="w-10 h-1 bg-gray-900 ml-4"></div>
                   </div>
                   <p className="">Felmérjük az igényeidet</p>
                 </li>
                 <li className="justify-start items-center">
-                  <div className="flex">
+                  <div className="flex flex-row align-middle content-center items-center">
                     <p className="text-3xl font-black">03</p>
-                    <div className="w-10 border-b-4 border-black ml-4 mb-4"></div>
+                    <div className="w-10 h-1 bg-gray-900 ml-4"></div>
                   </div>
                   <p className="">Azok alapján terveket készítünk</p>
                 </li>
                 <li className="justify-start items-center">
-                  <div className="flex">
+                  <div className="flex flex-row align-middle content-center items-center">
                     <p className="text-3xl font-black">04</p>
-                    <div className="w-10 border-b-4 border-black ml-4 mb-4"></div>
+                    <div className="w-10 h-1 bg-gray-900 ml-4"></div>
                   </div>
                   <p className="">
                     Bemutatjuk, és ha kell módosítjuk, végtelenszer, felár nélkül, míg olyan nem lesz, amilyet
@@ -364,17 +364,17 @@ const Services = () => {
                   </p>
                 </li>
                 <li className="justify-start items-center">
-                  <div className="flex">
+                  <div className="flex flex-row align-middle content-center items-center">
                     <p className="text-3xl font-black">05</p>
-                    <div className="w-10 border-b-4 border-black ml-4 mb-4"></div>
+                    <div className="w-10 h-1 bg-gray-900 ml-4"></div>
                   </div>
                   <p>Átadjuk a kész anyagot</p>
                 </li>
               </ol>
             </div>
 
-            <div className="bg-no-repeat" style={{ backgroundImage: `url(${Office})` }}>
-              <p className="font-black text-white text-lg px-16 relative top-1/2">
+            <div className="bg-no-repeat w-1/2 h-96 relative rounded-lg" style={{ backgroundImage: `url(${Office})` }}>
+              <p className="font-black text-white text-lg px-16 absolute bottom-3 left-3">
                 Ja ez? Ez itt nem a mi irodánk. Viszont nagyon szeretnénk egy hasonlót.
                 <br />
                 Ehhez pedig a te projekted is sikerre kell vinnünk!
