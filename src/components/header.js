@@ -36,16 +36,16 @@ function Header() {
                 },
               ].map((link) => (
                 <Link
-                  activeClassName=" ml-8 inline-flex items-center px-1 pt-1 bor0 text-brand-blue-500 -b-2-5 focus:outline-none hover:text-brand-blue-500 hover:border-brand-blue-500 focus:text-brand-blue-500 focus:border-brand-blue-500 transition duration-150 ease-in-out border-brand-blue-500"
+                  activeClassName="border-b font-extrabold ml-8 inline-flex items-center px-1 pt-1 text-brand-blue-500 focus:outline-none hover:text-brand-blue-500 hover:border-brand-blue-500 focus:text-brand-blue-500 focus:border-brand-blue-500 transition duration-150 ease-in-out border-brand-blue-500"
                   getProps={({ isPartiallyCurrent }) =>
                     isPartiallyCurrent
                       ? {
                           className:
-                            'ml-8 inline-flex items-center px-1 pt-1 bor0 text-brand-blue-500 -b-2-5 focus:outline-none hover:text-brand-blue-500 hover:border-brand-blue-500 focus:text-brand-blue-500 focus:border-brand-blue-500 transition duration-150 ease-in-out border-brand-blue-500',
+                            'border-b font-extrabold ml-8 inline-flex items-center px-1 pt-1 text-brand-blue-500 focus:outline-none hover:text-brand-blue-500 hover:border-brand-blue-500 focus:text-brand-blue-500 focus:border-brand-blue-500 transition duration-150 ease-in-out border-brand-blue-500',
                         }
                       : {}
                   }
-                  className="ml-8 inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium leading-5 focus:outline-none hover:text-brand-blue-700 hover:border-brand-blue-300 focus:text-brand-blue-700 focus:border-brand-blue-700 transition duration-150 ease-in-out menu-link"
+                  className="ml-8 inline-flex items-center px-1 pt-1 border-b border-transparent text-sm font-medium leading-5 focus:outline-none hover:text-brand-blue-700 hover:border-brand-blue-300 focus:text-brand-blue-700 focus:border-brand-blue-700 transition duration-150 ease-in-out menu-link"
                   key={link.title}
                   to={link.route}>
                   {link.title}
@@ -102,16 +102,16 @@ function Header() {
               },
             ].map((link) => (
               <Link
-                activeClassName="text-sm font-extrabold mt-1 block pl-3 pr-4 py-2 border-0 text-brand-blue-500 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300 focus:outline-none focus:text-gray-800 focus:bg-gray-50 focus:border-gray-300 transition duration-150 ease-in-out"
+                activeClassName="text-sm font-extrabold mt-1 block pl-3 pr-4 pt-2 border-0 text-brand-blue-500 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300 focus:outline-none focus:text-gray-800 focus:bg-gray-50 focus:border-gray-300 transition duration-150 ease-in-out"
                 getProps={({ isPartiallyCurrent }) =>
                   isPartiallyCurrent
                     ? {
                         className:
-                          'text-sm font-extrabold mt-1 block pl-3 pr-4 py-2 border-0 text-brand-blue-500 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300 focus:outline-none focus:text-gray-800 focus:bg-gray-50 focus:border-gray-300 transition duration-150 ease-in-out',
+                          'text-sm font-extrabold mt-1 block pl-3 pr-4 pt-2 border-0 text-brand-blue-500 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300 focus:outline-none focus:text-gray-800 focus:bg-gray-50 focus:border-gray-300 transition duration-150 ease-in-out',
                       }
                     : {}
                 }
-                className="mt-1 block pl-3 pr-4 py-2 border-l-4 border-transparent font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300 focus:outline-none focus:text-gray-800 focus:bg-gray-50 focus:border-gray-300 transition duration-150 ease-in-out"
+                className="mt-1 block pl-3 pr-4 pt-2 border-l-4 border-b border-transparent font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300 focus:outline-none focus:text-gray-800 focus:bg-gray-50 focus:border-gray-300 transition duration-150 ease-in-out"
                 key={link.title}
                 to={link.route}>
                 {link.title}

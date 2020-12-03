@@ -383,8 +383,8 @@ const Services = () => {
           </div>
         </div>
       </section>
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 my-32 bg-gray-100">
-        <section className="bg-white md:rounded md:shadow-brand py-8 px-8 md:px-36 z-50">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 my-32">
+        <section className="py-8 px-8 md:px-36 z-50">
           <div className="mb-16 max-w-2xl">
             <h2 className="font-display font-extrabold text-4xl leading-brand">
               Tetszettek a látottak?
