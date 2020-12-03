@@ -175,7 +175,7 @@ function IndexPage() {
           <div>images</div>
         </div>
       </div>
-      <div className="bg-gray-100">
+      <div className="">
         <section className="container max-w-7xl mx-auto pt-16 md:flex-row flex-col items-center justify-start">
           <CalloutSection />
           <section>
@@ -197,7 +197,7 @@ function IndexPage() {
                 {data?.[`${chosenCategory}Posts`]?.edges?.map((edge) => (
                   <Link key={edge?.node?.id} to={`portfolio/${edge?.node?.frontmatter?.slug}`}>
                     <div
-                      className={`h-48 hover:-mt-2 hover:opacity-75 transition-all duration-300 ease-in-out relative flex-shrink-0 overflow-hidden bg-gray-600 rounded bg-cover bg-no-repeat`}
+                      className={`h-48 hover:-mt-2 hover:opacity-75 transition-all duration-300 ease-in-out relative flex-shrink-0 overflow-hidden rounded bg-cover bg-no-repeat`}
                       style={{
                         background: `${
                           edge?.node?.frontmatter?.gradient ||
@@ -222,7 +222,7 @@ function IndexPage() {
                     to={`portfolio/${edge?.node?.frontmatter?.slug}`}
                     style={checkIndexAndApplyToContainer(index)}>
                     <div
-                      className={`hover:-mt-2 hover:opacity-75 transition-all duration-300 ease-in-out relative flex-shrink-0 overflow-hidden bg-gray-600 rounded bg-cover bg-no-repeat ${checkIndexAndApplyToCard(
+                      className={`hover:-mt-2 hover:opacity-75 transition-all duration-300 ease-in-out relative flex-shrink-0 overflow-hidden rounded bg-cover bg-no-repeat ${checkIndexAndApplyToCard(
                         index
                       )}`}
                       style={{

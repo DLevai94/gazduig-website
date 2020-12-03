@@ -26,7 +26,7 @@ const ContactForm = ({ contactPageEdits }) => {
                 <input
                   id="full_name"
                   name="full_name"
-                  className="bg-transparent form-input block w-full py-2 px-2 placeholder-gray-700 border-gray-900 transition ease-in-out duration-150"
+                  className="bg-transparent form-input block w-full py-3 px-4 placeholder-gray-700 border mb-3 border-gray-500 transition ease-in-out duration-150"
                   placeholder="Hogy szólíthatunk?"
                   required
                 />
@@ -41,7 +41,7 @@ const ContactForm = ({ contactPageEdits }) => {
                   id="email"
                   name="email"
                   type="email"
-                  className="bg-transparent form-input block w-full py-2 px-2 placeholder-gray-700 border-gray-900 transition ease-in-out duration-150"
+                  className="bg-transparent form-input block w-full py-3 px-4 placeholder-gray-700 border mb-3 border-gray-500 transition ease-in-out duration-150"
                   placeholder="Milyen e-mail címen érünk el?"
                   required
                 />
@@ -55,7 +55,7 @@ const ContactForm = ({ contactPageEdits }) => {
                 <select
                   id="jobtype"
                   name="jobtype"
-                  className="bg-transparent form-input block w-full py-2 px-2 text-brand-blue-700 font-extrabold border-gray-900 transition ease-in-out duration-150"
+                  className="bg-transparent form-input block w-full py-3 px-4 text-brand-blue-500 font-extrabold border mb-3 border-gray-500 transition ease-in-out duration-150"
                   onChange={(e) => setJobtype(e?.target?.value)}>
                   <option value="" disabled selected hidden>
                     Miben segíthetünk? ▼
@@ -77,7 +77,7 @@ const ContactForm = ({ contactPageEdits }) => {
                   id="message"
                   name="message"
                   rows="5"
-                  className="bg-transparent form-input block w-full py-2 px-2 placeholder-gray-700 border-gray-900 transition ease-in-out duration-150"
+                  className="bg-transparent form-input block w-full py-3 px-4 placeholder-gray-700 border mb-3 border-gray-500 transition ease-in-out duration-150"
                   placeholder="Ha már tudsz részleteket, pötyögd be őket pár szóban, és amint lehet, felkeresünk!"></textarea>
               </div>
             </div>
@@ -103,7 +103,9 @@ const ContactForm = ({ contactPageEdits }) => {
                 <button
                   type="submit"
                   disabled={!hasPrivacyAccepted}
-                  className={`primary-btn ${!hasPrivacyAccepted && 'bg-gray-500'}`}>
+                  className={`primary-btn ${
+                    !hasPrivacyAccepted && 'opacity-50 cursor-default hover:bg-brand-blue-500'
+                  }`}>
                   Küldés
                 </button>
               </span>

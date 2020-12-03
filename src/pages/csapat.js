@@ -1,9 +1,9 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import { graphql, useStaticQuery, Link } from 'gatsby';
 import Img from 'gatsby-image';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-// import PartnerCard from '../components/partner-card';
 
 import InstagramIcon from '../components/svg/instagramIcon';
 import LinkedInIcon from '../components/svg/linkedInIcon';
@@ -15,7 +15,6 @@ import LightBulbIcon from '../components/svg/lightbulbIcon';
 import NightIcon from '../components/svg/teamicons12';
 import UnitedIcon from '../components/svg/teamicons13';
 import MetalIcon from '../components/svg/teamicons14';
-// import LazacIcon from '../components/svg/teamicons32';
 import GuitarIcon from '../components/svg/teamicons15';
 import ComicIcon from '../components/svg/teamicons16';
 import PankratorIcon from '../components/svg/teamicons17';
@@ -95,8 +94,17 @@ function Team() {
         ]}
         title="Ezek vagyunk"
       />
-      <section className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <section className="flex flex-col md:flex-row justify-around items-center">
+      <section className="container mt-28 mx-auto px-4 sm:px-6 lg:px-8 relative">
+        <div className="absolute top-10 right-10">
+          <div className="hidden md:block sticky top-0">
+            <Img
+              fluid={data?.heroImg?.childImageSharp?.fluid}
+              className="md:w-48 lg:w-80"
+              alt="Gazduig Creative Agency Rolunk"
+            />
+          </div>
+        </div>
+        <section className="flex flex-col md:flex-row justify-start items-center">
           <div className="md:w-5/12">
             <h1 className="text-5xl font-display font-extrabold leading-brand mb-8">
               Mi az a Gazduig, és
@@ -122,21 +130,14 @@ function Team() {
               </li>
             </ul>
           </div>
-          <div className="hidden md:block">
-            <Img
-              fluid={data?.heroImg?.childImageSharp?.fluid}
-              className="md:w-48 lg:w-80"
-              alt="Gazduig Creative Agency Rolunk"
-            />
-          </div>
         </section>
         <section>
-          <h2 className="font-display text-4xl font-extrabold my-6 lg:ml-20 leading-brand">
+          <h2 className="font-display text-4xl font-extrabold my-6 leading-brand">
             6 mondat, amely
             <br />
             aranyat ér számunkra
           </h2>
-          <div className="flex flex-col lg:mx-20 w-7/12">
+          <div className="flex flex-col w-7/12">
             <div className="flex flex-col items-start py-4 xl:pr-24">
               <div className="flex flex-row align-middle content-center items-center">
                 <p className="text-3xl font-black">01</p>
@@ -594,35 +595,6 @@ function Team() {
           </div>
         </div>
       </section>
-      {/* <div className="-mt-16 rounded bg-gray-900 text-white text-2xl font-display font-extrabold mx-2 md:ml-16 md:mr-0 inline-block px-8 py-4 pr-20 mb-10">
-          <p>
-            A kreatív dolgokban vagyunk otthon. Viszont
-            <br /> vannak remek partnereink, akikkel kiegészülve
-            <br /> a kreativitáson túli területeket is lefedjük.
-          </p>
-        </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-32 mx-16 md:mx-0">
-          <PartnerCard
-            imageURL={data?.davidImg?.childImageSharp?.fluid}
-            title="Lévai Dávid és csapata"
-            description="Egyedi web-, és mobilapp fejlesztés"
-          />
-          <PartnerCard
-            imageURL={data?.nikiImg?.childImageSharp?.fluid}
-            title="Origin Door Kft."
-            description="Neff Niki és csapata minden nyomdai megoldást ismer"
-          />
-          <PartnerCard
-            imageURL={data?.roliImg?.childImageSharp?.fluid}
-            title="Gaál Roli"
-            description="Wordpress alapő weboldal fejlesztés"
-          />
-          <PartnerCard
-            imageURL={data?.patrikImg?.childImageSharp?.fluid}
-            title="Golden Brothers Zrt."
-            description="Patrik és csapata felelnek azért, ami online marketing"
-          />
-        </div> */}
       <section className="bg-gray-100">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 pb-32">
           <div className="mx-auto rounded w-full lg:w-7/12 md:border-2 md:border-gray-900 bg-white p-8 text-xl">

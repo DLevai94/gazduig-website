@@ -7,51 +7,49 @@ function Header() {
 
   return (
     <nav className="bg-white">
-      <div className="mx-auto container px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-16">
-          <div className="flex">
-            <div className="flex-shrink-0 flex items-center">
-              <Link to="/">
-                <MenuLogo className="w-24 sm:w-32" />
-                <p className="sr-only">Gazduig Creative Agency Budapest</p>
+      <div className="mx-auto container">
+        <div className="flex justify-between h-24">
+          <div className="flex-shrink-0 flex items-center">
+            <Link to="/">
+              <MenuLogo className="w-24 sm:w-32" />
+              <p className="sr-only">Gazduig Creative Agency Budapest</p>
+            </Link>
+          </div>
+          <div className="hidden sm:ml-6 sm:flex">
+            {[
+              {
+                route: `/szolgaltatasok`,
+                title: `Ebben segítünk`,
+              },
+              {
+                route: `/portfolio`,
+                title: `Ezeket csináltuk eddig`,
+              },
+              {
+                route: `/instagram-markaepites`,
+                title: `Ezeket neked írtuk`,
+              },
+              {
+                route: `/csapat`,
+                title: `Ezek vagyunk`,
+              },
+            ].map((link) => (
+              <Link
+                activeClassName="border-b font-extrabold ml-8 inline-flex items-center px-1 pt-1 text-brand-blue-500 focus:outline-none hover:text-brand-blue-500 hover:border-brand-blue-500 focus:text-brand-blue-500 focus:border-brand-blue-500 transition duration-150 ease-in-out border-brand-blue-500"
+                getProps={({ isPartiallyCurrent }) =>
+                  isPartiallyCurrent
+                    ? {
+                        className:
+                          'border-b font-extrabold ml-8 inline-flex items-center px-1 pt-1 text-brand-blue-500 focus:outline-none hover:text-brand-blue-500 hover:border-brand-blue-500 focus:text-brand-blue-500 focus:border-brand-blue-500 transition duration-150 ease-in-out border-brand-blue-500',
+                      }
+                    : {}
+                }
+                className="ml-8 inline-flex items-center px-1 pt-1 border-b border-transparent text-sm font-medium leading-5 focus:outline-none hover:text-brand-blue-700 hover:border-brand-blue-300 focus:text-brand-blue-700 focus:border-brand-blue-700 transition duration-150 ease-in-out menu-link"
+                key={link.title}
+                to={link.route}>
+                {link.title}
               </Link>
-            </div>
-            <div className="hidden sm:ml-6 sm:flex">
-              {[
-                {
-                  route: `/szolgaltatasok`,
-                  title: `Ebben segítünk`,
-                },
-                {
-                  route: `/portfolio`,
-                  title: `Ezeket csináltuk eddig`,
-                },
-                {
-                  route: `/instagram-markaepites`,
-                  title: `Ezeket neked írtuk`,
-                },
-                {
-                  route: `/csapat`,
-                  title: `Ezek vagyunk`,
-                },
-              ].map((link) => (
-                <Link
-                  activeClassName="border-b font-extrabold ml-8 inline-flex items-center px-1 pt-1 text-brand-blue-500 focus:outline-none hover:text-brand-blue-500 hover:border-brand-blue-500 focus:text-brand-blue-500 focus:border-brand-blue-500 transition duration-150 ease-in-out border-brand-blue-500"
-                  getProps={({ isPartiallyCurrent }) =>
-                    isPartiallyCurrent
-                      ? {
-                          className:
-                            'border-b font-extrabold ml-8 inline-flex items-center px-1 pt-1 text-brand-blue-500 focus:outline-none hover:text-brand-blue-500 hover:border-brand-blue-500 focus:text-brand-blue-500 focus:border-brand-blue-500 transition duration-150 ease-in-out border-brand-blue-500',
-                        }
-                      : {}
-                  }
-                  className="ml-8 inline-flex items-center px-1 pt-1 border-b border-transparent text-sm font-medium leading-5 focus:outline-none hover:text-brand-blue-700 hover:border-brand-blue-300 focus:text-brand-blue-700 focus:border-brand-blue-700 transition duration-150 ease-in-out menu-link"
-                  key={link.title}
-                  to={link.route}>
-                  {link.title}
-                </Link>
-              ))}
-            </div>
+            ))}
           </div>
           <div className="sm:ml-6 sm:flex sm:items-center">
             <Link to="/contact">

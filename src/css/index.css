@@ -20,11 +20,6 @@
 
 @tailwind components;
 
-.menu-link {
-  position: relative;
-  z-index: 1;
-}
-
 #tab-bar::-webkit-scrollbar {
   display: none;
 }
@@ -42,58 +37,15 @@
 }
 
 .primary-btn {
-  @apply inline-flex text-white bg-brand-blue-500 border-0 py-3 px-6 rounded font-extrabold;
-}
-
-.primary-btn:hover {
-  @apply bg-brand-blue-400;
+  @apply inline-flex text-white bg-brand-blue-500 border-0 py-2 px-6 rounded font-extrabold transition duration-300 hover:bg-brand-blue-400 transform hover:scale-105 hover:translate-y-1;
 }
 
 .secondary-btn {
-  @apply inline-flex bg-white text-brand-blue-500 border-0 py-3 px-6 rounded-sm font-extrabold;
-}
-
-.secondary-btn:hover {
-  @apply bg-brand-blue-200 text-brand-blue-500;
+  @apply inline-flex bg-white text-brand-blue-500 border-0 py-3 px-6 rounded-sm font-extrabold transition duration-300 hover:bg-brand-blue-400 hover:text-white transform hover:scale-105 hover:translate-y-1;
 }
 
 .callout-card {
   @apply mb-8 w-full rounded overflow-hidden bg-white p-4 shadow-brand flex flex-row justify-start items-center transition-all duration-300 ease-out;
-}
-
-.home-contact-bg {
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(255, 255, 255, 1) 60%,
-    rgba(247, 247, 247, 1) 61%,
-    rgba(247, 247, 247, 1) 100%
-  );
-}
-
-.portfolio-bg {
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(255, 255, 255, 1) 40%,
-    rgba(247, 247, 247, 1) 41%,
-    rgba(247, 247, 247, 1) 100%
-  );
-}
-
-.services-bg {
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(255, 255, 255, 1) 35%,
-    rgba(247, 247, 247, 1) 36%,
-    rgba(247, 247, 247, 1) 57%,
-    rgba(255, 255, 255, 1) 58%
-  );
-}
-
-.services-office-bg {
-  background: transparent;
 }
 
 @screen sm {
@@ -115,68 +67,6 @@
 }
 
 @screen lg {
-  .home-contact-bg {
-    background: url('../images/purple-blob.svg') 120% top no-repeat,
-      linear-gradient(
-        180deg,
-        rgba(255, 255, 255, 1) 0%,
-        rgba(255, 255, 255, 1) 60%,
-        rgba(247, 247, 247, 1) 61%,
-        rgba(247, 247, 247, 1) 100%
-      );
-  }
-
-  .portfolio-bg {
-    background: url('../images/purple-blob.svg') 130% -10% no-repeat,
-      linear-gradient(
-        180deg,
-        rgba(255, 255, 255, 1) 0%,
-        rgba(255, 255, 255, 1) 50%,
-        rgba(247, 247, 247, 1) 51%,
-        rgba(247, 247, 247, 1) 100%
-      );
-    background-size: 50% 50%, auto auto;
-  }
-
-  .services-bg {
-    background: url('../components/svg/blue-blob.svg') 150% -25% no-repeat,
-      url('../images/yellow-blob-bg.svg') -60% 25% no-repeat,
-      linear-gradient(
-        180deg,
-        rgba(255, 255, 255, 1) 0%,
-        rgba(255, 255, 255, 1) 35%,
-        rgba(247, 247, 247, 1) 36%,
-        rgba(247, 247, 247, 1) 57%,
-        rgba(255, 255, 255, 1) 58%
-      );
-    background-size: 50% 50%, 50% 50%, auto auto;
-  }
-
-  .services-office-bg {
-    background: url('../images/office.png') 110% 10% no-repeat, transparent;
-    background-size: 60%;
-  }
-
-  .purple-blob-bg {
-    @apply bg-no-repeat;
-    background-image: url('../images/purple-blob.svg');
-    background-position: 110% 50%;
-  }
-  .yellow-blob-bg {
-    @apply bg-no-repeat;
-    background-image: url('../images/yellow-blob.png');
-    background-position: 120% 0%;
-  }
-  .green-blob-bg {
-    @apply bg-no-repeat;
-    background-image: url('../images/green-blob.png');
-    background-position: -20% 80%;
-  }
-  .multi-blob-bg {
-    @apply bg-no-repeat;
-    background-image: url('../images/yellow-blob.png'), url('../images/green-blob.png');
-    background-position: 120% 0%, -20% 80%;
-  }
   .content-container {
     @apply px-8;
   }
