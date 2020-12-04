@@ -17,7 +17,7 @@ export const CATEGORIES = [
   },
   {
     key: 'print',
-    name: 'Print anyagok dizájnja',
+    name: 'Print dizájn',
   },
 ];
 
@@ -36,7 +36,7 @@ export const SERVICES = [
   },
   {
     key: 'print',
-    name: 'Print anyagok dizájnja',
+    name: 'Print dizájn',
   },
   {
     key: 'copy',
@@ -48,6 +48,6 @@ export const SERVICES = [
   },
   {
     key: 'other',
-    name: 'Hosszú, keressetek meg és kifejtem',
+    name: 'Sőt',
   },
 ];

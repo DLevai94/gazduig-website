@@ -26,7 +26,7 @@ function Header() {
                 title: `Ezeket csináltuk eddig`,
               },
               {
-                route: `/instagram-markaepites`,
+                route: `/neked-irtuk`,
                 title: `Ezeket neked írtuk`,
               },
               {
@@ -57,7 +57,7 @@ function Header() {
                 Beszélgessünk
               </button>
             </Link>
-            <div className="-mr-2 flex items-center sm:hidden">
+            <div className="flex items-center sm:hidden h-24">
               <button
                 className="inline-flex items-center justify-center p-2 rounded-lg text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out"
                 onClick={() => toggleExpansion(!isExpanded)}>
@@ -91,7 +91,7 @@ function Header() {
                 title: `Ezeket csináltuk eddig`,
               },
               {
-                route: `/instagram-markaepites`,
+                route: `/neked-irtuk`,
                 title: `Ezeket neked írtuk`,
               },
               {

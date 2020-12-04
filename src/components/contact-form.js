@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import { SERVICES } from '../config/consts';
 import Bence from '../images/contact-phone.png';
+import Moon from '../images/moon.png';
 
-const ContactForm = ({ contactPageEdits }) => {
+const ContactForm = ({ showMoon }) => {
   const [jobtype, setJobtype] = useState(null);
   const [hasPrivacyAccepted, setHasPrivacyAccepted] = useState(false);
   return (
-    <div className="mx-auto lg:grid lg:grid-cols-2 lg:col-gap-1">
-      <div className="lg:col-span-1 lg:col-start-1 flex justify-center items-baseline">
+    <div className={`mx-auto md:grid md:grid-cols-2 md:col-gap-1`}>
+      <div className="md:col-span-1 md:col-start-1 flex justify-center items-baseline">
         <div className="max-w-md">
           <form
             netlify-honeypot="bot-field"
@@ -98,8 +99,8 @@ const ContactForm = ({ contactPageEdits }) => {
                 velem a kapcsolatot.
               </label>
             </div>
-            <div className="">
-              <span className="inline-flex rounded-md">
+            <div className="mt-6">
+              <span className="inline-flex rounded">
                 <button
                   type="submit"
                   disabled={!hasPrivacyAccepted}
@@ -113,8 +114,14 @@ const ContactForm = ({ contactPageEdits }) => {
           </form>
         </div>
       </div>
-      <div className={`lg:col-span-1 flex ${contactPageEdits || 'justify-center items-baseline'}`}>
-        <div className="w-80">
+      <div className={`lg:col-span-1 flex relative mt-16 md:-mt-16 justify-center`}>
+        {showMoon && (
+          <img
+            src={Moon}
+            className="hidden md:block md:absolute top-0 right-0 w-64 lg:w-80 animate-float md:-mt-16 md:-mr-6 md:-mt-32 lg:-mr-16"
+          />
+        )}
+        <div className="w-64 md:w-96">
           <img src={Bence} className="" alt="Gazdig Bence" />
         </div>
       </div>

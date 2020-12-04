@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <footer className="bg-transparent text-gray-900">
       <div className="container mx-auto py-8 px-4 sm:px-6 lg:pt-16 lg:px-8">
-        <div className="flex flex-row justify-between items-start">
+        <div className="flex flex-col md:flex-row justify-between items-center md:items-start">
           <div>
             <Link to="/" className="">
               <MenuLogo className="w-32" />
@@ -17,7 +17,7 @@ const Footer = () => {
             </Link>
           </div>
           <div>
-            <p className="font-extrabold mb-4">Gazduig Creative Agency</p>
+            <p className="font-extrabold mb-4 mt-4 md:mt-0">Gazduig Creative Agency</p>
             <ul className="font-light">
               <li className="mb-1 text-sm hover:text-brand-blue-500 hover:underline">
                 <a className="flex flex-row  items-center content-center" href="mailto:szevasz@gazduig.com">
@@ -41,7 +41,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className="mt-4 lg:mt-0">
-            <p className="font-extrabold mb-4">Jogi cuccok</p>
+            <p className="font-extrabold mb-4 mt-4 md:mt-0">Jogi cuccok</p>
             <ul className="font-light text-sm">
               <li className="mb-1 text-sm hover:text-brand-blue-500 hover:underline">
                 <Link to="/privacy">Adatvédelmi tájékoztató</Link>

@@ -4,6 +4,19 @@ module.exports = {
   purge: ['./src/**/*.js', './src/**/*.jsx', './src/**/*.ts', './src/**/*.tsx'],
   theme: {
     extend: {
+      keyframes: {
+        float: {
+          '0%, 100%': {
+            transform: 'translateY(0)',
+          },
+          '50%': {
+            transform: 'translateY(-20px)',
+          },
+        },
+      },
+      animation: {
+        float: 'float 4s ease-in-out infinite',
+      },
       fontFamily: {
         sans: ['Sofia-Pro', ...fontFamily.sans],
         display: ['Sofia-Pro', ...fontFamily.sans],
@@ -42,36 +55,14 @@ module.exports = {
           ...width,
           einstein: '10rem',
         },
-        'brand-yellow': {
-          100: '#FFF8E8',
-          200: '#FFEDC5',
-          300: '#FEE1A1',
-          400: '#FECB5B',
-          500: '#FDB515',
-          600: '#E4A313',
-          700: '#986D0D',
-          800: '#725109',
-          900: '#4C3606',
-        },
-        'brand-purple': {
-          100: '#F0EAF4',
-          200: '#D9CBE3',
-          300: '#C2ABD3',
-          400: '#946CB1',
-          500: '#662D90',
-          600: '#5C2982',
-          700: '#3D1B56',
-          800: '#2E1441',
-          900: '#1F0E2B',
-        },
         gray: {
           ...colors.gray,
-          100: '#E5E5E5',
+          100: '#F4F4F4',
           900: '#1F1F1F',
         },
       },
     },
   },
-  variants: { margin: ['responsive', 'hover', 'focus'] },
+  variants: { extend: { margin: ['responsive', 'hover', 'focus'], scale: ['group-hover'] } },
   plugins: [require('@tailwindcss/ui')],
 };

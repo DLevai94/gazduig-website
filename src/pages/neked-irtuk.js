@@ -5,6 +5,7 @@ import { Link } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Typewriter from '../images/new-typewriter.png';
+import Pofo from '../images/pofo.svg';
 
 function IgHacks({ custom = '' }) {
   const { register, handleSubmit, errors, formState } = useForm();
@@ -53,17 +54,13 @@ function IgHacks({ custom = '' }) {
       />
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-32">
-          <div className="mx-auto flex mt-36">
-            <div className="md:w-1/2 relative flex justify-end items-center">
-              <img
-                className="absolute"
-                src={Typewriter}
-                alt="Irogep"
-                style={{ animation: 'float 4s ease-in-out infinite' }}
-              />
+          <div className="mx-auto flex mt-36 relative">
+            <div className="md:w-1/2 flex justify-end items-center">
+              <img className="absolute top-0 left-0 animate-float" src={Pofo} alt="Irogep" />
+              <img className="absolute top-10 left-10" src={Typewriter} alt="Irogep" />
             </div>
 
-            <div className="w-full md:w-1/2">
+            <div className="max-w-lg">
               <div>
                 <h2 className="text-4xl md:text-5xl leading-brand font-extrabold">
                   Az ügyfeleink 90%-át Instáról szerezzük
@@ -97,7 +94,7 @@ function IgHacks({ custom = '' }) {
                     <input type="hidden" name="v" value="2" ref={register({ required: true })} />
 
                     <input type="hidden" name="custom" value={custom} ref={register({ required: false })} />
-                    <div className="md:w-96">
+                    <div>
                       <label htmlFor="full_name" className="sr-only">
                         Hogy szólíthatunk?
                       </label>
@@ -105,14 +102,14 @@ function IgHacks({ custom = '' }) {
                         <input
                           id="fullname"
                           name="fullname"
-                          className="form-input block w-full py-3 px-4 placeholder-gray-500 border-gray-900 transition ease-in-out duration-150"
+                          className="form-input block w-full mb-4 py-3 px-4 placeholder-gray-500 border border-gray-500 transition ease-in-out duration-150"
                           placeholder="Hogy szólíthatunk?"
                           ref={register({ required: true, maxLength: 80 })}
                           required
                         />
                       </div>
                     </div>
-                    <div className="md:w-96">
+                    <div>
                       <label htmlFor="email" className="sr-only">
                         Milyen e-mail címen érünk el?
                       </label>
@@ -121,14 +118,14 @@ function IgHacks({ custom = '' }) {
                           id="email"
                           name="email"
                           type="email"
-                          className="form-input block w-full py-3 px-4 placeholder-gray-500 border-gray-900 transition ease-in-out duration-150"
+                          className="form-input block w-full mb-8 py-3 px-4 placeholder-gray-500 border border-gray-500 transition ease-in-out duration-150"
                           placeholder="Milyen e-mail címen érünk el?"
                           ref={register({ required: true, pattern: /^\S+@\S+$/i })}
                           required
                         />
                       </div>
                     </div>
-                    <div className="md:w-96">
+                    <div>
                       <label htmlFor="privacy" className="font-light text-xs">
                         <input
                           id="privacy"
@@ -146,7 +143,7 @@ function IgHacks({ custom = '' }) {
                       </label>
                     </div>
                     <div>
-                      <span className="inline-flex rounded-md">
+                      <span className="inline-flex rounded-md mt-10">
                         <input
                           type="submit"
                           disabled={!hasPrivacyAccepted}

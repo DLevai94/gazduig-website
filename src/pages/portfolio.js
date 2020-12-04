@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import { graphql, useStaticQuery, Link } from 'gatsby';
-import Img from 'gatsby-image';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-// import Hero from '../components/hero';
 import TabBar from '../components/tab-bar';
 import ContactForm from '../components/contact-form';
+import Arrow from '../images/arrow.svg';
+import Pofo from '../images/pofo.svg';
+import Chair from '../images/chair.png';
 import { CATEGORIES } from '../config/consts';
 
 const Portfolio = () => {
@@ -27,20 +28,11 @@ const Portfolio = () => {
           }
         }
       }
-      heroImg: file(relativePath: { eq: "chair.png" }) {
-        childImageSharp {
-          fluid(maxHeight: 350) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
     }
   `);
 
   const renderCallout = () => (
-    /* TODO: ADD BRAND BLUE COLOR */
-
-    <div className="relative flex-col content-center flex-shrink-0 overflow-hidden bg-brand-blue-500 text-white h-56 flex justify-center items-center">
+    <div className="relative flex-col content-center flex-shrink-0 overflow-hidden bg-brand-blue-500 text-white h-80 flex justify-center items-center">
       <p className="font-extrabold text-center text-lg mb-4">
         Ezt a helyet
         <br />
@@ -81,14 +73,9 @@ const Portfolio = () => {
               Íme pár korábbi példa.
             </p>
           </div>
-          <div
-            className="hidden md:flex md:w-1/3 items-center justify-end"
-            style={{ animation: 'float 4s ease-in-out infinite' }}>
-            <Img
-              fluid={data?.heroImg?.childImageSharp?.fluid}
-              className="w-96"
-              alt="Gazduig Creative Agency Portfolio"
-            />
+          <div className="hidden md:block relative">
+            <img src={Pofo} className="w-80" />
+            <img src={Chair} className="absolute top-0 left-0 animate-float w-96" />
           </div>
         </div>
         <section className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -117,19 +104,20 @@ const Portfolio = () => {
                 return (
                   <Link key={edge?.node?.id} to={`${edge?.node?.frontmatter?.slug}`}>
                     <div>
-                      <div
-                        className="relative flex-shrink-0 overflow-hidden bg-gray-600 h-56 bg-cover bg-no-repeat"
-                        style={{
-                          background: `${'linear-gradient(0deg, rgb(255,255,255) 0%, rgb(255,255,255) 30%,rgba(255,255,255,0) 31%, rgba(255,255,255,0) 100%)'} bottom, url(${
-                            edge?.node?.frontmatter?.thumbnail
-                          }) no-repeat center`,
-                          backgroundRepeat: 'no-repeat',
-                          backgroundSize: 'cover, contain',
-                          backgroundPosition: 'bottom, center',
-                        }}>
+                      <div className="relative flex-shrink-0 overflow-hidden bg-white h-80 bg-cover bg-no-repeat group">
+                        <img
+                          src={edge?.node?.frontmatter?.thumbnail}
+                          alt={edge?.node?.frontmatter?.title}
+                          className="transform duration-400 transition group-hover:scale-105"
+                        />
                         <div className="absolute bottom-0 left-0 py-3 max-w-xs">
-                          <p className="font-light truncate text-sm">{edge?.node?.frontmatter?.jobtime}</p>
-                          <p className="font-extrabold truncate text-lg">{edge?.node?.frontmatter?.title}</p>
+                          <p className="font-light truncate text-sm group-hover:text-brand-blue-500">
+                            {edge?.node?.frontmatter?.jobtime}
+                          </p>
+                          <p className="font-extrabold truncate text-lg group-hover:text-brand-blue-500">
+                            {edge?.node?.frontmatter?.title}
+                          </p>
+                          <img src={Arrow} />
                         </div>
                       </div>
                     </div>
@@ -138,10 +126,10 @@ const Portfolio = () => {
               })}
           </div>
         </section>
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-32 mg-gray-100">
-          <section className="py-8 px-8 md:px-36 z-50">
-            <div className="mb-16 max-w-2xl">
-              <h2 className="font-display font-extrabold text-2xl  uppercase leading-brand">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-32">
+          <section className="bg-gray-100 py-20 sm:px-8 md:px-36 z-50">
+            <div className="mb-16 xl:ml-16 sm:max-w-2xl">
+              <h2 className="font-display font-extrabold text-4xl leading-none">
                 Tetszettek a látottak? Töltsd ki a lenti
                 <br />
                 formot, és alkossunk együtt valami ütőset!

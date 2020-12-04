@@ -73,18 +73,17 @@ export default function Template({ data }) {
             <div className="mt-8 md:pr-64 font-light" dangerouslySetInnerHTML={{ __html: html }} />
           </div>
         </div>
-        <div className="md:px-16 mt-16 mb-32">
+        <div className="md:px-16 my-32">
           {frontmatter?.images?.map((image) => (
             <img key={image} src={image} alt={frontmatter?.title} className="w-100 mx-auto mb-8" />
           ))}
         </div>
 
-        <section className="bg-gray-200 py-8 px-8 md:px-36 z-50">
-          <div className="mb-16 max-w-2xl">
-            <h2 className="font-display font-extrabold text-2xl  uppercase leading-brand">
-              Tetszettek a látottak? Töltsd ki a lenti
-              <br />
-              formot, és alkossunk együtt valami ütőset!
+        <section className="bg-gray-100 py-20 sm:px-8 md:px-36 z-50">
+          <div className="mb-16 xl:ml-16 sm:max-w-2xl">
+            <h2 className="font-display font-extrabold text-4xl leading-none">
+              Tetszettek a látottak?
+              <br /> Töltsd ki a lenti formot, és alkossunk együtt valami ütőset neked is!
             </h2>
           </div>
           <Contact />
@@ -92,8 +91,8 @@ export default function Template({ data }) {
       </div>
 
       <section className="md:-mt-64 pt-36 md:pt-96 pb-36">
-        <div className="container mx-auto text-left sm:px-6 lg:px-64">
-          <h2 className="font-display font-extrabold text-2xl uppercase leading-brand mb-6">
+        <div className="container mx-auto text-left px-6 lg:px-64">
+          <h2 className="font-display font-extrabold text-2xl md:text-4xl leading-brand mb-6">
             Még nem vagy 100%-ig biztos a dologban?
             <br />
             Nézz meg pár hasonlót is!

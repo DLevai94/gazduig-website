@@ -298,9 +298,7 @@ const Services = () => {
             Olyanra, amilyet elképzeltél.
           </p>
         </div>
-        <div
-          className="hidden md:block md:w-1/3 flex items-center justify-end md:pr-32"
-          style={{ animation: 'float 4s ease-in-out infinite' }}>
+        <div className="hidden md:block md:w-1/3 flex items-center justify-end md:pr-32 animate-float">
           <Img
             fluid={data?.heroImg?.childImageSharp?.fluid}
             style={{ maxWidth: '26rem' }}
