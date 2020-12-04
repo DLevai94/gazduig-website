@@ -26,7 +26,7 @@ const TabBar = ({ containerClass, categories, chosenCategory, setCategory, textC
                   category.key !== chosenCategory
                     ? 'border-transparent font-medium'
                     : 'border-brand-blue-500 font-extrabold text-brand-blue-500'
-                } text-sm leading-5 hover:text-gray-700 hover:border-gray-700 focus:outline-none transition-colors duration-200 ease-in ${textClass}`}>
+                } leading-5 hover:text-gray-700 hover:border-gray-700 focus:outline-none transition-colors duration-200 ease-in ${textClass}`}>
                 {category?.name}
               </button>
             ))}

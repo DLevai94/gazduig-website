@@ -56,26 +56,19 @@ const data = [
 
 const CalloutSection = () => {
   return (
-    <section className="relative">
-      <div className="max-w-full mx-auto lg:px-6">
-        <h2 className="font-display font-extrabold text-2xl ml-6 md:ml-0 mb-8 text-left uppercase">
-          Ez itt az eszköztárunk
-        </h2>
+    <section className="bg-gray-100 py-16 max-w-full mx-auto lg:px-6">
+      <h2 className="font-display font-extrabold text-2xl ml-6 md:ml-0 mb-8 text-left">Ez itt az eszköztárunk</h2>
 
-        <div className="md:grid md:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-4 lg:gap-8 px-4 lg:px-0">
-          {data.map(({ title, description, icon, bgImage }, index) => (
-            <div
-              key={title}
-              className={`callout-card bg-no-repeat ${index < 3 ? 'bg-left' : 'bg-right'}`}
-              style={{ backgroundImage: `url(${bgImage})` }}>
-              <div className="w-3/12">{icon}</div>
-              <div className="w-9/12">
-                <h3 className="font-extrabold">{title}</h3>
-                <p className="font-light leading-tight tracking-tight text-sm">{description}</p>
-              </div>
+      <div className="md:grid md:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-4 lg:gap-8 px-4 lg:px-0">
+        {data.map(({ title, description, icon }) => (
+          <div key={title} className="">
+            <div className="w-3/12">{icon}</div>
+            <div className="w-9/12">
+              <h3 className="font-extrabold">{title}</h3>
+              <p className="font-light leading-tight tracking-tight text-sm">{description}</p>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
     </section>
   );

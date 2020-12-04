@@ -284,13 +284,13 @@ const Services = () => {
       />
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 my-16 h-64 bg-transparent flex justify-between">
-        <div className="w-full md:w-1/2 flex flex-col justify-center items-start md:pl-32">
+        <div className="max-w-xl flex flex-col justify-center items-start md:pl-32">
           <h1 className="text-5xl font-display font-extrabold leading-brand mb-6">
             Felejtsd el az
             <br />
             unalmas ötleteket!
           </h1>
-          <p className="text-light text-lg">
+          <p className="text-light text-lg leading-none">
             Van, aki csak beszél róla.
             <br />
             Mi beszélünk róla, majd megcsináljuk.
