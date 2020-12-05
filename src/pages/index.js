@@ -8,17 +8,12 @@ import TabBar from '../components/tab-bar';
 import CTABlob from '../images/cta-blob.svg';
 import Typewriter from '../images/the-great-typewriter.png';
 import Couch from '../images/couch.png';
-import LogoTSystems from '../images/logos/tsystems.svg';
-import LogoShoprenter from '../images/logos/shoprenter.svg';
-import LogoPensum from '../images/logos/pensum.svg';
-import LogoHD from '../images/logos/hdmarketing.png';
-import LogoEkata from '../images/logos/ekata.svg';
-import LogoInsimu from '../images/logos/insimu.svg';
-import LogoEcom from '../images/logos/ecommerce-logo.png';
-import LogoKSB from '../images/logos/ksb-logo.png';
-import LogoActive from '../images/logos/active-logo.png';
-import LogoDo from '../images/logos/domarketing-logo.png';
-import LogoAndersen from '../images/logos/andersen-logo.png';
+// import LogoKH from '../components/svg/logo-kh.svg';
+import LogoTSystems from '../components/svg/logo-t.svg';
+import LogoShoprenter from '../components/svg/logo-shoprenter.svg';
+import LogoEcom from '../components/svg/logo-ecom.svg';
+import LogoAndersen from '../components/svg/logo-andersen.svg';
+import LogoConversific from '../components/svg/logo-conversific.svg';
 import BenceImg from '../images/bence-bw.png';
 import { CATEGORIES } from '../config/consts';
 
@@ -150,7 +145,7 @@ function IndexPage() {
         ]}
       />
       <div className="h-screen">
-        <div className="container mx-auto flex justify-center lg:justify-start items-center h-screen -mt-32">
+        <div className="container mx-auto flex flex-col justify-center items-center lg:items-start h-screen -mt-32">
           <div className="my-10 md:my-16 lg:max-w-xl">
             <section className="px-4 lg:px-8">
               <div className="text-left">
@@ -170,9 +165,26 @@ function IndexPage() {
                 </div>
               </div>
             </section>
-            <div>Logo</div>
           </div>
-          <div>images</div>
+          <div className="ml-12 max-w-6xl">
+            <div className="grid grid-cols-2 gap-24 md:grid-cols-5">
+              <div className="col-span-2 flex justify-center lg:col-span-1">
+                <img className="h-12" src={LogoTSystems} alt="T-Systems" />
+              </div>
+              <div className="col-span-2 flex justify-center lg:col-span-1">
+                <img className="h-12" src={LogoShoprenter} alt="T-Systems" />
+              </div>
+              <div className="col-span-2 flex justify-center lg:col-span-1">
+                <img className="h-12" src={LogoEcom} alt="T-Systems" />
+              </div>
+              <div className="col-span-2 flex justify-center lg:col-span-1">
+                <img className="h-12" src={LogoAndersen} alt="T-Systems" />
+              </div>
+              <div className="col-span-2 flex justify-center lg:col-span-1">
+                <img className="h-12" src={LogoConversific} alt="T-Systems" />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div className="">
@@ -286,128 +298,6 @@ function IndexPage() {
           </div>
         </div>
       </section>
-      <section>
-        <div className="max-w-screen-xl mx-auto mb-32 px-4 sm:px-6 lg:px-8">
-          <h2 className="heading text-left uppercase">Néhány ügyfelünk, akikre büszkék vagyunk</h2>
-          <div className="mx-16 grid grid-cols-2 gap-8 md:grid-cols-6">
-            <div className="col-span-2 flex justify-center md:col-span-2">
-              <img className="h-12" src={LogoTSystems} alt="T-Systems" />
-            </div>
-            <div className="col-span-2 flex justify-center md:col-span-2 lg:col-span-1">
-              <img className="h-12" src={LogoShoprenter} alt="Shoprenter" />
-            </div>
-            <div className="col-span-2 flex justify-center md:col-span-2 lg:col-span-1">
-              <img className="h-12" src={LogoPensum} alt="Pensum Group" />
-            </div>
-            <div className="col-span-2 flex justify-center md:col-span-2 lg:col-span-1">
-              <img className="h-12" src={LogoHD} alt="HD Marketing" />
-            </div>
-            {/* <div className="col-span-2 flex justify-center md:col-span-2 lg:col-span-1">
-              <img className="h-12" src={LogoDoupla} alt="Doupla" />
-            </div> */}
-            <div className="col-span-2 flex justify-center md:col-span-2 lg:col-span-1">
-              <img className="h-12" src={LogoEcom} alt="Ecommerce Expo" />
-            </div>
-            <div className="col-span-2 flex justify-center md:col-span-2 lg:col-span-1">
-              <img className="h-12" src={LogoEkata} alt="Ekata" />
-            </div>
-            <div className="col-span-2 flex justify-center md:col-span-2 lg:col-span-1">
-              <img className="h-12" src={LogoKSB} alt="KSB" />
-            </div>
-            <div className="col-span-2 flex justify-center md:col-span-2 lg:col-span-1">
-              <img className="h-12" src={LogoInsimu} alt="Insimu" />
-            </div>
-            <div className="col-span-2 flex justify-center md:col-span-2 lg:col-span-1">
-              <img className="h-12" src={LogoActive} alt="Active" />
-            </div>
-            <div className="col-span-2 flex justify-center md:col-span-2 lg:col-span-1">
-              <img className="h-12" src={LogoDo} alt="Do Marketing" />
-            </div>
-            <div className="col-span-2 flex justify-center md:col-span-2 lg:col-span-1">
-              <img className="h-12" src={LogoAndersen} alt="Andersen Global" />
-            </div>
-          </div>
-        </div>
-      </section>
-      {/* <section
-        className="max-w-screen-xl mx-auto mb-32 px-4 sm:px-6 lg:px-8 bg-no-repeat"
-        style={{ backgroundImage: `url(${Plant})` }}>
-        <h2 className="heading">Vélemények rólunk olyanoktól, akik nem a rokonaink</h2>
-        <div className="grid grid-cols-2 gap-8 md:grid-cols-3">
-          <div className="bg-white col-span-1 flex justify-center md:col-span-2 lg:col-span-1 flex-col rounded shadow-brand p-4">
-            <p className="text-sm leading-tight mb-3">
-              A profi és egységes megjelenés ugyanilyen minőségi portékát sejtet. Tüntesd fel magad jó színben.
-            </p>
-            <p className="font-extrabold text-sm leading-tight">
-              Weinwurm Bence
-              <br />
-              Senior projektmenedzser, T-Systems
-            </p>
-          </div>
-          <div className="bg-white col-span-1 flex justify-center md:col-span-2 lg:col-span-1 flex-col rounded shadow-brand p-4">
-            <p className="text-sm leading-tight mb-3">
-              A profi és egységes megjelenés ugyanilyen minőségi portékát sejtet. Tüntesd fel magad jó színben.
-            </p>
-            <p className="font-extrabold text-sm leading-tight">
-              Weinwurm Bence
-              <br />
-              Senior projektmenedzser, T-Systems
-            </p>
-          </div>
-          <div className="bg-white col-span-1 flex justify-center md:col-span-2 lg:col-span-1 flex-col rounded shadow-brand p-4">
-            <p className="text-sm leading-tight mb-3">
-              A profi és egységes megjelenés ugyanilyen minőségi portékát sejtet. Tüntesd fel magad jó színben.
-            </p>
-            <p className="font-extrabold text-sm leading-tight">
-              Weinwurm Bence
-              <br />
-              Senior projektmenedzser, T-Systems
-            </p>
-          </div>
-          <div className="bg-white col-span-1 flex justify-center md:col-span-2 lg:col-span-1 flex-col rounded shadow-brand p-4">
-            <p className="text-sm leading-tight mb-3">
-              A profi és egységes megjelenés ugyanilyen minőségi portékát sejtet. Tüntesd fel magad jó színben.
-            </p>
-            <p className="font-extrabold text-sm leading-tight">
-              Weinwurm Bence
-              <br />
-              Senior projektmenedzser, T-Systems
-            </p>
-          </div>
-          <div className="bg-white col-span-1 flex justify-center md:col-span-2 lg:col-span-1 flex-col rounded shadow-brand p-4">
-            <p className="text-sm leading-tight mb-3">
-              A profi és egységes megjelenés ugyanilyen minőségi portékát sejtet. Tüntesd fel magad jó színben.
-            </p>
-            <p className="font-extrabold text-sm leading-tight">
-              Weinwurm Bence
-              <br />
-              Senior projektmenedzser, T-Systems
-            </p>
-          </div>
-          <div className="bg-white col-span-1 flex justify-center md:col-span-2 lg:col-span-1 flex-col rounded shadow-brand p-4">
-            <p className="text-sm leading-tight mb-3">
-              A profi és egységes megjelenés ugyanilyen minőségi portékát sejtet. Tüntesd fel magad jó színben.
-            </p>
-            <p className="font-extrabold text-sm leading-tight">
-              Weinwurm Bence
-              <br />
-              Senior projektmenedzser, T-Systems
-            </p>
-          </div>
-        </div>
-      </section>
-      <section>
-        <div className="max-w-screen-xl mx-auto mb-32 px-4 sm:px-6 lg:px-8">
-          <h2 className="heading">
-            Akár a rokonunk vagy, akár nem, a te soraidat is szívesen olvasnánk itt!
-            <br />
-            Viszont ehhez előbb együtt kell dolgoznunk! Mondd el, miben segíthetünk!
-          </h2>
-          <Link to="contact">
-            <button className="primary-btn md:m-16">Kattints ide</button>
-          </Link>
-        </div>
-      </section> */}
       <section className="pb-16 home-contact-bg">
         <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="-mb-8">
