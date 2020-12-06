@@ -8,6 +8,10 @@ import TabBar from '../components/tab-bar';
 import CTABlob from '../images/cta-blob.svg';
 import Typewriter from '../images/the-great-typewriter.png';
 import Couch from '../images/couch.png';
+import TeamBence from '../images/head-team-bence.png';
+import TeamReka from '../images/head-team-reka.png';
+import TeamDani from '../images/head-team-dani.png';
+import TeamGergo from '../images/head-team-gergo.png';
 // import LogoKH from '../components/svg/logo-kh.svg';
 import LogoTSystems from '../components/svg/logo-t.svg';
 import LogoShoprenter from '../components/svg/logo-shoprenter.svg';
@@ -144,45 +148,63 @@ function IndexPage() {
           'gazduig',
         ]}
       />
-      <div className="h-screen">
-        <div className="container mx-auto flex flex-col justify-center items-center lg:items-start h-screen -mt-32">
-          <div className="my-10 md:my-16 lg:max-w-xl">
-            <section className="px-4 lg:px-8">
-              <div className="text-left">
-                <h1 className="text-3xl lg:text-5xl font-display tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-brand md:text-6xl">
-                  Ütős megoldások,
-                  <br />
-                  ütős márkák számára.
-                </h1>
-                <p className="mt-3 text-base sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0 font-light">
-                  Szia! A Gazduig Creative Agency vagyunk Budapestről. Márkákat teszünk ismertebbé és feltűnőbbé, a
-                  dizájn erejét használva.
-                </p>
-                <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
-                  <Link to="/szolgaltatasok">
-                    <button className="primary-btn">Íme a részletek</button>
-                  </Link>
+      <div className="container mx-auto flex flex-row justify-center items-start h-screen -mt-32 z-0">
+        <div className="flex flex-col h-screen justify-center">
+          <div className="my-10 md:my-16">
+            <div className="lg:max-w-xl">
+              <section className="px-4 lg:px-8">
+                <div className="text-left">
+                  <h1 className="text-3xl lg:text-5xl font-display tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-brand md:text-6xl">
+                    Ütős megoldások,
+                    <br />
+                    ütős márkák számára.
+                  </h1>
+                  <p className="mt-3 text-base sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0 font-light">
+                    Szia! A Gazduig Creative Agency vagyunk Budapestről. Márkákat teszünk ismertebbé és feltűnőbbé, a
+                    dizájn erejét használva.
+                  </p>
+                  <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
+                    <Link to="/szolgaltatasok">
+                      <button className="primary-btn">Íme a részletek</button>
+                    </Link>
+                  </div>
                 </div>
-              </div>
-            </section>
+              </section>
+            </div>
           </div>
-          <div className="ml-12 max-w-6xl">
-            <div className="grid grid-cols-2 gap-24 md:grid-cols-5">
-              <div className="col-span-2 flex justify-center lg:col-span-1">
-                <img className="h-12" src={LogoTSystems} alt="T-Systems" />
+          <div className="ml-4 md:ml-12 max-w-xs md:max-w-lg lg:max-w-5xl">
+            <div className="grid gap-2 md:gap-10 lg:gap-20 grid-cols-5">
+              <div className="flex justify-center lg:col-span-1">
+                <img className="h-6 md:h-12" src={LogoTSystems} alt="T-Systems" />
               </div>
-              <div className="col-span-2 flex justify-center lg:col-span-1">
-                <img className="h-12" src={LogoShoprenter} alt="T-Systems" />
+              <div className="flex justify-center lg:col-span-1">
+                <img className="h-6 md:h-12" src={LogoShoprenter} alt="T-Systems" />
               </div>
-              <div className="col-span-2 flex justify-center lg:col-span-1">
-                <img className="h-12" src={LogoEcom} alt="T-Systems" />
+              <div className="flex justify-center lg:col-span-1">
+                <img className="h-6 md:h-12" src={LogoEcom} alt="T-Systems" />
               </div>
-              <div className="col-span-2 flex justify-center lg:col-span-1">
-                <img className="h-12" src={LogoAndersen} alt="T-Systems" />
+              <div className="flex justify-center lg:col-span-1">
+                <img className="h-6 md:h-12" src={LogoAndersen} alt="T-Systems" />
               </div>
-              <div className="col-span-2 flex justify-center lg:col-span-1">
-                <img className="h-12" src={LogoConversific} alt="T-Systems" />
+              <div className="flex justify-center lg:col-span-1">
+                <img className="h-6 md:h-12" src={LogoConversific} alt="T-Systems" />
               </div>
+            </div>
+          </div>
+        </div>
+        <div className="hidden md:flex h-screen justify-center items-center">
+          <div className="grid grid-cols-2 gap-4">
+            <div className="animate-float">
+              <img className="h-20 w-auto" src={TeamBence} alt="Bence" />
+            </div>
+            <div className="animate-float mt-10">
+              <img className="h-20 w-auto" src={TeamReka} alt="Reka" />
+            </div>
+            <div className="animate-float">
+              <img className="h-20 w-auto" src={TeamDani} alt="Dani" />
+            </div>
+            <div className="animate-float mt-10">
+              <img className="h-20 w-auto" src={TeamGergo} alt="Gergo" />
             </div>
           </div>
         </div>
@@ -193,9 +215,7 @@ function IndexPage() {
           <section>
             <div className="container px-5 pt-28 pb-10 mx-auto">
               <div className="w-full mb-10">
-                <h2 className="ml-16 text-2xl font-extrabold font-display uppercase">
-                  Nézz meg a fentiekből pár sikeres projektet
-                </h2>
+                <h2 className="ml-16 text-4xl font-extrabold font-display">Nézz meg pár korábbi, sikeres projektet</h2>
                 <br />
                 <TabBar
                   categories={CATEGORIES}

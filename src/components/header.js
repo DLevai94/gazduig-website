@@ -6,7 +6,7 @@ function Header() {
   const [isExpanded, toggleExpansion] = useState(false);
 
   return (
-    <nav className="bg-white">
+    <nav className="bg-white z-10">
       <div className="mx-auto container">
         <div className="flex justify-between h-24">
           <div className="flex-shrink-0 flex items-center">
