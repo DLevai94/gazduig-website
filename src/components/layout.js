@@ -10,7 +10,7 @@ function Layout({ children, ...props }) {
         Irány a tartalom
       </a>
       <Header />
-      <main className="min-h-screen" id="main-content">
+      <main className="" id="main-content">
         {children}
       </main>
       <Footer />
