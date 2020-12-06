@@ -13,7 +13,7 @@ import TeamReka from '../images/head-team-reka.png';
 import TeamDani from '../images/head-team-dani.png';
 import TeamGergo from '../images/head-team-gergo.png';
 import ctaBg from '../images/cta-bg.png';
-import ctaCircle from '../images/cta-circle.svg';
+// import ctaCircle from '../images/cta-circle.svg';
 // import LogoKH from '../components/svg/logo-kh.svg';
 import LogoTSystems from '../components/svg/logo-t.svg';
 import LogoShoprenter from '../components/svg/logo-shoprenter.svg';
@@ -225,7 +225,7 @@ function IndexPage() {
       <section className="container mx-auto my-32">
         <div
           style={{
-            background: `#F8F8F8,  url(${ctaCircle}) no-repeat center center, url(${ctaBg}) no-repeat bottom center`,
+            background: `#F8F8F8 url(${ctaBg}) no-repeat bottom center`,
           }}
           className="bg-gray-100 p-16 max-w-full mx-auto relative pb-64">
           <div className="sm:ml-0 md:ml-16">
