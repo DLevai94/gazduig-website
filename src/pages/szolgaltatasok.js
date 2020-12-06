@@ -56,31 +56,29 @@ const Services = () => {
         <br />
         <br />
         Ez a pár hatalmas előnyt érhetjük el számodra egy ütős és márkahű arculattal.`}>
-            <div className="grid grid-cols-2 gap-8">
-              <div className="bg-white rounded shadow-brand p-3">
-                <SolIcon1 className="w-8 mb-2" />
-                <p className="text-sm">Felmérjük az igényeidet, valamint megismerjük a márkád személyiségét</p>
-              </div>
-              <div className="bg-white rounded shadow-brand p-3">
-                <SolIcon2 className="w-8 mb-2" />
-                <p className="text-sm">Színeket, betűtípust, vizuális kommunikációs stílust választunk</p>
-              </div>
-              <div className="bg-white rounded shadow-brand p-3">
-                <SolIcon3 className="w-8 mb-2" />
-                <p className="text-sm">Logót tervezünk, ami a márkád hű arca lehet</p>
-              </div>
-              <div className="bg-white rounded shadow-brand p-3">
-                <SolIcon4 className="w-8 mb-2" />
-                <p className="text-sm">Arculathű posztdizájnokat, és más online reklámanyagokat készítünk</p>
-              </div>
-              <div className="bg-white rounded shadow-brand p-3">
-                <SolIcon5 className="w-8 mb-2" />
-                <p className="text-sm">Nyomdai anyagokat kreálunk, a lehető legnagyobb pontossággal</p>
-              </div>
-              <div className="bg-white rounded shadow-brand p-3">
-                <SolIcon6 className="w-8 mb-2" />
-                <p className="text-sm">Arculati kézikönyvet készítünk, hogy mindenki megértse a miérteket</p>
-              </div>
+            <div className="bg-white rounded shadow-brand p-3 mr-4 flex flex-row justify-between items-center max-w-sm h-20 mb-4">
+              <SolIcon1 className="w-8 mr-4" />
+              <p className="text-sm">Felmérjük az igényeidet, valamint megismerjük a márkád személyiségét</p>
+            </div>
+            <div className="bg-white rounded shadow-brand p-3 mr-4 flex flex-row justify-between items-center max-w-sm h-20 mb-4">
+              <SolIcon2 className="w-8 mr-4" />
+              <p className="text-sm">Színeket, betűtípust, vizuális kommunikációs stílust választunk</p>
+            </div>
+            <div className="bg-white rounded shadow-brand p-3 mr-4 flex flex-row justify-between items-center max-w-sm h-20 mb-4">
+              <SolIcon3 className="w-8 mr-4" />
+              <p className="text-sm">Logót tervezünk, ami a márkád hű arca lehet</p>
+            </div>
+            <div className="bg-white rounded shadow-brand p-3 mr-4 flex flex-row justify-between items-center max-w-sm h-20 mb-4">
+              <SolIcon4 className="w-8 mr-4" />
+              <p className="text-sm">Arculathű posztdizájnokat, és más online reklámanyagokat készítünk</p>
+            </div>
+            <div className="bg-white rounded shadow-brand p-3 mr-4 flex flex-row justify-between items-center max-w-sm h-20 mb-4">
+              <SolIcon5 className="w-8 mr-4" />
+              <p className="text-sm">Nyomdai anyagokat kreálunk, a lehető legnagyobb pontossággal</p>
+            </div>
+            <div className="bg-white rounded shadow-brand p-3 mr-4 flex flex-row justify-between items-center max-w-sm h-20 mb-4">
+              <SolIcon6 className="w-8 mr-4" />
+              <p className="text-sm">Arculati kézikönyvet készítünk, hogy mindenki megértse a miérteket</p>
             </div>
           </SolutionCategory>
         );
@@ -96,26 +94,26 @@ const Services = () => {
         Hogyha az oldal legapróbb részletei is gondosan vannak megtervezve, és erre egy igényes, márkahű
         dizájn van felhúzva, az olyan remek felhasználói élményt nyújt, ami az első pillanattól kezdve a
         megfelelő irányba tereli az oldal látogatóit.`}>
-            <div className="bg-white rounded shadow-brand p-3">
-              <SolIcon1 className="w-8 mb-2" />
+            <div className="bg-white rounded shadow-brand p-3 mr-4 flex flex-row justify-between items-center max-w-sm h-20 mb-4">
+              <SolIcon1 className="w-8 mr-4" />
               <p className="text-sm">Felmérjük az igényeidet, valamint megismerjük a márkád személyiségét</p>
             </div>
-            <div className="bg-white rounded shadow-brand p-3">
-              <SolIcon16 className="w-8 mb-2" />
+            <div className="bg-white rounded shadow-brand p-3 mr-4 flex flex-row justify-between items-center max-w-sm h-20 mb-4">
+              <SolIcon16 className="w-8 mr-4" />
               <p className="text-sm">Megismerjük a márkád arculatát, és a különböző vizuális irányokat</p>
             </div>
-            <div className="bg-white rounded shadow-brand p-3">
-              <SolIcon15 className="w-8 mb-2" />
+            <div className="bg-white rounded shadow-brand p-3 mr-4 flex flex-row justify-between items-center max-w-sm h-20 mb-4">
+              <SolIcon15 className="w-8 mr-4" />
               <p className="text-sm">
                 Meghatározzuk többek között a weboldal célját, célközönségét, és a problémát, amelyet megold
               </p>
             </div>
-            <div className="bg-white rounded shadow-brand p-3">
-              <SolIcon14 className="w-8 mb-2" />
+            <div className="bg-white rounded shadow-brand p-3 mr-4 flex flex-row justify-between items-center max-w-sm h-20 mb-4">
+              <SolIcon14 className="w-8 mr-4" />
               <p className="text-sm">Közösen összegyűjtük/elkészítjük az oldalon megjelenő tartalmakat</p>
             </div>
-            <div className="bg-white rounded shadow-brand p-3">
-              <SolIcon13 className="w-8 mb-2" />
+            <div className="bg-white rounded shadow-brand p-3 mr-4 flex flex-row justify-between items-center max-w-sm h-20 mb-4">
+              <SolIcon13 className="w-8 mr-4" />
               <p className="text-sm">Minden képernyőnézetre passzoló, arculathű dizájnt készítünk</p>
             </div>
           </SolutionCategory>
@@ -132,26 +130,26 @@ const Services = () => {
         Wordben dizájnoltak, egyszerűen gagyi hatást kelt.<br /><br />
         Az összeszedett, igényes és jól komponált posztdizájnok viszont hűen tükrözik a fent leírtakat, és a
         profizmust.`}>
-            <div className="bg-white rounded shadow-brand p-3">
-              <SolIcon1 className="w-8 mb-2" />
+            <div className="bg-white rounded shadow-brand p-3 mr-4 flex flex-row justify-between items-center max-w-sm h-20 mb-4">
+              <SolIcon1 className="w-8 mr-4" />
               <p className="text-sm">Felmérjük az igényeidet, valamint megismerjük a márkád személyiségét</p>
             </div>
-            <div className="bg-white rounded shadow-brand p-3">
-              <SolIcon16 className="w-8 mb-2" />
+            <div className="bg-white rounded shadow-brand p-3 mr-4 flex flex-row justify-between items-center max-w-sm h-20 mb-4">
+              <SolIcon16 className="w-8 mr-4" />
               <p className="text-sm">Megismerjük a márkád arculatát, és a különböző vizuális irányokat</p>
             </div>
-            <div className="bg-white rounded shadow-brand p-3">
-              <SolIcon15 className="w-8 mb-2" />
+            <div className="bg-white rounded shadow-brand p-3 mr-4 flex flex-row justify-between items-center max-w-sm h-20 mb-4">
+              <SolIcon15 className="w-8 mr-4" />
               <p className="text-sm">
                 Meghatározzuk többek között a kommunikáció célját, célközönségét, és a problémát, amelyet megold
               </p>
             </div>
-            <div className="bg-white rounded shadow-brand p-3">
-              <SolIcon12 className="w-8 mb-2" />
+            <div className="bg-white rounded shadow-brand p-3 mr-4 flex flex-row justify-between items-center max-w-sm h-20 mb-4">
+              <SolIcon12 className="w-8 mr-4" />
               <p className="text-sm">Közösen összegyűjtük/elkészítjük a posztok tartalmakat</p>
             </div>
-            <div className="bg-white rounded shadow-brand p-3">
-              <SolIcon11 className="w-8 mb-2" />
+            <div className="bg-white rounded shadow-brand p-3 mr-4 flex flex-row justify-between items-center max-w-sm h-20 mb-4">
+              <SolIcon11 className="w-8 mr-4" />
               <p className="text-sm">Arculathű és ütős dizájnokat kreálunk</p>
             </div>
           </SolutionCategory>
@@ -168,26 +166,26 @@ const Services = () => {
         jóval kisebb annál.<br /><br />
         A fentiek miatt a minőségük is sokszor igénytelen és elhanyagolt.<br /><br />
         A tiéd lehet a kivétel.`}>
-            <div className="bg-white rounded shadow-brand p-3">
-              <SolIcon1 className="w-8 mb-2" />
+            <div className="bg-white rounded shadow-brand p-3 mr-4 flex flex-row justify-between items-center max-w-sm h-20 mb-4">
+              <SolIcon1 className="w-8 mr-4" />
               <p className="text-sm">Felmérjük az igényeidet, valamint megismerjük a márkád személyiségét</p>
             </div>
-            <div className="bg-white rounded shadow-brand p-3">
-              <SolIcon16 className="w-8 mb-2" />
+            <div className="bg-white rounded shadow-brand p-3 mr-4 flex flex-row justify-between items-center max-w-sm h-20 mb-4">
+              <SolIcon16 className="w-8 mr-4" />
               <p className="text-sm">Megismerjük a márkád arculatát, és a különböző vizuális irányokat</p>
             </div>
-            <div className="bg-white rounded shadow-brand p-3">
-              <SolIcon15 className="w-8 mb-2" />
+            <div className="bg-white rounded shadow-brand p-3 mr-4 flex flex-row justify-between items-center max-w-sm h-20 mb-4">
+              <SolIcon15 className="w-8 mr-4" />
               <p className="text-sm">
                 Meghatározzuk többek között a kommunikáció célját, célközönségét, és a problémát, amelyet megold
               </p>
             </div>
-            <div className="bg-white rounded shadow-brand p-3">
-              <SolIcon10 className="w-8 mb-2" />
+            <div className="bg-white rounded shadow-brand p-3 mr-4 flex flex-row justify-between items-center max-w-sm h-20 mb-4">
+              <SolIcon10 className="w-8 mr-4" />
               <p className="text-sm">Közösen összegyűjtük/elkészítjük az anyagok tartalmait</p>
             </div>
-            <div className="bg-white rounded shadow-brand p-3">
-              <SolIcon11 className="w-8 mb-2" />
+            <div className="bg-white rounded shadow-brand p-3 mr-4 flex flex-row justify-between items-center max-w-sm h-20 mb-4">
+              <SolIcon11 className="w-8 mr-4" />
               <p className="text-sm">Arculathű és ütős dizájnokat kreálunk</p>
             </div>
           </SolutionCategory>
@@ -203,22 +201,22 @@ const Services = () => {
         alkotó szöveg.<br /><br />
         Ha egyértelmű az szöveg üzenete és lényege, valamint a célközönség nyelvén íródott, sokkal nagyobb
         eséllyel érheti el a célját.`}>
-            <div className="bg-white rounded shadow-brand p-3">
-              <SolIcon1 className="w-8 mb-2" />
+            <div className="bg-white rounded shadow-brand p-3 mr-4 flex flex-row justify-between items-center max-w-sm h-20 mb-4">
+              <SolIcon1 className="w-8 mr-4" />
               <p className="text-sm">Felmérjük az igényeidet, valamint megismerjük a márkád személyiségét</p>
             </div>
-            <div className="bg-white rounded shadow-brand p-3">
-              <SolIcon15 className="w-8 mb-2" />
+            <div className="bg-white rounded shadow-brand p-3 mr-4 flex flex-row justify-between items-center max-w-sm h-20 mb-4">
+              <SolIcon15 className="w-8 mr-4" />
               <p className="text-sm">
                 Meghatározzuk többek között a kommunikáció célját, célközönségét, és a problémát, amelyet megold
               </p>
             </div>
-            <div className="bg-white rounded shadow-brand p-3">
-              <SolIcon9 className="w-8 mb-2" />
+            <div className="bg-white rounded shadow-brand p-3 mr-4 flex flex-row justify-between items-center max-w-sm h-20 mb-4">
+              <SolIcon9 className="w-8 mr-4" />
               <p className="text-sm">Megismerjük a márkád nyelvezetét, és hanghordozását</p>
             </div>
-            <div className="bg-white rounded shadow-brand p-3">
-              <SolIcon8 className="w-8 mb-2" />
+            <div className="bg-white rounded shadow-brand p-3 mr-4 flex flex-row justify-between items-center max-w-sm h-20 mb-4">
+              <SolIcon8 className="w-8 mr-4" />
               <p className="text-sm">Ütős szövegeket írunk</p>
             </div>
           </SolutionCategory>
@@ -234,31 +232,85 @@ const Services = () => {
           megtartják, követőkké, majd vásárlókká alakítják az embereket.<br /><br />
           Nem is mondunk többet, <a href="https://instagram.com/gazduig" rel="noreferrer">nézd meg az instánkat</a>, és vond le a következtetést.<br /><br />
           Hogyha azt tapasztalod, amit a tiéd láttán is el akarsz érni, lépjünk kapcsolatba, és lássunk hozzá!`}>
-            <div className="bg-white rounded shadow-brand p-3">
-              <SolIcon1 className="w-8 mb-2" />
+            <div className="bg-white rounded shadow-brand p-3 mr-4 flex flex-row justify-between items-center max-w-sm h-20 mb-4">
+              <SolIcon1 className="w-8 mr-4" />
               <p className="text-sm">Felmérjük az igényeidet, valamint megismerjük a márkád személyiségét</p>
             </div>
-            <div className="bg-white rounded shadow-brand p-3">
-              <SolIcon16 className="w-8 mb-2" />
+            <div className="bg-white rounded shadow-brand p-3 mr-4 flex flex-row justify-between items-center max-w-sm h-20 mb-4">
+              <SolIcon16 className="w-8 mr-4" />
               <p className="text-sm">Megismerjük a márkád arculatát, és a különböző vizuális irányokat</p>
             </div>
-            <div className="bg-white rounded shadow-brand p-3">
-              <SolIcon15 className="w-8 mb-2" />
+            <div className="bg-white rounded shadow-brand p-3 mr-4 flex flex-row justify-between items-center max-w-sm h-20 mb-4">
+              <SolIcon15 className="w-8 mr-4" />
               <p className="text-sm">
                 Meghatározzuk többek között a kommunikáció célját, célközönségét, és a problémát, amelyet megold
               </p>
             </div>
-            <div className="bg-white rounded shadow-brand p-3">
-              <SolIcon12 className="w-8 mb-2" />
+            <div className="bg-white rounded shadow-brand p-3 mr-4 flex flex-row justify-between items-center max-w-sm h-20 mb-4">
+              <SolIcon12 className="w-8 mr-4" />
               <p className="text-sm">Közösen összegyűjtük/megtervezzük és elkészítjük a posztok tartalmait</p>
             </div>
-            <div className="bg-white rounded shadow-brand p-3">
-              <SolIcon11 className="w-8 mb-2" />
+            <div className="bg-white rounded shadow-brand p-3 mr-4 flex flex-row justify-between items-center max-w-sm h-20 mb-4">
+              <SolIcon11 className="w-8 mr-4" />
               <p className="text-sm">Arculathű és ütős dizájnokat kreálunk</p>
             </div>
-            <div className="bg-white rounded shadow-brand p-3">
-              <SolIcon7 className="w-8 mb-2" />
+            <div className="bg-white rounded shadow-brand p-3 mr-4 flex flex-row justify-between items-center max-w-sm h-20 mb-4">
+              <SolIcon7 className="w-8 mr-4" />
               <p className="text-sm">Menedzseljük, és építjük a márkád Insta oldalát</p>
+            </div>
+          </SolutionCategory>
+        );
+      case 'other':
+        return (
+          <SolutionCategory
+            name="Van más is!"
+            excerpt="Mi van, ha nemcsak kreatív részre van szükséged,
+            de analitika/fejlesztés/vágás, és hasonlók is kellenek
+            ahhoz, hogy megkapd, amit elképzeltél? Lesd meg
+            a lenti listát!"
+            fullName="Őket is mozgósítjuk, amikor szükséged van rájuk"
+            description={`Nem jó, ha valaki mindenhez ért, mert akkor igazán
+            nem is ért semmihez. Mi azon vagyunk, hogy pár
+            dologban nagyon jók legyünk, viszont ezek
+            önmagukban néha nem elég komplexek.
+            <br /><br />
+            Épp emiatt van pár egészen penge partnerünk,
+            akikkel huzamosabb ideje együttműködve márkákat
+            több területet kiszolgálva tehetünk ütősebbé.
+            Erről találsz itt egy listát.`}>
+            <div className="bg-white rounded shadow-brand p-3 mr-4 flex flex-row justify-between items-center max-w-sm h-20 mb-4">
+              <SolIcon1 className="w-8 mr-4" />
+              <p className="text-sm">Egyedi web-, és applikáció fejlesztő csapat vár, bug-mentesen</p>
+            </div>
+            <div className="bg-white rounded shadow-brand p-3 mr-4 flex flex-row justify-between items-center max-w-sm h-20 mb-4">
+              <SolIcon16 className="w-8 mr-4" />
+              <p className="text-sm">
+                PPC és SEO specialisták állnak lesben, hogy minden hirdetésre szánt forintod a legjobb helyre lőjék
+              </p>
+            </div>
+            <div className="bg-white rounded shadow-brand p-3 mr-4 flex flex-row justify-between items-center max-w-sm h-20 mb-4">
+              <SolIcon15 className="w-8 mr-4" />
+              <p className="text-sm">Fotósok és videósok is felkészültek arra, hogy kattintsanak párat a márkádért</p>
+            </div>
+            <div className="bg-white rounded shadow-brand p-3 mr-4 flex flex-row justify-between items-center max-w-sm h-20 mb-4">
+              <SolIcon10 className="w-8 mr-4" />
+              <p className="text-sm">A Facebook-, és Insta hirdetések sem kell, hogy véletlen kárba vesszenek</p>
+            </div>
+            <div className="bg-white rounded shadow-brand p-3 mr-4 flex flex-row justify-between items-center max-w-sm h-20 mb-4">
+              <SolIcon11 className="w-8 mr-4" />
+              <p className="text-sm">Az influencer marketing is ismerős terep</p>
+            </div>
+            <div className="bg-white rounded shadow-brand p-3 mr-4 flex flex-row justify-between items-center max-w-sm h-20 mb-4">
+              <SolIcon11 className="w-8 mr-4" />
+              <p className="text-sm">Nem kellenek lapos megoldások, a 3D tervezőnk térben gondolkozik</p>
+            </div>
+            <div className="bg-white rounded shadow-brand p-3 mr-4 flex flex-row justify-between items-center max-w-sm h-20 mb-4">
+              <SolIcon11 className="w-8 mr-4" />
+              <p className="text-sm">Van-e kéznél profi illusztrálónk? Jó hogy kérdezed, van!</p>
+            </div>
+            <div className="bg-white rounded shadow-brand p-3 mr-4 flex flex-row justify-between items-center max-w-sm h-20 mb-4">
+              <SolIcon11 className="w-8 mr-4" />
+              <p className="text-sm">Ha online és offline is minden király, jöhet a médiamegjelenés</p>
             </div>
           </SolutionCategory>
         );
@@ -300,22 +352,22 @@ const Services = () => {
             Olyanra, amilyet elképzeltél.
           </p>
         </div>
-        <div className="hidden md:block md:w-1/3 flex items-center justify-end md:pr-32 animate-float">
+        <div className="md:block md:w-1/3 flex items-center justify-end md:pr-32 animate-float">
           <Img
             fluid={data?.heroImg?.childImageSharp?.fluid}
-            style={{ maxWidth: '26rem' }}
-            className="-mt-25"
+            style={{ maxWidth: '20rem' }}
+            className="-mt-16"
             alt="Gazduig Creative Agency Szolgáltatások"
           />
         </div>
       </div>
-      <section className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="container mx-auto px-4 sm:px-6 lg:px-8 mt-32">
         <h2 className="font-display leading-brand text-4xl font-extrabold mb-6 md:px-32">
           Találd meg, amire leginkább szükséged van!
         </h2>
         <div className="md:px-48 xl:-mx-16">
           <TabBar
-            categories={SERVICES.slice(0, -1)}
+            categories={SERVICES}
             chosenCategory={chosenCategory}
             setCategory={setChosenCategory}
             containerClass="mb-16"
@@ -329,31 +381,31 @@ const Services = () => {
           <h2 className="font-display text-4xl font-extrabold mb-32 leading-brand">
             Így néz ki az együttműködésünk folyamata
           </h2>
-          <div className="flex flex-col md:flex-row">
-            <div className="w-full md:w-1/2 pr-10 text-xl mb-12">
+          <div className="flex flex-col lg:flex-row justify-between content-between">
+            <div className="pr-10 text-xl mb-12">
               <ol>
-                <li className="justify-start items-center">
+                <li className="justify-start items-center mb-8">
                   <div className="flex flex-row align-middle content-center items-center">
                     <p className="text-3xl font-black">01</p>
                     <div className="w-10 h-1 bg-gray-900 ml-5"></div>
                   </div>
                   <p className="">Kapcsolatba lépünk egymással</p>
                 </li>
-                <li className="justify-start items-center">
+                <li className="justify-start items-center mb-8">
                   <div className="flex flex-row align-middle content-center items-center">
                     <p className="text-3xl font-black">02</p>
                     <div className="w-10 h-1 bg-gray-900 ml-4"></div>
                   </div>
                   <p className="">Felmérjük az igényeidet</p>
                 </li>
-                <li className="justify-start items-center">
+                <li className="justify-start items-center mb-8">
                   <div className="flex flex-row align-middle content-center items-center">
                     <p className="text-3xl font-black">03</p>
                     <div className="w-10 h-1 bg-gray-900 ml-4"></div>
                   </div>
                   <p className="">Azok alapján terveket készítünk</p>
                 </li>
-                <li className="justify-start items-center">
+                <li className="justify-start items-center mb-8">
                   <div className="flex flex-row align-middle content-center items-center">
                     <p className="text-3xl font-black">04</p>
                     <div className="w-10 h-1 bg-gray-900 ml-4"></div>
@@ -373,8 +425,10 @@ const Services = () => {
               </ol>
             </div>
 
-            <div className="bg-no-repeat w-1/2 h-96 relative rounded-lg" style={{ backgroundImage: `url(${Office})` }}>
-              <p className="font-black text-white text-lg px-16 absolute bottom-3 left-3">
+            <div
+              className="bg-no-repeat relative rounded-lg"
+              style={{ backgroundImage: `url(${Office})`, width: '455px', height: '470px' }}>
+              <p className="font-black text-white text-lg px-16 max-w-md absolute bottom-20 left-0">
                 Ja ez? Ez itt nem a mi irodánk. Viszont nagyon szeretnénk egy hasonlót.
                 <br />
                 Ehhez pedig a te projekted is sikerre kell vinnünk!

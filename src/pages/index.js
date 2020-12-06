@@ -4,9 +4,9 @@ import { graphql, useStaticQuery, Link } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import CalloutSection from '../components/callout-section';
+import NewsletterForm from '../components/newsletter-form';
 import TabBar from '../components/tab-bar';
 import ProjectCard from '../components/project-card';
-import Typewriter from '../images/the-great-typewriter.png';
 import Couch from '../images/couch.png';
 import TeamBence from '../images/head-team-bence.png';
 import TeamReka from '../images/head-team-reka.png';
@@ -20,12 +20,12 @@ import LogoShoprenter from '../components/svg/logo-shoprenter.svg';
 import LogoEcom from '../components/svg/logo-ecom.svg';
 import LogoAndersen from '../components/svg/logo-andersen.svg';
 import LogoConversific from '../components/svg/logo-conversific.svg';
-import BenceImg from '../images/bence-bw.png';
+import BenceImg from '../images/bence-circle.png';
 import { CATEGORIES } from '../config/consts';
 
 function IndexPage() {
   const [chosenCategory, setChosenCategory] = useState('all');
-  const [hasPrivacyAccepted, setHasPrivacyAccepted] = useState(false);
+
   const data = useStaticQuery(graphql`
     {
       allPosts: allMarkdownRemark(limit: 8) {
@@ -222,139 +222,59 @@ function IndexPage() {
           </div>
         </section>
       </div>
-      <section className="container mx-auto my-32">
-        <div
-          style={{
-            background: `#F8F8F8 url(${ctaBg}) no-repeat bottom center`,
-          }}
-          className="bg-gray-100 p-16 max-w-full mx-auto relative pb-64">
-          <div className="sm:ml-0 md:ml-16">
-            <h2 className="mb-16 text-4xl max-w-lg font-extrabold font-display text-left">
-              Hogy tetszettek a látottak?
-              <br />
-              Neked mikor készítsünk valami ütőset?
-            </h2>
-            <div className="mb-16">
-              <button className="primary-btn">Írd meg, miben segíthetünk!</button>
-            </div>
-            <div className="relative bg-white py-3 pl-6 flex flex-row w-96 justify-between items-center pr-28 md:pr-48">
-              <div>
-                <p className="font-extrabold mb-2">Vagy hívd fel Bencét!</p>
-                <p className="font-light text-sm mb-2">Gazdig Bence - CEO & Designer csávó</p>
-                <p className="font-extrabold text-sm">+36 30 270 5363</p>
-              </div>
-              <img src={BenceImg} className="absolute bottom-0 right-2 h-32 overflow-visible" alt="Gazdig Bence" />
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className="pb-16 home-contact-bg">
-        <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="-mb-8">
-            <h2 className="heading mb-4 text-left uppercase leading-brand">
-              Írtunk egy összefoglalót arról, milyen módszerrel
-              <br />
-              szerezzük az ügyfeleink 90%-át Instáról
-            </h2>
-            <p className="font-light text-lg md:ml-16 md:mb-16 text-left mb-8">
-              Olvass bele, hátha találsz benne valami érdekeset!
-            </p>
-          </div>
-          <div className="md:bg-white md:rounded p-8 md:mx-8 md:shadow-brand flex">
-            <div className="w-full md:w-1/2">
-              <h3 className="text-2xl leading-brand font-display font-extrabold mb-8 uppercase">
-                Pötyögd be az e-mail címed,
+      <div
+        style={{
+          background: `linear-gradient(0deg, rgba(244,244,244,1) 75%, rgba(255,255,255,1) 75%, rgba(255,255,255,1) 76%)`,
+        }}>
+        <section className="container mx-auto my-32">
+          <div
+            style={{
+              background: `#F8F8F8 url(${ctaBg}) no-repeat bottom center`,
+            }}
+            className="bg-gray-100 p-16 max-w-full mx-auto relative pb-64">
+            <div className="sm:ml-0 md:ml-16">
+              <h2 className="mb-16 text-4xl max-w-lg font-extrabold font-display text-left">
+                Hogy tetszettek a látottak?
                 <br />
-                és már küldjük is!
-              </h3>
-              <form
-                method="POST"
-                netlify-honeypot="bot-field"
-                data-netlify="true"
-                name="ig-marketing"
-                className="grid grid-cols-1 row-gap-4"
-                netlify>
-                <input type="hidden" name="bot-field" />
-                <input type="hidden" name="form-name" value="ig-marketing" />
-                <div className="md:max-w-96">
-                  <label htmlFor="full_name" className="sr-only">
-                    Hogy szólíthatunk?
-                  </label>
-                  <div className="relative rounded-md">
-                    <input
-                      id="full_name"
-                      name="full_name"
-                      className="form-input block w-full py-3 px-4 placeholder-gray-500 border-gray-900 transition ease-in-out duration-150"
-                      placeholder="Hogy szólíthatunk?"
-                      required
-                    />
-                  </div>
-                </div>
-                <div className="max-w-96">
-                  <label htmlFor="email" className="sr-only">
-                    Milyen e-mail címen érünk el?
-                  </label>
-                  <div className="relative rounded-md">
-                    <input
-                      id="email"
-                      name="email"
-                      type="email"
-                      className="form-input block w-full py-3 px-4 placeholder-gray-500 border-gray-900 transition ease-in-out duration-150"
-                      placeholder="Milyen e-mail címen érünk el?"
-                      required
-                    />
-                  </div>
-                </div>
-                <div className="max-w-96">
-                  <label htmlFor="privacy" className="font-light text-sm">
-                    <input
-                      id="privacy"
-                      name="privacy"
-                      type="checkbox"
-                      className={`form-input mr-2 rounded-full p-1 transition ease-in-out duration-150 ${
-                        hasPrivacyAccepted && 'bg-brand-blue-500'
-                      }`}
-                      required
-                      onChange={() => setHasPrivacyAccepted(!hasPrivacyAccepted)}
-                      checked={hasPrivacyAccepted}
-                    />
-                    Elfogadom az adatvédelmi nyilatkozatot és engedélyezem, hogy a megadott elérhetőségeken felvegyétek
-                    velem a kapcsolatot.
-                  </label>
-                </div>
+                Neked mikor készítsünk valami ütőset?
+              </h2>
+              <div className="mb-16">
+                <button className="primary-btn">Írd meg, miben segíthetünk!</button>
+              </div>
+              <div className="relative bg-white py-3 pl-6 flex flex-row w-full lg:w-6/12 xl:w-4/12 justify-between items-center pr-28 md:pr-48">
                 <div>
-                  <span className="inline-flex rounded-md">
-                    <button
-                      type="submit"
-                      disabled={!hasPrivacyAccepted}
-                      className={`primary-btn ${!hasPrivacyAccepted && 'bg-gray-500'}`}>
-                      Jöhet
-                    </button>
-                  </span>
+                  <p className="font-extrabold mb-2">Vagy hívd fel Bencét!</p>
+                  <p className="font-light text-sm mb-2">Gazdig Bence - CEO & Designer csávó</p>
+                  <a href="tel:+36302705363">
+                    <p className="font-extrabold text-sm">+36 30 270 5363</p>
+                  </a>
                 </div>
-              </form>
-            </div>
-            <div className="md:w-1/2 relative flex justify-end items-center">
-              <img className="absolute" src={Typewriter} alt="Irogep" />
+                <img src={BenceImg} className="absolute bottom-0 right-2 h-28" alt="Gazdig Bence" />
+              </div>
             </div>
           </div>
-        </div>
-      </section>
-      <section>
-        <div className="py-10 lg:py-32 flex flex-col md:flex-row container mx-auto items-center justify-center md:justify-around">
-          <div className="w-100 md:max-w-xs text-left">
-            <h2 className="heading leading-brand ml-4">
-              Üdv az oldal alján! Hadd mutatkozzunk be, ha legörgettél idáig!
-            </h2>
-            <Link to="/csapat">
-              <button className="primary-btn ml-4">Ismerj meg minket</button>
-            </Link>
-          </div>
-          <div className="w-100 flex justify-end items-center">
-            <img className="min-h-12 max-h-64" src={Couch} alt="Kanapén ül a Gazduig csapata" />
+        </section>
+        <div className="container mx-auto">
+          <div className="xl:mx-32">
+            <NewsletterForm />
           </div>
         </div>
-      </section>
+        <section>
+          <div className="py-10 lg:py-32 flex flex-col md:flex-row container mx-auto items-center justify-center md:justify-around">
+            <div className="md:max-w-lg text-left">
+              <h2 className="heading leading-none ml-4 text-4xl">
+                Üdv az oldal alján! Hadd mutatkozzunk be, ha legörgettél idáig!
+              </h2>
+              <Link to="/csapat">
+                <button className="primary-btn ml-4">Ismerj meg minket</button>
+              </Link>
+            </div>
+            <div className="flex justify-end items-center">
+              <img className="min-h-12 max-h-64" src={Couch} alt="Kanapén ül a Gazduig csapata" />
+            </div>
+          </div>
+        </section>
+      </div>
     </Layout>
   );
 }
