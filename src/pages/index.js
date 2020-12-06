@@ -5,13 +5,15 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 import CalloutSection from '../components/callout-section';
 import TabBar from '../components/tab-bar';
-import CTABlob from '../images/cta-blob.svg';
+import ProjectCard from '../components/project-card';
 import Typewriter from '../images/the-great-typewriter.png';
 import Couch from '../images/couch.png';
 import TeamBence from '../images/head-team-bence.png';
 import TeamReka from '../images/head-team-reka.png';
 import TeamDani from '../images/head-team-dani.png';
 import TeamGergo from '../images/head-team-gergo.png';
+import ctaBg from '../images/cta-bg.png';
+import ctaCircle from '../images/cta-circle.svg';
 // import LogoKH from '../components/svg/logo-kh.svg';
 import LogoTSystems from '../components/svg/logo-t.svg';
 import LogoShoprenter from '../components/svg/logo-shoprenter.svg';
@@ -26,7 +28,7 @@ function IndexPage() {
   const [hasPrivacyAccepted, setHasPrivacyAccepted] = useState(false);
   const data = useStaticQuery(graphql`
     {
-      allPosts: allMarkdownRemark(limit: 6) {
+      allPosts: allMarkdownRemark(limit: 8) {
         edges {
           node {
             id
@@ -41,7 +43,7 @@ function IndexPage() {
           }
         }
       }
-      webPosts: allMarkdownRemark(limit: 6, filter: { frontmatter: { categories: { eq: "web" } } }) {
+      webPosts: allMarkdownRemark(limit: 8, filter: { frontmatter: { categories: { eq: "web" } } }) {
         edges {
           node {
             id
@@ -56,7 +58,7 @@ function IndexPage() {
           }
         }
       }
-      brandingPosts: allMarkdownRemark(limit: 6, filter: { frontmatter: { categories: { eq: "branding" } } }) {
+      brandingPosts: allMarkdownRemark(limit: 8, filter: { frontmatter: { categories: { eq: "branding" } } }) {
         edges {
           node {
             id
@@ -71,7 +73,7 @@ function IndexPage() {
           }
         }
       }
-      socialPosts: allMarkdownRemark(limit: 6, filter: { frontmatter: { categories: { eq: "social" } } }) {
+      socialPosts: allMarkdownRemark(limit: 8, filter: { frontmatter: { categories: { eq: "social" } } }) {
         edges {
           node {
             id
@@ -86,7 +88,7 @@ function IndexPage() {
           }
         }
       }
-      printPosts: allMarkdownRemark(limit: 6, filter: { frontmatter: { categories: { eq: "print" } } }) {
+      printPosts: allMarkdownRemark(limit: 8, filter: { frontmatter: { categories: { eq: "print" } } }) {
         edges {
           node {
             id
@@ -110,28 +112,6 @@ function IndexPage() {
       }
     }
   `);
-
-  const checkIndexAndApplyToContainer = (index) => {
-    switch (index) {
-      case 0:
-        return { gridArea: '1 / 1 / 3 / 3' };
-      case 5:
-        return { gridArea: '2 / 3 / 4 / 5' };
-      default:
-        return null;
-    }
-  };
-
-  const checkIndexAndApplyToCard = (index) => {
-    switch (index) {
-      case 0:
-        return 'h-48 lg:h-full';
-      case 5:
-        return 'h-48 lg:h-full';
-      default:
-        return 'h-48';
-    }
-  };
 
   return (
     <Layout>
@@ -214,8 +194,8 @@ function IndexPage() {
           <CalloutSection />
           <section>
             <div className="container px-5 pt-28 pb-10 mx-auto">
-              <div className="w-full mb-10">
-                <h2 className="ml-16 text-4xl font-extrabold font-display">Nézz meg pár korábbi, sikeres projektet</h2>
+              <div className="w-full ml-16 mb-10">
+                <h2 className="text-4xl font-extrabold font-display">Nézz meg pár korábbi, sikeres projektet</h2>
                 <br />
                 <TabBar
                   categories={CATEGORIES}
@@ -225,53 +205,9 @@ function IndexPage() {
                   textClass="text-lg"
                 />
               </div>
-              <div className="lg:hidden grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
                 {data?.[`${chosenCategory}Posts`]?.edges?.map((edge) => (
-                  <Link key={edge?.node?.id} to={`portfolio/${edge?.node?.frontmatter?.slug}`}>
-                    <div
-                      className={`h-48 hover:-mt-2 hover:opacity-75 transition-all duration-300 ease-in-out relative flex-shrink-0 overflow-hidden rounded bg-cover bg-no-repeat`}
-                      style={{
-                        background: `${
-                          edge?.node?.frontmatter?.gradient ||
-                          'linear-gradient(16deg, rgba(38,38,38,1) 0%, rgba(91,91,91,1) 23%, rgba(38,38,38,0) 100%)'
-                        } bottom, url(${edge?.node?.frontmatter?.thumbnail}) no-repeat center`,
-                        backgroundRepeat: 'no-repeat',
-                        backgroundSize: 'cover, contain',
-                        backgroundPosition: 'bottom, center',
-                      }}>
-                      <div className="absolute bottom-0 left-0 px-5 py-3 text-white">
-                        <p className="font-light">{edge?.node?.frontmatter?.jobtime}</p>
-                        <p className="font-extrabold">{edge?.node?.frontmatter?.title}</p>
-                      </div>
-                    </div>
-                  </Link>
-                ))}
-              </div>
-              <div className="hidden lg:grid grid-cols-1 lg:grid-cols-4 lg:grid-rows-3 gap-8">
-                {data?.[`${chosenCategory}Posts`]?.edges?.map((edge, index) => (
-                  <Link
-                    key={edge?.node?.id}
-                    to={`portfolio/${edge?.node?.frontmatter?.slug}`}
-                    style={checkIndexAndApplyToContainer(index)}>
-                    <div
-                      className={`hover:-mt-2 hover:opacity-75 transition-all duration-300 ease-in-out relative flex-shrink-0 overflow-hidden rounded bg-cover bg-no-repeat ${checkIndexAndApplyToCard(
-                        index
-                      )}`}
-                      style={{
-                        background: `${
-                          edge?.node?.frontmatter?.gradient ||
-                          'linear-gradient(16deg, rgba(38,38,38,1) 0%, rgba(91,91,91,1) 23%, rgba(38,38,38,0) 100%)'
-                        } bottom, url(${edge?.node?.frontmatter?.thumbnail}) no-repeat center`,
-                        backgroundRepeat: 'no-repeat',
-                        backgroundSize: 'cover, contain',
-                        backgroundPosition: 'bottom, center',
-                      }}>
-                      <div className="absolute bottom-0 left-0 px-5 py-3 text-white">
-                        <p className="font-light">{edge?.node?.frontmatter?.jobtime}</p>
-                        <p className="font-extrabold">{edge?.node?.frontmatter?.title}</p>
-                      </div>
-                    </div>
-                  </Link>
+                  <ProjectCard key={edge?.node?.id} edge={edge} />
                 ))}
               </div>
             </div>
@@ -286,29 +222,23 @@ function IndexPage() {
           </div>
         </section>
       </div>
-      <section
-        style={{
-          background: `linear-gradient(360deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 40%, rgba(247,247,247,1) 41%, rgba(247,247,247,1) 100%)`,
-        }}>
-        <div className="container md:px-5 md:py-32 mx-auto mb-8">
-          <h2 className=" ml-6 sm:ml-0 md:ml-16 text-2xl font-extrabold font-display text-left uppercase">
-            Hogy tetszettek a látottak?
-            <br />
-            Készítsünk valami ütőset neked is?
-          </h2>
-          <br />
-          <div
-            className="bg-white py-3 md:py-12 md:px-16 shadow-brand rounded flex flex-col md:flex-row md:justify-around items-center sm:bg-right sm:bg-no-repeat sm:bg-contain"
-            style={{ backgroundImage: `url(${CTABlob})` }}>
-            <div className="mb-6 md:mb-0">
-              <h3 className="font-extrabold mb-6 text-lg text-left">
-                Írd meg, miben
-                <br /> segíthetünk!
-              </h3>
-              <button className="primary-btn">Kattints ide</button>
+      <section className="container mx-auto my-32">
+        <div
+          style={{
+            background: `#F8F8F8,  url(${ctaCircle}) no-repeat center center, url(${ctaBg}) no-repeat bottom center`,
+          }}
+          className="bg-gray-100 p-16 max-w-full mx-auto relative pb-64">
+          <div className="sm:ml-0 md:ml-16">
+            <h2 className="mb-16 text-4xl max-w-lg font-extrabold font-display text-left">
+              Hogy tetszettek a látottak?
+              <br />
+              Neked mikor készítsünk valami ütőset?
+            </h2>
+            <div className="mb-16">
+              <button className="primary-btn">Írd meg, miben segíthetünk!</button>
             </div>
-            <div className="relative overflow-visible bg-gray-900 py-3 pl-6 rounded flex flex-row justify-between items-center pr-28 md:pr-48">
-              <div className="text-white">
+            <div className="relative bg-white py-3 pl-6 flex flex-row w-96 justify-between items-center pr-28 md:pr-48">
+              <div>
                 <p className="font-extrabold mb-2">Vagy hívd fel Bencét!</p>
                 <p className="font-light text-sm mb-2">Gazdig Bence - CEO & Designer csávó</p>
                 <p className="font-extrabold text-sm">+36 30 270 5363</p>

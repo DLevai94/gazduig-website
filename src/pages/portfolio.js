@@ -4,10 +4,10 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 import TabBar from '../components/tab-bar';
 import ContactForm from '../components/contact-form';
-import Arrow from '../images/arrow.svg';
 import Pofo from '../images/pofo.svg';
 import Chair from '../images/chair.png';
 import { CATEGORIES } from '../config/consts';
+import ProjectCard from '../components/project-card';
 
 const Portfolio = () => {
   const [chosenCategory, setChosenCategory] = useState('all');
@@ -101,28 +101,7 @@ const Portfolio = () => {
                 if (index === 5) {
                   return renderCallout();
                 }
-                return (
-                  <Link key={edge?.node?.id} to={`${edge?.node?.frontmatter?.slug}`}>
-                    <div>
-                      <div className="relative flex-shrink-0 overflow-hidden bg-white h-80 bg-cover bg-no-repeat group">
-                        <img
-                          src={edge?.node?.frontmatter?.thumbnail}
-                          alt={edge?.node?.frontmatter?.title}
-                          className="transform duration-400 transition group-hover:scale-105"
-                        />
-                        <div className="absolute bottom-0 left-0 py-3 max-w-xs">
-                          <p className="font-light truncate text-sm group-hover:text-brand-blue-500">
-                            {edge?.node?.frontmatter?.jobtime}
-                          </p>
-                          <p className="font-extrabold truncate text-lg group-hover:text-brand-blue-500">
-                            {edge?.node?.frontmatter?.title}
-                          </p>
-                          <img src={Arrow} />
-                        </div>
-                      </div>
-                    </div>
-                  </Link>
-                );
+                return <ProjectCard key={edge?.node?.id} edge={edge} />;
               })}
           </div>
         </section>
