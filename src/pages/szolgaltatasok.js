@@ -56,29 +56,31 @@ const Services = () => {
         <br />
         <br />
         Ez a pár hatalmas előnyt érhetjük el számodra egy ütős és márkahű arculattal.`}>
-            <div className="bg-white rounded shadow-brand p-3">
-              <SolIcon1 className="w-8 mb-2" />
-              <p className="text-sm">Felmérjük az igényeidet, valamint megismerjük a márkád személyiségét</p>
-            </div>
-            <div className="bg-white rounded shadow-brand p-3">
-              <SolIcon2 className="w-8 mb-2" />
-              <p className="text-sm">Színeket, betűtípust, vizuális kommunikációs stílust választunk</p>
-            </div>
-            <div className="bg-white rounded shadow-brand p-3">
-              <SolIcon3 className="w-8 mb-2" />
-              <p className="text-sm">Logót tervezünk, ami a márkád hű arca lehet</p>
-            </div>
-            <div className="bg-white rounded shadow-brand p-3">
-              <SolIcon4 className="w-8 mb-2" />
-              <p className="text-sm">Arculathű posztdizájnokat, és más online reklámanyagokat készítünk</p>
-            </div>
-            <div className="bg-white rounded shadow-brand p-3">
-              <SolIcon5 className="w-8 mb-2" />
-              <p className="text-sm">Nyomdai anyagokat kreálunk, a lehető legnagyobb pontossággal</p>
-            </div>
-            <div className="bg-white rounded shadow-brand p-3">
-              <SolIcon6 className="w-8 mb-2" />
-              <p className="text-sm">Arculati kézikönyvet készítünk, hogy mindenki megértse a miérteket</p>
+            <div className="grid grid-cols-2 gap-8">
+              <div className="bg-white rounded shadow-brand p-3">
+                <SolIcon1 className="w-8 mb-2" />
+                <p className="text-sm">Felmérjük az igényeidet, valamint megismerjük a márkád személyiségét</p>
+              </div>
+              <div className="bg-white rounded shadow-brand p-3">
+                <SolIcon2 className="w-8 mb-2" />
+                <p className="text-sm">Színeket, betűtípust, vizuális kommunikációs stílust választunk</p>
+              </div>
+              <div className="bg-white rounded shadow-brand p-3">
+                <SolIcon3 className="w-8 mb-2" />
+                <p className="text-sm">Logót tervezünk, ami a márkád hű arca lehet</p>
+              </div>
+              <div className="bg-white rounded shadow-brand p-3">
+                <SolIcon4 className="w-8 mb-2" />
+                <p className="text-sm">Arculathű posztdizájnokat, és más online reklámanyagokat készítünk</p>
+              </div>
+              <div className="bg-white rounded shadow-brand p-3">
+                <SolIcon5 className="w-8 mb-2" />
+                <p className="text-sm">Nyomdai anyagokat kreálunk, a lehető legnagyobb pontossággal</p>
+              </div>
+              <div className="bg-white rounded shadow-brand p-3">
+                <SolIcon6 className="w-8 mb-2" />
+                <p className="text-sm">Arculati kézikönyvet készítünk, hogy mindenki megértse a miérteket</p>
+              </div>
             </div>
           </SolutionCategory>
         );
@@ -381,28 +383,30 @@ const Services = () => {
           </div>
         </div>
       </section>
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 my-32">
-        <section className="py-8 px-8 md:px-36 z-50">
-          <div className="mb-16 max-w-2xl">
-            <h2 className="font-display font-extrabold text-4xl leading-brand">
-              Tetszettek a látottak?
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-32">
+        <section className="bg-gray-100 py-20 sm:px-8 md:px-36 z-50">
+          <div className="mb-16 xl:ml-16 sm:max-w-2xl">
+            <h2 className="font-display font-extrabold text-4xl leading-none">
+              Tetszettek a látottak? Töltsd ki a lenti
               <br />
-              Töltsd ki a lenti formot, és alkossunk együtt valami ütőset neked is!
+              formot, és alkossunk együtt valami ütőset!
             </h2>
           </div>
           <ContactForm />
         </section>
       </div>
-      <section className="md:-mt-64 pt-36 md:pt-96 pb-36 px-4 sm:px-6 lg:px-8">
-        <div className="container mx-auto text-left md:px-56 ml-8 sm:ml-0">
-          <h2 className="font-display font-extrabold text-4xl leading-brand mb-8">
-            Még nem vagy 100%-ig biztos a dologban?
-            <br />
-            No problem! Nézd meg pár korábbi munkánkat a témában, és dönts utána!
-          </h2>
-          <Link to="/portfolio">
-            <button className="primary-btn">Irány a portfólió</button>
-          </Link>
+      <section className="pb-36 px-4 sm:px-6 lg:px-8">
+        <div className="container mx-auto text-left">
+          <div className="ml-32 max-w-4xl">
+            <h2 className="font-display font-extrabold text-4xl leading-brand mb-8">
+              Még nem vagy 100%-ig biztos a dologban?
+              <br />
+              No problem! Nézd meg pár korábbi munkánkat a témában, és dönts utána!
+            </h2>
+            <Link to="/portfolio">
+              <button className="primary-btn">Irány a portfólió</button>
+            </Link>
+          </div>
         </div>
       </section>
     </Layout>
