@@ -1,12 +1,10 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
-import { graphql, useStaticQuery, Link } from 'gatsby';
-import Img from 'gatsby-image';
+import { Link } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
-import InstagramIcon from '../components/svg/instagramIcon';
-import LinkedInIcon from '../components/svg/linkedInIcon';
+import Circle from '../images/small-circle.svg';
 import ListIcon from '../components/svg/listIcon';
 
 import RocketIcon from '../components/svg/rocketIcon';
@@ -90,9 +88,10 @@ function Team() {
               </h2>
               <div className="flex flex-col">
                 <div className="flex flex-col items-start py-4">
-                  <div className="flex flex-row align-middle content-center items-center">
-                    <p className="text-3xl font-black">01</p>
-                    <div className="w-10 h-1 bg-gray-900 ml-4"></div>
+                  <div className="flex flex-row align-middle content-center items-center relative mb-8">
+                    <img src={Circle} className="h-8 absolute left-0 top-0 -ml-4 -mt-4 z-0" />
+                    <p className="text-3xl font-black absolute z-10">01</p>
+                    <div className="w-10 h-1 bg-gray-900 ml-12"></div>
                   </div>
                   <div>
                     <h3 className="font-extrabold text-lg leading-tight mb-2">Ha nem megy így, majd megy úgy.</h3>
@@ -104,9 +103,10 @@ function Team() {
                   </div>
                 </div>
                 <div className="flex flex-col items-start py-4 xl:pr-24">
-                  <div className="flex flex-row align-middle content-center items-center">
-                    <p className="text-3xl font-black">02</p>
-                    <div className="w-10 h-1 bg-gray-900 ml-4"></div>
+                  <div className="flex flex-row align-middle content-center items-center relative mb-8">
+                    <img src={Circle} className="h-8 absolute left-0 top-0 -ml-4 -mt-4 z-0" />
+                    <p className="text-3xl font-black absolute z-10">02</p>
+                    <div className="w-10 h-1 bg-gray-900 ml-12"></div>
                   </div>
                   <div>
                     <h3 className="font-extrabold text-lg leading-tight mb-2">
@@ -119,9 +119,10 @@ function Team() {
                   </div>
                 </div>
                 <div className="flex flex-col items-start py-4 xl:pr-24">
-                  <div className="flex flex-row align-middle content-center items-center">
-                    <p className="text-3xl font-black">03</p>
-                    <div className="w-10 h-1 bg-gray-900 ml-4"></div>
+                  <div className="flex flex-row align-middle content-center items-center relative mb-8">
+                    <img src={Circle} className="h-8 absolute left-0 top-0 -ml-4 -mt-4 z-0" />
+                    <p className="text-3xl font-black absolute z-10">03</p>
+                    <div className="w-10 h-1 bg-gray-900 ml-12"></div>
                   </div>
                   <div>
                     <h3 className="font-extrabold text-lg leading-tight mb-2">
@@ -134,9 +135,10 @@ function Team() {
                   </div>
                 </div>
                 <div className="flex flex-col items-start py-4 xl:pr-24">
-                  <div className="flex flex-row align-middle content-center items-center">
-                    <p className="text-3xl font-black">04</p>
-                    <div className="w-10 h-1 bg-gray-900 ml-4"></div>
+                  <div className="flex flex-row align-middle content-center items-center relative mb-8">
+                    <img src={Circle} className="h-8 absolute left-0 top-0 -ml-4 -mt-4 z-0" />
+                    <p className="text-3xl font-black absolute z-10">04</p>
+                    <div className="w-10 h-1 bg-gray-900 ml-12"></div>
                   </div>
                   <div>
                     <h3 className="font-extrabold text-lg leading-tight mb-2">
@@ -149,9 +151,10 @@ function Team() {
                   </div>
                 </div>
                 <div className="flex flex-col items-start py-4 xl:pr-24">
-                  <div className="flex flex-row align-middle content-center items-center">
-                    <p className="text-3xl font-black">05</p>
-                    <div className="w-10 h-1 bg-gray-900 ml-4"></div>
+                  <div className="flex flex-row align-middle content-center items-center relative mb-8">
+                    <img src={Circle} className="h-8 absolute left-0 top-0 -ml-4 -mt-4 z-0" />
+                    <p className="text-3xl font-black absolute z-10">05</p>
+                    <div className="w-10 h-1 bg-gray-900 ml-12"></div>
                   </div>
                   <div>
                     <h3 className="font-extrabold text-lg leading-tight mb-2">
@@ -164,9 +167,10 @@ function Team() {
                   </div>
                 </div>
                 <div className="flex flex-col items-start py-4 xl:pr-24">
-                  <div className="flex flex-row align-middle content-center items-center">
-                    <p className="text-3xl font-black">06</p>
-                    <div className="w-10 h-1 bg-gray-900 ml-4"></div>
+                  <div className="flex flex-row align-middle content-center items-center relative mb-8">
+                    <img src={Circle} className="h-8 absolute left-0 top-0 -ml-4 -mt-4 z-0" />
+                    <p className="text-3xl font-black absolute z-10">06</p>
+                    <div className="w-10 h-1 bg-gray-900 ml-12"></div>
                   </div>
                   <div>
                     <h3 className="font-extrabold text-lg leading-tight mb-2">
@@ -279,12 +283,8 @@ function Team() {
                 <img src={Bence} className="lg:absolute bottom-0 right-4" alt="Gazdig Bence" />
               </div>
               <div className="flex self-center w-2/12 flex-col">
-                <a href="https://instagram.com/gazduig" rel="noreferrer">
-                  <InstagramIcon className="w-8 mb-8 hover:opacity-50" />
-                </a>
-                <a href="https://linkedin.com/in/gazduig" rel="noreferrer">
-                  <LinkedInIcon className="w-8 md:mt-8 hover:opacity-50" />
-                </a>
+                <a href="https://instagram.com/gazduig" rel="noreferrer"></a>
+                <a href="https://linkedin.com/in/gazduig" rel="noreferrer"></a>
               </div>
             </div>
           </div>
@@ -355,12 +355,8 @@ function Team() {
                 <img src={Gergo} className="lg:absolute bottom-0 right-4" alt="Bergyár Gergő" />
               </div>
               <div className="flex self-center w-2/12 flex-col">
-                <a href="https://www.instagram.com/gangstro.graphics/" rel="noreferrer">
-                  <InstagramIcon className="w-8 mb-8 hover:opacity-50" />
-                </a>
-                <a href="https://www.linkedin.com/in/gerg%C5%91-bergy%C3%A1r-4195b31b0/" rel="noreferrer">
-                  <LinkedInIcon className="w-8 md:mt-8 hover:opacity-50" />
-                </a>
+                <a href="https://www.instagram.com/gangstro.graphics/" rel="noreferrer"></a>
+                <a href="https://www.linkedin.com/in/gerg%C5%91-bergy%C3%A1r-4195b31b0/" rel="noreferrer"></a>
               </div>
             </div>
           </div>
@@ -433,12 +429,8 @@ function Team() {
                 <img src={Reka} className="lg:absolute bottom-0 right-4" alt="Dabasi Réka" />
               </div>
               <div className="flex self-center w-2/12 flex-col">
-                <a href="https://www.instagram.com/1r5.design/" rel="noreferrer">
-                  <InstagramIcon className="w-8 mb-8 hover:opacity-50" />
-                </a>
-                <a href="https://www.linkedin.com/in/r%C3%A9ka-dabasi15/" rel="noreferrer">
-                  <LinkedInIcon className="w-8 md:mt-8 hover:opacity-50" />
-                </a>
+                <a href="https://www.instagram.com/1r5.design/" rel="noreferrer"></a>
+                <a href="https://www.linkedin.com/in/r%C3%A9ka-dabasi15/" rel="noreferrer"></a>
               </div>
             </div>
           </div>
@@ -543,12 +535,8 @@ function Team() {
                 <img src={Dani} className="lg:absolute bottom-0 right-4" alt="Tímár Dani" />
               </div>
               <div className="flex self-center w-2/12 flex-col">
-                <a href="https://www.instagram.com/uzletifarkas/" rel="noreferrer">
-                  <InstagramIcon className="w-8 mb-8 hover:opacity-50" />
-                </a>
-                <a href="https://www.linkedin.com/in/daniel-tim%C3%A1r-b2267a175/" rel="noreferrer">
-                  <LinkedInIcon className="w-8 md:mt-8 hover:opacity-50" />
-                </a>
+                <a href="https://www.instagram.com/uzletifarkas/" rel="noreferrer"></a>
+                <a href="https://www.linkedin.com/in/daniel-tim%C3%A1r-b2267a175/" rel="noreferrer"></a>
               </div>
             </div>
           </div>
